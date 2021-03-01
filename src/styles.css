@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Montserrat:wght@300;400&display=swap");
+
+html,
+body,
+.App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+}
+
+label {
+  font-size: 100%;
+}
+
+a {
+  color: inherit !important;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  outline: none !important;
+}
+
+@media only screen and (min-width: 900px) {
+  .onlyTablet {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .noShowTablet {
+    display: none !important;
+  }
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0);
+}
+
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: rgb(240, 248, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.2rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 28px;
+  margin: 0;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  transition: all ease 0.39s;
+}
+
+a {
+  color: rgb(240, 248, 255);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.44rem;
+    line-height: 18px;
+  }
+
+  h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0;
+  }
+}
+
+/* Animations */
+
+.animBottomUp {
+  opacity: 0;
+  margin-top: 0%;
+  animation: bottomUp 0.3s ease forwards;
+}
+
+@keyframes bottomUp {
+  from {
+    opacity: 0;
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.animOpacity {
+  opacity: 0;
+  animation: animOpacity 0.3s ease forwards;
+}
+
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation Delays*/
+
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+
+.delay3 {
+  animation-delay: 0.3s;
+}
+
+.delay4 {
+  animation-delay: 0.4s;
+}
+
+.delay5 {
+  animation-delay: 0.5s;
+}
+
+.delay6 {
+  animation-delay: 0.6s;
+}
+
+.noOverflow {
+  overflow: hidden;
+}

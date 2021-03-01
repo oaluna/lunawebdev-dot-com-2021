@@ -1,0 +1,92 @@
+import React from 'react';
+
+import SvgIcons from './SvgIcons.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faInstagram,
+  faTwitter,
+  faDev
+} from '@fortawesome/free-brands-svg-icons';
+import './pages.css';
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
+  return (
+    <div className='footer'>
+      <div className='footerContent'>
+        <div className='footerFirstRow'>
+          <Link to={'/'} className='footerLogo'>
+            <h1 style={{ fontFamily: 'Ammonite', color: 'rgb(240, 248, 255)' }}>
+              luna web solutions
+            </h1>
+          </Link>
+          <div className='socialBox' style={{ zIndex: 20 }}>
+            <a
+              href='https://www.facebook.com/aka.kay.drama'
+              className='socialItem'>
+              <FontAwesomeIcon
+                icon={faFacebookSquare}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/oscar-a-luna'
+              className='socialItem'>
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+            <a
+              href='https://www.instagram.com/LunaWebDev'
+              className='socialItem'>
+              <FontAwesomeIcon
+                icon={faInstagram}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+            <a href='https://www.dev.to/oaluna' className='socialItem'>
+              <FontAwesomeIcon
+                icon={faDev}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+            <a href='https://www.twitter.com/LunaWebDev' className='socialItem'>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+          </div>
+        </div>
+        <div className='footerMainMenu'>
+          <h4>
+            <Link to='/'>Home</Link>
+          </h4>
+          <h4>
+            <Link to='/Projects'>Case History</Link>
+          </h4>
+          <h4>
+            <Link to='/Services'>Services</Link>
+          </h4>
+          <h4>
+            <Link to='/Contact'>Contacts</Link>
+          </h4>
+          <h4>
+            <Link to='/Aboutus'>About Us</Link>
+          </h4>
+        </div>
+
+        <div className='footerEnd'>
+          <h6>&copy;2021 by Oscar Armando Luna, All rights reserved</h6>
+          <div className='footerEndMenu'>
+            <h6> Terms and conditions </h6>
+            <h6> Privacy policy </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
