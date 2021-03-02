@@ -20,6 +20,18 @@
   border: 1px solid #113355;
   transition: 0.2s ease-in-out;
 }
+
+.chat-chatbot-button-label {
+  width: 10vw;
+  position: absolute;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: aliceblue;
+  top: 10vh;
+  left: -3vw;
+  text-align: center;
+}
+
 .react-chatbot-kit-chat-inner-container {
   background: rgba(256, 256, 256, 0.21);
   border-radius: 10px;

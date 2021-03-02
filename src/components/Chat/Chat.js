@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Chatbot from 'react-chatbot-kit';
 import './Chat.css';
 import { ConditionallyRender } from 'react-util-kit';
@@ -10,6 +10,20 @@ import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 function Chat() {
   const [showChatbot, toggleChatbot] = useState(false);
+  const [showButtonLabel, setShowButtonLabel] = useState(false);
+  const [buttonClicked, setButtonClicked] = useState(false);
+  const [position, setPosition] = useState(0);
+
+  function mouseOver(e) {
+    const rect = e.target.getBoundingClientRect();
+    console.log(rect.left);
+    setPosition(rect.left);
+    setShowButtonLabel(true);
+  }
+  function mouseLeave() {
+    setShowButtonLabel(false);
+  }
+
   return (
     <div className='chat'>
       <header className='chatHeader'>
@@ -28,11 +42,19 @@ function Chat() {
 
         <button
           className='chat-chatbot-button'
-          onClick={() => toggleChatbot((prev) => !prev)}>
+          onClick={() => toggleChatbot((prev) => !prev)}
+          onMouseEnter={mouseOver}
+          onMouseLeave={mouseLeave}>
           <FontAwesomeIcon
             icon={faComment}
             className='chat-chatbot-button-icon'
           />
+          <br />
+          {showButtonLabel && (
+            <p className='chat-chatbot-button-label'>
+              Click here to speak to my assistant
+            </p>
+          ) }
         </button>
       </header>
     </div>
