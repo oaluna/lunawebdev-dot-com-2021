@@ -81,7 +81,7 @@ export default class ProjectPage extends Component {
               minHeight: '500px',
               maxWidth: '30vw',
               width: '100%',
-              padding: '5px'
+              padding: '15px'
             }}>
             <div className='siteTitle'>
               <h5> {projectsData[this.state.currentProject].category} </h5>

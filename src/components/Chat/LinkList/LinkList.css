@@ -16,12 +16,13 @@
   text-decoration: none;
   margin: 6px;
   display: block;
-  background-color: rgb(240, 248, 255, 1);
-  border: 2px solid #113355;
+  background-color: rgb(240, 248, 255, 0.8);
+  border: 3px solid #113355;
   padding: 8px;
   border-radius: 25px;
   box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
   font-size: 1.5em;
+  font-weight: 700;
 
 }
 .link-list-item:hover {

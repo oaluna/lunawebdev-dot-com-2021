@@ -536,7 +536,7 @@ color: rgb(240, 248, 255);
   padding: 6px;
   font-size: 18px;
   border: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid rgba(189,202,251,0.3);
   margin-top: 5px;
   outline: 0;
   transition: 0.3s ease border-bottom;
@@ -549,7 +549,7 @@ color: rgb(240, 248, 255);
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-bottom: 1px solid rgba(189, 202, 251, 1);
+  border-bottom: 2px solid rgba(189, 202, 251, 1);
 }
 
 textarea {
@@ -565,7 +565,7 @@ textarea {
   font-size: 1.8rem;
   line-height: 28px;
   font-family: "Montserrat", sans-serif;
-  color: #ccc !important;
+  color: rgba(204,204,204,0.5) !important;
   margin: 0;
 }
 

@@ -120,7 +120,7 @@ export default class Homepage extends Component {
           <div className='fullSectionContent limitWidthContent'>
             <h1 className='bigTitle'> Projects </h1>
             <br />
-            <h3>
+            <h3 style={{ margin: '15px'}}>
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h3>

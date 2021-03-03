@@ -6,13 +6,14 @@ import ActionProvider from './ActionProvider';
 import MessageParser from './MessageParser';
 import config from './chatbotConfig';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment } from '@fortawesome/free-solid-svg-icons';
+import { faComment, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 function Chat() {
   const [showChatBot, setShowChatBot] = useState(false);
   const [showButtonLabel, setShowButtonLabel] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const [position, setPosition] = useState(0);
+
 
   function handleShowChatBot() {
     setShowChatBot(!showChatBot);
@@ -48,7 +49,8 @@ function Chat() {
           className='chat-chatbot-button'
           onClick={() => setShowChatBot((prev) => !prev)}
           onMouseEnter={mouseOver}
-          onMouseLeave={mouseLeave}></button>
+          onMouseLeave={mouseLeave}>
+          <FontAwesomeIcon icon={faRobot} /></button>
         <br />
         {showButtonLabel && (
           <p className='chat-chatbot-button-label'>
