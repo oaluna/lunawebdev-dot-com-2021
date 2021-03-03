@@ -140,10 +140,10 @@ overflow-x: hidden;
 /* Footer Component */
 
 .footer {
-  margin-top: 100vh;
+  position: relative;
+margin-bottom: 0%;
   height: 15%;
   width: 100%;
-  margin-bottom: 0vh;
   display: flex;
   justify-content: center;
   padding: 0px 2% 0px 2%;

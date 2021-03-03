@@ -9,10 +9,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 
 function Chat() {
-  const [showChatbot, toggleChatbot] = useState(false);
+  const [showChatBot, setShowChatBot] = useState(false);
   const [showButtonLabel, setShowButtonLabel] = useState(false);
   const [buttonClicked, setButtonClicked] = useState(false);
   const [position, setPosition] = useState(0);
+
+  function handleShowChatBot() {
+    setShowChatBot(!showChatBot);
+  }
 
   function mouseOver(e) {
     const rect = e.target.getBoundingClientRect();
@@ -29,7 +33,7 @@ function Chat() {
       <header className='chatHeader'>
         <div className='chat-chatbot-container'>
           <ConditionallyRender
-            ifTrue={showChatbot}
+            ifTrue={showChatBot}
             show={
               <Chatbot
                 config={config}
@@ -42,20 +46,15 @@ function Chat() {
 
         <button
           className='chat-chatbot-button'
-          onClick={() => toggleChatbot((prev) => !prev)}
+          onClick={() => setShowChatBot((prev) => !prev)}
           onMouseEnter={mouseOver}
-          onMouseLeave={mouseLeave}>
-          <FontAwesomeIcon
-            icon={faComment}
-            className='chat-chatbot-button-icon'
-          />
-          <br />
-          {showButtonLabel && (
-            <p className='chat-chatbot-button-label'>
-              Click here to speak to my assistant
-            </p>
-          ) }
-        </button>
+          onMouseLeave={mouseLeave}></button>
+        <br />
+        {showButtonLabel && (
+          <p className='chat-chatbot-button-label'>
+            Click here to speak to my assistant
+          </p>
+        )}
       </header>
     </div>
   );

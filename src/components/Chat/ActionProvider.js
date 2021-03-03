@@ -6,18 +6,52 @@ class ActionProvider {
 
   // new method
   greet() {
-    const greetingMessage = this.createChatBotMessage("Hello, there!");
+    const greetingMessage = this.createChatBotMessage(
+      `Hi Folk!😁 ${`\n`}
+       How may I help you?`,
+       {
+         widget: 'learningOptions'
+       }
+    );
     this.updateChatbotState(greetingMessage);
   }
 
-  handleJavascriptList = () => {
+  handleProjectLinks = () => {
     const message = this.createChatBotMessage(
-      "You got it! Here's the following list of links available",
+      'Excellent! Here are your options to choose from:',
       {
-        widget: "javascriptLinks",
+        widget: 'projectLinks'
       }
     );
+    this.updateChatbotState(message);
+  };
+  handleContactLinks = () => {
+    const message = this.createChatBotMessage(
+      'Excellent! Here are your options to choose from:',
+      {
+        widget: 'contactLinks'
+      }
+    );
+    this.updateChatbotState(message);
+  };
+  handleAboutLinks = () => {
+    const message = this.createChatBotMessage(
+      'Excellent! Here are your options to choose from:',
+      {
+        widget: 'aboutLinks'
+      }
+    );
+    this.updateChatbotState(message);
+  };
 
+
+  handleDefault = () => {
+    const message = this.createChatBotMessage(
+      "I'm sorry, I didn't quite catch that. Could you please try again?",
+      {
+        widget: 'learningOptions'
+      }
+    );
     this.updateChatbotState(message);
   };
 
@@ -26,7 +60,7 @@ class ActionProvider {
 
     this.setState((prevState) => ({
       ...prevState,
-      messages: [...prevState.messages, message],
+      messages: [...prevState.messages, message]
     }));
   }
 }

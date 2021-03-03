@@ -2,17 +2,18 @@ import React from 'react';
 
 import './LearningOptions.css';
 
-const LearningOptions = (props) => {
+const HighSchoolBranches = (props) => {
   const options = [
     {
-      text: 'JavaScript',
-      handler: props.actionProvider.handleJavascriptList,
+      text: 'I\'d like to see Oscar\'s projects',
+      handler: props.actionProvider.handleProjectLinks,
       id: 1
     },
-    { text: 'Data visualization', handler: () => {}, id: 2 },
-    { text: 'APIs', handler: () => {}, id: 3 },
-    { text: 'Security', handler: () => {}, id: 4 },
-    { text: 'Interview prep', handler: () => {}, id: 5 }
+    { text: 'I\'d like to get in contact with Oscar',
+    handler: props.actionProvider.handleContactLinks,
+    id: 2
+  },
+    { text: 'I\'d like to know more about Oscar', handler: props.actionProvider.handleAboutLinks, id: 3 }
   ];
 
   const optionsMarkup = options.map((option) => (
@@ -27,4 +28,4 @@ const LearningOptions = (props) => {
   return <div className='learning-options-container'>{optionsMarkup}</div>;
 };
 
-export default LearningOptions;
+export default HighSchoolBranches;

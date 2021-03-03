@@ -6,12 +6,23 @@ class MessageParser {
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
 
-    if (lowerCaseMessage.includes("hello" || "hi" || "hey")) {
+    if (
+      lowerCaseMessage.includes('hi') ||
+      lowerCaseMessage.includes('hey') ||
+      lowerCaseMessage.includes('hello') ||
+      lowerCaseMessage.includes('hello there') ||
+      lowerCaseMessage.includes('hey there') ||
+      lowerCaseMessage.includes('hi there')
+    ) {
       this.actionProvider.greet();
-    }
-
-    if (lowerCaseMessage.includes("Oscar" || "Luna")) {
-      this.actionProvider.handleJavascriptList();
+    } else if (lowerCaseMessage.includes('projects')) {
+      this.actionProvider.handleProjectLinks();
+    } else if (lowerCaseMessage.includes('contact')) {
+      this.actionProvider.handleContactLinks();
+    } else if (lowerCaseMessage.includes('about')) {
+      this.actionProvider.handleAboutLinks();
+    } else {
+      this.actionProvider.handleDefault();
     }
   }
 }

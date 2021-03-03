@@ -1,17 +1,26 @@
 .learning-options-container {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .learning-option-button {
-  padding: 0.5rem;
-  background: rgba( 31, 38, 135, 0.17 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
-  border-radius: 10px;
+  text-decoration: none;
+  margin: 6px;
+  display: block;
+  color: #113355;
+  background-color: rgb(240, 248, 255, 1);
+  border: 2px solid #113355;
+  padding: 8px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
+  font-size: 1.5em;
+}
+
+.learning-option-button:hover {
+  background: rgba(189,202,251, 0.5);
   color: aliceblue;
-  border: 1px solid aliceblue;
-  margin: 3px;
+  transition: 0.4s ease-in-out;
 }

@@ -1,55 +1,100 @@
-import React from "react";
-import { createChatBotMessage } from "react-chatbot-kit";
+import React from 'react';
+import { createChatBotMessage } from 'react-chatbot-kit';
 
-import LearningOptions from "./LearningOptions/LearningOptions";
-import LinkList from "./LinkList/LinkList";
+import LearningOptions from './LearningOptions/LearningOptions';
+import LinkList from './LinkList/LinkList';
+
+const botName = 'Zaxia';
 
 const config = {
-  botName: "Zaxa",
+  botName: 'Zaxia',
   initialMessages: [
-    createChatBotMessage("Hello! I'm Zaxa, Mr. Luna's personal assistant. How may I be of assistance?", {
-      widget: "learningOptions",
-    }),
+    createChatBotMessage(
+      `Hi There! I am ${botName}. I am Mr. Luna\'s personal Bot assistant.`
+    ),
+    createChatBotMessage('How may I be of assistance?', {
+      withAvatar: true,
+      widget: 'learningOptions'
+    })
   ],
   customStyles: {
     botMessageBox: {
-      backgroundColor: "aliceblue",
+      backgroundColor: 'aliceblue'
     },
     chatButton: {
-      backgroundColor: "aliceblue",
-    },
+      backgroundColor: 'aliceblue'
+    }
   },
   widgets: [
     {
-      widgetName: "learningOptions",
-      widgetFunc: (props) => <LearningOptions {...props} />,
+      widgetName: 'learningOptions',
+      widgetFunc: (props) => <LearningOptions {...props} />
     },
     {
-      widgetName: "javascriptLinks",
+      widgetName: 'projectLinks',
       widgetFunc: (props) => <LinkList {...props} />,
       props: {
         options: [
           {
-            text: "Oscar's projects",
-            url:
-              "/projects",
-            id: 1,
+            text: 'Project 1',
+            url: '/ProjectPage/1',
+            id: 1
           },
           {
-            text: "Get In Contact with Oscar",
-            url:
-              "/Contact",
-            id: 2,
+            text: 'Project 2',
+            url: '/ProjectPage/2',
+            id: 2
           },
           {
-            text: "Learn more",
-            url: "/AboutMe",
-            id: 3,
+            text: 'See all projects',
+            url: '/projects',
+            id: 3
           },
-        ],
-      },
+          {
+            text: 'Go home',
+            url: '/',
+            id: 4
+          }
+        ]
+      }
     },
-  ],
+    {
+      widgetName: 'contactLinks',
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "I'd like to get in touch with Oscar",
+            url: '/contact',
+            id: 1
+          },
+          {
+            text: 'Go home',
+            url: '/',
+            id: 2
+          }
+        ]
+      }
+    },
+    {
+      widgetName: 'aboutLinks',
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "View his About page",
+            url: '/aboutme',
+            id: 1
+          },
+          {
+            text: 'Go home',
+            widgetFunc: (props) => <LearningOptions {...props} />,
+            id: 2
+          }
+        ]
+      }
+    }
+  ]
 };
 
 export default config;
