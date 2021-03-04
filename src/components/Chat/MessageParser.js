@@ -12,9 +12,16 @@ class MessageParser {
       lowerCaseMessage.includes('hello') ||
       lowerCaseMessage.includes('hello there') ||
       lowerCaseMessage.includes('hey there') ||
-      lowerCaseMessage.includes('hi there')
+      lowerCaseMessage.includes('hi there') ||
+      lowerCaseMessage.includes("what's up") ||
+      lowerCaseMessage.includes('sup')
     ) {
       this.actionProvider.greet();
+    } else if (
+      lowerCaseMessage.includes('how are you') ||
+      lowerCaseMessage.includes("how 's it going")
+    ) {
+      this.actionProvider.howAreYou();
     } else if (lowerCaseMessage.includes('projects')) {
       this.actionProvider.handleProjectLinks();
     } else if (lowerCaseMessage.includes('contact')) {

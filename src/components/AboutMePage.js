@@ -11,7 +11,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import aboutMeData from './Data/aboutMeData';
-//TODO import {Player} from @lottiefiles/react-lottie-player
 import './components.css';
 
 export default class AboutMePage extends Component {
@@ -171,27 +170,7 @@ export default class AboutMePage extends Component {
             </div>
           </div>
         </div>
-        <div
-          className='lottiefilesContainer'
-          style={{
-            position: 'absolute',
-            zIndex: 0,
-            marginTop: '20vh',
-            marginLeft: '50vw'
-          }}>
-          <lottie-player
-            src='https://assets1.lottiefiles.com/packages/lf20_k86wxpgr.json'
-            background='transparent'
-            speed='0.5'
-            style={{
-              transform: 'scale(2, 2)',
-              opacity: 0.8,
-              width: '100%',
-              height: '100%'
-            }}
-            loop
-            autoplay></lottie-player>
-        </div>
+      
       </div>
     );
   }

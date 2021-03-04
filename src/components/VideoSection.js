@@ -24,29 +24,29 @@ export default class VideoSection extends Component {
                 <h2> 30+ </h2>
               </div>
               <div className='tokenBottom'>
-                <h6> Events Organized. </h6>
+                <h6> Tech books read so far </h6>
               </div>
             </div>
             <div className='token secondtoken'>
               <div className='tokenTop'>
-                <h2> 12000+ </h2>
+                <h2> 100+ </h2>
               </div>
               <div className='tokenBottom'>
-                <h6> Fans gathered together. </h6>
+                <h6> Random thoughts had today </h6>
               </div>
             </div>
             <div className='token thirdtoken'>
               <div className='tokenTop'>
-                <h2> 10+ </h2>
+                <h2> 10k+ </h2>
               </div>
               <div className='tokenBottom'>
-                <h6> Clients on tour with us. </h6>
+                <h6> Hours of learning. </h6>
               </div>
             </div>
           </div>
         </div>
         <div className='videoOverlay'></div>
-        <video width="100vw" loop playsInline autoPlay muted>
+        <video width="50vw" loop playsInline autoPlay muted>
           <source
             src={Video}
             type='video/mp4'
@@ -60,6 +60,7 @@ export default class VideoSection extends Component {
             height: '100%',
             width: '40vw',
             padding: '25px'
+
           }}>
           <div
             className='siteInfo'

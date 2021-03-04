@@ -10,6 +10,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@lottiefiles/react-lottie-player": "^3.0.1",
     "emailjs-com": "2.6.4",
     "materialize-css": "^1.0.0",
     "react": "17.0.1",

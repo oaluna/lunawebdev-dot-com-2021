@@ -2,7 +2,7 @@ import React from 'react';
 
 import './LearningOptions.css';
 
-const HighSchoolBranches = (props) => {
+const LearningOptions = (props) => {
   const options = [
     {
       text: 'I\'d like to see Oscar\'s projects',
@@ -28,4 +28,4 @@ const HighSchoolBranches = (props) => {
   return <div className='learning-options-container'>{optionsMarkup}</div>;
 };
 
-export default HighSchoolBranches;
+export default LearningOptions;

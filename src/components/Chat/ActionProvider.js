@@ -6,19 +6,30 @@ class ActionProvider {
 
   // new method
   greet() {
-    const greetingMessage = this.createChatBotMessage(
-      `Hi Folk!😁 ${`\n`}
+    const message = this.createChatBotMessage(
+      `What's good!😁 ${`\n`}
        How may I help you?`,
-       {
-         widget: 'learningOptions'
-       }
+      {
+        widget: 'learningOptions'
+      }
     );
-    this.updateChatbotState(greetingMessage);
+    this.updateChatbotState(message);
+  }
+
+  howAreYou() {
+    const message = this.createChatBotMessage(
+      `How am I? Hm.. I suppose I am well, since I am not experiencing bugs nor COVID-19. ${`\n`}
+      Now, what can I do for you?`,
+      {
+        widget: 'learningOptions'
+      }
+    );
+    this.updateChatbotState(message);
   }
 
   handleProjectLinks = () => {
     const message = this.createChatBotMessage(
-      'Excellent! Here are your options to choose from:',
+      `Excellent! Here\'s a couple of sample projects, or you can view them all in the Projects page`,
       {
         widget: 'projectLinks'
       }
@@ -43,7 +54,6 @@ class ActionProvider {
     );
     this.updateChatbotState(message);
   };
-
 
   handleDefault = () => {
     const message = this.createChatBotMessage(
