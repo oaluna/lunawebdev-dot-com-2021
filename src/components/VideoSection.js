@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Video from '../assets/video.mp4'
+
 import './components.css';
 
 export default class VideoSection extends Component {
@@ -48,7 +48,7 @@ export default class VideoSection extends Component {
         <div className='videoOverlay'></div>
         <video width="50vw" loop playsInline autoPlay muted>
           <source
-            src={Video}
+            src="https://player.vimeo.com/video/314181352?title=0&portrait=0&byline=0&autoplay=1"
             type='video/mp4'
           />
         </video>
