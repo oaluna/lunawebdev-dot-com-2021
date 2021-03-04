@@ -19,7 +19,7 @@ export default function Footer() {
         <div className='footerFirstRow'>
           <Link to={'/'} className='footerLogo'>
             <h1 style={{ fontFamily: 'Ammonite', color: 'rgb(240, 248, 255)' }}>
-              luna web solutions
+              oscar armando luna
             </h1>
           </Link>
           <div className='socialBox' style={{ zIndex: 20 }}>

@@ -136,7 +136,7 @@ export default function HeadBar(props) {
               fontWeight: 100,
               textShadow: '0px 0px 2px #333'
             }}>
-            luna web solutions
+            oscar armando luna
           </h2>
         </Link>
         <div className='headBarButton' onClick={() => handleMenu(!isOpen)}>

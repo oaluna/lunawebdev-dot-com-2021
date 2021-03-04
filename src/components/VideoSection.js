@@ -46,9 +46,9 @@ export default class VideoSection extends Component {
           </div>
         </div>
         <div className='videoOverlay'></div>
-        <video width="50vw" loop playsInline autoPlay muted>
+        <video loop playsInline autoPlay muted>
           <source
-            src="https://player.vimeo.com/video/314181352?title=0&portrait=0&byline=0&autoplay=1"
+            src="https://player.vimeo.com/video/314181352?title=0&portrait=0&byline=0&autoplay=1000"
             type='video/mp4'
           />
         </video>
