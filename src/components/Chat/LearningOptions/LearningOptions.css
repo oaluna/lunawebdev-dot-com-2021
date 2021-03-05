@@ -23,6 +23,6 @@
 
 .learning-option-button:hover {
   background: rgba(189,202,251, 0.5);
-  color: aliceblue;
+  color: rgba(189,202,251,1) ;
   transition: 0.4s ease-in-out;
 }

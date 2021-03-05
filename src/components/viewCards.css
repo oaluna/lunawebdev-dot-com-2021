@@ -56,16 +56,10 @@
   width: 23%;
   height: 100%;
   overflow: hidden;
-
+  border-radius: 30px;
   box-sizing: border-box;
   transition: all 0.6s ease;
-  background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.27 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .viewCard:hover {
@@ -125,12 +119,13 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .viewCardLast {
-  background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.5px );
--webkit-backdrop-filter: blur( 7.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 2px solid rgba(206, 208, 237, 1);
+  box-shadow: none !important;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(235, 230, 248, 1) 90%
+  );
 }
 
 .viewCardLast .filterBlurImg {
@@ -163,8 +158,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .viewCard:hover .circleBtnIcon {
+  background-color: #f0f8ff;
+  color: #113355;
   border-color: #113355;
-  color: rgb(240, 248, 255);
 }
 
 /* viewCards on projects page / case history */
@@ -178,7 +174,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-
 }
 
 .projectsCards .viewCard {
@@ -187,7 +182,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .projectTitle {
-  color: #fff;
+  color: #f0f8ff;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 451px) {

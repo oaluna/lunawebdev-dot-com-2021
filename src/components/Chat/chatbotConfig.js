@@ -19,10 +19,10 @@ const config = {
   ],
   customStyles: {
     botMessageBox: {
-      backgroundColor: 'aliceblue'
+      backgroundColor: 'rgba(189,202,251,1) '
     },
     chatButton: {
-      backgroundColor: 'aliceblue'
+      backgroundColor: 'rgba(189,202,251,1) '
     }
   },
   widgets: [
@@ -82,7 +82,7 @@ const config = {
       props: {
         options: [
           {
-            text: "View his About page",
+            text: 'View his About page',
             url: '/aboutme',
             id: 1
           },
