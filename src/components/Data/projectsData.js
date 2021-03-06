@@ -3,11 +3,11 @@ const projectsData = [
     id: 1,
     category: 'Landing Site',
     imageLarge:
-      'https://images.pexels.com/photos/1555177/pexels-photo-1555177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      "https://www.lunawebdev.com/static/cf53c4931821a2a08b029e1f51ebd930/43fa5/lws-landing-demo.png",
     imageCard:
-      'https://images.pexels.com/photos/1555177/pexels-photo-1555177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    logoImg: 'https://logoipsum.com/logo/logo-16.svg',
-    title: 'Sample Project #1',
+      "https://www.lunawebdev.com/static/cf53c4931821a2a08b029e1f51ebd930/43fa5/lws-landing-demo.png",
+    logoImg: '',
+    title: 'Landing Demo #1',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -27,11 +27,11 @@ const projectsData = [
     id: 2,
     category: 'Landing Site',
     imageLarge:
-      'https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://www.lunawebdev.com/static/52115e8c382c2974e2de8c293569fda3/43fa5/lunadevblog.png',
     imageCard:
-      'https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://www.lunawebdev.com/static/52115e8c382c2974e2de8c293569fda3/43fa5/lunadevblog.png',
     logoImg: 'https://logoipsum.com/logo/logo-24.svg',
-    title: 'Project 2',
+    title: 'Blog Site',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -51,11 +51,11 @@ const projectsData = [
     id: 3,
     category: 'Landing Site',
     imageLarge:
-      'https://images.pexels.com/photos/3616964/pexels-photo-3616964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://www.lunawebdev.com/static/2b580584daa074f2916ed81deb154fa3/43fa5/crwn-clothing-2020.png',
     imageCard:
-      'https://images.pexels.com/photos/3616964/pexels-photo-3616964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      'https://www.lunawebdev.com/static/2b580584daa074f2916ed81deb154fa3/43fa5/crwn-clothing-2020.png',
     logoImg: 'https://logoipsum.com/logo/logo-12.svg',
-    title: 'Project 3',
+    title: 'E-Commerce Demo',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -75,11 +75,11 @@ const projectsData = [
     id: 4,
     category: 'Landing Site',
     imageLarge:
-      'https://images.pexels.com/photos/210766/pexels-photo-210766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      '../../assets/lunasportsstore.png',
     imageCard:
-      'https://images.pexels.com/photos/210766/pexels-photo-210766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      '../../assets/lunasportsstore.png',
     logoImg: 'https://logoipsum.com/logo/logo-15.svg',
-    title: 'Project 4',
+    title: 'E-Commerce Demo #2',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -99,11 +99,11 @@ const projectsData = [
     id: 5,
     category: 'Landing Site',
     imageLarge:
-      'https://images.pexels.com/photos/1304640/pexels-photo-1304640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      '../../assets/2020-portfolio-preview.png',
     imageCard:
-      'https://images.pexels.com/photos/1304640/pexels-photo-1304640.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      '../../assets/2020-portfolio-preview.png',
     logoImg: 'https://logoipsum.com/logo/logo-11.svg',
-    title: 'Project 5',
+    title: 'Landing Page Demo for Web Development',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -119,125 +119,125 @@ const projectsData = [
       text: 'Interactions across all socials'
     }
   },
-  {
-    id: 6,
-    category: 'e-commerce',
-    imageLarge:
-      'https://images.pexels.com/photos/2091399/pexels-photo-2091399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    imageCard:
-      'https://images.pexels.com/photos/2091399/pexels-photo-2091399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    logoImg: 'https://logoipsum.com/logo/logo-2.svg',
-    title: 'Project 6',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-    stat1: {
-      number: '10',
-      text: 'stuff'
-    },
-    stat2: {
-      number: '10',
-      text: 'stuff'
-    },
-    stat3: {
-      number: '10',
-      text: 'stuff'
-    }
-  },
-  {
-    id: 7,
-    category: 'Landing Site',
-    imageLarge:
-      'https://images.pexels.com/photos/5147325/pexels-photo-5147325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    imageCard:
-      'https://images.pexels.com/photos/5147325/pexels-photo-5147325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    logoImg: 'https://logoipsum.com/logo/logo-26.svg',
-    title: 'Project 7',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-    stat1: {
-      number: '5+',
-      text: 'Millions of views on TikTok (jk)'
-    },
-    stat2: {
-      number: '800K+',
-      text: 'interactions on TikTok (jk)'
-    },
-    stat3: {
-      number: '600K+',
-      text: 'Instances of the urge to dance per day'
-    }
-  },
-  {
-    id: 8,
-    category: 'Landing Site',
-    imageLarge:
-      'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    imageCard:
-      'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    logoImg: 'https://logoipsum.com/logo/logo-17.svg',
-    title: 'Project 8',
-    text: 'Lorem ipsum',
-    stat1: {
-      number: '2.5+',
-      text: 'Restraining orders received from Lady Gaga'
-    },
-    stat2: {
-      number: '170k+',
-      text: 'Violations of the former'
-    },
-    stat3: {
-      number: '1375+',
-      text: 'meters kept away from Lady Gaga at all times'
-    }
-  },
-  {
-    id: 9,
-    category: 'Landing Site',
-    imageLarge:
-      'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    imageCard:
-      'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    logoImg: '',
-    title: 'Project 9',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-    stat1: {
-      number: '1.9+',
-      text: 'Lorem ipsum'
-    },
-    stat2: {
-      number: '170k+',
-      text: 'Lorem ipsum'
-    },
-    stat3: {
-      number: '9',
-      text: 'Rocket number'
-    }
-  },
-  {
-    id: 10,
-    category: 'Landing Site',
-    imageLarge:
-      'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    imageCard:
-      'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    logoImg: '',
-    title: 'Project 10',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-    stat1: {
-      number: '900k+',
-      text: 'Lorem ipsum'
-    },
-    stat2: {
-      number: '2',
-      text: 'Lorem ipsum'
-    },
-    stat3: {
-      number: '70k+',
-      text: 'Lorem ipsum'
-    }
-  }
+  // {
+  //   id: 6,
+  //   category: 'e-commerce',
+  //   imageLarge:
+  //     'https://images.pexels.com/photos/2091399/pexels-photo-2091399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   imageCard:
+  //     'https://images.pexels.com/photos/2091399/pexels-photo-2091399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   logoImg: 'https://logoipsum.com/logo/logo-2.svg',
+  //   title: 'Project 6',
+  //   text:
+  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+  //   stat1: {
+  //     number: '10',
+  //     text: 'stuff'
+  //   },
+  //   stat2: {
+  //     number: '10',
+  //     text: 'stuff'
+  //   },
+  //   stat3: {
+  //     number: '10',
+  //     text: 'stuff'
+  //   }
+  // },
+  // {
+  //   id: 7,
+  //   category: 'Landing Site',
+  //   imageLarge:
+  //     'https://images.pexels.com/photos/5147325/pexels-photo-5147325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   imageCard:
+  //     'https://images.pexels.com/photos/5147325/pexels-photo-5147325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   logoImg: 'https://logoipsum.com/logo/logo-26.svg',
+  //   title: 'Project 7',
+  //   text:
+  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+  //   stat1: {
+  //     number: '5+',
+  //     text: 'Millions of views on TikTok (jk)'
+  //   },
+  //   stat2: {
+  //     number: '800K+',
+  //     text: 'interactions on TikTok (jk)'
+  //   },
+  //   stat3: {
+  //     number: '600K+',
+  //     text: 'Instances of the urge to dance per day'
+  //   }
+  // },
+  // {
+  //   id: 8,
+  //   category: 'Landing Site',
+  //   imageLarge:
+  //     'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   imageCard:
+  //     'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   logoImg: 'https://logoipsum.com/logo/logo-17.svg',
+  //   title: 'Project 8',
+  //   text: 'Lorem ipsum',
+  //   stat1: {
+  //     number: '2.5+',
+  //     text: 'Restraining orders received from Lady Gaga'
+  //   },
+  //   stat2: {
+  //     number: '170k+',
+  //     text: 'Violations of the former'
+  //   },
+  //   stat3: {
+  //     number: '1375+',
+  //     text: 'meters kept away from Lady Gaga at all times'
+  //   }
+  // },
+  // {
+  //   id: 9,
+  //   category: 'Landing Site',
+  //   imageLarge:
+  //     'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  //   imageCard:
+  //     'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+  //   logoImg: '',
+  //   title: 'Project 9',
+  //   text:
+  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+  //   stat1: {
+  //     number: '1.9+',
+  //     text: 'Lorem ipsum'
+  //   },
+  //   stat2: {
+  //     number: '170k+',
+  //     text: 'Lorem ipsum'
+  //   },
+  //   stat3: {
+  //     number: '9',
+  //     text: 'Rocket number'
+  //   }
+  // },
+  // {
+  //   id: 10,
+  //   category: 'Landing Site',
+  //   imageLarge:
+  //     'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   imageCard:
+  //     'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  //   logoImg: '',
+  //   title: 'Project 10',
+  //   text:
+  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+  //   stat1: {
+  //     number: '900k+',
+  //     text: 'Lorem ipsum'
+  //   },
+  //   stat2: {
+  //     number: '2',
+  //     text: 'Lorem ipsum'
+  //   },
+  //   stat3: {
+  //     number: '70k+',
+  //     text: 'Lorem ipsum'
+  //   }
+  // }
 ];
 
 export default projectsData;

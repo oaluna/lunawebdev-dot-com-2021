@@ -124,6 +124,7 @@ export default class Homepage extends Component {
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h3>
+            <p>Using a mobile device? Swipe to see more previews.</p>
             <ViewCards />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>

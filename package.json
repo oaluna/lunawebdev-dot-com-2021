@@ -5,14 +5,18 @@
   "author": "Oscar Luna <CaporalesLuna@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@loadable/component": "^5.14.1",
     "@lottiefiles/react-lottie-player": "^3.0.1",
+    "autoprefixer": "9",
     "emailjs-com": "2.6.4",
     "materialize-css": "^1.0.0",
+    "postcss": "^7",
     "react": "17.0.1",
     "react-chatbot-kit": "^1.1.14",
     "react-custom-scrollbars": "^4.2.1",
@@ -22,7 +26,8 @@
     "react-scripts": "4.0.2",
     "react-simple-chatbot": "^0.6.1",
     "react-spinners": "^0.10.6",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "tailwindcss": "yarn:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
     "typescript": "3.8.3"

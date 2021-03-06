@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Montserrat:wght@300;400&display=swap");
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 html,
 body,
 .App {
@@ -7,7 +9,7 @@ body,
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #130f40;
   background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
   color: #f0f8ff;

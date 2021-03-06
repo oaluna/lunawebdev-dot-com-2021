@@ -454,8 +454,9 @@ color: rgb(240, 248, 255);
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   z-index: 5;
+  transform: scale(1.2);
 }
 
 .filterBlurImgBottom {
@@ -543,7 +544,7 @@ color: rgb(240, 248, 255);
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 28px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 

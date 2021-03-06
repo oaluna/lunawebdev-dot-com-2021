@@ -81,7 +81,7 @@ export default class Marketing extends Component {
                 <SvgIcons
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='50px'
-                  iconName=' '
+                  iconName='influencer'
                   fillColor='rgb(240, 246, 255)'
                 />
                 <h3> Client Selection </h3>
@@ -89,7 +89,7 @@ export default class Marketing extends Component {
                   {' '}
                   I do not discriminate a client based on gender, identity,
                   ethnicity, religious background, nor will I perpeptuate any
-                  discrimination.
+                  discrimination. Period.
                 </p>
               </div>
               <div className='serviceDetailsCard'>
@@ -114,7 +114,7 @@ export default class Marketing extends Component {
                   iconName='videoEdit'
                   fillColor='rgb(240, 246, 255)'
                 />
-                <h3>Quality contents</h3>
+                <h3>Quality Content</h3>
                 <p>
                   {' '}
                   My clients do their best to visualize the content that follows

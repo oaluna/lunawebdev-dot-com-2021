@@ -119,13 +119,9 @@
 }
 
 .viewCardLast {
-  border: 2px solid rgba(206, 208, 237, 1);
+  border: 1px solid rgba(189, 202, 251, 1);
   box-shadow: none !important;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(235, 230, 248, 1) 90%
-  );
+  background: rgba(189,202,251,0.22);
 }
 
 .viewCardLast .filterBlurImg {

@@ -4,10 +4,12 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  background-color: rgb(240, 248, 255);
+  background-color: rgba(240, 248, 255,0);
   border-radius: 30px;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
+
 
 .socialPostContainer {
   position: relative;
@@ -27,7 +29,7 @@
 }
 
 .socialPostContainer:hover {
-  transform: brightness(1.2);
+  transform: brightness(1.4);
   transition: 0.3s ease-in-out;
   background-color: rgba(256, 256, 256, 0.21);
 }
@@ -46,6 +48,7 @@
 
 .serviceName {
   position: absolute;
+  font-family: 'Montserrat', sans-serif;
   z-index: 30;
   top: 50px;
   left: 50px;
@@ -64,7 +67,7 @@
 }
 
 .transparentBlueGradientBack {
-  background: rgba( 255, 255, 255, 1 );
+  background: rgba( 189, 202, 251, 0.32 );
 }
 
 .redGradientBack {
@@ -1286,6 +1289,10 @@
   justify-content: space-evenly;
 
 }
+.serviceDetailsCard:hover {
+  transform: brightness(1.4);
+  transition: 0.3s ease-in-out;
+}
 
 .serviceDetailsCard svg {
   padding-left: 15px;
@@ -1299,6 +1306,10 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+}
+.serviceDetailsCardLast:hover {
+  background: rgba(189,202,251,0.33);
+  transition: 0.3s ease-in-out;
 }
 
 .serviceDetailsCard .svgIcon {

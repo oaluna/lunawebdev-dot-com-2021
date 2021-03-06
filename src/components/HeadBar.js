@@ -128,7 +128,7 @@ export default function HeadBar(props) {
               height: '48px'
             }}
           />
-          <h2
+          <h1
             className='headBarTitle'
             style={{
               fontFamily: 'Ammonite',
@@ -137,7 +137,7 @@ export default function HeadBar(props) {
               textShadow: '0px 0px 2px #333'
             }}>
             oscar armando luna
-          </h2>
+          </h1>
         </Link>
         <div className='headBarButton' onClick={() => handleMenu(!isOpen)}>
           <button
