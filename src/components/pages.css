@@ -36,7 +36,7 @@ overflow-x: hidden;
   border-color: rgb(240, 248, 255);
 }
 
-/* Full section component and dritte addon (tesla style third view)*/
+/* Full section component and third addon (tesla style third view)*/
 
 .fullSection {
   position: relative;
@@ -76,38 +76,38 @@ overflow-x: hidden;
   }
 }
 
-.dritteTop {
+.thirdTop {
   height: 300px;
 }
 
-.dritteBottom {
+.thirdBottom {
   min-height: 250px;
 }
 
 @media only screen and (min-height: 600px) {
-  .dritteSection {
+  .thirdSection {
     height: 100vh;
   }
 
-  .dritteTop {
+  .thirdTop {
     height: 100% !important;
   }
 
-  .dritteBottom {
+  .thirdBottom {
     height: 25%;
   }
 }
 
 @media only screen and (min-height: 600px) and (max-width: 450px) {
-  .dritteSection {
+  .thirdSection {
     height: 100vh;
   }
 
-  .dritteTop {
+  .thirdTop {
     height: 50% !important;
   }
 
-  .dritteBottom {
+  .thirdBottom {
     height: 50%;
     min-height: 300px;
   }

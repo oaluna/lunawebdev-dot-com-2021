@@ -120,13 +120,13 @@ export default class Homepage extends Component {
           <div className='fullSectionContent limitWidthContent'>
             <h1 className='bigTitle'> Projects </h1>
             <br />
-            <h3 style={{ margin: '15px'}}>
+            <h3 style={{ margin: '15px' }}>
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h3>
             <ViewCards />
           </div>
-          <div className='fullSectionContent limitWidthContent dritteBottom'>
+          <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfo'>
               <div className='siteTitle'>
                 <h5 style={{ fontWeight: 700, marginTop: '-4vh' }}>
@@ -188,10 +188,10 @@ export default class Homepage extends Component {
             <h1 className='bigTitle'> Services </h1>
             <ServicesSection />
           </div>
-          <div className='fullSectionContent limitWidthContent dritteBottom'>
+          <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfo'>
-              <div className='siteTitle' style={{lineHeight: 1.5}}>
-                <FontAwesomeIcon icon={faGlobe} style={{fontSize: '48px'}} />
+              <div className='siteTitle' style={{ lineHeight: 1.5 }}>
+                <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
               </div>
