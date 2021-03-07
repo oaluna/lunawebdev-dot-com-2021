@@ -18,7 +18,7 @@ export default function Footer() {
       <div className='footerContent'>
         <div className='footerFirstRow'>
           <Link to={'/'} className='footerLogo'>
-            <SvgIcons dimension="400px" iconName={oscarArmandoLunaLogo} />
+            <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' />
           </Link>
           <div className='socialBox' style={{ zIndex: 20 }}>
             <a
@@ -80,7 +80,12 @@ export default function Footer() {
         <div className='footerEnd'>
           <h6>&copy;2021 by Oscar Armando Luna, All rights reserved</h6>
           <div className='footerEndMenu'>
-          <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=4EoD4LpoaNqS9Kn4VydonuEwLZnJaQJk0eJZU99KyNUyTY6PImcTF1v6yyn6"></script></span>
+            <span id='siteseal'>
+              <script
+                async
+                type='text/javascript'
+                src='https://seal.godaddy.com/getSeal?sealID=4EoD4LpoaNqS9Kn4VydonuEwLZnJaQJk0eJZU99KyNUyTY6PImcTF1v6yyn6'></script>
+            </span>
             <h6> Terms and conditions </h6>
             <h6> Privacy policy </h6>
           </div>
