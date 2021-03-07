@@ -46,12 +46,7 @@ export default class VideoSection extends Component {
           </div>
         </div>
         <div className='videoOverlay'></div>
-        <video loop playsInline autoPlay muted>
-          <source
-            src="https://player.vimeo.com/video/314181352?title=0&portrait=0&byline=0&autoplay=1000"
-            type='video/mp4'
-          />
-        </video>
+        <img src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg?auto=compress&amp;fit=crop&amp;h=256&amp;w=256' alt="earth as seen from space" />
 
         <div
           className='videoSectionRight'

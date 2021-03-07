@@ -140,12 +140,10 @@ export default class TabView extends Component {
               </button>
             </div>
             <div className='tabContent'>
-              <h2> Engaged Audience </h2>
+              <h2> What I Do </h2>
               <p>
                 {' '}
-                I create cross-platform promotional campaigns and contents that
-                spark engaging conversations, drive positive brand perception
-                and deliver real results.{' '}
+                I develop and deploy web applications, as well as provide free web counseling for those wishing to either create a web application for their business or require new features in an existing application. {' '}
               </p>
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
@@ -173,7 +171,7 @@ export default class TabView extends Component {
               <h2> Real-time metrics </h2>
               <p>
                 {' '}
-                I provide 1st party data and analytics to measure campaign
+                I can provide data and analytics to measure campaign
                 success at each distribution touchpoint to optimize and redirect
                 efforts if necessary.{' '}
               </p>
