@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faDev } from '@fortawesome/free-brands-svg-icons';
 //import {faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import SvgIcons from './SvgIcons'
+import SvgIcons from './SvgIcons';
 import './headBar.css';
 import { Link } from 'react-router-dom';
 // import styled from 'styled-components';
@@ -119,7 +119,10 @@ export default function HeadBar(props) {
             flexDirection: 'row',
             alignItems: 'center'
           }}>
-<SvgIcons iconName="oscarArmandoLunaLogo" style={{position: 'absolute', marginLeft: '-10vw'}} />
+          <SvgIcons
+            iconName='oscarArmandoLunaLogo'
+            style={{ position: 'absolute', marginLeft: '-10vw' }}
+          />
           {/* <img
             src='https://cdn4.iconfinder.com/data/icons/iconsland-weather/PNG/256x256/Moon_Phase_Full.png'
             alt='moon brand'
@@ -161,7 +164,7 @@ export default function HeadBar(props) {
             <Link to={'/Services'}>Services</Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Contact'}>Contacts</Link>
+            <Link to={'/Contact'}>Contact</Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/AboutMe'}>About</Link>

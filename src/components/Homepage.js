@@ -154,7 +154,7 @@ export default class Homepage extends Component {
                 My Promise{' '}
               </h5>
               <div className='siteText'>
-                <p style={{ marginTop: '2vh', lineHeight: 1.5, width: '30vw' }}>
+                <p style={{ marginTop: '2vh', lineHeight: 1, width: '20vw' }}>
                   {' '}
                   I can design, build and launch your vision at scale. Whether
                   you're a Fortune 500, a startup or even a local business - I
