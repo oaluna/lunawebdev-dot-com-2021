@@ -46,8 +46,16 @@ export default class VideoSection extends Component {
           </div>
         </div>
         <div className='videoOverlay'></div>
-        <img src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg' alt="earth as seen from space" />
-
+        {/* <img
+          src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg'
+          alt='earth as seen from space'
+          style={{ width: '100vw' }}
+        /> */}
+        <video autoplay loop width='100%' height='auto'>
+          <source
+            src='https://www.facebook.com/528138817/videos/10158924246313818/'
+            type='video/mp4'></source>
+        </video>
         <div
           className='videoSectionRight'
           style={{
@@ -55,7 +63,6 @@ export default class VideoSection extends Component {
             height: '100%',
             width: '40vw',
             padding: '25px'
-
           }}>
           <div
             className='siteInfo'
@@ -65,11 +72,8 @@ export default class VideoSection extends Component {
               <br />
             </div>
             <br />
-            <div className='siteText' style={{height: '25vh'}}>
-              <p>
-                {' '}
-                Coming soon!{' '}
-              </p>
+            <div className='siteText' style={{ height: '25vh' }}>
+              <p> Coming soon! </p>
             </div>
             <div
               className='siteButtons'
