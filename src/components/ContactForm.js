@@ -88,7 +88,6 @@ export default function ContactForm() {
           <h5>or contact me directly at:</h5>
           <h3>oscar@oscarluna.dev</h3>
 
-          <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' style={{textAlign: 'center'}}/>
         </div>
       </div>
       <div

@@ -30,7 +30,7 @@ export default class Homepage extends Component {
               <span style={{ fontWeight: 900 }}> needs</span>{' '}
             </h1>
             <br /><br />
-            <h2 style={{ fontWeight: 100, textAlign: 'center' }}>
+            <h2 className="siteSubtitle" style={{ fontWeight: 100, textAlign: 'center' }}>
               {' '}
               Web development services, maintenance and web application
               deployment.
@@ -130,38 +130,37 @@ export default class Homepage extends Component {
             <ViewCards />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo'>
-              <div className='siteTitle'>
-                <h5 style={{ fontWeight: 700, marginTop: '-4vh' }}>
+            <div className='siteInfo' style={{ textAlign: 'center'}}>
+              <div className='siteTitle' style={{ marginTop: '5vh'}}>
+                <h5 style={{ fontWeight: 700}}>
                   {' '}
                   Expertise{' '}
                 </h5>
-                <p style={{ lineHeight: 1.5 }}>
-                  {' '}
-                  I am a full-stack web developer with 2 years of experience
-                  creating web applications using JavaScript and integrated
-                  JavaScript libraries/frameworks.{' '}
-                </p>
+               <div className="siteText">
+                  <p>
+                    {' '}
+                    I am a full-stack web developer with 2 years of experience
+                    creating web applications using JavaScript and integrated
+                    JavaScript libraries/frameworks.{' '}
+                  </p>
+               </div>
               </div>
-              <h5
-                style={{
-                  fontWeight: 700,
-                  width: '100%',
-                  position: 'relative',
-                  margin: '-18vh auto 0vh 15vw'
-                }}>
+              <div className="siteTitle" style={{ marginTop: '25vh'}}>
+              <h5 style={{fontWeight: 700}}>
                 {' '}
                 My Promise{' '}
               </h5>
+              <br />
               <div className='siteText'>
-                <p style={{ marginTop: '2vh', lineHeight: 1, width: '20vw' }}>
+                <p>
                   {' '}
                   I can design, build and launch your vision at scale. Whether
                   you're a Fortune 500, a startup or even a local business - I
                   give my clients the technical prowess they need to succeed.{' '}
                 </p>
               </div>
-              <div className='siteButtons' style={{ left: '5vw' }}>
+              </div>
+              <div className='siteButtons' style={{display: 'flex'}}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
@@ -192,15 +191,15 @@ export default class Homepage extends Component {
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo'>
-              <div className='siteTitle' style={{ lineHeight: 1.5 }}>
+            <div className='siteInfo' style={{display: 'flex', flexDirection: 'row'}}>
+              <div className='siteTitle' style={{ lineHeight: 1.5, display: 'flex', flexDirection: 'column' }}>
                 <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
               </div>
               <div
                 className='siteText'
-                style={{ width: '30vw', lineHeight: 1.4 }}>
+                style={{ width: '40vw', marginLeft: '-25vw', lineHeight: 1.4 }}>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,
