@@ -18,9 +18,7 @@ export default function Footer() {
       <div className='footerContent'>
         <div className='footerFirstRow'>
           <Link to={'/'} className='footerLogo'>
-            <h1 style={{ fontFamily: 'Ammonite', color: 'rgb(240, 248, 255)' }}>
-              oscar armando luna
-            </h1>
+            <SvgIcons icon={oscarArmandoLunaLogo} />
           </Link>
           <div className='socialBox' style={{ zIndex: 20 }}>
             <a

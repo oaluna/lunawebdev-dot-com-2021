@@ -86,9 +86,9 @@ export default function ContactForm() {
           </form>
 
           <h5>or contact me directly at:</h5>
-          <h3>oscarluna.webdev@gmail.com</h3>
+          <h3>oscar@oscarluna.dev</h3>
 
-          <p style={{ fontFamily: 'Ammonite' }}>oscar armando luna</p>
+          <SvgIcons icon={oscarArmandoLunaLogo} />
         </div>
       </div>
       <div
