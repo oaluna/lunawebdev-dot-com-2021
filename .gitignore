@@ -1,2 +1,6 @@
 node_modules
 .env
+webpack.config.prod.js
+tailwind.config.js
+server.js
+craco.config.js

@@ -37,6 +37,15 @@
 .chat-chatbot-button-label:hover {
   transition: 0.5s ease-in;
 }
+@media only screen and (max-width: 900px) {
+  .chat-chatbot-button {
+    left: 80vw;
+  }
+  .chat-chatbot-button-label {
+    left: 80vw;
+    width: 20vw;
+  }
+}
 .react-chatbot-kit-chat-inner-container {
   background: rgba(189, 202, 251, 0) !important;
   border-radius: 10px;
@@ -50,6 +59,11 @@
   overflow-y: scroll;
   border-radius: 10px;
   z-index: 1000;
+}
+@media only screen and (max-width: 900px) {
+  .chat-chatbot-container
+  {left: 0vw;
+}
 }
 .react-chatbot-kit-chat-header {
   color: #135;

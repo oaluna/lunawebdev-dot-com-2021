@@ -36,10 +36,10 @@ export default class viewCards extends Component {
               className='projectLogo'></img>
           </Link>
 
-          <Link to={'/ProjectPage/3'} className='viewCard'>
-            <FilterBlurImg img={projectsData[3].imageCard} brightness={''} />
+          <Link to={'/ProjectPage/2'} className='viewCard'>
+            <FilterBlurImg img={projectsData[2].imageCard} brightness={''} />
             <img
-              src={projectsData[3].logoImg}
+              src={projectsData[1].logoImg}
               alt='none'
               className='projectLogo'></img>
           </Link>

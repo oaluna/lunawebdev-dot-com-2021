@@ -25,21 +25,21 @@ export default class Homepage extends Component {
           <div className='socialHeaderTitle'>
             <h1>
               {' '}
+              <br />
               The optimal solution for your web development
-              <span style={{ fontWeight: '900' }}> needs</span>{' '}
+              <span style={{ fontWeight: 900 }}> needs</span>{' '}
             </h1>
-            <h6>
+            <br /><br />
+            <h2 style={{ fontWeight: 100, textAlign: 'center' }}>
               {' '}
               Web development services, maintenance and web application
               deployment.
-            </h6>
+            </h2>
           </div>
-          <div
-            className='tokenModule'
-            style={{ color: 'rgb(240, 248, 255)', top: '85vh' }}>
+          <div className='tokenModule' style={{ color: 'rgb(240, 248, 255)' }}>
             <div className='token firsttoken'>
               <div className='tokenTop'>
-                <h2> 1.7x </h2>
+                <h2>100%</h2>
               </div>
               <div className='tokenBottom'>
                 <h6> Engagement With Content. </h6>
@@ -49,7 +49,7 @@ export default class Homepage extends Component {
               className='token secondtoken'
               style={{ borderColor: 'rgb(240, 248, 255)' }}>
               <div className='tokenTop'>
-                <h2> 69 </h2>
+                <h2>62</h2>
               </div>
               <div className='tokenBottom'>
                 <h6> Completed projects to date </h6>
@@ -60,7 +60,7 @@ export default class Homepage extends Component {
                 <h2> 1B+ </h2>
               </div>
               <div className='tokenBottom'>
-                <h6> Prior Clients </h6>
+                <h6>Reasons to hire</h6>
               </div>
             </div>
           </div>
@@ -73,7 +73,9 @@ export default class Homepage extends Component {
             <Link to={'/Contact'}>
               <h6> Schedule a FREE Virtual Consultation</h6>
             </Link>
+            <br /><br />
           </div>
+
           <div className='socialManagement'>
             <div className='socialManagementContent'>
               <div className='iconBox instaBox'>
