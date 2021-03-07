@@ -46,7 +46,7 @@ export default class VideoSection extends Component {
           </div>
         </div>
         <div className='videoOverlay'></div>
-        <img src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg?auto=compress&amp;fit=crop&amp;h=256&amp;w=256' alt="earth as seen from space" />
+        <img src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg' alt="earth as seen from space" />
 
         <div
           className='videoSectionRight'

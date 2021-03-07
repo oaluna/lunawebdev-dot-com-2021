@@ -3,11 +3,13 @@ const projectsData = [
     id: 1,
     category: 'Landing Site',
     imageLarge:
-      'https://www.lunawebdev.com/static/cf53c4931821a2a08b029e1f51ebd930/43fa5/lws-landing-demo.png',
+      '../../assets/2020-portfolio-preview.png',
     imageCard:
-      'https://www.lunawebdev.com/static/cf53c4931821a2a08b029e1f51ebd930/43fa5/lws-landing-demo.png',
+      '../../assets/2020-portfolio-preview.png',
     logoImg: '',
     title: 'Landing Demo #1',
+url:'https://lunawebdev.com',
+repo:'https://github.com/oaluna/lunawebdevdotcom',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -32,6 +34,8 @@ const projectsData = [
       'https://www.lunawebdev.com/static/52115e8c382c2974e2de8c293569fda3/43fa5/lunadevblog.png',
     logoImg: '',
     title: 'Blog Site',
+url:'https://lunadevblog.netlify.app',
+repo:'https://github.com/oaluna/lunadevblog',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -51,11 +55,13 @@ const projectsData = [
     id: 3,
     category: 'Landing Site',
     imageLarge:
-      'https://www.lunawebdev.com/static/2b580584daa074f2916ed81deb154fa3/43fa5/crwn-clothing-2020.png',
+      '../../assets/crwn-clothing-2021.png',
     imageCard:
-      'https://www.lunawebdev.com/static/2b580584daa074f2916ed81deb154fa3/43fa5/crwn-clothing-2020.png',
+      '../../assets/crwn-clothing-2021.png',
     logoImg: '',
     title: 'E-Commerce Demo',
+url:'http://lws-shopping-demo.herokuapp.com/',
+repo:'https://github.com/oaluna/react-final-crwn-clothing',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -74,10 +80,12 @@ const projectsData = [
   {
     id: 4,
     category: 'Landing Site',
-    imageLarge: '../../assets/lunasportsstore.png',
-    imageCard: '../../assets/lunasportsstore.png',
+    imageLarge: '../../assets/lunas-big-commerce.png',
+    imageCard: '../../assets/lunas-big-commerce.png',
     logoImg: '',
     title: 'E-Commerce Demo #2',
+url:'https://lunas.mybigcommerce.com/',
+repo:'https://github.com/oaluna/vercel-commerce',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -96,15 +104,17 @@ const projectsData = [
   {
     id: 5,
     category: 'Landing Site',
-    imageLarge: '../../assets/2020-portfolio-preview.png',
-    imageCard: '../../assets/2020-portfolio-preview.png',
+    imageLarge: '../../assets/globomantics-preview.png',
+    imageCard: '../../assets/globomantics-preview.png',
     logoImg: '',
-    title: 'Landing Page Demo for Web Development',
+    title: 'Globomantics - a Real Estate page demo',
+url:'https://globomantics.vercel.app/',
+repo:'https://github.com/oaluna/globomantics',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
-      number: '700k+',
-      text: 'Price of the man who can get it.'
+      number: '250m',
+      text: 'Dollars to make me stop'
     },
     stat2: {
       number: '1+',
@@ -112,16 +122,18 @@ const projectsData = [
     },
     stat3: {
       number: '150k+',
-      text: 'Interactions across all socials'
+      text: 'Things to do'
     }
   },
   {
     id: 6,
-    category: 'e-commerce',
-    imageLarge: '../../assets/globomantics-preview.png',
-    imageCard: '../../assets/globomantics-preview.png',
+    category: 'Landing Site',
+    imageLarge: '../../assets/lunawebsolutions.png',
+    imageCard: '../../assets/lunawebsolutions.png',
     logoImg: '',
-    title: 'Project 6',
+    title: 'Landing Demo #3: The old Portfolio',
+url:'https://lunawebdev.com',
+repo:'',
     text:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
     stat1: {
@@ -137,99 +149,107 @@ const projectsData = [
       text: 'stuff'
     }
   },
-  {
-    id: 7,
-    category: 'Landing Site',
-    imageLarge: '../../assets/lunas-big-commerce.png',
-    imageCard: '../../assets/lunas-big-commerce.png',
-    logoImg: '',
-    title: 'BigCommerce Demo',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-    stat1: {
-      number: '5+',
-      text: 'Millions of views on TikTok (jk)'
-    },
-    stat2: {
-      number: '800K+',
-      text: 'interactions on TikTok (jk)'
-    },
-    stat3: {
-      number: '600K+',
-      text: 'Instances of the urge to dance per day'
-    }
-  }
-  // {
-  //   id: 8,
-  //   category: 'Landing Site',
-  //   imageLarge:
-  //     '',
-  //   imageCard:
-  //     '',
-  //   logoImg: '',
-  //   title: 'Project 8',
-  //   text: 'Lorem ipsum',
-  //   stat1: {
-  //     number: '2.5+',
-  //     text: 'Restraining orders received from Lady Gaga'
-  //   },
-  //   stat2: {
-  //     number: '170k+',
-  //     text: 'Violations of the former'
-  //   },
-  //   stat3: {
-  //     number: '1375+',
-  //     text: 'meters kept away from Lady Gaga at all times'
-  //   }
-  // },
-  // {
-  //   id: 9,
-  //   category: 'Landing Site',
-  //   imageLarge:
-  //     'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-  //   imageCard:
-  //     'https://images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-  //   logoImg: '',
-  //   title: 'Project 9',
-  //   text:
-  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-  //   stat1: {
-  //     number: '1.9+',
-  //     text: 'Lorem ipsum'
-  //   },
-  //   stat2: {
-  //     number: '170k+',
-  //     text: 'Lorem ipsum'
-  //   },
-  //   stat3: {
-  //     number: '9',
-  //     text: 'Rocket number'
-  //   }
-  // },
-  // {
-  //   id: 10,
-  //   category: 'Landing Site',
-  //   imageLarge:
-  //     'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-  //   imageCard:
-  //     'https://images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-  //   logoImg: '',
-  //   title: 'Project 10',
-  //   text:
-  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
-  //   stat1: {
-  //     number: '900k+',
-  //     text: 'Lorem ipsum'
-  //   },
-  //   stat2: {
-  //     number: '2',
-  //     text: 'Lorem ipsum'
-  //   },
-  //   stat3: {
-  //     number: '70k+',
-  //     text: 'Lorem ipsum'
-  //   }
-  // }
+//   {
+//     id: 7,
+//     category: 'Landing Site',
+//     imageLarge: '../../assets/lunas-big-commerce.png',
+//     imageCard: '../../assets/lunas-big-commerce.png',
+//     logoImg: '',
+//     title: 'BigCommerce Demo',
+// url:'',
+// repo:'',
+//     text:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+//     stat1: {
+//       number: '5+',
+//       text: 'Millions of views on TikTok (jk)'
+//     },
+//     stat2: {
+//       number: '800K+',
+//       text: 'interactions on TikTok (jk)'
+//     },
+//     stat3: {
+//       number: '600K+',
+//       text: 'Instances of the urge to dance per day'
+//     }
+//   }
+//    {
+//      id: 8,
+//      category: 'Landing Site',
+//      imageLarge:
+//        '',
+//      imageCard:
+//        '',
+//      logoImg: '',
+//      title: 'Project 8',
+//   url:'',
+//   repo:'',
+//   text: 'Lorem ipsum',
+//      stat1: {
+//        number: '2.5+',
+//        text: 'Restraining orders received from Lady Gaga'
+//      },
+//      stat2: {
+//        number: '170k+',
+//        text: 'Violations of the former'
+//      },
+//      stat3: {
+//        number: '1375+',
+//        text: 'meters kept away from Lady Gaga at all times'
+//      }
+//    },
+//    {
+//      id: 9,
+//      category: 'Landing Site',
+//      imageLarge:
+//        'https:images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+//      imageCard:
+//        'https:images.pexels.com/photos/3504198/pexels-photo-3504198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+//      logoImg: '',
+//      title: 'Project 9',
+//   url:'',
+//   repo:'',
+//   text:
+//        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+//      stat1: {
+//        number: '1.9+',
+//        text: 'Lorem ipsum'
+//      },
+//      stat2: {
+//        number: '170k+',
+//        text: 'Lorem ipsum'
+//      },
+//      stat3: {
+//        number: '9',
+//        text: 'Rocket number'
+//      }
+//    },
+//    {
+//      id: 10,
+//      category: 'Landing Site',
+//      imageLarge:
+//        'https:images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+//      imageCard:
+//        'https:images.pexels.com/photos/2740844/pexels-photo-2740844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+//      logoImg: '',
+//      title: 'Project 10',
+//   url:'',
+//   repo:'',
+//   text:
+//        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+//      stat1: {
+//        number: '900k+',
+//        text: 'Lorem ipsum'
+//      },
+//      stat2: {
+//        number: '2',
+//        text: 'Lorem ipsum'
+//      },
+//      stat3: {
+//        number: '70k+',
+//        text: 'Lorem ipsum'
+//      }
+//    }
 ];
 
 export default projectsData;
