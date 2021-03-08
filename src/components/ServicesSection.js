@@ -63,7 +63,7 @@ export default class ServicesSection extends Component {
                 style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                 dimension='25px'
                 iconName='user'
-                fillColor='rgba(189, 202, 251, 1)'
+                fillColor='rgb(255,255,255)'
               />{' '}
             </div>
             <div className='socialImageContainer'>
@@ -71,7 +71,7 @@ export default class ServicesSection extends Component {
                 style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                 dimension='60px'
                 iconName='photo'
-                fillColor='#rgba(189, 202, 251, 1)'
+                fillColor='rgb(255,255,255)'
               />
             </div>
             <div className='socialAction socialLike'>
@@ -80,7 +80,7 @@ export default class ServicesSection extends Component {
                 style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                 dimension='12px'
                 iconName='heart'
-                fillColor='#rgba(189, 202, 251, 1)'
+                fillColor='rgb(255,255,255)'
               />{' '}
             </div>
             <div className='socialAction socialComment'>
@@ -89,7 +89,7 @@ export default class ServicesSection extends Component {
                 style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                 dimension='12px'
                 iconName='comment'
-                fillColor='rgba(189, 202, 251, 1)'
+                fillColor='rgb(255,255,255)'
               />{' '}
             </div>
             <div className='socialAction socialShare'>
@@ -98,7 +98,7 @@ export default class ServicesSection extends Component {
                 style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                 dimension='12px'
                 iconName='send'
-                fillColor='rgba(189, 202, 251, 1)'
+                fillColor='rgb(255,255,255)'
               />{' '}
             </div>
           </div>
@@ -127,7 +127,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='12px'
                   iconName='web'
-                  fillColor='rgba(252, 197, 215, 1)'
+                  fillColor='#B993D6'
                 />
               </div>
               <div className='webBox'>
@@ -135,7 +135,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='60px'
                   iconName='photo'
-                  fillColor='rgba(252, 197, 215, 1)'
+                  fillColor='#B993D6'
                 />
               </div>
             </div>
@@ -145,7 +145,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='60px'
                   iconName='appstore'
-                  fillColor='rgba(252, 197, 215, 1)'
+                  fillColor='#B993D6'
                 />
               </div>
             </div>
@@ -176,7 +176,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='100px'
                   iconName='instagram'
-                  fillColor='#rgba(189, 202, 251, 1)'
+                  fillColor='#fff'
                 />{' '}
               </div>
               <div className='iconBox tiktokBox'>
@@ -185,7 +185,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='100px'
                   iconName='tiktok'
-                  fillColor='#rgba(189, 202, 251, 1)'
+                  fillColor='rgb(255,255,255)'
                 />{' '}
               </div>
               <div className='iconBox youtubeBox'>
@@ -194,7 +194,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='100px'
                   iconName='youtube'
-                  fillColor='#rgba(189, 202, 251, 1)'
+                  fillColor='#ff0000'
                 />{' '}
               </div>
               <div className='iconBox facebookBox'>
@@ -203,7 +203,7 @@ export default class ServicesSection extends Component {
                   style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                   dimension='100px'
                   iconName='facebook'
-                  fillColor='#rgba(189, 202, 251, 1)'
+                  fillColor='#fff'
                 />{' '}
               </div>
             </div>

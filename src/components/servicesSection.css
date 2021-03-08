@@ -71,27 +71,17 @@
 }
 
 .redGradientBack {
-  background: linear-gradient(
-    130deg,
-    rgba(215, 102, 98, 1) 0%,
-    rgba(244, 181, 161, 0.7) 100%
-  );
+  background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
+
 }
 
 .pinkGradientBack {
-  background: linear-gradient(
-    130deg,
-    rgba(221, 129, 137, 1) 0%,
-    rgba(252, 197, 215, 0.7) 100%
-  );
+  background: linear-gradient(135deg,   #b24592 0%, #f15f79 74%);
+
 }
 
 .violetGradientBack {
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 0.7) 100%
-  );
+  background: linear-gradient(315deg, #9d50bb 0%, #6e48aa 74%);
 }
 
 .socialPost1 {
@@ -261,11 +251,7 @@
   z-index: 10;
   width: 30px;
   height: 30px;
-  background: linear-gradient(
-    130deg,
-    rgba(215, 102, 98, 1) 0%,
-    rgba(244, 181, 161, 1) 100%
-  );
+  background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
   border-radius: 30px;
   overflow: hidden;
   position: absolute;
@@ -348,11 +334,7 @@
 .socialImageContainer {
   width: 180px;
   height: 180px;
-  background: linear-gradient(
-    130deg,
-    rgba(215, 102, 98, 1) 0%,
-    rgba(244, 181, 161, 1) 100%
-  );
+  background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
   border-radius: 30px;
   position: absolute;
   top: 50px;
@@ -451,11 +433,7 @@
   width: 20px;
   height: 20px;
   border-radius: 30px;
-  background: linear-gradient(
-    130deg,
-    rgba(215, 102, 98, 1) 0%,
-    rgba(244, 181, 161, 1) 100%
-  );
+  background: linear-gradient(315deg, #ee8c68 0%, #eb6b9d 74%);
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
@@ -609,11 +587,7 @@
   position: relative;
   width: 260px;
   height: 180px;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 129, 137, 0.5) 0%,
-    rgba(252, 197, 215, 1) 100%
-  );
+  background: linear-gradient(135deg,   #b24592 0%, #f15f79 74%);
   border-radius: 30px;
   box-shadow: inset 4px -4px 4px rgb(221, 129, 137, 1);
   overflow: hidden;
@@ -683,11 +657,7 @@
   position: relative;
   width: 0px;
   height: 180px;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 129, 137, 0.5) 0%,
-    rgba(252, 197, 215, 1) 100%
-  );
+  background: linear-gradient(135deg,   #b24592 0%, #f15f79 74%);
   border-radius: 30px;
   box-shadow: inset 4px -4px 4px rgb(252, 197, 215, 1);
   overflow: hidden;
@@ -919,32 +889,20 @@
   left: 160px;
   animation: InstaBoxAnim 6s ease;
   animation-iteration-count: 9;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 1) 100%
-  );
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
 }
 
 .youtubeBox {
   top: 160px;
   animation: youtubeBoxAnim 6s ease;
   animation-iteration-count: 9;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 1) 100%
-  );
+  background: #ff0000;
 }
 
 .tiktokBox {
   animation: tiktokFacebookBoxAnim 6s ease;
   animation-iteration-count: 9;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 1) 100%
-  );
+  background: linear-gradient(135deg, #000000 0%, #434343 74%);
 }
 
 .facebookBox {
@@ -952,11 +910,7 @@
   top: 160px;
   animation: tiktokFacebookBoxAnim 6s ease;
   animation-iteration-count: 9;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 1) 100%
-  );
+  background: linear-gradient(135deg, #1488cc, #2b32b2);
 }
 
 @keyframes InstaBoxAnim {
@@ -1145,17 +1099,12 @@
   z-index: 4;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(133, 110, 189, 0.5) 30%,
-    rgba(165, 131, 243, 0.1) 100%
-  );
+  background-image: linear-gradient( 109.6deg,  rgba(177,173,219,0.30.3) 11.2%, rgba(245,226,226,1) 91.1% );
 }
 
 .socialHeader .socialManagement {
   z-index: 20;
-  filter: drop-shadow(-36px 36px 12px rgba(255, 255, 255, 0.5));
+  filter: drop-shadow(-36px 36px 12px rgba(255, 255, 255, 0.1));
   margin-left: 10px;
 }
 
@@ -1166,11 +1115,7 @@
 .socialHeader .instaBox {
   animation: InstaBoxAnim 6s ease;
   animation-iteration-count: 1;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 129, 137, 0.5) 0%,
-    rgba(252, 197, 215, 1) 100%
-  );
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
   box-shadow: inset 8px -8px 6px rgba(221, 119, 137, 0.6);
   filter: drop-shadow(-12px 12px 24px rgba(221, 119, 137, 1));
 }
@@ -1178,11 +1123,7 @@
 .socialHeader .youtubeBox {
   animation: youtubeBoxAnim 6s ease;
   animation-iteration-count: 1;
-  background: linear-gradient(
-    130deg,
-    rgba(215, 102, 98, 1) 0%,
-    rgba(244, 181, 161, 1) 100%
-  );
+  background: #ff0000;
   box-shadow: inset 8px -8px 6px rgba(215, 82, 98, 0.6);
   filter: drop-shadow(-12px 12px 24px rgba(215, 82, 98, 1));
 }
@@ -1190,11 +1131,7 @@
 .socialHeader .tiktokBox {
   animation: tiktokFacebookBoxAnim 6s ease;
   animation-iteration-count: 1;
-  background: linear-gradient(
-    130deg,
-    rgba(221, 168, 232, 1) 0%,
-    rgba(249, 215, 253, 1) 100%
-  );
+  background:linear-gradient(135deg, #000000 0%, #434343 74%);
   box-shadow: inset 8px -8px 6px rgba(221, 168, 232, 0.6);
   filter: drop-shadow(-12px 12px 24px rgba(221, 168, 232, 1));
 }

@@ -126,17 +126,19 @@ export default class Homepage extends Component {
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h3>
-            <p>Using a mobile device? Swipe to see more previews.</p>
+            <p style={{marginBottom: '30px'}}>Using a mobile device? Swipe to see more previews.</p>
+
             <ViewCards />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfo' style={{ textAlign: 'center'}}>
-              <div className='siteTitle' style={{ marginTop: '5vh'}}>
+              <div className='siteTitle expertise'>
                 <h5 style={{ fontWeight: 700}}>
                   {' '}
                   Expertise{' '}
                 </h5>
-               <div className="siteText">
+                <br />
+               <div className="siteText expertise">
                   <p>
                     {' '}
                     I am a full-stack web developer with 2 years of experience
@@ -145,13 +147,13 @@ export default class Homepage extends Component {
                   </p>
                </div>
               </div>
-              <div className="siteTitle" style={{ marginTop: '25vh'}}>
+              <div className="siteTitle promise">
               <h5 style={{fontWeight: 700}}>
                 {' '}
                 My Promise{' '}
               </h5>
               <br />
-              <div className='siteText'>
+              <div className='siteText promise'>
                 <p>
                   {' '}
                   I can design, build and launch your vision at scale. Whether
@@ -160,7 +162,7 @@ export default class Homepage extends Component {
                 </p>
               </div>
               </div>
-              <div className='siteButtons' style={{display: 'flex'}}>
+              <div className='siteButtons' style={{ margin: '15px', padding: '5px'}}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
@@ -191,15 +193,15 @@ export default class Homepage extends Component {
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo' style={{display: 'flex', flexDirection: 'row'}}>
-              <div className='siteTitle' style={{ lineHeight: 1.5, display: 'flex', flexDirection: 'column' }}>
+            <div className='siteInfo' style={{textAlign: 'center'}}>
+              <div className='siteTitle'>
                 <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
               </div>
               <div
                 className='siteText'
-                style={{ width: '40vw', marginLeft: '-25vw', lineHeight: 1.4 }}>
+                style={{  lineHeight: 1.4 }}>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,

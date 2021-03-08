@@ -51,10 +51,8 @@ export default class VideoSection extends Component {
           alt='earth as seen from space'
           style={{ width: '100vw' }}
         /> */}
-        <video autoplay loop width='100%' height='auto'>
-          <source
-            src='https://www.facebook.com/528138817/videos/10158924246313818/'
-            type='video/mp4'></source>
+        <video autoplay muted loop>
+          <source src="https://vod-progressive.akamaized.net/exp=1615230068~acl=%2A%2F1212112675.mp4%2A~hmac=71ce8e3da8f46b3237095d76dac2b77def67dfc078f78b4320d17e4fcc8d6370/vimeo-prod-skyfire-std-us/01/2836/12/314181352/1212112675.mp4" type="video/mp4"></source>
         </video>
         <div
           className='videoSectionRight'

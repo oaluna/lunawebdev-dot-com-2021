@@ -42,7 +42,7 @@ export default class SocialMediaManagement extends Component {
                       }}
                       dimension='100px'
                       iconName='tiktok'
-                      fillColor='fff'
+                      fillColor='#fff'
                     />{' '}
                   </div>
                   <div className='iconBox youtubeBox'>
@@ -53,7 +53,7 @@ export default class SocialMediaManagement extends Component {
                       }}
                       dimension='100px'
                       iconName='youtube'
-                      fillColor='fff'
+                      fillColor='#fff'
                     />{' '}
                   </div>
                   <div className='iconBox facebookBox'>
@@ -64,7 +64,7 @@ export default class SocialMediaManagement extends Component {
                       }}
                       dimension='100px'
                       iconName='facebook'
-                      fillColor='fff'
+                      fillColor='#fff'
                     />{' '}
                   </div>
                 </div>
