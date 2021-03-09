@@ -46,14 +46,14 @@ export default class VideoSection extends Component {
           </div>
         </div>
         <div className='videoOverlay'></div>
-        {/* <img
-          src='https://images.pexels.com/users/avatars/930404/space-space-885.jpeg'
-          alt='earth as seen from space'
-          style={{ width: '100vw' }}
-        /> */}
-        <video autoplay muted loop>
-          <source src="https://vod-progressive.akamaized.net/exp=1615230068~acl=%2A%2F1212112675.mp4%2A~hmac=71ce8e3da8f46b3237095d76dac2b77def67dfc078f78b4320d17e4fcc8d6370/vimeo-prod-skyfire-std-us/01/2836/12/314181352/1212112675.mp4" type="video/mp4"></source>
-        </video>
+        {/*  */}
+
+          <img
+          src='https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg'
+          alt='earth as seen from space' style={{position: 'absolute', transform: 'scale(1.5)'}}
+        />
+          Your browser does not support the video tag.
+
         <div
           className='videoSectionRight'
           style={{

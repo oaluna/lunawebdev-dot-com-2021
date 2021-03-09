@@ -30,13 +30,13 @@ export default class Homepage extends Component {
               <span style={{ fontWeight: 900 }}> needs</span>{' '}
             </h1>
             <br /><br />
-            <h2 className="siteSubtitle" style={{ fontWeight: 100, textAlign: 'center' }}>
+            <h3 className="siteSubtitle" style={{ fontSize: '24px', fontWeight: 100, textAlign: 'center' }}>
               {' '}
               Web development services, maintenance and web application
               deployment.
-            </h2>
+            </h3>
           </div>
-          <div className='tokenModule' style={{ color: 'rgb(240, 248, 255)' }}>
+          <div className='tokenModule' style={{ color: 'rgb(240, 248, 255)', bottom: '0px' }}>
             <div className='token firsttoken'>
               <div className='tokenTop'>
                 <h2>100%</h2>
@@ -130,8 +130,8 @@ export default class Homepage extends Component {
 
             <ViewCards />
           </div>
-          <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo' style={{ textAlign: 'center'}}>
+          <div className='fullSectionContent limitWidthContent thirdBottom' style={{textAlign: 'center'}}>
+            <div className='siteInfo'>
               <div className='siteTitle expertise'>
                 <h5 style={{ fontWeight: 700}}>
                   {' '}
@@ -162,7 +162,7 @@ export default class Homepage extends Component {
                 </p>
               </div>
               </div>
-              <div className='siteButtons' style={{ margin: '15px', padding: '5px'}}>
+              <div className='siteButtons' style={{ padding: '15px'}}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
@@ -193,15 +193,15 @@ export default class Homepage extends Component {
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo' style={{textAlign: 'center'}}>
-              <div className='siteTitle'>
+            <div className='siteInfo'>
+              <div className='siteTitle' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
-                <h5> Full Package </h5>
-                <h2> 360° Digital Presence </h2>
+                <h5 style={{marginLeft: '0vw'}}> Full Package </h5>
+                <h2 style={{textAlign: 'center'}}> 360° Digital Presence </h2>
               </div>
               <div
                 className='siteText'
-                style={{  lineHeight: 1.4 }}>
+                style={{  margin: '15px', padding: '15px', maxWidth: '40vw',lineHeight: 1.4 }}>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,

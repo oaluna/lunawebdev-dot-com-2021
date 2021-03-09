@@ -1,7 +1,7 @@
 .siteInfo {
-  width: 90vw;
+  width: 85vw;
   display: flex;
-  margin: 25px;
+  margin: 10vh auto auto auto;
   padding: 25px;
   box-sizing: border-box;
   line-height: 1.2;
@@ -9,26 +9,28 @@
 
 }
 
-.siteTitle {
+.siteTitle h5{
   position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  margin-left: -6vw;
 }
 
-.siteText.expertise, .siteText.promise, .siteText {
+.siteText.expertise > p, .siteText.promise > p, .siteText > p {
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-left: 5vw;
+
+  margin-left: 0vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
 }
 
 .siteButtons {
-
-  grid-column: 5/6;
-  grid-row: 1/2;
-  display: grid;
+display: flex;
+margin-left: 0vw;
+text-align: left;
   flex-direction: column;
 }
 
@@ -67,14 +69,14 @@
 @media only screen and (max-width: 900px) {
   .siteInfo {
     width: 100%;
-    margin-left: 10vw;
-    margin-right: auto;
+    padding: 15vw 25px;
+
     display: flex;
     flex-direction: column;
   }
 
-  .siteTitle {
-    padding-bottom: 15px;
+  .siteTitle h5{
+    padding-top: 15px;
   }
   .siteTitle.expertise {
 
@@ -84,8 +86,7 @@
   }
 
   .siteText {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    text-align: center;
     margin-left: 0vw;
 
   }

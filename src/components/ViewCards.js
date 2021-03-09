@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import projectsData from './Data/projectsData.js';
 
 import FilterBlurImg from './FilterBlurImg.js';
-
 import './components.css';
 import './viewCards.css';
 

@@ -185,6 +185,11 @@
   .projectsCards {
     grid-template-columns: 1fr 1fr;
   }
+  .viewCard {
+    max-width: 100%;
+    overflow-x: visible;
+  }
+
 }
 
 @media only screen and (max-width: 450px) {
