@@ -48,11 +48,11 @@ export default class VideoSection extends Component {
         <div className='videoOverlay'></div>
         {/*  */}
 
-          <img
+        <img
           src='https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg'
-          alt='earth as seen from space' style={{position: 'absolute', transform: 'scale(1.5)'}}
+          alt='droplets of water'
+          style={{ position: 'absolute', width: '100vw', height: 'auto' }}
         />
-          Your browser does not support the video tag.
 
         <div
           className='videoSectionRight'
@@ -64,7 +64,7 @@ export default class VideoSection extends Component {
           }}>
           <div
             className='siteInfo'
-            style={{ display: 'flex', flexDirection: 'column' }}>
+            style={{ display: 'flex', flexDirection: 'column', color: '#113355, fontWeight: 500' }}>
             <div className='siteTitle'>
               <h5> Live Events </h5>
               <br />
@@ -78,7 +78,8 @@ export default class VideoSection extends Component {
               style={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
+                color: '#113355'
               }}>
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>

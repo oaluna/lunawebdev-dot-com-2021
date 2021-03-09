@@ -72,23 +72,21 @@ export default class ProjectPage extends Component {
               'url(' + projectsData[this.state.currentProject].imageLarge + ')'
           }}></div>
 
-        <div className='videoSectionRight' style={{ marginTop: '0vh' }}>
+        <div className='videoSectionRight' style={{ marginTop: '10vh' }}>
           <div
             className='siteInfo'
             style={{
-              display: 'flex',
-              flexDirection: 'column',
               minHeight: '500px',
-              maxWidth: '30vw',
+              maxWidth: '100vw',
               width: '100%',
               padding: '15px'
             }}>
-            <div className='siteTitle'>
+            <div className='siteTitle' style={{width: '100vw'}}>
               <h5> {projectsData[this.state.currentProject].category} </h5>
               <h2>{projectsData[this.state.currentProject].title}</h2>
             </div>
             <div className='siteText'>
-              <p style={{ lineHeight: 1.7, width: '20vw', textAlign: 'left' }}>
+              <p>
                 {projectsData[this.state.currentProject].text}
               </p>
             </div>
@@ -113,10 +111,20 @@ export default class ProjectPage extends Component {
               <Link to={'/Contact'}>
                 <button
                   className='simpleBtn simpleBtnDark'
-                  style={{ padding: 10 }}>
+                  style={{ width: '15vw', padding: '10px' }}>
                   CONTACT
                 </button>
               </Link>
+              <button className="simpleBtn simpleBtnDark" style={{ width: '15vw', padding: '10px'}}>
+                <Link to={projectsData[this.state.currentProject].url}>
+                  <h3>DEMO</h3>
+                </Link>
+              </button>
+              <button className="simpleBtn simpleBtnDark" style={{ width: '15vw', padding: '10px'}}>
+                <Link to={projectsData[this.state.currentProject].repo}>
+                  <h3>REPO</h3>
+                </Link>
+              </button>
             </div>
           </div>
         </div>

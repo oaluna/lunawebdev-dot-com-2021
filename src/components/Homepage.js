@@ -162,7 +162,7 @@ export default class Homepage extends Component {
                 </p>
               </div>
               </div>
-              <div className='siteButtons' style={{ padding: '15px'}}>
+              <div className='siteButtons' style={{ display: 'flex', flexDirection: 'column', margin: '0px 0px 0px 5vw', padding: '25px'}}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
@@ -201,7 +201,7 @@ export default class Homepage extends Component {
               </div>
               <div
                 className='siteText'
-                style={{  margin: '15px', padding: '15px', maxWidth: '40vw',lineHeight: 1.4 }}>
+                style={{  margin: '5px 15px', padding: '15px', maxWidth: '60vw',lineHeight: 1.4 }}>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,
