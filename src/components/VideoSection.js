@@ -50,13 +50,13 @@ export default class VideoSection extends Component {
         <Player
           autoplay
           loop
-          src="https://assets1.lottiefiles.com/packages/lf20_wloxwco0.json"
+          src="https://assets4.lottiefiles.com/packages/lf20_SkhtL8.json"
           background='rgba(0,0,0,0)'
           id='#secondLottie'
           speed='1'
           style={{
             position: 'absolute',
-textShadow: '0 0 4px rgba(189,202,251,0.3)'
+textShadow: '0 0 4px rgba(189,202,251,0.3)',
             width: '1000px',
             height: '1000px',
             top: '-10vh',
