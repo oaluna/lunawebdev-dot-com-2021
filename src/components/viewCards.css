@@ -121,7 +121,8 @@
 .viewCardLast {
 
   box-shadow: none !important;
-  background: rgba(233, 241, 247,0.33);
+  background: rgba(189,202,251,.11);
+  border: 1px solid rgba(189,202,251,.33);
 }
 
 .viewCardLast .filterBlurImg {

@@ -87,9 +87,9 @@
   font-weight: 700;
 }
 .chat {
-  background:  rgba(233, 241, 247,0.33);}
+  background:  rgba(189,202,251,.11);}
 .react-chatbot-kit-chat-message-container {
-  border: 1px solid rgba(189, 202, 251, 0.37);
+  border: 1px solid rgba(189,202,251,.33);
   background-color: rgba(189, 202, 251, 0.21) !important;
   box-shadow: 0 8px 32px 0 rgba(189, 202, 251, 0.37);
   backdrop-filter: blur(7.5px);

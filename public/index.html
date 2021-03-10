@@ -52,21 +52,21 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
- <script>
- LottieInteractivity.create({
-    mode:"scroll",
-    player: "#secondLottie",
-    container: ".videoSection",
-    actions: [
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script>
+    LottieInteractivity.create({
+      mode: "scroll",
+      player: "#secondLottie",
+      container: ".videoSection",
+      actions: [
         {
-            visibility:[0,1],
-            type: "seek",
-            frames: [0, 120]
+          visibility: [0, 1],
+          type: "seek",
+          frames: [0, 120]
         }
-    ]
-});
- </script>
+      ]
+    });
+  </script>
 
 
 </body>
