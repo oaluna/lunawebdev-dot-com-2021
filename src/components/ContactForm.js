@@ -81,12 +81,12 @@ export default function ContactForm() {
             </div>
 
             <button type='submit' className='simpleBtn simpleBtnDark'>
-              <h4> SEND </h4>
+              <h4> Send </h4>
             </button>
           </form>
 
           <h5>or contact me directly at:</h5>
-          <h3>oscar@oscarluna.dev</h3>
+         <br /> <h4>oscar@oscarluna.dev</h4>
 
         </div>
       </div>

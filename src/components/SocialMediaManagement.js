@@ -69,7 +69,7 @@ export default class SocialMediaManagement extends Component {
                   </div>
                 </div>
               </div>
-              <div className='serviceName'>
+              <div className='serviceName' style={{lineHeight: 1.5}}>
                 <h5> Server/Database </h5>
                 <h1> Management </h1>
               </div>

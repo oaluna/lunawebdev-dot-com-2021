@@ -72,8 +72,10 @@ overflow-x: hidden;
 
 }
 
-@media only screen and (max-width: 900px) {
-padding: 5px;
+media only screen and (max-height: 900px) {
+  .fullSectionContent {
+    max-width: 90vw;
+  }
 }
 
 .thirdTop {
@@ -181,7 +183,7 @@ background: rgba(255,255,255,0);
 }
 
 .footerMainMenu h4 {
-  margin: 5px 10px;
+  margin: 5px 5px;
   cursor: pointer;
 }
 

@@ -3,6 +3,7 @@
 .bigTitle {
   width: 100%;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -24,26 +25,25 @@
   min-height: 600px;
   position: relative;
   overflow: hidden;
-  background-color: rgba(206, 208, 237, 1);
+  background-color: rgba(206, 208, 237,0);
   display: flex;
   flex-direction: row;
 }
 
 .videoSection video {
-  position: absolute;
-  z-index: 10;
-  background-size: 100% 100%;
+  /* position: absolute;
+  z-index: 0;
   margin-left: 50vw;
   transform: translateX(-50%) translateY(-50%);
   margin-top: 50vh;
   top: 0px;
   left: 0px; /* fixed to left. Replace it by right if you want.*/
-  min-width: 100%;
+  /* min-width: 100%;
   min-height: 100%;
   width: auto;
   height: 100%;
   z-index: -5;
-  opacity: 1;
+  opacity: 1; */
 }
 
 .videoSection .fullScreenImage {
@@ -57,8 +57,10 @@
 
 @media only screen and (max-width: 900px) {
   .videoSection .fullScreenImage {
+    background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30% 0;
+    background-position: center;
   }
 }
 
@@ -69,10 +71,12 @@
   position: absolute;
   background: linear-gradient(
     0deg,
-    rgba(46,42,94, 1) 0%,
+    rgba(46,43,96,0.9) 0%,
+    rgba(46,42,94,0.) 10%,
     rgba(46,42,94, 0.1) 20%,
     rgba(255,255,255, 0) 50%,
     rgba(46,42,94, 0.1) 80%,
+    rgba(46,42,94,1) 90%,
     rgba(46,42,94, 1) 100%
   );
 }
@@ -148,14 +152,14 @@
     height: 40vh;
     padding: 15px;
   }
+.videoOverlay img {
+  background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-position: center;
+}
 
 
 
-  .siteButtons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
 }
 
 /* token module (tesla style stat head-up) */
@@ -402,6 +406,7 @@ color: rgb(240, 248, 255);
   .defaultCarouselItemWrapper {
     transition: all 0.2s ease;
   }
+
 }
 
 /* Filter Blur Img Component */
@@ -466,12 +471,11 @@ color: rgb(240, 248, 255);
 
   position: relative;
   border-radius: 50px;
-  background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.5px );
-  -webkit-backdrop-filter: blur( 7.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 16px;
+
+  box-shadow: none !important;
+  background: rgba(233, 241, 247,0.33);
+  backdrop-filter: blur(12px);
 }
 
 .contactFormContainer h3 {
@@ -531,7 +535,7 @@ textarea {
   font-size: 1.8rem;
   line-height: 28px;
   font-family: "Montserrat", sans-serif;
-  color: rgba(204,204,204,0.5) !important;
+  color: rgba(224,224,224,0.5) !important;
   margin: 0;
 }
 

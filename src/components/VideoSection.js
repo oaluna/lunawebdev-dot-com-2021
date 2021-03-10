@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Player } from '@lottiefiles/react-lottie-player';
+import LottieInteractivity from '@lottiefiles/react-lottie-player';
 import './components.css';
 
 export default class VideoSection extends Component {
@@ -45,18 +46,28 @@ export default class VideoSection extends Component {
             </div>
           </div>
         </div>
-        <div className='videoOverlay'></div>
-        {/*  */}
 
-        <img
-          src='https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg'
-          alt='droplets of water'
-          style={{ position: 'absolute', width: '100vw', height: 'auto' }}
+        <Player
+          autoplay
+          loop
+          src="https://assets1.lottiefiles.com/packages/lf20_wloxwco0.json"
+          background='rgba(0,0,0,0)'
+          id='#secondLottie'
+          speed='1'
+          style={{
+            position: 'absolute',
+textShadow: '0 0 4px rgba(189,202,251,0.3)'
+            width: '1000px',
+            height: '1000px',
+            top: '-10vh',
+            left: '10vw'
+          }}
         />
 
         <div
           className='videoSectionRight'
           style={{
+            position: 'relative',
             maxHeight: '100%',
             height: '100%',
             width: '40vw',
@@ -64,8 +75,15 @@ export default class VideoSection extends Component {
           }}>
           <div
             className='siteInfo'
-            style={{ display: 'flex', flexDirection: 'column', color: '#113355, fontWeight: 500' }}>
-            <div className='siteTitle'>
+            style={{
+              display: 'flex',
+              background: 'rgba(233, 241, 247, 0.33)',
+              flexDirection: 'column',
+              fontWeight: 500
+            }}>
+            <div
+              className='siteTitle'
+              style={{ position: 'relative', textAlign: 'center' }}>
               <h5> Live Events </h5>
               <br />
             </div>
@@ -84,12 +102,12 @@ export default class VideoSection extends Component {
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
                   <span className='circleBtnIcon'>+</span>
-                  <h4> FIND OUT MORE </h4>
+                  <h5>Find Out More</h5>
                 </button>
               </Link>
               <Link to={'/Contact'}>
                 <button className='simpleBtn simpleBtnDark'>
-                  <h4> CONTACT </h4>
+                  <h4>Contact</h4>
                 </button>
               </Link>
             </div>

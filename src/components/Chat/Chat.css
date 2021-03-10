@@ -1,6 +1,6 @@
 .chat-chatbot-button {
   position: fixed;
-  left: 90vw;
+  left: 92vw;
   top: 50vh;
   width: 65px;
   height: 65px;
@@ -71,8 +71,7 @@
 .chatWindowHeader {
   display: flex;
   flex-direction: row;
-  background: rgba(189, 202, 251, 0.11);
-  font-size: 24px;
+  background: rgba(189, 202, 251, 0.22);  font-size: 24px;
   color: #135;
 }
 .react-chatbot-kit-chat-header {
@@ -88,8 +87,7 @@
   font-weight: 700;
 }
 .chat {
-  background: rgba(189, 202, 251, 0.22);
-}
+  background:  rgba(233, 241, 247,0.33);}
 .react-chatbot-kit-chat-message-container {
   border: 1px solid rgba(189, 202, 251, 0.37);
   background-color: rgba(189, 202, 251, 0.21) !important;

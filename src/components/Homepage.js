@@ -29,14 +29,23 @@ export default class Homepage extends Component {
               The optimal solution for your web development
               <span style={{ fontWeight: 900 }}> needs</span>{' '}
             </h1>
-            <br /><br />
-            <h3 className="siteSubtitle" style={{ fontSize: '24px', fontWeight: 100, textAlign: 'center' }}>
+            <br />
+            <br />
+            <h3
+              className='siteSubtitle'
+              style={{
+                fontSize: '24px',
+                fontWeight: 100,
+                textAlign: 'center'
+              }}>
               {' '}
               Web development services, maintenance and web application
               deployment.
             </h3>
           </div>
-          <div className='tokenModule' style={{ color: 'rgb(240, 248, 255)', bottom: '0px' }}>
+          <div
+            className='tokenModule'
+            style={{ color: 'rgb(240, 248, 255)', bottom: '0px' }}>
             <div className='token firsttoken'>
               <div className='tokenTop'>
                 <h2>100%</h2>
@@ -64,19 +73,20 @@ export default class Homepage extends Component {
               </div>
             </div>
           </div>
-          <div className='socialHeaderCallToAction' style={{ top: '75vh' }}>
+          <div className='socialHeaderCallToAction' style={{ top: '85vh' }}>
             <Link to={'/Contact'}>
               <button className='simpleBtn simpleBtnDark'>
-                <h4>GET IN TOUCH</h4>
+                <h4>Get Started</h4>
               </button>
             </Link>
             <Link to={'/Contact'}>
-              <h6> Schedule a FREE Virtual Consultation</h6>
+              <p> Schedule a FREE Virtual Consultation</p>
             </Link>
-            <br /><br />
+            <br />
+            <br />
           </div>
 
-          <div className='socialManagement'>
+          <div className='socialManagement' style={{ top: '12vh' }}>
             <div className='socialManagementContent'>
               <div className='iconBox instaBox'>
                 {' '}
@@ -120,58 +130,67 @@ export default class Homepage extends Component {
 
         <div className='fullSection'>
           <div className='fullSectionContent limitWidthContent'>
-            <h1 className='bigTitle'> Projects </h1>
+            <h1 className='bigTitle'>Projects</h1>
             <br />
-            <h3 style={{ margin: '15px' }}>
+            <h3 style={{margin: '15px'}}>
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h3>
-            <p style={{marginBottom: '30px'}}>Using a mobile device? Swipe to see more previews.</p>
+            <p style={{marginBottom: '30px'}}>
+              Using a mobile device? Swipe to see more previews.
+            </p>
 
             <ViewCards />
           </div>
-          <div className='fullSectionContent limitWidthContent thirdBottom' style={{textAlign: 'center'}}>
+          <div
+            className='fullSectionContent limitWidthContent thirdBottom'
+            style={{textAlign: 'center'}}>
             <div className='siteInfo'>
-              <div className='siteTitle expertise'>
-                <h5 style={{ fontWeight: 700}}>
-                  {' '}
-                  Expertise{' '}
-                </h5>
+              <div
+                className='siteTitle expertise'
+                style={{ margin: '20px', padding: '0 0 0 25px' }}>
+                <h5 style={{ fontWeight: 700 }}> Expertise </h5>
                 <br />
-               <div className="siteText expertise">
+                <div className='siteText expertise'>
                   <p>
                     {' '}
                     I am a full-stack web developer with 2 years of experience
                     creating web applications using JavaScript and integrated
                     JavaScript libraries/frameworks.{' '}
                   </p>
-               </div>
+                </div>
               </div>
-              <div className="siteTitle promise">
-              <h5 style={{fontWeight: 700}}>
-                {' '}
-                My Promise{' '}
-              </h5>
-              <br />
-              <div className='siteText promise'>
-                <p>
-                  {' '}
-                  I can design, build and launch your vision at scale. Whether
-                  you're a Fortune 500, a startup or even a local business - I
-                  give my clients the technical prowess they need to succeed.{' '}
-                </p>
+              <div
+                className='siteTitle promise'
+                style={{ margin: '20px 0px 0px 45px', padding: 0 }}>
+                <h5 style={{ fontWeight: 700 }}> My Promise </h5>
+                <br />
+                <div className='siteText promise'>
+                  <p>
+                    {' '}
+                    I can design, build and launch your vision at scale. Whether
+                    you're a Fortune 500, a startup or even a local business - I
+                    give my clients the technical prowess they need to succeed.{' '}
+                  </p>
+                </div>
               </div>
-              </div>
-              <div className='siteButtons' style={{ display: 'flex', flexDirection: 'column', margin: '0px 0px 0px 5vw', padding: '25px'}}>
+              <div
+                className='siteButtons'
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  margin: '0px 0px 0px 5vw',
+                  padding: '25px'
+                }}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4> SEE CASE HISTORY</h4>
+                    <h4>See Case History</h4>
                   </button>
                 </Link>
                 <Link to={'/Contact'}>
                   <button className='simpleBtn simpleBtnDark'>
-                    <h4> CONTACT </h4>
+                    <h4>Contact</h4>
                   </button>
                 </Link>
               </div>
@@ -194,14 +213,20 @@ export default class Homepage extends Component {
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfo'>
-              <div className='siteTitle' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              <div
+                className='siteTitle'
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                }}>
                 <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
-                <h5 style={{marginLeft: '0vw'}}> Full Package </h5>
-                <h2 style={{textAlign: 'center'}}> 360° Digital Presence </h2>
+                <h5 style={{ marginLeft: '0vw', lineHeight: 2 }}> Full Package </h5>
+                <h2 style={{ textAlign: 'center' }}> 360° Digital Presence </h2>
               </div>
               <div
                 className='siteText'
-                style={{  margin: '5px 15px', padding: '15px', maxWidth: '60vw',lineHeight: 1.4 }}>
+                style={{ margin: '15px auto', lineHeight: 1.4 }}>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,
@@ -214,13 +239,13 @@ export default class Homepage extends Component {
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4> SEE CASE HISTORY </h4>
+                    <h4>See Case History</h4>
                   </button>
                 </Link>
                 <Link to={'/Services'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4> SEE SERVICES </h4>
+                    <h4>See Services</h4>
                   </button>
                 </Link>
               </div>

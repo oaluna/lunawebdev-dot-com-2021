@@ -102,7 +102,7 @@ export default class ServicesSection extends Component {
               />{' '}
             </div>
           </div>
-          <div className='serviceName'>
+          <div className='serviceName' style={{lineHeight: 1.4}}>
             <h5> Advertising </h5>
             <h2>Marketing </h2>
           </div>
@@ -150,7 +150,7 @@ export default class ServicesSection extends Component {
               </div>
             </div>
           </div>
-          <div className='serviceName'>
+          <div className='serviceName' style={{lineHeight: 1.5}}>
             <h5> Websites & more... </h5>
             <h2> Digital Creations </h2>
           </div>
@@ -208,7 +208,7 @@ export default class ServicesSection extends Component {
               </div>
             </div>
           </div>
-          <div className='serviceName'>
+          <div className='serviceName' style={{lineHeight: 1.5}}>
             <h5> Socialmedia </h5>
             <h2> Management </h2>
           </div>
