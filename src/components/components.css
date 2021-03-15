@@ -108,6 +108,7 @@
   height: 100%;
   position: relative;
   display: flex;
+
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -325,6 +326,9 @@ border: 2px solid rgb(240, 248, 255);
 .circleBtnDark {
   border-color: rgb(240, 248, 255);
 color: rgb(240, 248, 255);
+margin: 0;
+padding: 0;
+justify-content: center;
 }
 
 .circleBtnLight {

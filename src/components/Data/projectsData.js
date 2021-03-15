@@ -9,7 +9,7 @@ const projectsData = [
     imageCard:
       'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/157813787_10158924213393818_8031783451925725067_o.jpg?_nc_cat=109&ccb=1-3&_nc_sid=730e14&_nc_ohc=i2gPuL6GjpAAX9Tlisa&_nc_ht=scontent-sjc3-1.xx&oh=c2d511721560bf7b5c78527aae1bf77e&oe=606AF0FF',
     logoImg: "../../assets/oscarArmandoLunaLogo.png",
-    title: 'Landing Demo #1 - My old Portfolio',
+    title: 'Landing Demo 1',
 url:'https://lunawebdev.com',
 repo:'https://github.com/oaluna/lunawebdevdotcom',
     text:

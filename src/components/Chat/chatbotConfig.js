@@ -47,7 +47,7 @@ const config = {
           },
           {
             text: 'See all projects',
-            url: '/projects',
+            url: '/Projects',
             id: 3
           },
           {

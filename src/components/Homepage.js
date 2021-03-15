@@ -132,10 +132,10 @@ export default class Homepage extends Component {
           <div className='fullSectionContent limitWidthContent'>
             <h1 className='bigTitle'>Projects</h1>
             <br />
-            <h3 style={{margin: '15px'}}>
+            <h4>
               Previous projects I have created, as well as links to their demos
               and repositories.
-            </h3>
+            </h4>
             <p style={{marginBottom: '30px'}}>
               Using a mobile device? Swipe to see more previews.
             </p>
@@ -145,10 +145,10 @@ export default class Homepage extends Component {
           <div
             className='fullSectionContent limitWidthContent thirdBottom'
             style={{textAlign: 'center'}}>
-            <div className='siteInfo'>
+            <div className='siteInfoHomepage'>
               <div
                 className='siteTitle expertise'
-                style={{ margin: '20px', padding: '0 0 0 25px' }}>
+                >
                 <h5 style={{ fontWeight: 700 }}> Expertise </h5>
                 <br />
                 <div className='siteText expertise'>
@@ -162,7 +162,7 @@ export default class Homepage extends Component {
               </div>
               <div
                 className='siteTitle promise'
-                style={{ margin: '20px 0px 0px 45px', padding: 0 }}>
+                >
                 <h5 style={{ fontWeight: 700 }}> My Promise </h5>
                 <br />
                 <div className='siteText promise'>
@@ -215,18 +215,14 @@ export default class Homepage extends Component {
             <div className='siteInfo'>
               <div
                 className='siteTitle'
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}>
+                >
                 <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
-                <h5 style={{ marginLeft: '0vw', lineHeight: 2 }}> Full Package </h5>
-                <h2 style={{ textAlign: 'center' }}> 360° Digital Presence </h2>
+                <h5> Full Package </h5>
+                <h2> 360° Digital Presence </h2>
               </div>
               <div
                 className='siteText'
-                style={{ margin: '15px auto', lineHeight: 1.4 }}>
+                >
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,

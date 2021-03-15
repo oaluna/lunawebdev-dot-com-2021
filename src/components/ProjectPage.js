@@ -75,12 +75,7 @@ export default class ProjectPage extends Component {
         <div className='videoSectionRight' style={{ marginTop: '10vh' }}>
           <div
             className='siteInfo'
-            style={{
-              minHeight: '500px',
-              maxWidth: '100vw',
-              width: '100%',
-              padding: '15px'
-            }}>
+            >
             <div className='siteTitle' style={{width: '100vw'}}>
               <h5> {projectsData[this.state.currentProject].category} </h5>
               <h2>{projectsData[this.state.currentProject].title}</h2>
@@ -106,7 +101,7 @@ export default class ProjectPage extends Component {
                     fillColor="rgba('0, 0, 0, 1)"
                   />
                 </span>
-                <h4> GO BACK </h4>
+                <h4>Go Back</h4>
               </button>
               <Link to={'/Contact'}>
                 <button
@@ -115,16 +110,16 @@ export default class ProjectPage extends Component {
                   CONTACT
                 </button>
               </Link>
-              <button className="simpleBtn simpleBtnDark" style={{ width: '15vw', padding: '10px'}}>
                 <Link to={projectsData[this.state.currentProject].url}>
-                  <h3>DEMO</h3>
-                </Link>
+              <button className="simpleBtn simpleBtnDark" style={{width:'15vw', padding: '10px'}}>
+                  DEMO
               </button>
-              <button className="simpleBtn simpleBtnDark" style={{ width: '15vw', padding: '10px'}}>
+                </Link>
                 <Link to={projectsData[this.state.currentProject].repo}>
-                  <h3>REPO</h3>
-                </Link>
+              <button className="simpleBtn simpleBtnDark" style={{width:'15vw', padding: '10px'}}>
+                  REPO
               </button>
+                </Link>
             </div>
           </div>
         </div>

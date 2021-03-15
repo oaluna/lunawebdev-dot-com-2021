@@ -1,38 +1,51 @@
-.siteInfo {
-  padding: 45px;
+.siteInfo,
+.siteInfoHomepage {
+  padding: 15px;
 
-  line-height: 1.2;
-  margin: 5vh 0 0;
+  line-height: 1;
+  margin: -5vh 10vw 0vh 0vh;
   z-index: 30;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 70vw;
-
+  height: auto;
   border-radius: 16px;
 
   box-shadow: none !important;
-  background: rgba(189,202,251,.11);
-  border: 1px solid rgba(189,202,251,.33);
+  background: rgba(189, 202, 251, 0.11);
+  border: 1px solid rgba(189, 202, 251, 0.33);
   backdrop-filter: blur(12px);
   align-items: flex-start;
 }
 
+.siteInfoHomepage {
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
 .siteTitle {
-  position: relative;
   display: flex;
   flex-direction: column;
+  margin-left: 0vw;
   width: 100%;
-  text-align: center;
+  padding: 15px;
+  text-align: left;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .siteButtons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 15px auto;
   bottom: 0px;
-  width: 20vw;
+  width: 100%;
 }
 
-.siteText > p {
+.siteText  p {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -40,18 +53,31 @@
   margin-right: 25px;
   padding-right: 25px;
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
 }
 
 .siteButtons {
   display: flex;
   margin-left: 0vw;
-  text-align: left;
+  text-align: center;
   width: 80%;
   flex-direction: column !important;
   justify-content: space-evenly !important;
 }
+
+.siteTitle h5 {
+
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .minimalButton {
   display: flex;
@@ -66,16 +92,17 @@
 }
 
 @media only screen and (max-width: 1023px) {
-  .siteInfo {
-    max-width: 90vw;
+  .siteInfo,
+  .siteInfoHomepage {
     width: 100%;
   }
   .siteButtons {
     position: relative;
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: 15px;
   }
   .siteText {
     padding: 25px;
@@ -83,37 +110,37 @@ flex-direction: column;
 }
 
 @media only screen and (max-width: 900px) {
-  .siteInfo {
-    max-width: 85vw;
-    width: 100%;
+  .siteInfo,
+  .siteInfoHomepage {
 
+    width: 100%;
+max-width: 90vw;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
+
+    align-items: center;
     margin: 15px;
     padding: 25px;
   }
 
   .siteTitle h5 {
-margin-left: -20vw;
     font-size: 24px;
   }
 
-  .siteText {
-    position: relative;
-    align-items: center;
-line-height: 22px;
-    width: 80%;
+  .siteText p {
+    line-height: 22px;
+    width: 70vw;
+    text-align: left;
+    justify-content: center;
 
   }
 
   .siteButtons {
-text-align: left;
-display: flex;
-left: 0vw;
-flex-direction: row !important;
-justify-content: space-between;
-font-weight: 900 !important;
+    text-align: left;
+    display: flex;
+    left: 0vw;
+    flex-direction: row !important;
+    justify-content: space-between;
+    font-weight: 900 !important;
   }
 }
