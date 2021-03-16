@@ -95,3 +95,9 @@
   background-color: rgba(31,38,135, 0.5);
   color: rgb(240, 248, 255);
 }
+
+@media only screen and (max-width: 900px) {
+  .headBarMenuItem h4 {
+    font-size: 24px;
+  }
+}

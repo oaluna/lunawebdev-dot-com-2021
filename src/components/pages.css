@@ -182,7 +182,8 @@ background: rgba(255,255,255,0);
   flex-wrap: wrap;
 }
 
-.footerMainMenu h4 {
+.footerMainMenu h5 {
+  font-size: 18px;
   margin: 5px 5px;
   cursor: pointer;
 }
@@ -206,17 +207,33 @@ background: rgba(255,255,255,0);
 }
 
 @media only screen and (max-width: 900px) {
+  footer {
+    max-width: 100vw;
+    width: 100%;
+
+  }
   .footerFirstRow {
+    position: relative;
     flex-direction: column;
+
+    max-width: 100vw;
+    width: 100%;
+    justify-content: center;
   }
 
   .footerEnd {
+    position: relative;
+    max-width: 100vw;
     width: 100%;
     height: 5vh;
+    align-items: center;
     justify-content: center;
   }
   .footerLogo {
+    position: relative;
     text-align: center;
+    margin-bottom: 15px;
+    padding: 5px;
   }
 }
 

@@ -111,6 +111,18 @@
   }
 }
 
+.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
+  margin-top: 10vh;
+  margin-left: 15vw;
+}
+.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo > .siteTitle .icon {
+  width: 100%;
+  text-align: center;
+}
+.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo > .siteTitle h2 {
+  text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
   .siteInfo,
   .siteInfoHomepage {
@@ -119,7 +131,7 @@
 max-width: 90vw;
     display: flex;
     flex-direction: column;
-
+border-radius: 0;
     align-items: center;
     margin: 15px;
     padding: 25px;
@@ -150,5 +162,13 @@ max-width: 90vw;
     flex-direction: row !important;
     justify-content: space-between;
     font-weight: 900 !important;
+  }
+
+  .fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
+    width: 100%;
+    max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
   }
 }

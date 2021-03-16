@@ -60,21 +60,20 @@ export default function Footer() {
           </div>
         </div>
         <div className='footerMainMenu'>
-          <h4>
+
             <Link to='/'><h5>Home</h5></Link>
-          </h4>
-          <h4>
+
             <Link to='/Projects'><h5>Case History</h5></Link>
-          </h4>
-          <h4>
+
+
             <Link to='/Services'><h5>Services</h5></Link>
-          </h4>
-          <h4>
+
+
             <Link to='/Contact'><h5>Contacts</h5></Link>
-          </h4>
-          <h4>
+
+
             <Link to='/AboutMe'><h5>About Me</h5></Link>
-          </h4>
+
         </div>
 
         <div className='footerEnd'>
