@@ -235,8 +235,9 @@ background: rgba(255,255,255,0);
     margin-bottom: 15px;
     padding: 5px;
   }
-  .footerMainMenu {
+  .footerMainMenu h5 {
     margin-top: 5vh;
+    font-size: 12px;
   }
 }
 
