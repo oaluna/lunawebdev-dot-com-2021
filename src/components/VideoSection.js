@@ -47,22 +47,25 @@ export default class VideoSection extends Component {
           </div>
         </div>
 
-        <Player
-          autoplay
-          loop
-          src='https://assets7.lottiefiles.com/packages/lf20_k86wxpgr.json'
-          background='rgba(0,0,0,0)'
-          id='#secondLottie'
-          speed='1'
-          style={{
-            position: 'absolute',
-            textShadow: '0 0 4px rgba(189,202,251,0.3)',
-            width: '900px',
-            height: '900px',
-            top: '-10vh',
-            left: '0vw'
-          }}
-        />
+        <div className="lottie-player-container">
+          <Player
+            autoplay
+            loop
+            src='https://assets7.lottiefiles.com/packages/lf20_k86wxpgr.json'
+            background='rgba(0,0,0,0)'
+            className="secondLottie"
+            id='#secondLottie'
+            speed='1'
+            style={{
+              position: 'absolute',
+              textShadow: '0 0 4px rgba(189,202,251,0.3)',
+              width: '900px',
+              height: '900px',
+              top: '-10vh',
+              left: '0vw'
+            }}
+          />
+        </div>
 
         <div
           className='videoSectionRight'
@@ -75,13 +78,7 @@ export default class VideoSection extends Component {
           }}>
           <div
             className='siteInfo'
-            style={{
-              display: 'flex',
-              background: 'rgba(233, 241, 247, 0.33)',
-              flexDirection: 'column',
-              fontWeight: 500,
-              width: '30vw'
-            }}>
+            >
             <div
               className='siteTitle'
               style={{ position: 'relative', textAlign: 'center' }}>

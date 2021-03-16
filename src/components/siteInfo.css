@@ -36,6 +36,8 @@
   font-size: 20px;
 }
 
+
+
 .siteButtons {
   display: flex;
   flex-direction: row;
@@ -122,16 +124,22 @@ max-width: 90vw;
     margin: 15px;
     padding: 25px;
   }
-
+.siteTitle .icon {
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+}
   .siteTitle h5 {
     font-size: 24px;
   }
-
+  .siteTitle h2 {
+    text-align: center;
+  }
   .siteText p {
     line-height: 22px;
     width: 70vw;
     text-align: left;
-    justify-content: center;
+    justify-content: flex-end;
 
   }
 

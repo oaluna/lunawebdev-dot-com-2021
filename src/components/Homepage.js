@@ -136,7 +136,7 @@ export default class Homepage extends Component {
               Previous projects I have created, as well as links to their demos
               and repositories.
             </h4>
-            <p style={{marginBottom: '30px'}}>
+            <p style={{ marginBottom: '30px' }}>
               Using a mobile device? Swipe to see more previews.
             </p>
 
@@ -144,11 +144,9 @@ export default class Homepage extends Component {
           </div>
           <div
             className='fullSectionContent limitWidthContent thirdBottom'
-            style={{textAlign: 'center'}}>
+            style={{ textAlign: 'center' }}>
             <div className='siteInfoHomepage'>
-              <div
-                className='siteTitle expertise'
-                >
+              <div className='siteTitle expertise'>
                 <h5 style={{ fontWeight: 700 }}> Expertise </h5>
                 <br />
                 <div className='siteText expertise'>
@@ -160,9 +158,7 @@ export default class Homepage extends Component {
                   </p>
                 </div>
               </div>
-              <div
-                className='siteTitle promise'
-                >
+              <div className='siteTitle promise'>
                 <h5 style={{ fontWeight: 700 }}> My Promise </h5>
                 <br />
                 <div className='siteText promise'>
@@ -213,16 +209,15 @@ export default class Homepage extends Component {
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfo'>
-              <div
-                className='siteTitle'
-                >
-                <FontAwesomeIcon icon={faGlobe} style={{ fontSize: '48px' }} />
+              <div className='siteTitle'>
+                <FontAwesomeIcon
+                  icon={faGlobe}
+                  className="icon"
+                />
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
               </div>
-              <div
-                className='siteText'
-                >
+              <div className='siteText'>
                 <p>
                   {' '}
                   I will help you establish a network that fits your brand,

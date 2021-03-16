@@ -114,6 +114,19 @@
   box-sizing: border-box;
   padding: 30px;
 }
+@media only screen and (max-width: 900px) {
+  .videoSectionRight .siteInfo{
+    position: absolute;
+    max-width: 100vw;
+    top: -30vh;
+  left: 0vw;
+    width: 100%;
+    justify-content: center;
+  }
+ .lottie-player-container {
+   display: none;
+  }
+}
 
 
 @media only screen and (max-width: 768px) {
