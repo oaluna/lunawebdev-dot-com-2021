@@ -177,17 +177,17 @@ export default class Homepage extends Component {
                   display: 'flex',
                   flexDirection: 'column',
                   margin: '0px 0px 0px 5vw',
-                  padding: '25px'
+
                 }}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4>See Case History</h4>
+                    <h5 style={{color: '#f0f8ff', padding: '25px'}}>See Case History</h5>
                   </button>
                 </Link>
                 <Link to={'/Contact'}>
                   <button className='simpleBtn simpleBtnDark'>
-                    <h4>Contact</h4>
+                    <h5 style={{padding: '15px'}}>Contact</h5>
                   </button>
                 </Link>
               </div>
@@ -224,17 +224,17 @@ export default class Homepage extends Component {
                   managing your maintenance after deployment.{' '}
                 </p>
               </div>
-              <div className='siteButtons'>
+              <div className='siteButtons' >
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4>See Case History</h4>
+                    <h5  style={{color: '#f0f8ff'}}>See Case History</h5>
                   </button>
                 </Link>
                 <Link to={'/Services'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h4>See Services</h4>
+                    <h5 style={{color: '#f0f8ff'}} >See Services</h5>
                   </button>
                 </Link>
               </div>

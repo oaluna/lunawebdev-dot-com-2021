@@ -18,7 +18,7 @@ export default class VideoSection extends Component {
   render() {
     return (
       <div className='videoSection'>
-        <div className='videoSectionLeft'>
+        <div className='videoSectionLeft' style={{color: '#f0f8ff'}}>
           <div className='tokenModule'>
             <div className='token firsttoken'>
               <div className='tokenTop'>
@@ -59,8 +59,8 @@ export default class VideoSection extends Component {
             style={{
               position: 'absolute',
               textShadow: '0 0 4px rgba(189,202,251,0.3)',
-              width: '900px',
-              height: '900px',
+              width: '800px',
+              height: '800px',
               top: '-10vh',
               left: '0vw'
             }}
@@ -73,7 +73,8 @@ export default class VideoSection extends Component {
             position: 'relative',
             maxHeight: '100%',
             height: '100%',
-            width: '40vw',
+            maxWidth: '35vw',
+            width: '100%',
             padding: '25px'
           }}>
           <div
@@ -82,30 +83,25 @@ export default class VideoSection extends Component {
             <div
               className='siteTitle'
               style={{ position: 'relative', textAlign: 'center' }}>
-              <h5> Live Events </h5>
+              <h5 style={{color: '#f0f8ff'}}> Live Events </h5>
               <br />
             </div>
             <br />
             <div className='siteText' style={{ height: '25vh' }}>
-              <p> Coming soon! </p>
+              <p style={{color: '#f0f8ff'}}> Coming soon! </p>
             </div>
             <div
               className='siteButtons'
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                color: '#113355'
-              }}>
+              >
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
                   <span className='circleBtnIcon'>+</span>
-                  <h5>Find Out More</h5>
+                  <h5 style={{color: '#f0f8ff'}}>Find Out More</h5>
                 </button>
               </Link>
               <Link to={'/Contact'}>
                 <button className='simpleBtn simpleBtnDark'>
-                  <h4>Contact</h4>
+                  <h4 style={{color: '#f0f8ff'}}>Contact</h4>
                 </button>
               </Link>
             </div>

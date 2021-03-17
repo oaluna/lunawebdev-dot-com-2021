@@ -114,6 +114,13 @@
   box-sizing: border-box;
   padding: 30px;
 }
+.videoSectionRight .siteText,
+.videoSectionRight .siteTitle,
+.videoSectionRight .siteButtons {
+
+  color: #113355;
+  border-color: #113355;
+}
 @media only screen and (max-width: 900px) {
   .videoSectionRight .siteInfo{
     position: absolute;
@@ -170,6 +177,8 @@
     height: 40vh;
     padding: 15px;
   }
+
+
 .videoOverlay img {
   background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-size: cover;

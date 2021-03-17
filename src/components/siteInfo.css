@@ -45,6 +45,10 @@
   margin: 15px auto;
   bottom: 0px;
   width: 100%;
+
+}
+.siteButtons h4 {
+  color: #113355;
 }
 
 .siteText  p {
@@ -56,7 +60,7 @@
   padding-right: 25px;
   text-align: center;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .siteButtons {
