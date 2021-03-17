@@ -16,7 +16,7 @@ export default class ProjectPage extends Component {
   }
 
   componentDidMount() {
-    if (this.state.nextProject === projectsData.lenght - 1) {
+    if (this.state.nextProject === projectsData.length - 1) {
       this.setState({
         nextProject: 0
       });
