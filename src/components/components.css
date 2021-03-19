@@ -90,7 +90,7 @@
     0deg,
     rgba(46,42,94, 1) 0%,
     rgba(46,42,94, 0.2) 20%,
-    rgba(255,255,255, 0.1) 50%,
+    rgba(97, 52, 52, 0.33) 50%,
     rgba(46,42,94, 0.2) 80%,
     rgba(46,42,94, 1) 100%
   );
@@ -103,12 +103,12 @@
 }
 
 .videoSectionRight {
-  width: 30%;
-  min-width: 300px;
+  width: 100%;
+  max-width: 45vw;
   height: 100%;
   position: relative;
   display: flex;
-
+text-align: center;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -117,9 +117,10 @@
 .videoSectionRight .siteText,
 .videoSectionRight .siteTitle,
 .videoSectionRight .siteButtons {
-
-  color: #113355;
-  border-color: #113355;
+max-width: 35vw;
+width: 100%;
+  color: #f0f8ff;
+  border-color: #f0f8ff;
 }
 @media only screen and (max-width: 900px) {
   .videoSectionRight .siteInfo{

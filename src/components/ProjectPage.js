@@ -27,41 +27,7 @@ export default class ProjectPage extends Component {
     return (
       <div className='videoSection projectPage'>
         <div className='videoSectionLeft'>
-          <div className='tokenModule'>
-            <div className='token firsttoken'>
-              <div className='tokenTop'>
-                <h2>
-                  {' '}
-                  {projectsData[this.state.currentProject].stat1.number}{' '}
-                </h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6> {projectsData[this.state.currentProject].stat1.text} </h6>
-              </div>
-            </div>
-            <div className='token secondtoken'>
-              <div className='tokenTop'>
-                <h2>
-                  {' '}
-                  {projectsData[this.state.currentProject].stat2.number}{' '}
-                </h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6> {projectsData[this.state.currentProject].stat2.text} </h6>
-              </div>
-            </div>
-            <div className='token thirdtoken'>
-              <div className='tokenTop'>
-                <h2>
-                  {' '}
-                  {projectsData[this.state.currentProject].stat3.number}{' '}
-                </h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6> {projectsData[this.state.currentProject].stat3.text} </h6>
-              </div>
-            </div>
-          </div>
+          
         </div>
         <div className='projectOverlay'></div>
 
