@@ -1,0 +1,101 @@
+.titleText {
+  margin: 50px 0;
+
+}
+
+.titleTextFirst,
+.titleTextSecond {
+  position: relative;
+}
+
+.titleTextFirst h2 {
+  margin: 32px 0 0 0;
+}
+
+.titleTextFirst h3 {
+  position: absolute;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+.titleTextSecond p {
+  margin: 38px 0 0 0;
+}
+
+.titleTextBottom {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  grid-auto-rows: 1fr;
+  padding-top: 10px;
+  border-top: 2px solid rgb(240, 248, 255);
+}
+
+.titleTextBottom .titleTextFirst {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.titleTextBottom .titleTextSecond {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.titleH1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 42px 0 0 0 !important;
+}
+
+.titleTextTop {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin-bottom: 55px;
+}
+
+@media only screen and (max-width: 1023px) and (min-height: 600px),
+  (orientation: portrait) {
+  .titleH1 {
+    font-size: 2.34rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 32px 0 0 0 !important;
+  }
+
+  .titleTextFirst h2 {
+    margin: 22px 0 0 0;
+  }
+
+  .titleTextSecond p {
+    margin: 28px 0 0 0;
+  }
+
+  .titleTextBottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titleTextBottom .titleTextFirst {
+    width: 100%;
+  }
+
+  .titleTextBottom .titleTextSecond {
+    width: 100%;
+  }
+}
+
+.titleTextVertical {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1023px) and (min-height: 600px),
+  (orientation: portrait) {
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
-import SvgIcons from '../SvgIcons.js';
+import SvgIcons from './SvgIcons.js';
 
 import './pages.css';
 import './components.css';
@@ -38,7 +38,6 @@ export default function ContactForm() {
             Fill out the form below to get started with a FREE 30-minute web
             consultation.
           </h5>
-
           <form
             className='contactForm'
             onSubmit={sendEmail}
@@ -84,10 +83,8 @@ export default function ContactForm() {
               <h4> Send </h4>
             </button>
           </form>
-
           <h5>or contact me directly at:</h5>
-         <br /> <h4>oscar@oscarluna.dev</h4>
-
+          <br /> <h4>oscar@oscarluna.dev</h4>
         </div>
       </div>
       <div
