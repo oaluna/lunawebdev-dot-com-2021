@@ -31,7 +31,7 @@
 }
 
 .videoSection video {
-  /* position: absolute;
+ position: absolute;
   z-index: 0;
   margin-left: 50vw;
   transform: translateX(-50%) translateY(-50%);
@@ -502,7 +502,6 @@ justify-content: center;
 
   position: relative;
   border-radius: 50px;
-  border-radius: 16px;
 
   box-shadow: none !important;
   background: rgba(189,202,251,.11);

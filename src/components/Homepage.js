@@ -88,42 +88,50 @@ export default class Homepage extends Component {
 
           <div className='socialManagement' style={{ top: '12vh' }}>
             <div className='socialManagementContent'>
-              <div className='iconBox instaBox'>
-                {' '}
-                <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-                  dimension='100px'
-                  iconName='instagram'
-                  fillColor='rgb(240, 248, 255)'
-                />{' '}
-              </div>
-              <div className='iconBox tiktokBox'>
-                {' '}
-                <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-                  dimension='100px'
-                  iconName='tiktok'
-                  fillColor='rgb(240, 248, 255)'
-                />{' '}
-              </div>
-              <div className='iconBox youtubeBox'>
-                {' '}
-                <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-                  dimension='100px'
-                  iconName='youtube'
-                  fillColor='rgb(240, 248, 255)'
-                />{' '}
-              </div>
-              <div className='iconBox facebookBox'>
-                {' '}
-                <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-                  dimension='100px'
-                  iconName='facebook'
-                  fillColor='rgb(240, 248, 255)'
-                />{' '}
-              </div>
+            <div className='iconBox instaBox'>
+                    {' '}
+                    <SvgIcons
+                      style={{
+                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                      }}
+                      dimension='100px'
+                      iconName='instagram'
+                      fillColor='#fff'
+                    />{' '}
+                  </div>
+                  <div className='iconBox tiktokBox'>
+                    {' '}
+                    <SvgIcons
+                      style={{
+                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                      }}
+                      dimension='100px'
+                      iconName='tiktok'
+                      fillColor='#fff'
+                    />{' '}
+                  </div>
+                  <div className='iconBox youtubeBox'>
+                    {' '}
+                    <SvgIcons
+                      style={{
+                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                      }}
+                      dimension='100px'
+                      iconName='youtube'
+                      fillColor='#fff'
+                    />{' '}
+                  </div>
+                  <div className='iconBox facebookBox'>
+                    {' '}
+                    <SvgIcons
+                      style={{
+                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                      }}
+                      dimension='100px'
+                      iconName='facebook'
+                      fillColor='#fff'
+                    />{' '}
+                  </div>
             </div>
           </div>
         </div>

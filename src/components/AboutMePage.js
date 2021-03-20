@@ -22,45 +22,18 @@ export default class AboutMePage extends Component {
     return (
       <div
         className='aboutMePage'
-        style={{
-          position: 'relative',
-          height: '100vh',
-          margin: '5vh 5vw',
-          padding: '5px',
-          zIndex: 0
-        }}>
+        >
         <div
           className='aboutContainer'
-          style={{
-            background: 'transparent',
-            marginLeft: '0vw',
-            marginTop: '10vh',
-            zIndex: 200
-          }}>
+          >
           <div
             className='aboutTitle'
-            style={{
-              position: 'relative',
-              padding: 0,
-
-              marginLeft: '10vw',
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between'
-            }}>
+            >
             <h1 style={{ width: '100%' }}>{aboutMeData.title}</h1>
           </div>
           <div
             className='socialBox'
-            style={{
-              position: 'absolute',
-              marginTop: '20vh',
-              marginLeft: '70vw',
-              display: 'flex',
-              flexDirection: 'column',
-              height: '20vh',
-              zIndex: 200
-            }}>
+            >
             <a
               style={{ zIndex: 25 }}
               href={aboutMeData.facebookLink}
@@ -170,7 +143,7 @@ export default class AboutMePage extends Component {
             </div>
           </div>
         </div>
-      
+
       </div>
     );
   }

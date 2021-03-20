@@ -56,10 +56,14 @@
   width: 23%;
   height: 100%;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 15px;
   box-sizing: border-box;
   transition: all 0.6s ease;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  box-shadow: none !important;
+  background: rgba(189, 202, 251, 0.11);
+  border: 1px solid rgba(189, 202, 251, 0.33);
+  backdrop-filter: blur(12px);
 }
 
 .viewCard:hover {
@@ -68,9 +72,9 @@
   transform: scale(1.02);
 }
 
-/*.viewCard:hover .backImg {
+.viewCard:hover .backImg {
   filter: blur(3px) brightness(100%);
-}*/
+}
 
 .viewCard .backImg {
   position: absolute;
@@ -84,20 +88,9 @@
   position: absolute;
   z-index: 10 !important;
   position: absolute;
-  -webkit-mask-image: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(188, 188, 188, 0) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 20%,
-    rgba(188, 188, 188, 0) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-filter: blur(3px) brightness(200%) !important;
-  filter: blur(3px) brightness(200%) !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(12,12,12,0.4) 40%, rgba(0,0,0,0) 100%);
+
+  filter: blur(3px) brightness(20%);
 }
 
 .projectInfo {
@@ -121,13 +114,13 @@
 .viewCardLast {
 
   box-shadow: none !important;
-  background: rgba(189,202,251,.11);
-  border: 1px solid rgba(189,202,251,.33);
+  background: rgba(189, 202, 251, 0.11);
+  border: 1px solid rgba(189, 202, 251, 0.33);
+  backdrop-filter: blur(12px);
 }
 
 .viewCardLast .filterBlurImg {
-  -webkit-filter: blur(3px) brightness(100%) saturate(0) !important;
-  filter: blur(3px) brightness(100%) saturate(0) !important;
+filter: blur(3px) brightness(100%) saturate(0) !important;
   opacity: 0.2;
 }
 
@@ -155,12 +148,12 @@
 }
 
 .viewCard:hover .circleBtnIcon {
-  background-color: #f0f8ff;
-  color: #113355;
-  border-color: #113355;
+  background-color: #060606;
+  color: #f6f6f6;
+  border-color: #060606;
 }
 
-/* viewCards on projects page / case history */
+/* vierCards on projects page / case history */
 
 .projectsCards {
   position: relative;
@@ -179,18 +172,17 @@
 }
 
 .projectTitle {
-  color: #f0f8ff;
+  color: #fff;
 }
 
 @media only screen and (max-width: 900px) and (min-width: 451px) {
   .projectsCards {
     grid-template-columns: 1fr 1fr;
+    color: #113355;
   }
   .viewCard {
-    max-width: 100%;
-    overflow-x: visible;
+    color: #113355;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
