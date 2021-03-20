@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html,
 body,
 .App {
@@ -9,7 +9,7 @@ body,
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -98,7 +98,7 @@ h6 {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.8rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -106,7 +106,7 @@ p {
   font-weight: 400;
   font-size: 12px;
   line-height: 28px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -166,14 +166,14 @@ a {
     font-weight: 400;
     font-size: 1.44rem;
     line-height: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   h6 {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.4rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
   }
 }

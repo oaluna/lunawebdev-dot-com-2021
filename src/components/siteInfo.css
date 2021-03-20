@@ -22,7 +22,8 @@
   margin: 10vh auto;
   display: flex;
   flex-direction: row;
-  width: 90vw;
+  max-width: 80vw;
+  width: 100%;
 }
 
 .siteTitle {
@@ -156,7 +157,8 @@ border-radius: 0;
   }
   .siteText p {
     line-height: 22px;
-    width: 70vw;
+    width: 100%;
+    max-width: 75vw;
     text-align: left;
     justify-content: flex-end;
 
