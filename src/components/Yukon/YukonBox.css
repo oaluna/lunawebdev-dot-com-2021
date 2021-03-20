@@ -1,0 +1,161 @@
+/*----------*/
+/*---------------*/
+/*--- SideBox Component ---*/
+
+.yukonBoxContainer {
+  position: relative;
+  right: -5%;
+  width: 550px;
+  height: 160px;
+  float: right;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 8px 0px rgba(37, 42, 66, 0.2);
+  margin: 20px 0;
+}
+
+.yukonBoxContainer:hover {
+  right: 0px;
+  background: linear-gradient(145deg, #ffffff, #d8dfe6);
+  box-shadow:  10px 10px 30px #ccd3d9,
+             -10px -10px 30px #ffffff;
+}
+
+.yukonBoxContainer:hover .yukonBoxButton {
+  opacity: 1;
+  box-shadow:  10px 10px 30px #ccd3d9,
+             -10px -10px 30px #ffffff;
+}
+
+.yukonBoxContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.yukonBoxButton {
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.yukonBoxImage {
+  width: 40%;
+  height: 100%;
+background-image: url('../../assets/lunawebdevdotcom.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.yukonBoxInfo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.yukonBoxInfo p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .yukonBoxContainer {
+    position: relative;
+    right: 0;
+    margin: 20px auto;
+    width: 90%;
+    height: 200px;
+    float: right;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 8px 0pxrgba(18, 20, 59, 0.2);
+    border-radius: 35px;
+    overflow: hidden;
+  }
+
+  .yukonBoxContent {
+    flex-direction: column;
+  }
+  .yukonBoxImage {
+    width: 100%;
+    height: 100%;
+  }
+  .yukonBoxInfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .yukonBoxButton {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 35px;
+  }
+}
+
+/*--- EXTRA STYLES FOR THE HOMEPAGE ---*/
+
+.yukonBoxPosition {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  right: 0;
+  top: 20vh;
+  transition: all 1s ease;
+}
+
+.yukonBoxPosition :nth-child(1) {
+  animation: yukonBoxesEntry 0.8s ease;
+}
+
+.yukonBoxPosition :nth-child(2) {
+  animation: yukonBoxesEntry 1s ease;
+}
+
+@keyframes yukonBoxesEntry {
+  0% {
+    opacity: 0;
+    right: -120%;
+  }
+  100% {
+    opacity: 1;
+    right: -5%;
+  }
+}
+
+.latestWorkTitle {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .yukonBoxPosition {
+    position: relative;
+    width: 100%;
+  }
+
+  .latestWorkTitle {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: block;
+  }
+}

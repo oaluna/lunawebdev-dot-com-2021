@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
-import SvgIcons from './SvgIcons.js';
+import SvgIcons from '../SvgIcons.js';
 
 import './pages.css';
 import './components.css';

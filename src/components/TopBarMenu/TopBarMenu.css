@@ -1,0 +1,307 @@
+/*----------*/
+/*---------------*/
+/*--- Top Bar Component ---*/
+
+.topBarContainer {
+  z-index: 500;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: topBarEntry 1s ease 2s forwards;
+}
+
+.topBarContent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  padding: 20px 80px;
+  box-sizing: border-box;
+}
+
+@keyframes topBarEntry {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*----------*/
+/*---------------*/
+/*--- Logo Element ---*/
+
+.logoWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  width: 200px;
+}
+
+.logoWrapper img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+/*----------*/
+/*---------------*/
+/*--- Menu Element ---*/
+
+.menuContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.menuContent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.menuItems {
+  width: auto;
+  height: 100%;
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItems button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgb(150, 150, 150);
+  background:transparent;
+  margin: 5px;
+font-weight: 100;
+border: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.menuItems button:hover {
+  color: slateblue;
+  box-shadow:  10px 10px 30px #ccd3d9,
+             -10px -10px 30px #ffffff;
+}
+
+/*--- Hamburger Element ---*/
+
+.hamburger {
+  position: fixed;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  right: 20px;
+  transition: all 0.3s ease;
+}
+
+.line1 {
+  width: 30px;
+  height: 3px;
+background-color: slateblue;
+  transition: all 0.3s ease;
+}
+
+.hamburgerActive .line1 {
+  transform: rotate(135deg);
+  margin-top: 3px;
+}
+
+.line2 {
+  width: 20px;
+  height: 3px;
+background-color: slateblue;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburgerActive .line2 {
+  display: none;
+}
+
+.line3 {
+  width: 30px;
+  height: 3px;
+background-color: slateblue;
+  transition: all 0.3s ease;
+}
+
+.hamburgerActive .line3 {
+  margin-top: -3px;
+  transform: rotate(-135deg);
+}
+
+/*--- Mobile Style for Top Bar Component ---*/
+
+@media only screen and (max-width: 900px) {
+  .topBarContainer {
+    z-index: 500;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    animation: topBarEntry 1s ease 2s forwards;
+    margin-top: 20px;
+  }
+
+  .topBarContent {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menuContent {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .logoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5px auto;
+  }
+
+  .menuContainer {
+    z-index: 800;
+    position: fixed;
+    background: light-grey;
+    width: 0vw;
+    height: 100vh;
+    padding-bottom: 10vh;
+    margin-top: 75vh;
+    right: 0;
+
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .menuOpen {
+    opacity: 1;
+    width: 100vw;
+    background: rgba(106, 90, 205, 0.4);
+  }
+
+  .menuContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .colorBarMenu {
+    position: absolute;
+    z-index: 600;
+    width: 0%;
+    height: 100%;
+
+    right: 0;
+  }
+
+  .menuOpen .colorBarMenu {
+    animation: colorSliderOpen 0.7s ease;
+  }
+
+  .colorBarMenu {
+    animation: colorSliderClose 1.4s ease;
+  }
+
+  @keyframes colorSliderOpen {
+    0% {
+      width: 100%;
+      left: 0;
+    }
+    20% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0%;
+      left: 0;
+    }
+  }
+
+  @keyframes colorSliderClose {
+    0% {
+      width: 5%;
+      left: 0;
+    }
+    10% {
+      width: 100%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  .menuItems {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .menuItems p {
+    height: 30px;
+    font-size: 20px;
+    padding: 10px 5px;
+    overflow: hidden;
+    color: aliceblue;
+  }
+
+  .menuItems button {
+    font-size: 20px;
+    background: transparent;
+    color: aliceblue;
+  }
+  .menuItems button:hover {
+    color: aliceblue;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .hamburger:hover {
+    box-shadow:  10px 10px 30px aliceblue,
+    -10px -10px 30px rgba(106, 90, 205, 1);
+  }
+}
+
+/*--- entry animation bottom-up opacity---*/
+/*--- animation: bottomUpOpacity 1.6s ease forward; ---*/
+@keyframes bottomUpOpacity {
+  from {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}

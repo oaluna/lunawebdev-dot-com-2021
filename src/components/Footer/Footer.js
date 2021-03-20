@@ -1,6 +1,6 @@
 import React from 'react';
-
-import SvgIcons from './SvgIcons.js';
+import './Footer.css'
+import SvgIcons from '../SvgIcons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookSquare,
@@ -9,7 +9,7 @@ import {
   faTwitter,
   faDev
 } from '@fortawesome/free-brands-svg-icons';
-import './pages.css';
+
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

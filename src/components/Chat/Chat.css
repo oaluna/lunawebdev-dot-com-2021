@@ -78,13 +78,13 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background-color: rgba(189, 202, 251, 1);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   font-size: 2rem !important;
   color: #135;
   padding: 12.5px;
-  font-weight: 700;
+  font-weight: 100;
 }
 .chat {
   background:  rgba(189,202,251,.11);}
@@ -159,13 +159,13 @@
   color: #135;
   background: rgba(189, 202, 251, 1);
   font-size: 2rem !important;
-  font-weight: 700;
+  font-weight: 100;
 }
 .react-chatbot-kit-user-chat-message {
   background-color: #135;
   color: rgba(189, 202, 251, 1);
   font-size: 2rem !important;
-  font-weight: 700;
+  font-weight: 100;
 }
 .react-chatbot-kit-user-chat-message > .react-chatbot-kit-user-chat-message-arrow {
   fill: #135;

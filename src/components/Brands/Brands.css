@@ -1,0 +1,41 @@
+/*----------*/
+/*---------------*/
+/*--- Brands Element Grid ---*/
+
+.brandsList {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%) [4];
+  grid-template-columns: repeat(4, 25%);
+  background: transparent;
+  border-radius: 10px;
+}
+
+.brandsList img {
+  mix-blend-mode: normal;
+  max-width: 65%;
+  max-height: 145px;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding: 40px;
+  transition: 0.3s;
+}
+  .brandsList img:hover {
+  border-radius: 50px;
+background: linear-gradient(145deg, #ffffff, #d8dfe6);
+box-shadow:  20px 20px 60px #ccd3d9,
+             -20px -20px 60px #ffffff;
+
+}
+@media only screen and (max-width: 900px) {
+  .brandsList {
+    width: 100%;
+    -ms-grid-columns: (50%) [3];
+    grid-template-columns: repeat(2, 50%);
+  }
+}
