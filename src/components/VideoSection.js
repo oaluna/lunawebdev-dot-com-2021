@@ -87,7 +87,7 @@ export default class VideoSection extends Component {
               <br />
             </div>
             <br />
-            <div className='siteText' style={{ height: '25vh' }}>
+            <div className='siteText' style={{ width: '20vw', height: '25vh' }}>
               <p style={{color: '#f0f8ff'}}> Coming soon! </p>
             </div>
             <div

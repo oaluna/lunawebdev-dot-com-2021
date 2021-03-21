@@ -123,13 +123,31 @@ width: 100%;
   border-color: #f0f8ff;
 }
 @media only screen and (max-width: 900px) {
-  .videoSectionRight .siteInfo{
+  .videoSectionRight > .siteInfo{
     position: absolute;
     max-width: 100vw;
     top: -30vh;
   left: -5vw;
     width: 100%;
-    justify-content: center;
+    height: 50%;
+  }
+  .videoSectionRight .siteInfo {
+    min-width: 100vw;
+
+  }
+  .videoSectionRight .siteInfo > .siteText p {
+    max-width: 100vw;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .videoSectionRight .siteButtons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100vw;
+    justify-content: space-evenly;
   }
  .lottie-player-container {
    display: none;
