@@ -8,8 +8,10 @@ body,
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
+
   background-color: #130f40;
   background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+
   color: #f0f8ff;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -233,3 +235,5 @@ a {
 .noOverflow {
   overflow: hidden;
 }
+
+

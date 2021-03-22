@@ -56,6 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+      
         <div className='mainPage' ref={this.mainPageRef}>
           <HeadBar isTop={this.state.isTop} />
           <Switch>
