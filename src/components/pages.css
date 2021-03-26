@@ -277,6 +277,8 @@ background: rgba(255,255,255,0);
 .header-right {
   opacity: 0;
 }
+
+
 @media only screen and (max-width: 900px){
 .aboutMePage {
   display: flex;
@@ -288,7 +290,7 @@ background: rgba(255,255,255,0);
   width: 100vw;
   margin-top: 80vh;
   min-height: 60vh;
-  
+
 }
 .aboutTitle {
   display: initial;

@@ -21,10 +21,10 @@ export default class AboutMePage extends Component {
   render() {
     return (
       <div
-        className='aboutMePage'
+        className='aboutMePage' style={{ height: '90vh'}}
         >
         <div
-          className='aboutContainer'
+          className='aboutContainer' style={{height: '100%'}}
           >
           <div
             className='aboutTitle'
@@ -32,7 +32,7 @@ export default class AboutMePage extends Component {
             <h1 style={{ width: '100%' }}>{aboutMeData.title}</h1>
           </div>
           <div
-            className='socialBox'
+            className='socialBox' style={{position: 'absolute', top: '20vh', left:'75vw', display: 'flex', flexDirection: 'column'}}
             >
             <a
               style={{ zIndex: 25 }}
@@ -91,7 +91,7 @@ export default class AboutMePage extends Component {
                 position: 'absolute',
                 width: '60vw',
                 height: '40vh',
-                marginTop: '10vh',
+                marginTop: '25vh',
                 marginLeft: '15vw',
                 background: 'rgba( 255, 255, 255, 0.34 )',
                 boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
@@ -107,7 +107,7 @@ export default class AboutMePage extends Component {
                   style={{
                     position: 'absolute',
                     marginLeft: '-10vw',
-                    marginTop: '-10vh',
+                    marginTop: '20vh',
                     clipPath: 'circle(150px)',
                     zIndex: 40
                   }}

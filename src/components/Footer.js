@@ -20,7 +20,7 @@ export default function Footer() {
           <Link to={'/'} className='footerLogo'>
             <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' />
           </Link>
-          <div className='socialBox' style={{ zIndex: 20 }}>
+          <div className='socialBox'>
             <a
               href='https://www.facebook.com/aka.kay.drama'
               className='socialItem'>
