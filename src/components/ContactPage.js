@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import ContactForm from "./ContactForm.js";
+import ContactForm from "./components/MiraContacts/ContactForm.js";
 
 import "./pages.css";
 

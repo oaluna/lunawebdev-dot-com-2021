@@ -11,18 +11,18 @@ const projectsData = [
     url: 'https://lunawebdev.com',
     repo: 'https://github.com/oaluna/lunawebdevdotcom',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.',
+      'A previous draft built as a part of my learning process for learning frontend frameworks. Built using Gatsby, React',
     stat1: {
-      number: '16+',
-      text: 'Statistical number'
+      number: '',
+      text: ''
     },
     stat2: {
-      number: '1.7+',
-      text: 'Millions of example statistics'
+      number: '',
+      text: ''
     },
     stat3: {
-      number: '19',
-      text: 'Number of random things'
+      number: '',
+      text: ''
     }
   },
   {
@@ -37,11 +37,11 @@ const projectsData = [
     url: 'https://lunadevblog.netlify.app',
     repo: 'https://github.com/oaluna/lunadevblog',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.'
+      'My blog site! I initially started posting to a DEV account when I learned from the DEV dashboard about using a content management system to write blog posts from. I deployed this as a means to learn about how CMS works. Built using Next, Stackbit.'
   },
   {
     id: 3,
-    category: 'Landing Site',
+    category: 'E-Commerce Site',
     imageLarge:
       'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/158340854_10158924201888818_4215532764369205759_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=730e14&_nc_ohc=9x0E3vhaHDEAX91mXYH&_nc_ht=scontent-sjc3-1.xx&oh=d8797c35bca7208a2108ac513f6c754d&oe=606B5859',
     imageCard:
@@ -51,11 +51,10 @@ const projectsData = [
     url: 'http://lws-shopping-demo.herokuapp.com/',
     repo: 'https://github.com/oaluna/react-final-crwn-clothing',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.'
-  },
+      'This was a project I created learning react from the React Bootcamp on Udemy. This applications is a PWA that stores content with GraphQL and manages auth and item display using Redux. As a part of this project I also implemented a payment API using stripe-elements as well as stripe-js.'  },
   {
     id: 4,
-    category: 'Landing Site',
+    category: 'E-Commerce Site',
     imageLarge:
       'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/157682868_10158924201868818_8088164113961206257_o.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=bPWcejl-SvkAX9M5MX2&_nc_ht=scontent-sjc3-1.xx&oh=95cead595ebfba4a615d6c9084b4912c&oe=60691479',
     imageCard:
@@ -65,7 +64,7 @@ const projectsData = [
     url: 'https://lunas.mybigcommerce.com/',
     repo: 'https://github.com/oaluna/vercel-commerce',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.'
+      'I have most recently become enamored with the beauty of Next.js and server-side rendering. In my journey I discovered the cloud platform Vercel as well as Big Commerce, a SaaS platform that is customizable with or without code. Built using Next, deployed to Vercel.'
   },
   {
     id: 5,
@@ -79,7 +78,7 @@ const projectsData = [
     url: 'https://globomantics.vercel.app/',
     repo: 'https://github.com/oaluna/globomantics',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.'
+      'This project is part of my independent learning as well. When building this real-estate application I learned about state management with Redux, including making API calls like dispatch() and subscribe(). I also added a mock data generator that will generate fake house listings. Built using React, Redux.'
   },
   {
     id: 6,
@@ -93,9 +92,9 @@ const projectsData = [
     url: 'https://lws-landing-demo.vercel.app',
     repo: 'https://lws-landing-demo',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet leo ex, ac vulputate ipsum vehicula sit amet. Mauris mattis sem eu mauris iaculis gravida. Maecenas eget tortor at est cursus tempus. Aliquam id facilisis leo.'
+      'I will be quite honest. I was bent on learning how that wonderful gradient mask on Stripe.com works. So after some reverse engineering I implemented the gradient webGL to a React application. Through building this application I also learned about Figma and how to generate web applications through prototypes and used a community file to create device mockups for it. Built using React.'
   }
-  
+
 ];
 
 export default projectsData;
