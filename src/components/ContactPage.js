@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import ContactForm from "./components/MiraContacts/ContactForm.js";
+import ContactForm from './ContactForm.js';
 
-import "./pages.css";
+import './pages.css';
 
 export default class ContactPage extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class ContactPage extends Component {
 
   render() {
     return (
-      <div className="Contact">
+      <div className='Contact'>
         <ContactForm />
       </div>
     );

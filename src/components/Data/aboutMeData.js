@@ -1,7 +1,7 @@
 const aboutMeData = {
   id: 0,
   title: 'About Me',
-  image: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/87863475_10157885228738818_8579202692792975360_n.jpg?_nc_cat=110&ccb=3&_nc_sid=09cbfe&_nc_ohc=m6gi6EejH9YAX8oPBuV&_nc_ht=scontent-sjc3-1.xx&oh=347bddb0bc145aa300e2f8c704953b6f&oe=605FCE68',
+  image: 'https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/87863475_10157885228738818_8579202692792975360_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=174925&_nc_ohc=MmQllMd_pN4AX--jEpZ&_nc_ht=scontent-sjc3-1.xx&oh=45c49eaee0030182fccbe2d32a09914d&oe=60875B68',
   name: 'Oscar Armando Luna',
 
   text:
