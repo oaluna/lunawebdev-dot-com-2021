@@ -18,7 +18,7 @@ export default class VideoSection extends Component {
   render() {
     return (
       <div className='videoSection'>
-        <div className='videoSectionLeft' style={{color: '#f0f8ff'}}>
+        <div className='videoSectionLeft' style={{ color: '#f0f8ff' }}>
           <div className='tokenModule'>
             <div className='token firsttoken'>
               <div className='tokenTop'>
@@ -47,13 +47,13 @@ export default class VideoSection extends Component {
           </div>
         </div>
 
-        <div className="lottie-player-container">
+        <div className='lottie-player-container'>
           <Player
             autoplay
             loop
             src='https://assets7.lottiefiles.com/packages/lf20_k86wxpgr.json'
             background='rgba(0,0,0,0)'
-            className="secondLottie"
+            className='secondLottie'
             id='#secondLottie'
             speed='1'
             style={{
@@ -67,41 +67,26 @@ export default class VideoSection extends Component {
           />
         </div>
 
-        <div
-          className='videoSectionRight'
-          style={{
-            position: 'relative',
-            maxHeight: '100%',
-            height: '100%',
-            maxWidth: '35vw',
-            width: '100%',
-            padding: '25px'
-          }}>
-          <div
-            className='siteInfo'
-            >
-            <div
-              className='siteTitle'
-              style={{ position: 'relative', textAlign: 'center' }}>
-              <h5 style={{color: '#f0f8ff'}}> Live Events </h5>
+        <div className='videoSectionRight'>
+          <div className='siteInfoVideoSection'>
+            <div className='siteTitle'>
+              <h5 style={{ color: '#f0f8ff' }}> Live Events </h5>
               <br />
             </div>
             <br />
-            <div className='siteText' style={{ width: '20vw', height: '25vh' }}>
-              <p style={{color: '#f0f8ff'}}> Coming soon! </p>
+            <div className='siteText'>
+              <p style={{ color: '#f0f8ff' }}> Coming soon! </p>
             </div>
-            <div
-              className='siteButtons'
-              >
+            <div className='siteButtons'>
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
                   <span className='circleBtnIcon'>+</span>
-                  <h5 style={{color: '#f0f8ff'}}>Find Out More</h5>
+                  <h5 style={{ color: '#f0f8ff' }}>Find Out More</h5>
                 </button>
               </Link>
               <Link to={'/Contact'}>
                 <button className='simpleBtn simpleBtnDark'>
-                  <h4 style={{color: '#f0f8ff'}}>Contact</h4>
+                  <h4 style={{ color: '#f0f8ff' }}>Contact</h4>
                 </button>
               </Link>
             </div>

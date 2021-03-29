@@ -86,6 +86,7 @@ overflow-x: hidden;
   min-height: 250px;
 }
 
+
 @media only screen and (min-height: 600px) {
   .thirdSection {
     height: 100vh;
@@ -120,13 +121,15 @@ overflow-x: hidden;
 .socialBox {
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  z-index: 200;
 }
 
 .socialItem {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  margin: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,7 +218,7 @@ background: rgba(255,255,255,0);
   .footerFirstRow {
     position: relative;
     flex-direction: column;
-
+padding: 15px 0px;
     max-width: 100vw;
     width: 100%;
     justify-content: center;
@@ -227,6 +230,7 @@ background: rgba(255,255,255,0);
     width: 100%;
     height: 5vh;
     align-items: center;
+    padding: 15px 0;
     justify-content: center;
   }
   .footerLogo {
@@ -277,25 +281,129 @@ background: rgba(255,255,255,0);
 .header-right {
   opacity: 0;
 }
+.aboutMePage {
+  display: block;
+  position: relative;
+  margin: 0vh auto 20vh auto;
 
+  height: 100%;
+}
+.aboutContainer {
+
+  margin-top: 20vh;
+}
+.aboutTitle h1 {
+  width: 100%;
+  margin-left: 40vw;
+}
+.aboutBody {
+  width: 90vw;
+}
+.aboutBodyContainer {
+  position: absolute;
+  width: 60vw;
+  height: 40vh;
+  margin-top: 0vh;
+  margin-left: 25vw;
+  background: rgba( 255, 255, 255, 0.34 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 10;
+}
+.aboutBodyImg {
+  position: absolute;
+  margin-left: -10vw;
+  margin-top: -10vh;
+  clip-path: circle(150px);
+  z-index: 40;
+}
+.aboutBodyName {
+  position: relative;
+  margin-left: 15vw;
+  font-family: La storia -demo-;
+  font-size: 18px;
+  width: 100vw;
+  z-index: 200;
+}
+.aboutBodyText p{
+  font-size: 14px;
+  font-weight: 100;
+  width: 35vw;
+  line-height: 1.75;
+  margin-top: 0vh;
+  margin-left: 15vw;
+}
+.socialBoxAboutMe {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 85vw;
+  margin-top: 55vh;
+}
 
 @media only screen and (max-width: 900px){
 .aboutMePage {
   display: flex;
   flex-direction: column;
+  height: 50%;
 ;
 }
-.aboutBodyContainer {
+.aboutBody {
   max-width: 100vw;
-  width: 100vw;
-  margin-top: 80vh;
+  width: 100%;
+  position: absolute;
+ left: 0vw;
+ top: 30vh;
+ margin: 0px;
+ padding: 0px;
+}
+.aboutBodyContainer {
+
+  width: 100%;
+  margin-top: -20vh;
+  margin-left: 0vw;
   min-height: 60vh;
 
 }
 .aboutTitle {
-  display: initial;
+  display: none;
+}
+.aboutBodyName {
+  font-size: 12px;
+  margin-left: 0vw;
+  padding: 25px;
 }
 .aboutBodyImg {
   clip-path: circle(18vw, 18vh);
+  margin: -5vh auto 0 auto;
+  transform: scale(0.5, 0.5);
+}
+.aboutBodyText p {
+
+  width: 90%;
+  margin: 15vh auto 0 auto;
+
+}
+.socialBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: center;
+  z-index: 200;
+}
+
+.socialBoxAboutMe {
+ display: flex;
+ flex-direction: row;
+max-width: 100vw;
+width: 100%;
+justify-content: space-evenly;
+margin: 0vh auto;
+}
+.footerMainMenu {
+  margin: 15px 0;
 }
 }

@@ -27,7 +27,7 @@ export default class ProjectPage extends Component {
     return (
       <div className='videoSection projectPage'>
         <div className='videoSectionLeft'>
-          
+
         </div>
         <div className='projectOverlay'></div>
 
@@ -40,7 +40,7 @@ export default class ProjectPage extends Component {
 
         <div className='videoSectionRight' style={{ marginTop: '10vh' }}>
           <div
-            className='siteInfo'
+            className='siteInfo' style={{filter: 'brightness(0.8)'}}
             >
             <div className='siteTitle' style={{width: '100vw'}}>
               <h5> {projectsData[this.state.currentProject].category} </h5>
@@ -51,7 +51,7 @@ export default class ProjectPage extends Component {
                 {projectsData[this.state.currentProject].text}
               </p>
             </div>
-            <div className='siteButtons'>
+            <div className='siteButtons' style={{display: 'flex', flexDirection: 'column'}}>
               <button
                 onClick={() => this.props.history.goBack()}
                 className='circleBtn circleBtnDark'>
