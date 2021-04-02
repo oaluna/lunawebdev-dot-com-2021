@@ -20,7 +20,10 @@ export default class CaseHistoryPage extends Component {
       return (
         <Link to={'/ProjectPage/' + (item.id - 1)} className='viewCard'>
           <FilterBlurImg img={item.imageCard} brightness={'dark'} />
-          <img src={item.logoImg} alt='none' className='projectLogo'></img>
+          <SvgIcons
+            iconName='oscarArmandoLunaLogo'
+            style={{ position: 'absolute', marginLeft: '-10vw' }}
+          />
         </Link>
       );
     });

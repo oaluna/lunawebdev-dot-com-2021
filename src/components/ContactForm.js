@@ -1,28 +1,26 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import emailjs, { init } from 'emailjs-com';
 
 import SvgIcons from './SvgIcons.js';
 
 import './pages.css';
 import './components.css';
 
+init('user_GNoYMqZXu8puUlBH1AHpn');
+
 export default function ContactForm() {
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template_fvg6gzb',
-        e.target,
-        'user_GNoYMqZXu8puUlBH1AHpn'
-      )
+      .send('gmail', 'template_fvg6gzb')
+
       .then(
         (result) => {
-          console.log(result.text);
+          alert(result.text);
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
 
