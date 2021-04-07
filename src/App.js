@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import HeadBar from './components/HeadBar';
 import AboutMePage from './components/AboutMePage'
 import Chat from './components/Chat/Chat'
-
+import BlogPage from './components/BlogPage/BlogPage'
 import './styles.css';
 
 class App extends Component {
@@ -56,7 +56,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      
+
         <div className='mainPage' ref={this.mainPageRef}>
           <HeadBar isTop={this.state.isTop} />
           <Switch>
@@ -73,7 +73,7 @@ class App extends Component {
             <Route path='/Projects' component={CaseHistory} />
             <Route path='/ProjectPage/:Project' component={ProjectPage} />
             <Route path='/AboutMe' component={AboutMePage} />
-
+<Route path="/BlogPage" component={BlogPage} />
           </Switch>
           <Chat />
           <Footer />

@@ -164,6 +164,9 @@ export default function HeadBar(props) {
             <Link to={'/Services'}><h4>Services</h4></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
+            <Link to={'/BlogPage'}><h4>Blog</h4></Link>
+          </h2>
+          <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/Contact'}><h4>Contact</h4></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
