@@ -3,6 +3,24 @@ const projectsData = require('./Data/projectsData');
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import FilterBlurImg from './FilterBlurImg';
+import styled from 'styled-components';
+
+const CardRow = styled.div`
+  position: relative;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row-wrap;
+  max-width: 90vw;
+  width: 100%;
+  padding: 25px 15px;
+  margin: 15px;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+`;
 
 class Slider extends Component {
   constructor(props) {
@@ -67,27 +85,13 @@ class Slider extends Component {
         </div>
         <div className='blog__slider'>
           {this.state.itemRows.map((row, i) => (
-            <div
-              className='row'
-              key={i}
-              style={{
-                position: 'relative',
-                marginLeft: '2vw',
-                display: 'flex',
-                flexDirection: 'row',
-                flexWrap: 'row-wrap',
-                maxWidth: '90vw',
-                width: '100%',
-                padding: '25px 15px',
-                margin: '15px',
-                justifyContent: 'center'
-              }}>
+            <CardRow>
               {row.map((item, j) => (
-                <div key={j} sm='8' className='m-0 p-5'>
+                <div key={j} xs='12' sm='8' md='4' className='m-0 p-5'>
                   <BlogCard {...item} />
                 </div>
               ))}
-            </div>
+              </CardRow>
           ))}
         </div>
       </>
