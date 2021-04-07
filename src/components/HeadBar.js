@@ -155,22 +155,22 @@ export default function HeadBar(props) {
       <div className='headBarMenu'>
         <div className='headBarMenuItems'>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/'}><h4>Home</h4></Link>
+            <Link to={'/'}><h3>Home</h3></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Projects'}><h4>Case History</h4></Link>
+            <Link to={'/Projects'}><h3>Case History</h3></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Services'}><h4>Services</h4></Link>
+            <Link to={'/Services'}><h3>Services</h3></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/BlogPage'}><h4>Blog</h4></Link>
+            <Link to={'/BlogPage'}><h3>Blog</h3></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Contact'}><h4>Contact</h4></Link>
+            <Link to={'/Contact'}><h3>Contact</h3></Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/AboutMe'}><h4>About</h4></Link>
+            <Link to={'/AboutMe'}><h3>About</h3></Link>
           </h2>
         </div>
         <div className='socialBox'>

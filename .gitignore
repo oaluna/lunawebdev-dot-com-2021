@@ -4,3 +4,4 @@ webpack.config.prod.js
 tailwind.config.js
 server.js
 craco.config.js
+src/assets/Shards-React-1.0.1
