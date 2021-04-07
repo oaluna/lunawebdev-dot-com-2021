@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import HeadBar from './components/HeadBar';
 import AboutMePage from './components/AboutMePage'
 import Chat from './components/Chat/Chat'
-import BlogPage from './components/BlogPage/BlogPage'
+import BlogPage from './components/BlogPage'
 import './styles.css';
 
 class App extends Component {
