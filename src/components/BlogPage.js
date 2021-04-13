@@ -5,22 +5,6 @@ import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import FilterBlurImg from './FilterBlurImg';
 import styled from 'styled-components';
 
-const CardRow = styled.div`
-  position: relative;
-  margin-left: 2vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: row-wrap;
-  max-width: 90vw;
-  width: 100%;
-  padding: 25px 15px;
-  margin: 15px;
-  justify-content: center;
-  @media (max-width: 900px) {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-`;
 
 class Slider extends Component {
   constructor(props) {
@@ -53,45 +37,21 @@ class Slider extends Component {
   render() {
     return (
       <>
-        <div
-          className='blogpage-header'
-          style={{
-            position: 'relative',
-            backgroundBlendMode: 'normal',
-            opacity: 1,
-            backdropFilter: 'normal'
-          }}>
-          <h1
-            style={{
-              marginTop: '20vh',
-              textAlign: 'center',
-              backdropFilter: 'none',
-              zIndex: 1000,
-              opacity: 1,
-              color: '#fff',
-              marginBottom: 0
-            }}>
-            Blog
-          </h1>
-          <h2
-            style={{
-              textAlign: 'center',
-              backdropFilter: 'none',
-              zIndex: 1000,
-              fontWeight: 300
-            }}>
+        <BlogPageHeader>
+          <BlogPageTitle>Blog</BlogPageTitle>
+          <BlogPageSubtitle>
             Documenting my dev journey, one commit at a time.
-          </h2>
-        </div>
-        <div className='blog__slider'>
+          </BlogPageSubtitle>
+        </BlogPageHeader>
+        <div className="blog__slider">
           {this.state.itemRows.map((row, i) => (
             <CardRow>
               {row.map((item, j) => (
-                <div key={j} xs='12' sm='8' md='4' className='m-0 p-5'>
+                <BlogCardContainer key={j}>
                   <BlogCard {...item} />
-                </div>
+                </BlogCardContainer>
               ))}
-              </CardRow>
+            </CardRow>
           ))}
         </div>
       </>
@@ -137,26 +97,8 @@ function BlogCard(props) {
 
   return (
     <>
+      <CardPost>
       <div
-        small
-        className='card-post w-50 h-50'
-        style={{
-          position: 'relative',
-          padding: '25px 15px',
-          margin: '15px',
-          height: '100%',
-          overflow: 'hidden',
-          borderRadius: '15px',
-          boxSizing: 'border-box',
-          transition: 'all 0.6s ease',
-
-          boxShadow: 'none !important',
-          background: 'rgba(189, 202, 251, 0.11)',
-
-          border: '1px solid rgba(189, 202, 251, 0.33)',
-          backdropFilter: 'blur(12px)'
-        }}>
-        <div
           className='card-post__image'
           style={{
             backgroundImage: props.imageCard,
@@ -178,7 +120,7 @@ function BlogCard(props) {
             {ShortenText(ToText(props.content), 0, 120) + '...'}
           </p>
         </div>
-        <div className='text-muted border-top mb-0 py-3 d-flex align-items-end'>
+        <CardText>
           <span className='text-dark'>
             <a
               href={props.profilelink}
@@ -208,16 +150,85 @@ function BlogCard(props) {
             />{' '}
             {finalDate}
           </span>
-        </div>
-      </div>
+        </CardText>
+      </CardPost>
     </>
   );
 }
 
-export default function BlogPage() {
+function BlogPage() {
   return (
     <div className='blogPage'>
       <Slider />
     </div>
   );
 }
+
+  const CardRow = styled.div`
+    position: relative;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row-wrap;
+    max-width: 90vw;
+    width: 100%;
+    padding: 25px 15px;
+    margin: 15px;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  `;
+
+  const BlogPageHeader = styled.div`
+    position: relative;
+    background-blend-mode: normal;
+    opacity: 1;
+    backdrop-filter: normal;
+  `;
+  const BlogPageTitle = styled.h1`
+    margin-top: 20vh;
+    text-align: center;
+    backdrop-filter: none;
+    z-index: 1000;
+    opacity: 1;
+    color: #fff;
+    margin-bottom: 0;
+  `;
+  const BlogPageSubtitle = styled.h2`
+    text-align: center;
+    backdrop-filter: none;
+    z-index: 1000;
+    font-weight: 300;
+  `;
+  const BlogCardContainer = styled.div`
+    margin: 0;
+    padding: 5;
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+    }
+  `;
+  const CardPost = styled.div`
+    position: relative;
+    padding: 25px 15px;
+    margin: 15px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all 0.6s ease;
+    box-shadow: none !important;
+    background: rgba(189, 202, 251, 0.11);
+    border: 1px solid rgba(189, 202, 251, 0.33);
+    backdrop-filter: blur(12px);
+  `;
+
+  const CardText = styled.div`
+    margin-bottom: 0;
+    padding: 3 auto;
+    display: flex;
+    align-items: flex-end;
+  `;
+
+  export default BlogPage

@@ -30,6 +30,7 @@
     "react-scripts": "4.0.2",
     "react-simple-chatbot": "^0.6.1",
     "react-spinners": "^0.10.6",
+    "react-twitter-embed": "^3.0.3",
     "styled-components": "^5.2.1",
     "tailwindcss": "yarn:@tailwindcss/postcss7-compat"
   },
