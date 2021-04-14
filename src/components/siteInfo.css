@@ -167,8 +167,10 @@ border-radius: 0;
   .siteButtons {
     text-align: left;
     display: flex;
+    margin: 2px;
     left: 0vw;
     flex-direction: row !important;
+
     justify-content: space-between;
     font-weight: 900 !important;
   }

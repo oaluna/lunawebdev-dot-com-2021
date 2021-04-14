@@ -407,3 +407,90 @@ margin: 0vh auto;
   margin: 15px 0;
 }
 }
+
+
+
+
+/* Pluralsight RoleIQ */
+.pageHeading---i-v48 {
+  background: url(https://s2.pluralsight.com/roleiq/imgs/roleiq_header_background3.svg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 400px;
+  padding: 5px 15px;
+  position: absolute;
+  left: 0vw;
+  top: 3vh;
+  align-items: center;
+  border-radius: 10px;
+}
+
+@media (-ms-high-contrast:active),(min-width: 1600px) and (-ms-high-contrast:none) {
+  .pageHeading---i-v48 {
+      max-width:1360px
+  }
+}
+
+
+.skillProgressContainer---lVDLZ {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 25px 25px 0;
+flex-direction: column;
+}
+.skillProgressLogoImage---Yz5P2{
+  padding: 0px 0 40px 0;
+}
+
+.roleIcon---3uZGY ,
+.badgeIcon---1NL4y {
+  position: absolute;
+  max-width: 72px;
+  height: 72px;
+  padding: 0;
+  left: 0vw;
+  transform: scale(1.4);
+
+}
+.levelBadge-3---2S32E {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0px 8px;
+  max-width: 50px;
+  margin-left: 7vw;
+  margin-right: auto;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(176, 176, 176, 0.25);
+}
+
+@media screen only and (max-width: 900px) {
+  .onlinePresenceSection {
+    display: flex;
+    position: relative !important;
+    flex-direction: column;
+
+  }
+ .twitter-component{
+
+    position: relative;
+  }
+.pageHeading---i-v48 {
+
+    flex-direction: column;
+  }
+}

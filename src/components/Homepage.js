@@ -7,7 +7,6 @@ import ServicesSection from './ServicesSection.js';
 import ViewCards from './ViewCards.js';
 import SvgIcons from './SvgIcons.js';
 import ContactForm from './ContactForm.js';
-import Twitter from './TwitterFeed';
 
 import './pages.css';
 import './siteInfo.css';
@@ -214,7 +213,7 @@ export default class Homepage extends Component {
 
   <div className="fullSection">
 <div className="fullSectionContent limitWidthContent">
-<Twitter />
+
 </div>
 </div>
         <div className='fullSection'>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Player } from '@lottiefiles/react-lottie-player';
-import LottieInteractivity from '@lottiefiles/react-lottie-player';
+//import { Player } from '@lottiefiles/react-lottie-player';
+//import LottieInteractivity from '@lottiefiles/react-lottie-player';
 import './components.css';
 
 export default class VideoSection extends Component {
@@ -47,8 +47,8 @@ export default class VideoSection extends Component {
           </div>
         </div>
 
-        <div className='lottie-player-container'>
-          <Player
+        {/* <div className='lottie-player-container'>
+         <Player
             autoplay
             loop
             src='https://assets7.lottiefiles.com/packages/lf20_k86wxpgr.json'
@@ -64,8 +64,22 @@ export default class VideoSection extends Component {
               top: '-10vh',
               left: '0vw'
             }}
-          />
-        </div>
+          /> */}
+        <div className='videoOverlay'></div>
+          <video className="videoMain"
+            width='100%'
+            style={{ zIndex: -1 }}
+            loop
+            playsInline
+            autoPlay
+            muted>
+            <source
+              src='https://res.cloudinary.com/dgdnpkfun/video/upload/v1618435059/oscarlunadotdev/video-section.mp4'
+              type='video/mp4'
+            />
+          </video>
+          {/* </div> */}
+
 
         <div className='videoSectionRight'>
           <div className='siteInfoVideoSection'>
@@ -75,7 +89,7 @@ export default class VideoSection extends Component {
             </div>
             <br />
             <div className='siteText'>
-              <p style={{ color: '#f0f8ff' }}> Coming soon! </p>
+              <h1 style={{ color: '#f0f8ff', fontWeight: 100, textAlign: 'center' }}> COMING SOON</h1>
             </div>
             <div className='siteButtons'>
               <Link to={'/Contact'}>

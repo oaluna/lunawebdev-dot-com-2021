@@ -7,16 +7,17 @@
 
 }
 .tw-main-div {
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  width: auto;
+  position: relative;
+  max-width: 350px;
+  height: 400px;
   padding: 1.5rem;
 
 }
 .twitter-component {
-  width: auto;
+
+  height: 400px;
   padding: 1.5rem;
+  margin-top: 0vh;
 
 }
 

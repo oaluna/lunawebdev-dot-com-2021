@@ -64,6 +64,13 @@
   .chat-chatbot-container
   {left: 0vw;
 }
+@media only screen and (max-height: 400px) {
+  .chat-chatbot-container {
+    left: 50vw;
+    max-height: 300px;
+    flex-shrink: 1;
+  }
+}
 }
 .react-chatbot-kit-chat-header {
   color: #135;
