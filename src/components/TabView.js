@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import styled from 'styled-components';
 import SvgIcons from './SvgIcons.js';
 
 import './tabView.css';
@@ -288,3 +288,92 @@ export default class TabView extends Component {
     );
   }
 }
+
+const TabView = styled.div`
+width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  min-height: 600px;
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+
+  }
+`
+const TabViewDisplayLeft = styled.div`
+position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  flex-direction: column;
+  @media only screen and (max-width: 900px) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+`
+const TabViewDisplayRight = styled.div`
+position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-items: center;
+  @media only screen and (max-width: 900px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    max-height: 200px;
+  }
+`
+const TabContainer = styled.div`
+width: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  margin: 15px 0px;
+  cursor: pointer;`
+
+const TabOpen = styled.div`
+height: 300px;
+@media only screen and (max-width: 900px){
+  height: 230px;
+}`
+
+const TabClosed = styled.div`
+height: 50px;`
+
+const TabLabel = styled.div`
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const TabContent = styled.div`
+& h2 {
+  padding-bottom: 15px;
+}
+& p {
+  padding-bottom: 15px;
+}`
+const PhoneContainer = styled.div`
+width: 200px;
+  height: 340px;
+  padding: 30px;
+  animation: none;
+  margin-top: -50px;
+  position: relative;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-25px)
+    scale(1.4);
+  transition: all 0.4s ease;
+  filter: drop-shadow(12px 12px 15px rgb(212, 221, 250, 0.33));
+  margin-left: 200px;
+`
+

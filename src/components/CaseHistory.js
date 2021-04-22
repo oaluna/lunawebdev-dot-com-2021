@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import projectsData from './Data/projectsData';
-
 import FilterBlurImg from './FilterBlurImg.js';
 import SvgIcons from './SvgIcons.js';
-
 import './pages.css';
 
 export default class CaseHistoryPage extends Component {
@@ -29,30 +26,30 @@ export default class CaseHistoryPage extends Component {
     });
 
     return (
-      <div className='caseHistoryPage'>
-        <div className='fullSection'>
-          <div className='fullSectionContent limitWidthContent'>
-            <h1 className='bigTitle'> Projects </h1>
-            <div className='projectsCards'>{projectsCards}</div>
-          </div>
-          <div className='backSvg backRightTop'>
+      <StyledCaseHistoryPage>
+        <FullSection>
+          <LimitWidthContent>
+            <BigTitle> Projects </BigTitle>
+            <ProjectsCards>{projectsCards}</ProjectsCards>
+          </LimitWidthContent>
+          <BackRightTop>
             <SvgIcons
               style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
               dimension='400px'
               iconName='star'
               fillColor='rgba(189, 202, 251, 1)'
             />
-          </div>
-          <div className='backSvg backLeftBottom'>
+          </BackRightTop>
+          <BackLeftBottom>
             <SvgIcons
               style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
               dimension='300px'
               iconName='heartMessage'
               fillColor='rgba(189, 202, 251, 1)'
             />
-          </div>
-        </div>
-      </div>
+          </BackLeftBottom>
+        </FullSection>
+      </StyledCaseHistoryPage>
     );
   }
 }

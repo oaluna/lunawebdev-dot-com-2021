@@ -5,6 +5,7 @@ import projectsData from './Data/projectsData.js';
 import SvgIcons from './SvgIcons.js';
 import './components.css';
 
+
 export default class ProjectPage extends Component {
   constructor(props) {
     super(props);
