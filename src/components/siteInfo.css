@@ -136,12 +136,12 @@
   .siteInfoHomepage {
 
     width: 100%;
-max-width: 90vw;
+max-width:100vw;
     display: flex;
     flex-direction: column;
 border-radius: 0;
     align-items: center;
-    margin: 15px;
+    margin: 15vh;
     padding: 25px;
   }
 .siteTitle .icon {

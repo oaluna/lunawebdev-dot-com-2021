@@ -135,7 +135,7 @@
   border-radius: 16px;
 
   box-shadow: none !important;
-  background: rgba(189, 202, 251, 0.11);
+  background: rgba(189, 202, 251, .11);
   border: 1px solid rgba(189, 202, 251, 0.33);
   backdrop-filter: blur(12px);
   align-items: flex-start;
@@ -158,11 +158,12 @@
   .videoSectionRight .siteInfo {
     position: absolute;
     max-width: 100vw;
-    width: 100%;
-    height: 100%;
-    top: -40vh;
+    width: 100vw;
+ color: #fff !important;
+    top: -50vh;
     left: -5vw;
-    height: 100%;
+    border-radius: 15px;
+
   }
   .videoSectionRight .siteInfo .siteInfoVideoSection {
     max-width: 100vw;
@@ -170,10 +171,13 @@
   }
   .videoSectionRight .siteInfo > .siteText p {
     max-width: 100vw;
-    width: 100%;
+    width: 80vw;
+    opacity: 1;
     text-align: left;
     margin: 0 !important;
+    margin-left: -25vw !important;
     padding: 0 !important;
+    color: #fff !important;
   }
   .videoSectionRight .siteButtons {
     display: flex;
@@ -226,20 +230,20 @@
   .videoOverlay {
     background: linear-gradient(
       0deg,
-      rgba(256, 256, 256, 0.2) 0%,
-      rgba(256, 256, 256, 0) 35%,
-      rgba(256, 256, 256, 0.1) 50%,
-      rgba(256, 256, 256, 0.2) 100%
+      rgba(0,0,0, 0.2) 0%,
+      rgba(0,0,0, 0) 35%,
+      rgba(0,0,0, 0.1) 50%,
+      rgba(0,0,0, 0.2) 100%
     );
   }
 
   .projectOverlay {
     background: linear-gradient(
       0deg,
-      rgba(256, 256, 256, 1) 1%,
-      rgba(256, 256, 256, 0.5) 50%,
-      rgba(256, 256, 256, 0) 70%,
-      rgba(256, 256, 256, 0) 100%
+      rgba(0,0,0, .21) 1%,
+      rgba(0,0,0, 0.5) 50%,
+      rgba(0,0,0, 0) 70%,
+      rgba(0,0,0, 0) 100%
     );
   }
 
@@ -310,7 +314,7 @@
   }
 }
 
-/* Play Button componet */
+/* Play Button component */
 
 .playButtonContainer {
   width: 100%;
@@ -337,18 +341,20 @@
 /* Simple  Button component */
 
 .simpleBtn {
-  border-radius: 60px;
+
+  border-radius: 50px;
   border: 2px solid rgb(240, 248, 255);
   transition: all 0.6s ease;
   cursor: pointer;
   text-align: center;
   background-color: transparent;
   color: rgb(240, 248, 255);
-  margin: 10px 0px 10px 0;
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
 }
 
 .simpleBtn h4 {
-  padding: 10px 20px;
+  padding: 10px 15px;
   text-align: center;
   white-space: nowrap;
 }
@@ -360,7 +366,9 @@
 .simpleBtnDark {
   border: 2px solid rgb(240, 248, 255);
   color: rgb(240, 248, 255);
-  font-weight: 700;
+  font-weight: 500;
+  margin: 5px 15px;
+
 }
 
 .simpleLightBtn {

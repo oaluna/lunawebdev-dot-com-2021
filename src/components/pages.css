@@ -353,7 +353,7 @@ flex-direction: column;
   background-color: rgba(176, 176, 176, 0.25);
 }
 
-@media screen only and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .onlinePresenceSection {
     display: flex;
     position: relative !important;

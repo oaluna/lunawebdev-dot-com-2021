@@ -68,22 +68,23 @@ export default class ProjectPage extends Component {
                     fillColor="rgba('0, 0, 0, 1)"
                   />
                 </span>
-                <h4>Go Back</h4>
+                <h3>GO BACK</h3>
+                <br />
               </button>
               <Link to={'/Contact'}>
                 <button
                   className='simpleBtn simpleBtnDark'
-                  style={{ width: '15vw', padding: '10px' }}>
+                  style={{ width: '100%', padding: '10px' }}>
                   CONTACT
                 </button>
               </Link>
                 <Link to={projectsData[this.state.currentProject].url}>
-              <button className="simpleBtn simpleBtnDark" style={{width:'15vw', padding: '10px'}}>
+              <button className="simpleBtn simpleBtnDark" style={{width:'100%', padding: '10px'}}>
                   DEMO
               </button>
                 </Link>
                 <Link to={projectsData[this.state.currentProject].repo}>
-              <button className="simpleBtn simpleBtnDark" style={{width:'15vw', padding: '10px'}}>
+              <button className="simpleBtn simpleBtnDark" style={{width:'100%', padding: '10px'}}>
                   REPO
               </button>
                 </Link>
