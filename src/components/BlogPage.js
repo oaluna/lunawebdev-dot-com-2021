@@ -98,12 +98,14 @@ function BlogCard(props) {
   return (
     <>
       <CardPost>
-      <div
+      <img src={props.image}
+      alt="post image"
           className='card-post__image'
           style={{
-            backgroundImage: props.imageCard,
-            backgroundSize: 'cover',
-            maxWidth: '100vw'
+            // backgroundImage: props.thumbnail,
+            // backgroundSize: 'cover',
+            maxWidth: '100vw',
+            height: '125px'
           }}
         />
         <div className='Card'>
@@ -214,6 +216,7 @@ function BlogPage() {
     padding: 25px 15px;
     margin: 15px;
     height: 100%;
+    max-width: 30vw;
     overflow: hidden;
     border-radius: 15px;
     box-sizing: border-box;
