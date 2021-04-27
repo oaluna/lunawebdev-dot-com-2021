@@ -31,7 +31,7 @@ export default function Twitter() {
               <TwitterTimelineEmbed
                 sourceType='profile'
                 screenName={twitterDetails.userName}
-                options={{ height: 400, width: { widthScreen } }}
+                options={{ height: 360, width: '100vw' }}
                 placeholder={renderLoader()}
                 autoHeight={false}
                 borderColor='#fff'
@@ -59,18 +59,19 @@ const CenterContent = styled.div`
 
 const TwitterMainDiv = styled.div`
   position: relative;
-  max-width: 350px;
-  height: 400px;
+  max-width: 750px;
+  height: 360px;
   padding: 1.5rem;
+  margin-left: 0vw;
 `;
 
 const TwitterContainer = styled.div`
-  height: 400px;
-  padding: 1.5rem;
+  height: 360px;
+  padding: 1rem;
   margin-top: 0vh;
 `;
 
 const TimelineHeaderTitle = styled.div`
-  font-size: 56px;
-  font-weight: 100 !important;
+  font-size: 24px;
+  font-weight:300 !important;
 `;

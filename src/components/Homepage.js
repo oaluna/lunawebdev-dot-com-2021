@@ -27,7 +27,7 @@ export default class Homepage extends Component {
               {' '}
               <br />
               The optimal solution for your web development
-              <span style={{ fontWeight: 900 }}> needs</span>{' '}
+            needs.
             </h1>
             <br />
             <br />
@@ -36,7 +36,7 @@ export default class Homepage extends Component {
               style={{
                 fontSize: '24px',
                 fontWeight: 100,
-                textAlign: 'center'
+                textAlign: 'left'
               }}>
               {' '}
               Web development services, maintenance and web application
@@ -86,7 +86,7 @@ export default class Homepage extends Component {
             <br />
           </div>
 
-          <div className='socialManagement' style={{ top: '12vh' }}>
+          <div className='socialManagement' style={{ top: '5vh', left: '25vw' }}>
             <div className='socialManagementContent'>
             <div className='iconBox instaBox'>
                     {' '}

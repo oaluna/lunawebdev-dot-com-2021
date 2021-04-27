@@ -1057,7 +1057,12 @@
 .socialHeaderTitle {
   z-index: 30;
   position: absolute;
-  top: 100px;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  max-width: 75vw;
+  left: 5vw;
+  text-align: left;
 }
 
 @media only screen and (max-width: 450px) {
@@ -1075,8 +1080,13 @@
 }
 
 .socialHeaderTitle h1 {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  text-align: left;
  color: rgb(240, 248, 255);
+ font-size: 48px;
+ max-width: 65vw;
 }
 
 .socialHeaderTitle h6 {
