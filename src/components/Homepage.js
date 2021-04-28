@@ -73,13 +73,13 @@ export default class Homepage extends Component {
               </div>
             </div>
           </div>
-          <div className='socialHeaderCallToAction' style={{ top: '85vh' }}>
+          <div className='socialHeaderCallToAction' style={{ maxWidth: '100vw', width: '100%', top: '85vh' }}>
             <Link to={'/Contact'}>
-              <button className='simpleBtn simpleBtnDark'>
-                <h4>Get Started</h4>
+              <button className='simpleBtn simpleBtnDark' style={{ position: 'absolute', top: '-20vh', left: '5vw', width: '200px', padding: '15px 10px'}}>
+                <h3>Get Started</h3>
               </button>
             </Link>
-            <Link to={'/Contact'}>
+            <Link to={'/Contact'} style={{position: 'absolute', left: '5vw', top: '-27vh'}}>
               <p> Schedule a FREE Virtual Consultation</p>
             </Link>
             <br />

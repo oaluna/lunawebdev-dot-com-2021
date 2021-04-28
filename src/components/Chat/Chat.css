@@ -91,7 +91,7 @@
   font-size: 2rem !important;
   color: #135;
   padding: 12.5px;
-  font-weight: 100;
+  font-weight: 300;
 }
 .chat {
   background:  rgba(189,202,251,.11);}
@@ -166,13 +166,13 @@
   color: #135;
   background: rgba(189, 202, 251, 1);
   font-size: 2rem !important;
-  font-weight: 100;
+  font-weight: 300;
 }
 .react-chatbot-kit-user-chat-message {
   background-color: #135;
   color: rgba(189, 202, 251, 1);
   font-size: 2rem !important;
-  font-weight: 100;
+  font-weight: 300;
 }
 .react-chatbot-kit-user-chat-message > .react-chatbot-kit-user-chat-message-arrow {
   fill: #135;
