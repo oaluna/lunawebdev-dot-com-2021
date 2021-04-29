@@ -24,15 +24,16 @@
   transition: 0.5s ease-in;
 }
 .chat-chatbot-button-label {
-  width: 10vw;
+  width: 5vw;
   position: absolute;
   font-size: 1.8rem;
   line-height: 1;
   color: #f0f8ff;
   top: 62vh;
-  left: 88vw;
+  left: 92vw;
   text-align: center;
   opacity: 1;
+  z-index: 10000;
 }
 .chat-chatbot-button-label:hover {
   transition: 0.5s ease-in;
@@ -42,8 +43,9 @@
     left: 80vw;
   }
   .chat-chatbot-button-label {
-    left: 80vw;
-    width: 20vw;
+    margin-left: 85vw;
+    max-width: 5vw;
+    text-align: center;
   }
 }
 .react-chatbot-kit-chat-inner-container {
@@ -63,6 +65,10 @@
 @media only screen and (max-width: 900px) {
   .chat-chatbot-container
   {left: 0vw;
+}
+.chat-chatbot-button-label {
+  max-width: 50px !important;
+  width: 100%;
 }
 @media only screen and (max-height: 400px) {
   .chat-chatbot-container {

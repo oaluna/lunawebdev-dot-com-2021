@@ -52,11 +52,11 @@ function Chat() {
           onMouseLeave={mouseLeave}>
           <FontAwesomeIcon icon={faRobot} /></button>
         <br />
-        {showButtonLabel && (
+        {!showChatBot ? (
           <p className='chat-chatbot-button-label'>
-            Click here to speak to my assistant
+            Click here to speak with an assistant
           </p>
-        )}
+        ) : <p className="chat-chatbot-button-label">Click here to close the chat</p>}
       </header>
     </div>
   );

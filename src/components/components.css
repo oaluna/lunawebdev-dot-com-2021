@@ -353,6 +353,7 @@
   margin: 10px 5px 10px 5px;
 }
 
+
 .simpleBtn h4 {
   padding: 10px 15px;
   text-align: center;
@@ -399,6 +400,16 @@
   background-color: rgba(256, 256, 256, 1);
   color: #113355;
   border-color: rgb(240, 248, 255);
+}
+@media only screen and (max-width: 900px) {
+  .simpleBtn .simpleBtnDark {
+    top: 50vh;
+    left: 50vw;
+    right: auto;
+    width: 100%;
+    max-width: 100vw;
+    align-items: center;
+  }
 }
 
 /*Circle Button component */

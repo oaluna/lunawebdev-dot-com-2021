@@ -1067,7 +1067,12 @@
 
 @media only screen and (max-width: 450px) {
   .socialHeaderTitle {
+    margin-top: -10vh;
     max-width: 300px;
+    text-align: center;
+  }
+  .socialHeaderTitle h4 {
+    margin-top: -10vh;
   }
 
   .socialHeader {
@@ -1075,7 +1080,8 @@
   }
 
   .socialHeaderCallToAction {
-    bottom: 120px !important;
+    margin-top: -10vh;
+    text-align: left;
   }
 }
 
@@ -1117,6 +1123,12 @@
   z-index: 20;
   filter: drop-shadow(-36px 36px 12px rgba(255, 255, 255, 0.1));
   margin-left: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .socialHeader .socialManagement {
+    margin-left: 5vw;
+    margin-top: 0vh;
+  }
 }
 
 .socialHeader .iconBox svg {
