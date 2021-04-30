@@ -50,7 +50,7 @@
 }
 .react-chatbot-kit-chat-inner-container {
   background: rgba(189, 202, 251, 0) !important;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .chat-chatbot-container {
   position: fixed;
@@ -59,7 +59,7 @@
   width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
-  border-radius: 10px;
+  border-radius: 15px;
   z-index: 1000;
 }
 @media only screen and (max-width: 900px) {
@@ -102,7 +102,7 @@
 .chat {
   background:  rgba(189,202,251,.11);}
 .react-chatbot-kit-chat-message-container {
-  border: 1px solid rgba(189,202,251,.33);
+  border: 1px solid rgba(189,202,251,0.11);
   background-color: rgba(189, 202, 251, 0.21) !important;
   box-shadow: 0 8px 32px 0 rgba(189, 202, 251, 0.37);
   backdrop-filter: blur(7.5px);
@@ -118,7 +118,7 @@
   box-shadow: 0 8px 32px 0 rgba(189, 202, 251, 0.37);
   backdrop-filter: blur(7.5px);
   -webkit-backdrop-filter: blur(7.5px);
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(196, 90, 90, 0.18);
 }
 .heading {
@@ -149,7 +149,7 @@
   box-shadow: 0 8px 32px 0 rgba(189, 202, 251, 0.37);
   backdrop-filter: blur(7.5px);
   -webkit-backdrop-filter: blur(7.5px);
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   overflow-y: scroll;
 }

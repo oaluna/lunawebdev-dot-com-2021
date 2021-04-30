@@ -7,7 +7,7 @@
   flex-direction: column;
   text-align: center;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
   color: #113355;
 }
 
@@ -22,7 +22,7 @@
   border-radius: 25px;
   box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 500;
 
 }
 .link-list-item:hover {

@@ -14,10 +14,13 @@ class MessageParser {
       lowerCaseMessage.includes('hey there') ||
       lowerCaseMessage.includes('hi there') ||
       lowerCaseMessage.includes("what's up") ||
-      lowerCaseMessage.includes('sup')
-    ) {
+      lowerCaseMessage.includes('sup')) {
       this.actionProvider.greet();
-    } else if (
+     } else if (
+      lowerCaseMessage.includes("what's new")) {
+        this.actionProvider.handleWhatsNew();
+      }
+     else if (
       lowerCaseMessage.includes('how are you') ||
       lowerCaseMessage.includes("how 's it going")
     ) {

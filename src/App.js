@@ -14,6 +14,7 @@ import HeadBar from './components/HeadBar';
 import AboutMePage from './components/AboutMePage'
 import Chat from './components/Chat/Chat'
 import BlogPage from './components/BlogPage.js'
+import ErrorPage from './components/404.js'
 import './styles.css';
 
 class App extends Component {
@@ -74,6 +75,7 @@ class App extends Component {
             <Route path='/ProjectPage/:Project' component={ProjectPage} />
             <Route path='/AboutMe' component={AboutMePage} />
 <Route path="/BlogPage" component={BlogPage} />
+<Route path="/ErrorPage" component={ErrorPage} />
           </Switch>
           <Chat />
           <Footer />

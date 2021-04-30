@@ -19,10 +19,10 @@ const config = {
   ],
   customStyles: {
     botMessageBox: {
-      backgroundColor: 'rgba(189,202,251,1) '
+      backgroundColor: 'rgba(189,152,251,1) '
     },
     chatButton: {
-      backgroundColor: 'rgba(189,202,251,1) '
+      backgroundColor: 'rgba(189,152,251,1) '
     }
   },
   widgets: [
@@ -90,6 +90,29 @@ const config = {
             text: 'Go home',
             widgetFunc: (props) => <LearningOptions {...props} />,
             id: 2
+          }
+        ]
+      }
+    },
+    {
+      widgetName: 'blogLearningOptions',
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: 'Visit the Blog Page',
+            url: '/blogPage',
+            id: 1
+          },
+          {
+            text: 'View other projects Oscar is working on',
+            url: '/projectPage',
+            id: 2
+          },
+          {
+            text: 'Get in contact with Oscar',
+            url: '/contactPage',
+            id: 3
           }
         ]
       }

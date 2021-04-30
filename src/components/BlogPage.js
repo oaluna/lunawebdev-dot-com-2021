@@ -5,7 +5,6 @@ import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import FilterBlurImg from './FilterBlurImg';
 import styled from 'styled-components';
 
-
 class Slider extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +42,7 @@ class Slider extends Component {
             Documenting my dev journey, one commit at a time.
           </BlogPageSubtitle>
         </BlogPageHeader>
-        <div className="blog__slider">
+        <div className='blog__slider'>
           {this.state.itemRows.map((row, i) => (
             <CardRow>
               {row.map((item, j) => (
@@ -98,8 +97,9 @@ function BlogCard(props) {
   return (
     <>
       <CardPost>
-      <img src={props.image}
-      alt="post image"
+        <img
+          src={props.image}
+          alt='post image'
           className='card-post__image'
           style={{
             // backgroundImage: props.thumbnail,
@@ -166,72 +166,71 @@ function BlogPage() {
   );
 }
 
-  const CardRow = styled.div`
-    position: relative;
-    margin-left: 2vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: row-wrap;
-    max-width: 90vw;
-    width: 100%;
-    padding: 25px 15px;
-    margin: 15px;
-    justify-content: center;
-    @media (max-width: 900px) {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  `;
+const CardRow = styled.div`
+  position: relative;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row-wrap;
+  max-width: 90vw;
+  width: 100%;
+  padding: 25px 15px;
+  margin: 15px;
+  justify-content: center;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+`;
 
-  const BlogPageHeader = styled.div`
-    position: relative;
-    background-blend-mode: normal;
-    opacity: 1;
-    backdrop-filter: normal;
-  `;
-  const BlogPageTitle = styled.h1`
-    margin-top: 20vh;
-    text-align: center;
-    backdrop-filter: none;
-    z-index: 1000;
-    opacity: 1;
-    color: #fff;
-    margin-bottom: 0;
-  `;
-  const BlogPageSubtitle = styled.h2`
-    text-align: center;
-    backdrop-filter: none;
-    z-index: 1000;
-    font-weight: 300;
-  `;
-  const BlogCardContainer = styled.div`
-    margin: 0;
-    padding: 5;
-    @media only screen and (max-width: 900px) {
-      width: 100%;
-    }
-  `;
-  const CardPost = styled.div`
-    position: relative;
-    padding: 25px 15px;
-    margin: 15px;
-    height: 100%;
-    max-width: 30vw;
-    overflow: hidden;
-    border-radius: 15px;
-    box-sizing: border-box;
-    transition: all 0.6s ease;
-    box-shadow: none !important;
-    background: rgba(189, 202, 251, 0.11);
-    border: 1px solid rgba(189, 202, 251, 0.33);
-    backdrop-filter: blur(12px);
-  `;
+const BlogPageHeader = styled.div`
+  position: relative;
+  background-blend-mode: normal;
+  opacity: 1;
+  backdrop-filter: normal;
+`;
+const BlogPageTitle = styled.h1`
+  margin-top: 20vh;
+  text-align: center;
+  backdrop-filter: none;
+  z-index: 1000;
+  opacity: 1;
+  color: #fff;
+  margin-bottom: 0;
+`;
+const BlogPageSubtitle = styled.h2`
+  text-align: center;
+  backdrop-filter: none;
+  z-index: 1000;
+  font-weight: 300;
+`;
+const BlogCardContainer = styled.div`
+  margin: 0;
+  padding: 5;
+`;
+const CardPost = styled.div`
+  position: relative;
+  padding: 25px 15px;
+  margin: 15px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+  box-shadow: none !important;
+  background: rgba(189, 202, 251, 0.11);
+  border: 1px solid rgba(189, 202, 251, 0.11);
+  backdrop-filter: blur(12px);
+  @media only screen and (max-width: 900px) {
+    width: 80vw;
+  }
+`;
 
-  const CardText = styled.div`
-    margin-bottom: 0;
-    padding: 3 auto;
-    display: flex;
-    align-items: flex-end;
-  `;
+const CardText = styled.div`
+  margin-bottom: 0;
+  padding: 3 auto;
+  display: flex;
+  align-items: flex-end;
+`;
 
-  export default BlogPage
+export default BlogPage;

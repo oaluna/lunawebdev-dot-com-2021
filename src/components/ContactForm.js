@@ -81,8 +81,8 @@ export default function ContactForm() {
               <h4> Send </h4>
             </button>
           </form>
-          <h5>or contact me directly at:</h5>
-          <br /> <h4>oscar@oscarluna.dev</h4>
+          <p>or contact me directly at:</p>
+          <br /> <h2>oscar@oscarluna.dev</h2>
         </div>
       </div>
       <div

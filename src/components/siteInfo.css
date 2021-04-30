@@ -13,7 +13,7 @@
 
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189, 202, 251, 0.33);
+  border: 1px solid rgba(189,202,251,0.11);
   backdrop-filter: blur(12px);
   align-items: flex-start;
 }
@@ -177,7 +177,7 @@ border-radius: 0;
 
   .fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
     width: 100%;
-    max-width: 90vw;
+    max-width: 100vw;
         display: flex;
         flex-direction: column;
         margin-left: 5vw;

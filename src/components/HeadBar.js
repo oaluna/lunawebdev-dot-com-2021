@@ -35,7 +35,7 @@ import { Link } from 'react-router-dom';
 //     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 //     backdrop-filter: blur(7.5px);
 //     -webkit-backdrop-filter: blur(7.5px);
-//     border-radius: 10px;
+//     border-radius: 15px;
 //     border: 1px solid rgba(255, 255, 255, 0.18);
 //   }
 // `;
@@ -155,22 +155,34 @@ export default function HeadBar(props) {
       <div className='headBarMenu'>
         <div className='headBarMenuItems'>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/'}><h3>Home</h3></Link>
+            <Link to={'/'}>
+              <h3>Home</h3>
+            </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Projects'}><h3>Case History</h3></Link>
+            <Link to={'/Projects'}>
+              <h3>Case History</h3>
+            </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Services'}><h3>Services</h3></Link>
+            <Link to={'/Services'}>
+              <h3>Services</h3>
+            </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/BlogPage'}><h3>Blog</h3></Link>
+            <Link to={'/BlogPage'}>
+              <h3>Blog</h3>
+            </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Contact'}><h3>Contact</h3></Link>
+            <Link to={'/Contact'}>
+              <h3>Contact</h3>
+            </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/AboutMe'}><h3>About</h3></Link>
+            <Link to={'/AboutMe'}>
+              <h3>About</h3>
+            </Link>
           </h2>
         </div>
         <div className='socialBox'>

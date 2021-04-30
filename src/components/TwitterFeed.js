@@ -5,8 +5,8 @@ import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import StyleContext from '../utils/contexts/StyleContext';
 
 const twitterDetails = {
-  userName: 'LunaWebDev', //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: 'LunaWebDev',
+  display: true
 };
 
 const renderLoader = () => <Loading />;
@@ -63,6 +63,9 @@ const TwitterMainDiv = styled.div`
   height: 360px;
   padding: 1.5rem;
   margin-left: 0vw;
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const TwitterContainer = styled.div`
