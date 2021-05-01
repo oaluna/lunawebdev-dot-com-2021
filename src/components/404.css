@@ -1,0 +1,42 @@
+.text-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.buttons {
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid #efefef;
+  padding: .5em;
+  border-radius: 50px;
+  float: left;
+  margin: 5vh -5vw;
+  left: 50%;
+  position: relative;
+  transition: all .3s linear;
+}
+
+.buttons:hover {
+  background-color: #fefefe;
+
+color: #0e2a5c;
+}
+
+.subtitle {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 100;
+  margin-top: 10vh;
+}
+
+.title {
+  margin-top:20vh;
+  margin-left:0vw;
+  text-align: center;
+  font-size: 200px;
+  font-weight: 700;
+  text-shadow: #000 1px 1px, #001 2px 2px, #000002 3px 3px, #000003 4px 4px, #000004 5px 5px, #000004 6px 6px, #000004 7px 7px, #000005 8px 8px, #000005 9px 9px, #000006 10px 10px, #000006 11px 11px, #000007 12px 12px, #000007 13px 13px, #000007 14px 14px, #000007 15px 15px;
+}

@@ -1,33 +1,25 @@
-import styled, { keyframes } from 'styled-components';
+import './404.css';
 
-const FadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+const ErrorPage = () => {
+  return (
+    <div className='text-wrapper'>
+      <h1 className='title' data-content='404'>
+        404
+      </h1>
 
-const ErrorHeader = styled.h1`
-  display: flex;
-  margin-top: 20vh;
-  margin-left: 40vw;
-  text-align: center;
-  width: 100%;
-  font-size: 350px;
-  color: white;
-  z-index: 1000;
-  animation: 3s ${FadeIn} ease-in;
-`;
+      <p
+        className='subtitle'
+        data-content="Oops, the page you're looking for doesn't exist">
+        Oops, the page you're looking for doesn't exist.
+      </p>
 
-const ErrorPage = () => (
-  <section className='wrapper'>
-    <ErrorHeader>404</ErrorHeader>
-    <h2>Oh no! A thing happened.</h2>
-    <hr />
-    <p>Content not found. Go back?</p>
-    <button>Go back</button>
-  </section>
-);
+      <div className='buttons'>
+        <a className='button' href='/'>
+          Go to homepage
+        </a>
+      </div>
+    </div>
+  );
+};
+
 export default ErrorPage;
