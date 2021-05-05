@@ -79,9 +79,9 @@ export default class Homepage extends Component {
                 <h3>Get Started</h3>
               </button>
             </Link>
-            <Link to={'/Contact'} style={{position: 'absolute', left: '5vw', top: '-27vh'}}>
-              <p> Schedule a FREE Virtual Consultation</p>
-            </Link>
+
+              <p className="socialHeaderCallToActionHeader"> Schedule a FREE Virtual Consultation</p>
+            
             <br />
             <br />
           </div>

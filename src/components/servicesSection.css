@@ -1065,23 +1065,40 @@
   text-align: left;
 }
 
+
+
 @media only screen and (max-width: 450px) {
   .socialHeaderTitle {
-    margin-top: -10vh;
-    max-width: 300px;
-    text-align: center;
+    margin-top: -7vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    width: 100%;
   }
-  .socialHeaderTitle h4 {
-    margin-top: -10vh;
+  .socialHeaderTitle h1 {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center !important;
   }
 
   .socialHeader {
     height: 90vh;
   }
 
+}
+@media only screen and (max-width: 900px) and (max-height: 400px) {
+  .socialHeaderTitle {
+    margin-top: -20vh;
+  }
   .socialHeaderCallToAction {
     margin-top: -10vh;
     text-align: left;
+  }
+  .socialHeaderCallToAction button {
+    margin-left: -1vw;
   }
 }
 
@@ -1092,13 +1109,8 @@
   text-align: left;
  color: rgb(240, 248, 255);
  font-size: 48px;
+ line-height: 1;
  max-width: 65vw;
-}
-
-.socialHeaderTitle h6 {
-  margin-top: 15px;
-  text-align: center;
- color: rgb(240, 248, 255);
 }
 
 .socialHeaderCallToAction {
@@ -1109,6 +1121,12 @@
   align-items: center;
   justify-content: center;
   bottom: 150px;
+}
+
+.socialHeaderCallToActionHeader{
+  position: absolute;
+  left: 5vw;
+  top: -28vh;
 }
 
 .socialHeaderGradient {
@@ -1126,13 +1144,40 @@
 }
 @media only screen and (max-width: 900px) {
   .socialHeader .socialManagement {
-    margin-left: 5vw;
-    margin-top: 0vh;
+    margin-left: -40vw;
+    margin-top: 20vh;
   }
+  .socialHeaderCallToAction {
+    width: 100%;
+    margin-top: 15vh;
+    text-align: center;
+    justify-content: center;
 }
+.socialHeaderCallToActionHeader {
+  width: 100%;
+  text-align: center;
+}
+.socialHeaderCallToAction button {
+  text-align: center;
 
+  margin-left: 22vw;
+  margin-right: auto;
+}
+}
 .socialHeader .iconBox svg {
   opacity: 0.7;
+}
+@media only screen and (max-height: 380px) {
+  .socialHeader .socialManagement {
+    margin-top: -15vh;
+    margin-left: 20vw;
+  }
+  .socialHeaderCallToActionHeader {
+    display: none;
+  }
+  .socialHeaderCallToAction button {
+    margin-left: auto;
+  }
 }
 
 .socialHeader .instaBox {
