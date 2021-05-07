@@ -595,12 +595,6 @@ function getIcon(props) {
         </svg>
       );
 
-  
-
-
-
-
-
     case 'sittingGirlWithBook':
       return (
         <svg

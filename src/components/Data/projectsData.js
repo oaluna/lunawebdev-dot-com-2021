@@ -3,9 +3,11 @@ const projectsData = [
     id: 1,
     category: 'Landing Site',
     brightness: 'light',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
-    logoImg: '../../assets/oscarArmandoLunaLogo.svg',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
+    logoImg: '../../assets/Logo1.svg',
     title: 'Landing Demo 1',
     url: 'https://lunawebdev.com',
     repo: 'https://github.com/oaluna/lunawebdevdotcom',
@@ -27,10 +29,12 @@ const projectsData = [
   {
     id: 2,
     category: 'Landing Site',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617824535/oscarlunadotdev/lunaDevBlog.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617824535/oscarlunadotdev/lunaDevBlog.png',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617824535/oscarlunadotdev/lunaDevBlog.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617824535/oscarlunadotdev/lunaDevBlog.png',
     brightness: 'light',
-    logoImg: '../../assets/oscarArmandoLunaLogo.svg',
+    logoImg: '../../assets/Logo1.svg',
     title: 'Blog Site',
     url: 'https://lunadevblog.netlify.app',
     repo: 'https://github.com/oaluna/lunadevblog',
@@ -40,8 +44,10 @@ const projectsData = [
   {
     id: 3,
     category: 'E-Commerce Site',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617818282/oscarlunadotdev/crwnClothing2021.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617818282/oscarlunadotdev/crwnClothing2021.png',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617818282/oscarlunadotdev/crwnClothing2021.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617818282/oscarlunadotdev/crwnClothing2021.png',
     logoImg: '../../assets/oscarArmandoLunaLogo.png',
     title: 'E-Commerce Demo',
     url: 'http://lws-shopping-demo.herokuapp.com/',
@@ -52,8 +58,10 @@ const projectsData = [
   {
     id: 4,
     category: 'E-Commerce Site',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617819253/oscarlunadotdev/lunasBigCommerce.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617819253/oscarlunadotdev/lunasBigCommerce.png',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617819253/oscarlunadotdev/lunasBigCommerce.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617819253/oscarlunadotdev/lunasBigCommerce.png',
     logoImg: '../../assets/oscarArmandoLunaLogo.png',
     title: 'E-Commerce Demo #2',
     url: 'https://lunas.mybigcommerce.com/',
@@ -64,8 +72,10 @@ const projectsData = [
   {
     id: 5,
     category: 'Landing Site',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
     logoImg: '../../assets/oscarArmandoLunaLogo.png',
     title: 'Globomantics - a Real Estate page demo',
     url: 'https://globomantics.vercel.app/',
@@ -76,8 +86,10 @@ const projectsData = [
   {
     id: 6,
     category: 'Landing Site',
-    imageLarge: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817985/oscarlunadotdev/lwsLandingDemo.png',
-    imageCard: 'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817985/oscarlunadotdev/lwsLandingDemo.png',
+    imageLarge:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817985/oscarlunadotdev/lwsLandingDemo.png',
+    imageCard:
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817985/oscarlunadotdev/lwsLandingDemo.png',
     logoImg: '../../assets/oscarArmandoLunaLogo.png',
     title: 'Landing Demo #2',
     url: 'https://lws-landing-demo.vercel.app',
