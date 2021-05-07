@@ -7,7 +7,7 @@ const projectsData = [
       'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
     imageCard:
       'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817507/oscarlunadotdev/lunaWebDevDotCom.png',
-    logoImg: '../../assets/Logo1.svg',
+    logoImg: '../../assets/oscarArmandoLunaLogo.svg',
     title: 'Landing Demo 1',
     url: 'https://lunawebdev.com',
     repo: 'https://github.com/oaluna/lunawebdevdotcom',
@@ -34,7 +34,7 @@ const projectsData = [
     imageCard:
       'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617824535/oscarlunadotdev/lunaDevBlog.png',
     brightness: 'light',
-    logoImg: '../../assets/Logo1.svg',
+    logoImg: '../../assets/oscarArmandoLunaLogo.svg',
     title: 'Blog Site',
     url: 'https://lunadevblog.netlify.app',
     repo: 'https://github.com/oaluna/lunadevblog',
