@@ -1,9 +1,66 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import styled from 'styled-components'
 import projectsData from './Data/projectsData.js';
 import SvgIcons from './SvgIcons.js';
 import './components.css';
+
+const VideoSectionRight = styled.div`
+  margin-top: 10vh;
+`
+const SiteInfo = styled.div`
+  filter: brightness(0.8);
+  @media only screen and (max-width: 600px) {
+    margin: 0 10vw 0 0;
+    width: 100vw;
+    border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    max-width: 100vw;
+  }
+`
+const SiteTitle = styled.div`
+  width: 100vw;
+`
+const SiteButtons = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align:left;
+  max-width: 100%;
+  right: 10vw;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0vh 10vw 0vh 0vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+   button {
+    max-width: 70%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+      margin: 2vh 10vw;
+    }
+  }
+`
+const BackButton = styled.span`
+  transform: rotate(180deg);
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px solid #f0f8ff;
+  padding: 10px 5px;
+  border-radius: 50px;
+  width: 100px;
+  h3 {
+    width: 150px;
+    padding: 0px auto;
+  }
+
+`
 
 
 export default class ProjectPage extends Component {
@@ -39,37 +96,30 @@ export default class ProjectPage extends Component {
               'url(' + projectsData[this.state.currentProject].imageLarge + ')'
           }}></div>
 
-        <div className='videoSectionRight' style={{ marginTop: '10vh' }}>
-          <div
-            className='siteInfo' style={{filter: 'brightness(0.8)'}}
-            >
-            <div className='siteTitle' style={{width: '100vw'}}>
+        <VideoSectionRight className="videoSectionRight">
+          <SiteInfo className="siteInfo">
+            <SiteTitle className="siteTitle">
               <h5> {projectsData[this.state.currentProject].category} </h5>
               <h2>{projectsData[this.state.currentProject].title}</h2>
-            </div>
+            </SiteTitle>
             <div className='siteText'>
               <p>
                 {projectsData[this.state.currentProject].text}
               </p>
             </div>
-            <div className='siteButtons' style={{display: 'flex', flexDirection: 'column'}}>
+            <SiteButtons className="siteButtons">
               <button
                 onClick={() => this.props.history.goBack()}
                 className='circleBtn circleBtnDark'>
-                <span
-                  style={{
-                    transform: 'rotate(' + 180 + 'deg)',
-                    marginRight: '10px'
-                  }}>
+                <BackButton>
                   <SvgIcons
-                    style={{ boxShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                     dimension='15px'
                     iconName='arrowRight'
-                    fillColor="rgba('0, 0, 0, 1)"
+                    fillColor="#f0f8ff"
                   />
-                </span>
-                <h3>GO BACK</h3>
+                <h3 style={{transform: 'rotate(180deg)'}}>GO BACK</h3>
                 <br />
+                </BackButton>
               </button>
               <Link to={'/Contact'}>
                 <button
@@ -88,9 +138,9 @@ export default class ProjectPage extends Component {
                   REPO
               </button>
                 </Link>
-            </div>
-          </div>
-        </div>
+            </SiteButtons>
+          </SiteInfo>
+        </VideoSectionRight>
       </div>
     );
   }

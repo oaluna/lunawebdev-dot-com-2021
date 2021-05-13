@@ -81,7 +81,7 @@ export default class Homepage extends Component {
             </Link>
 
               <p className="socialHeaderCallToActionHeader"> Schedule a FREE Virtual Consultation</p>
-            
+
             <br />
             <br />
           </div>
@@ -143,6 +143,7 @@ export default class Homepage extends Component {
             <h5 style={{ padding: '15px', textAlign: 'center' }}>
               Previous projects I have created, as well as links to their demos
               and repositories.
+              <br />
               <br />
               <strong>
                 Using a mobile device? Swipe to see more previews.

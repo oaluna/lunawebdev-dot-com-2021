@@ -18,7 +18,7 @@ export default function Footer() {
       <div className='footerContent'>
         <div className='footerFirstRow'>
           <Link to={'/'} className='footerLogo'>
-            <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' />
+            <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' className="oscarArmandoLunaLogo" />
           </Link>
           <div className='socialBox'>
             <a

@@ -135,7 +135,7 @@
     translateZ(0px);
 }
 
-@media only screen and (max-width: 900px) and (min-height: 600px),
+@media only screen and (min-width: 300px) and (max-width: 900px) and (min-height: 600px),
   (orientation: portrait) {
   .servicesContainer {
     grid-template-rows: 1fr 1fr 1fr;
@@ -1069,7 +1069,7 @@
 
 @media only screen and (max-width: 450px) {
   .socialHeaderTitle {
-    margin-top: -7vh;
+    margin-top: 0vh;
     margin-left: auto;
     margin-right: auto;
     max-width: 350px;
@@ -1078,9 +1078,8 @@
   .socialHeaderTitle h1 {
     max-width: 100%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+    margin-left: 2%;
+    margin-top: -20vh;
     text-align: center !important;
   }
 
@@ -1088,17 +1087,19 @@
     height: 90vh;
   }
 
+
 }
-@media only screen and (max-width: 900px) and (max-height: 400px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) and (max-height: 400px) {
   .socialHeaderTitle {
     margin-top: -20vh;
   }
   .socialHeaderCallToAction {
     margin-top: -10vh;
-    text-align: left;
+    margin-left: -7vw;
+    max-width: 100vw;
   }
   .socialHeaderCallToAction button {
-    margin-left: -1vw;
+    margin-left: -7vw;
   }
 }
 
@@ -1142,25 +1143,26 @@
   filter: drop-shadow(-36px 36px 12px rgba(255, 255, 255, 0.1));
   margin-left: 10px;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .socialHeader .socialManagement {
     margin-left: -40vw;
     margin-top: 20vh;
   }
   .socialHeaderCallToAction {
-    width: 100%;
-    margin-top: 15vh;
+    width: 100vw;
+    margin-top: 25vh;
     text-align: center;
     justify-content: center;
 }
 .socialHeaderCallToActionHeader {
   width: 100%;
   text-align: center;
+  margin-left: -3vw;
 }
 .socialHeaderCallToAction button {
   text-align: center;
-
-  margin-left: 22vw;
+margin-top: -2vh;
+  margin-left: 15vw;
   margin-right: auto;
 }
 }
@@ -1249,7 +1251,7 @@
  color: rgb(240, 248, 255);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .socialPostFull {
     box-sizing: border-box;
     padding: 0 0 20px 0;
@@ -1338,7 +1340,7 @@ border: 1px solid rgba(189,202,251,0.11);
   padding-bottom: 15px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .serviceDetailsGrid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);

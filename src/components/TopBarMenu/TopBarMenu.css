@@ -44,6 +44,8 @@
   width: 200px;
 }
 
+
+
 .logoWrapper img {
   width: 60px;
   height: 60px;
@@ -148,7 +150,7 @@ background-color: slateblue;
 
 /*--- Mobile Style for Top Bar Component ---*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .topBarContainer {
     z-index: 500;
     position: absolute;
@@ -265,6 +267,7 @@ background-color: slateblue;
     flex-direction: column;
     align-items: center;
     align-content: center;
+
   }
 
   .menuItems p {

@@ -38,7 +38,7 @@
 .chat-chatbot-button-label:hover {
   transition: 0.5s ease-in;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .chat-chatbot-button {
     left: 80vw;
   }
@@ -62,21 +62,21 @@
   border-radius: 15px;
   z-index: 1000;
 }
-@media only screen and (max-width: 900px) {
-  .chat-chatbot-container
-  {left: 0vw;
-}
-.chat-chatbot-button-label {
-  max-width: 50px !important;
-  width: 100%;
-}
-@media only screen and (max-height: 400px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .chat-chatbot-container {
-    left: 50vw;
-    max-height: 300px;
-    flex-shrink: 1;
+    left: 0vw;
   }
-}
+  .chat-chatbot-button-label {
+    max-width: 50px !important;
+    width: 100%;
+  }
+  @media only screen and (max-height: 400px) {
+    .chat-chatbot-container {
+      left: 50vw;
+      max-height: 300px;
+      flex-shrink: 1;
+    }
+  }
 }
 .react-chatbot-kit-chat-header {
   color: #135;
@@ -84,14 +84,15 @@
 .chatWindowHeader {
   display: flex;
   flex-direction: row;
-  background: rgba(189, 202, 251, 0.22);  font-size: 24px;
+  background: rgba(189, 202, 251, 0.22);
+  font-size: 24px;
   color: #135;
 }
 .react-chatbot-kit-chat-header {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background-color: rgba(189, 202, 251, 1);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   font-size: 2rem !important;
@@ -100,9 +101,10 @@
   font-weight: 300;
 }
 .chat {
-  background:  rgba(189,202,251,.11);}
+  background: rgba(189, 202, 251, 0.11);
+}
 .react-chatbot-kit-chat-message-container {
-  border: 1px solid rgba(189,202,251,0.11);
+  border: 1px solid rgba(189, 202, 251, 0.11);
   background-color: rgba(189, 202, 251, 0.21) !important;
   box-shadow: 0 8px 32px 0 rgba(189, 202, 251, 0.37);
   backdrop-filter: blur(7.5px);

@@ -9,7 +9,7 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .phoneContainer {
     margin-left: 0;
     transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(-25px)

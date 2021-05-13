@@ -143,7 +143,10 @@ export default class TabView extends Component {
               <h2> What I Do </h2>
               <p>
                 {' '}
-                I develop and deploy web applications, as well as provide free web counseling for those wishing to either create a web application for their business or require new features in an existing application. {' '}
+                I develop and deploy web applications, as well as provide free
+                web counseling for those wishing to either create a web
+                application for their business or require new features in an
+                existing application.{' '}
               </p>
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
@@ -171,9 +174,9 @@ export default class TabView extends Component {
               <h2> Real-time metrics </h2>
               <p>
                 {' '}
-                I can provide data and analytics to measure campaign
-                success at each distribution touchpoint to optimize and redirect
-                efforts if necessary.{' '}
+                I can provide data and analytics to measure campaign success at
+                each distribution touchpoint to optimize and redirect efforts if
+                necessary.{' '}
               </p>
               <Link to={'/Contact'}>
                 <button className='circleBtn circleBtnDark'>
@@ -290,20 +293,19 @@ export default class TabView extends Component {
 }
 
 const TabView = styled.div`
-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   min-height: 600px;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
-
   }
-`
+`;
 const TabViewDisplayLeft = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -312,14 +314,13 @@ position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
   flex-direction: column;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-`
+`;
 const TabViewDisplayRight = styled.div`
-position: relative;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -328,43 +329,47 @@ position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
   align-items: center;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
     grid-column: 1/2;
     grid-row: 1/2;
     max-height: 200px;
   }
-`
+`;
 const TabContainer = styled.div`
-width: 100%;
+  width: 100%;
   overflow: hidden;
   transition: all 0.6s ease;
   margin: 15px 0px;
-  cursor: pointer;`
+  cursor: pointer;
+`;
 
 const TabOpen = styled.div`
-height: 300px;
-@media only screen and (max-width: 900px){
-  height: 230px;
-}`
+  height: 300px;
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
+    height: 230px;
+  }
+`;
 
 const TabClosed = styled.div`
-height: 50px;`
+  height: 50px;
+`;
 
 const TabLabel = styled.div`
- display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const TabContent = styled.div`
-& h2 {
-  padding-bottom: 15px;
-}
-& p {
-  padding-bottom: 15px;
-}`
+  & h2 {
+    padding-bottom: 15px;
+  }
+  & p {
+    padding-bottom: 15px;
+  }
+`;
 const PhoneContainer = styled.div`
-width: 200px;
+  width: 200px;
   height: 340px;
   padding: 30px;
   animation: none;
@@ -375,5 +380,4 @@ width: 200px;
   transition: all 0.4s ease;
   filter: drop-shadow(12px 12px 15px rgb(212, 221, 250, 0.33));
   margin-left: 200px;
-`
-
+`;

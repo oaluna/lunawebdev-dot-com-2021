@@ -6,12 +6,12 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .bigTitle {
     width: auto;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .siteSubtitle {
     display: none;
   }
@@ -55,7 +55,7 @@
   background-position: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .videoSection .fullScreenImage {
     background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
@@ -146,7 +146,7 @@
   align-items: flex-end;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .videoMain {
     position: absolute;
     height: 100%;
@@ -401,7 +401,7 @@
   color: #113355;
   border-color: rgb(240, 248, 255);
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .simpleBtn .simpleBtnDark {
     top: 50vh;
     left: 50vw;
@@ -423,6 +423,7 @@
   align-items: center;
   cursor: pointer;
   margin: 10px 0px 10px 0;
+  padding: auto;
   white-space: nowrap;
 }
 
@@ -444,7 +445,8 @@
   color: rgb(240, 248, 255);
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: space-evenly;
+  
 }
 
 .circleBtnLight {

@@ -16,21 +16,30 @@
 
 }
 
-@media only screen and (max-width: 900px) and (min-width: 451px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .viewCardModule {
     overflow-x: scroll;
     overflow-y: hidden;
-    width: 100vw;
+    min-width: 100vw;
+    max-height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+
   }
 
   .viewCardContent {
-    width: 160% !important;
-    padding: 2%;
+    width: 200 !important;
+    height: 95 !important;
+    margin: 0 !important;
   }
 
   .viewCard {
-    width: 25% !important;
-    margin: 0 1%;
+    max-width: 100% !important;
+    margin: 0;
+    max-height: 90%;
   }
 }
 
@@ -90,7 +99,6 @@
   z-index: 10 !important;
   position: absolute;
   mask-image: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(12,12,12,0.4) 40%, rgba(0,0,0,0) 100%);
-
 }
 
 .projectInfo {
@@ -112,7 +120,6 @@
 }
 
 .viewCardLast {
-
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
   border: 1px solid rgba(189,202,251,0.11);
@@ -175,7 +182,7 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
   color: #fff;
 }
 
-@media only screen and (max-width: 900px) and (min-width: 351px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) and (min-width: 351px) {
   .projectsCards {
     grid-template-columns: 1fr 1fr;
     color: #113355;

@@ -26,17 +26,22 @@ export default function HeadBar(props) {
           style={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'center',
+            marginLeft: '-3.5vw',
+            marginBottom: '20px'
           }}>
-          <SvgIcons
-            iconName='oscarArmandoLunaLogo'
-            style={{ position: 'absolute', marginLeft: '-15vw' }}
-          />
+          <div className="logoWrapper">
+            <SvgIcons
+              iconName='oscarArmandoLunaLogo'
+              className="OscarArmandoLunaLogo"
+              style={{ position: 'absolute', left: '-20vw' }}
+            />
+          </div>
         </Link>
         <div className='headBarButton' onClick={() => handleMenu(!isOpen)}>
           <button
             className='circleBtn circleBtnDark'
-            style={{ margin: 0, height: '35px' }}>
+            style={{ margin: '-10px 0 50px 0', height: '35px', alignItems: 'flex-start' }}>
             <span className='headBarButtonContent circleBtnIcon'>+</span>
           </button>
         </div>

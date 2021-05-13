@@ -63,7 +63,7 @@ const TwitterMainDiv = styled.div`
   height: 360px;
   padding: 1.5rem;
   margin-left: 0vw;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 300px) and (max-width: 900px) {
     display: none;
   }
 `;
@@ -76,5 +76,5 @@ const TwitterContainer = styled.div`
 
 const TimelineHeaderTitle = styled.div`
   font-size: 24px;
-  font-weight:300 !important;
+  font-weight: 300 !important;
 `;

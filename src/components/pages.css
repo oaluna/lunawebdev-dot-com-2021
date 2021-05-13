@@ -25,7 +25,7 @@ overflow-x: hidden;
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  
+
 }
 
 .contactPage {
@@ -123,8 +123,11 @@ overflow-x: hidden;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:space-evenly;
+  margin: 0vh auto 0vh 40vw;
   z-index: 200;
+  width: 100%;
+  margin-left: 0vw;
 }
 
 .socialItem {
@@ -152,7 +155,7 @@ margin-bottom: 0%;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 0px 2% 0px 2%;
+  padding: 0 2% 0 2%;
   box-sizing: border-box;
 background: rgba(255,255,255,0);
 }
@@ -177,7 +180,7 @@ background: rgba(255,255,255,0);
 
 .footerMainMenu {
   grid-column: 1/1;
-  grid-row: 1/2;
+  grid-row: 2/2;
   display: flex;
   width: 100%;
   display: flex;
@@ -188,7 +191,7 @@ background: rgba(255,255,255,0);
 
 .footerMainMenu h5 {
   font-size: 18px;
-  margin: 5px 5px;
+  margin: 5px 15px;
   cursor: pointer;
 }
 
@@ -199,6 +202,7 @@ background: rgba(255,255,255,0);
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0px 20px;
 }
 
 .footerEndMenu {
@@ -206,7 +210,7 @@ background: rgba(255,255,255,0);
 }
 
 .footerEndMenu h6 {
-  margin: 5px 10px;
+  margin: 5px 20px;
   cursor: pointer;
 }
 
@@ -272,7 +276,7 @@ background: rgba(255,255,255,0);
   margin-top: 55vh;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 300px) and (max-width: 900px){
 .aboutMePage {
   display: flex;
   flex-direction: column;
@@ -338,7 +342,7 @@ margin: 0vh auto;
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   footer {
     max-width: 100vw;
     width: 100%;
@@ -367,6 +371,7 @@ padding: 15px 0px;
     text-align: center;
     margin-bottom: 15px;
     padding: 5px;
+    transform: scale(0.8);
   }
   .footerMainMenu h5 {
     margin-top: 5vh;
@@ -482,7 +487,7 @@ flex-direction: column;
   background-color: rgba(176, 176, 176, 0.25);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .onlinePresenceSection {
     display: flex;
     position: relative !important;

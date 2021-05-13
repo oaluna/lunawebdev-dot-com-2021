@@ -131,7 +131,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .siteInfo,
   .siteInfoHomepage {
 
@@ -154,12 +154,14 @@ border-radius: 0;
   }
   .siteTitle h2 {
     text-align: center;
+    margin-top: 10
   }
   .siteText p {
     line-height: 22px;
     width: 100%;
     max-width: 75vw;
     text-align: left;
+    margin-left: 0vw;
     justify-content: flex-end;
 
   }
@@ -167,7 +169,8 @@ border-radius: 0;
   .siteButtons {
     text-align: left;
     display: flex;
-    margin: 2px;
+    margin: 2px 4px;
+    padding: 3px;
     left: 0vw;
     flex-direction: row !important;
 
@@ -177,9 +180,9 @@ border-radius: 0;
 
   .fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
     width: 100%;
-    max-width: 100vw;
+    max-width: 90vw;
         display: flex;
         flex-direction: column;
-        margin-left: 5vw;
+       margin-left: 25vw;
   }
 }
