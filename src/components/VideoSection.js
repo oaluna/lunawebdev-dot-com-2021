@@ -84,23 +84,23 @@ export default class VideoSection extends Component {
         <div className='videoSectionRight'>
           <div className='siteInfoVideoSection'>
             <div className='siteTitle'>
-              <h5 style={{ color: '#f0f8ff' }}> Live Events </h5>
+              <h1 style={{ fontWeight: 900, color: '#f0f8ff'}}> Live Events </h1>
               <br />
             </div>
             <br />
             <div className='siteText'>
-              <h1 style={{ color: '#f0f8ff', fontWeight: 100, textAlign: 'center' }}> COMING SOON</h1>
+              <h2 style={{fontWeight: 100, fontSize: '30px', lineHeight: 1.2}}> COMING SOON</h2>
             </div>
-            <div className='siteButtons'>
+            <div className='siteButtons' style={{paddingTop: 25}}>
               <Link to={'/Contact'}>
-                <button className='circleBtn circleBtnDark'>
+                <button className='circleBtn circleBtnDark' style={{marginLeft: '15px'}}>
                   <span className='circleBtnIcon'>+</span>
                   <h5 style={{ color: '#f0f8ff' }}>Find Out More</h5>
                 </button>
               </Link>
               <Link to={'/Contact'}>
                 <button className='simpleBtn simpleBtnDark'>
-                  <h4 style={{ color: '#f0f8ff' }}>Contact</h4>
+                  <h4 style={{ color: '#f0f8ff', padding:'5px 95px'}}>Contact</h4>
                 </button>
               </Link>
             </div>

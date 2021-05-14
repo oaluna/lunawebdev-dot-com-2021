@@ -27,14 +27,14 @@ export default function HeadBar(props) {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
-            marginLeft: '-3.5vw',
+    marginLeft: '10vw',
             marginBottom: '20px'
           }}>
           <div className="logoWrapper">
             <SvgIcons
               iconName='oscarArmandoLunaLogo'
               className="OscarArmandoLunaLogo"
-              style={{ position: 'absolute', left: '-20vw' }}
+
             />
           </div>
         </Link>

@@ -66,15 +66,6 @@
   color: #f0f8ff;
 }
 
-.siteButtons {
-  display: flex;
-  margin-left: 0vw;
-  text-align: center;
-  width: 80%;
-  flex-direction: column !important;
-  justify-content: space-evenly !important;
-}
-
 .siteTitle h5 {
 
   position: relative;
@@ -95,9 +86,10 @@
 
   border-radius: 50px;
 }
-.minimalButton h4 {
+.minimalButton h3 {
   padding-right: 4px;
   transition: all 0.6s ease;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -115,7 +107,8 @@
     margin-top: 15px;
   }
   .siteText {
-    padding: 25px;
+    padding: 15px;
+
   }
 }
 
@@ -131,7 +124,7 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 900px) {
+@media only screen and (min-width: 300px){
   .siteInfo,
   .siteInfoHomepage {
 
@@ -167,14 +160,10 @@ border-radius: 0;
   }
 
   .siteButtons {
-    text-align: left;
-    display: flex;
-    margin: 2px 4px;
-    padding: 3px;
-    left: 0vw;
-    flex-direction: row !important;
 
-    justify-content: space-between;
+    display: flex;
+
+    left: 0vw;
     font-weight: 900 !important;
   }
 

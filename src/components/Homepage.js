@@ -73,10 +73,10 @@ export default class Homepage extends Component {
               </div>
             </div>
           </div>
-          <div className='socialHeaderCallToAction' style={{ maxWidth: '100vw', width: '100%', top: '85vh' }}>
+          <div className='socialHeaderCallToAction'>
             <Link to={'/Contact'}>
-              <button className='simpleBtn simpleBtnDark' style={{ position: 'absolute', top: '-20vh', left: '5vw', width: '200px', padding: '15px 10px'}}>
-                <h3>Get Started</h3>
+              <button className='simpleBtn simpleBtnDark' style={{ textAlign: 'center', justifyContent: 'center', left: '0vw',width: '100%'}}>
+                <h4 style={{fontSize: '24px',fontWeight: '300', padding: '5px 75px'}}>Get Started</h4>
               </button>
             </Link>
 
@@ -185,18 +185,19 @@ export default class Homepage extends Component {
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
+
                   margin: '0px 0px 0px 5vw',
 
                 }}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h5 style={{color: '#f0f8ff', padding: '25px'}}>See Case History</h5>
+                    <h5 style={{fontSize: '20px', fontWeight: 500, color: '#f0f8ff', padding: '25px'}}>See Case History</h5>
                   </button>
                 </Link>
                 <Link to={'/Contact'}>
                   <button className='simpleBtn simpleBtnDark'>
-                    <h5 style={{padding: '15px'}}>Contact</h5>
+                    <h4 style={{padding: '8px 100px', borderRadius: '50%'}}>Contact</h4>
                   </button>
                 </Link>
               </div>
@@ -238,7 +239,7 @@ export default class Homepage extends Component {
                   managing your maintenance after deployment.{' '}
                 </p>
               </div>
-              <div className='siteButtons' >
+              <div className='siteButtons' style={{alignItems: 'flex-start'}}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
