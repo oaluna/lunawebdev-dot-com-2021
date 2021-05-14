@@ -29,7 +29,7 @@ const SiteButtons = styled.div`
   text-align:left;
   max-width: 100%;
   right: 10vw;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 600px) {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0vh 10vw 0vh 0vw;

@@ -30,7 +30,7 @@ export default function ContactForm() {
   return (
     <div className='fullSection'>
       <div className='fullSectionContent limitWidthContent'>
-        <div className='contactFormContainer'>
+        <div className='contactFormContainer' style={{borderRadius: '10px', width: '100%'}}>
           <h1>Contact</h1>
           <h5 style={{ padding: 25 }}>
             Fill out the form below to get started with a FREE 30-minute web

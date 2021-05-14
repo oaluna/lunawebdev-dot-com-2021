@@ -36,7 +36,8 @@ export default class Homepage extends Component {
               style={{
                 fontSize: '24px',
                 fontWeight: 100,
-                textAlign: 'left'
+                textAlign: 'left',
+                marginLeft: '2vw'
               }}>
               {' '}
               Web development services, maintenance and web application
@@ -154,7 +155,7 @@ export default class Homepage extends Component {
           </div>
           <div
             className='fullSectionContent limitWidthContent thirdBottom'
-            style={{ textAlign: 'center' }}>
+            style={{ textAlign: 'center'}}>
             <div className='siteInfoHomepage'>
               <div className='siteTitle expertise'>
                 <h5 style={{ fontWeight: 700 }}> Expertise </h5>
@@ -182,13 +183,7 @@ export default class Homepage extends Component {
               </div>
               <div
                 className='siteButtons'
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-
-                  margin: '0px 0px 0px 5vw',
-
-                }}>
+                >
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
@@ -224,7 +219,7 @@ export default class Homepage extends Component {
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo'>
+            <div className='siteInfo' style={{borderRadius: '10px'}}>
               <div className='siteTitle'>
                 <FontAwesomeIcon icon={faGlobe} className='icon' />
                 <h5> Full Package </h5>
