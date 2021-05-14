@@ -156,11 +156,11 @@ export default class Homepage extends Component {
           <div
             className='fullSectionContent limitWidthContent thirdBottom'
             style={{ textAlign: 'center'}}>
-            <div className='siteInfoHomepage'>
-              <div className='siteTitle expertise'>
-                <h5 style={{ fontWeight: 700 }}> Expertise </h5>
+            <div className='siteInfo'>
+              <div className='siteTitle'>
+                <h2 style={{ fontWeight: 700 }}> Expertise </h2>
                 <br />
-                <div className='siteText expertise'>
+                <div className='siteText'>
                   <p>
                     {' '}
                     I am a full-stack web developer with 2 years of experience
@@ -169,14 +169,14 @@ export default class Homepage extends Component {
                   </p>
                 </div>
               </div>
-              <div className='siteTitle promise'>
-                <h5 style={{ fontWeight: 700 }}> My Promise </h5>
+              <div className='siteTitle'>
+                <h2 style={{ fontWeight: 700 }}> My Promise </h2>
                 <br />
-                <div className='siteText promise'>
+                <div className='siteText'>
                   <p>
                     {' '}
                     I can design, build and launch your vision at scale. Whether
-                    you're a Fortune 500, a startup or even a local business - I
+                    you're a Fortune 500 company, a startup or even a mom-and-pop shop - I
                     give my clients the technical prowess they need to succeed.{' '}
                   </p>
                 </div>
@@ -219,7 +219,7 @@ export default class Homepage extends Component {
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo' style={{borderRadius: '10px'}}>
+            <div className='siteInfo'>
               <div className='siteTitle'>
                 <FontAwesomeIcon icon={faGlobe} className='icon' />
                 <h5> Full Package </h5>

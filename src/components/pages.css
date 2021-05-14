@@ -30,6 +30,7 @@ overflow-x: hidden;
 
 .contactPage {
   min-height: 600px;
+  max-width: 40vw !important;
 }
 
 .projectPage .token {
