@@ -18,7 +18,7 @@ export default class VideoSection extends Component {
   render() {
     return (
       <div className='videoSection'>
-        <div className='videoSectionLeft' style={{ color: '#f0f8ff' }}>
+        <div className='videoSectionLeft' style={{ zIndex: 10000, color: '#f0f8ff' }}>
           <div className='tokenModule'>
             <div className='token firsttoken'>
               <div className='tokenTop'>

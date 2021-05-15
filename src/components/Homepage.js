@@ -39,7 +39,17 @@ export default class Homepage extends Component {
             </h1>
             <br />
             <br />
+<<<<<<< HEAD
             <h3 className='siteSubtitle'>
+=======
+            <h3
+              className='siteSubtitle'
+              style={{
+                fontSize: '24px',
+                fontWeight: 100,
+                textAlign: 'left'
+              }}>
+>>>>>>> f33ca8779c52ee9015fd5678a192f1520635ac8b
               {' '}
               I create, deploy, and maintain web applications.
             </h3>
@@ -170,6 +180,7 @@ export default class Homepage extends Component {
 
             <ViewCards />
           </div>
+<<<<<<< HEAD
 
           <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfoHomepage'>
@@ -207,6 +218,57 @@ export default class Homepage extends Component {
                   </h4>
                 </button>
               </Link>
+=======
+          <div
+            className='fullSectionContent limitWidthContent thirdBottom'
+            style={{ textAlign: 'center'}}>
+            <div className='siteInfo'>
+              <div className='siteTitle'>
+                <h2 style={{ fontWeight: 700 }}> Expertise </h2>
+                <br />
+                <div className='siteText'>
+                  <p>
+                    {' '}
+                    I am a full-stack web developer with 2 years of experience
+                    creating web applications using JavaScript and integrated
+                    JavaScript libraries/frameworks.{' '}
+                  </p>
+                </div>
+              </div>
+              <div className='siteTitle'>
+                <h2 style={{ fontWeight: 700 }}> My Promise </h2>
+                <br />
+                <div className='siteText'>
+                  <p>
+                    {' '}
+                    I can design, build and launch your vision at scale. Whether
+                    you're a Fortune 500 company, a startup or even a mom-and-pop shop - I
+                    give my clients the technical prowess they need to succeed.{' '}
+                  </p>
+                </div>
+              </div>
+              <div
+                className='siteButtons'
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+
+                  margin: '0px 0px 0px 5vw',
+
+                }}>
+                <Link to={'/Projects'}>
+                  <button className='circleBtn circleBtnDark'>
+                    <span className='circleBtnIcon'>+</span>
+                    <h5 style={{fontSize: '20px', fontWeight: 500, color: '#f0f8ff', padding: '25px'}}>See Case History</h5>
+                  </button>
+                </Link>
+                <Link to={'/Contact'}>
+                  <button className='simpleBtn simpleBtnDark'>
+                    <h4 style={{padding: '8px 100px', borderRadius: '50%'}}>Contact</h4>
+                  </button>
+                </Link>
+              </div>
+>>>>>>> f33ca8779c52ee9015fd5678a192f1520635ac8b
             </div>
           </div>
           <div className='backSvg backRightBottom'>
