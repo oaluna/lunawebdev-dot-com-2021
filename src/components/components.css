@@ -20,7 +20,7 @@
 
 .videoSection {
   z-index: 20;
-  width: 100% !important;
+  width: 100%;
   height: 100vh;
   min-height: 600px;
   position: relative;
@@ -34,8 +34,7 @@
   position: absolute;
   z-index: 0;
   margin-left: 50vw;
-  transform: translateX(-50%) translateY(-50%) scale(1.25);
-  max-width: 100vw !important;
+  transform: translateX(-50%) translateY(-50%);
   margin-top: 50vh;
   top: 0px;
   left: 0px; /* fixed to left. Replace it by right if you want.*/
@@ -56,7 +55,7 @@
   background-position: center;
 }
 
-@media only screen and (min-width: 300px){
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   .videoSection .fullScreenImage {
     background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
@@ -134,8 +133,8 @@
   border-radius: 15px;
 
   box-shadow: none !important;
-  background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189, 202, 251, 0.11);
+  background: rgba(189, 202, 251, .11);
+  border: 1px solid rgba(189,202,251,0.11);
   backdrop-filter: blur(12px);
   align-items: flex-start;
 }
@@ -158,10 +157,11 @@
     position: absolute;
     max-width: 100vw;
     width: 100vw;
-    color: #fff !important;
+ color: #fff !important;
     top: -50vh;
 
     border-radius: 15px;
+
   }
   .videoSectionRight .siteInfo .siteInfoVideoSection {
     max-width: 100vw;
@@ -176,11 +176,13 @@
     color: #fff !important;
   }
   .videoSectionRight .siteButtons {
-    max-width: 100vw;
-    align-items: flex-start;
-    text-align: left;
-    margin-left: -20vw;
-    padding: 0;
+max-width: 100vw;
+align-items: flex-start;
+text-align: left;
+margin-left: -20vw;
+padding: 0;
+
+
   }
   .lottie-player-container {
     margin-top: -50vh;
@@ -201,10 +203,10 @@
   .siteInfoVideoSection {
     margin-left: 0vw;
     margin-top: 0vh;
-    width: 120%;
+    width:120%;
     height: 350px;
     padding: 0px 100px;
-  }
+    }
 
   .siteInfoVideoSection > .siteText {
     text-align: left;
@@ -221,9 +223,9 @@
     flex-direction: column;
     margin-top: 55px;
     margin-left: -7vw;
-    padding: 25px 25px;
+padding: 25px 25px;
     align-items: flex-start;
-    width: 100%;
+   width: 100%;
   }
 }
 
@@ -235,20 +237,20 @@
   .videoOverlay {
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0) 35%,
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.2) 100%
+      rgba(0,0,0, 0.2) 0%,
+      rgba(0,0,0, 0) 35%,
+      rgba(0,0,0, 0.1) 50%,
+      rgba(0,0,0, 0.2) 100%
     );
   }
 
   .projectOverlay {
     background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.21) 1%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0) 70%,
-      rgba(0, 0, 0, 0) 100%
+      rgba(0,0,0, .21) 1%,
+      rgba(0,0,0, 0.5) 50%,
+      rgba(0,0,0, 0) 70%,
+      rgba(0,0,0, 0) 100%
     );
   }
 
@@ -267,37 +269,16 @@
     background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
     background-position: center;
+
   }
   .siteInfoVideoSection {
-    margin-left: -20vw !important;
+margin-left: -20vw !important;
     margin-top: -20vh;
   }
-  .siteInfoVideoSection .siteText p {
+  .siteInfoVideoSection .siteText p{
     margin-top: -50vh;
-    font-weight: 100;
+font-weight: 100;
     z-index: 1400;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .videoSectionLeft {
-    max-width: 100vw;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .siteInfoVideoSection {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    margin-left: 0vw;
-    padding: 10px;
-  }
-  .siteInfoVideoSection .siteButtons {
-    align-items: flex-start;
-
-    margin-left: 12vw;
-    padding: 5px;
   }
 }
 
@@ -335,7 +316,7 @@
   border-left: 1px solid #0e0e0e;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 450px) {
   .tokenModule {
     bottom: 0px;
   }
@@ -373,6 +354,7 @@
 /* Simple  Button component */
 
 .simpleBtn {
+
   border-radius: 50px;
   border: 2px solid rgb(240, 248, 255);
   transition: all 0.6s ease;
@@ -383,6 +365,7 @@
   padding: 5px;
   margin: 10px 5px 10px 5px;
 }
+
 
 .simpleBtn h4 {
   padding: 10px 15px;
@@ -400,6 +383,7 @@
   color: rgb(240, 248, 255);
   font-weight: 500;
   margin: 5px 15px;
+
 }
 
 .simpleLightBtn {
@@ -431,9 +415,11 @@
   color: #113355;
   border-color: rgb(240, 248, 255);
 }
-@media only screen and (min-width: 300px) {
-  .simpleBtn .simpleBtnDark {
-    left: 0vw;
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  .simpleBtn .simpleBtnDark{
+
+
+left: 0vw;
     width: 100%;
     max-width: 100vw;
     align-items: center;
@@ -477,6 +463,7 @@
   margin: 0;
   padding: 0;
   justify-content: space-evenly;
+
 }
 
 .circleBtnLight {
@@ -623,7 +610,7 @@
 
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189, 202, 251, 0.11);
+  border: 1px solid rgba(189,202,251,0.11);
   backdrop-filter: blur(12px);
 }
 

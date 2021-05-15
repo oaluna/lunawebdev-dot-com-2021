@@ -57,12 +57,9 @@ padding: 45px;
   transition: all 0.6s ease;
 }
 
-.minimalButton:hover h4 {
-  padding-right: 12px;
-}
-
 @media only screen and (max-width: 1023px) {
-  .siteInfo {
+  .siteInfo,
+  .siteInfoHomepage {
     width: 100%;
     display: flex;
 
@@ -76,7 +73,11 @@ padding: 45px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    margin-top: 15px;
+  }
+  .siteText {
+    padding: 15px;
+
   }
 }
 
@@ -85,13 +86,28 @@ padding: 45px;
     display: flex;
     flex-direction: column;
   }
-
+  .siteTitle h2 {
+    text-align: center;
+    margin-top: 10
+  }
+  .siteText p {
+    line-height: 22px;
+    width: 100%;
+    max-width: 75vw;
+    text-align: left;
+    margin-left: 0vw;
+    justify-content: flex-end;
+  }
   .siteTitle {
     padding-bottom: 15px;
   }
 
-  .siteText {
-    padding-bottom: 15px;
+  .siteButtons {
+
+    display: flex;
+
+    left: 0vw;
+    font-weight: 900 !important;
   }
 
   .siteButtons {

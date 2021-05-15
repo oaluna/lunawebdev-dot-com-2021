@@ -74,10 +74,9 @@ overflow-x: hidden;
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-height: 900px) {
   .fullSectionContent {
-    max-width: 100vw;
-    margin-left: 0vw;
+    max-width: 90vw;
   }
 }
 
@@ -90,7 +89,7 @@ overflow-x: hidden;
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-height: 600px) {
   .thirdSection {
     height: 100vh;
   }
@@ -101,13 +100,10 @@ overflow-x: hidden;
 
   .thirdBottom {
     height: 25%;
-   width: 100%;
-   margin-left: -5vw;
-   border-radius: 10px;
   }
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-height: 600px) and (max-width: 450px) {
   .thirdSection {
     height: 100vh;
   }
