@@ -7,18 +7,10 @@ import ServicesSection from './ServicesSection.js';
 import ViewCards from './ViewCards.js';
 import SvgIcons from './SvgIcons.js';
 import ContactForm from './ContactForm.js';
-import styled from 'styled-components';
+
 import './pages.css';
 import './siteInfo.css';
 
-const StyledName = styled.span`
-  font-family: 'La storia -demo-';
-  font-size: 32px;
-  margin-left: 20vw;
-  margin-top: -7vh;
-  margin-bottom: -6vh;
-  align-items: center;
-`;
 export default class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +26,7 @@ export default class Homepage extends Component {
             <h1 style={{ display: 'flex', flexDirection: 'column' }}>
               {' '}
               <br />
-              Hello! I'm <StyledName>Oscar,</StyledName> <br />
+              Hello! I'm Oscar,<br />
               and I'm a front-end developer from San Francisco
             </h1>
             <br />
