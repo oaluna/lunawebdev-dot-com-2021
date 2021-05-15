@@ -38,14 +38,13 @@
 .chat-chatbot-button-label:hover {
   transition: 0.5s ease-in;
 }
-@media only screen and (min-width: 300px) and (max-width: 900px) {
+@media only screen and (max-width:450px) {
   .chat-chatbot-button {
     left: 80vw;
+    top: 85vh;
   }
   .chat-chatbot-button-label {
-    margin-left: 85vw;
-    max-width: 5vw;
-    text-align: center;
+    display: none;
   }
 }
 .react-chatbot-kit-chat-inner-container {

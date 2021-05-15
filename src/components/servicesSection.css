@@ -1111,31 +1111,38 @@
 }
 
 @media only screen and (max-width: 450px) {
+
   .socialHeaderTitle h1 {
     max-width: 100vw;
-
+flex-wrap: wrap;
+text-align: left;
     width: 100%;
-    margin-left: -15vw;
-    margin-top: -27vh;
+    margin-left: -10vw;
+    margin-top: -15vh;
     margin-right: -20vw;
     padding: 0px 0px;
-    transform: scale(0.5);
+    line-height: 1.4;
+    transform: scale(0.8);
   }
   .socialHeaderTitle span {
-     margin-left: 35vw;
+     margin-left: 65vw;
+
   }
 
   .socialHeader {
     height: 90vh;
-    width: 100vw;
+    max-width: 100vw;
   }
 
   .socialHeaderCallToAction {
     bottom: 20px !important;
     left: -4vw !important;
+    width: 100vw;
   }
   .socialHeader .socialManagement {
-    transform: scale(0.6);
+    top: 25vh;
+    left: -20vw;
+    transform: scale(0.9);
   }
 
 }
