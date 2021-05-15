@@ -7,10 +7,18 @@ import ServicesSection from './ServicesSection.js';
 import ViewCards from './ViewCards.js';
 import SvgIcons from './SvgIcons.js';
 import ContactForm from './ContactForm.js';
-
+import styled from 'styled-components';
 import './pages.css';
 import './siteInfo.css';
 
+const StyledName = styled.span`
+  font-family: 'La storia -demo-';
+  font-size: 32px;
+  margin-left: 20vw;
+  margin-top: -7vh;
+  margin-bottom: -6vh;
+  align-items: center;
+`;
 export default class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -23,25 +31,17 @@ export default class Homepage extends Component {
       <div className='homepage'>
         <div className='fullSection socialHeader'>
           <div className='socialHeaderTitle'>
-            <h1>
+            <h1 style={{ display: 'flex', flexDirection: 'column' }}>
               {' '}
               <br />
-              The optimal solution for your web development
-            needs.
+              Hello! I'm <StyledName>Oscar,</StyledName> <br />
+              and I'm a front-end developer from San Francisco
             </h1>
             <br />
             <br />
-            <h3
-              className='siteSubtitle'
-              style={{
-                fontSize: '24px',
-                fontWeight: 100,
-                textAlign: 'left',
-                marginLeft: '2vw'
-              }}>
+            <h3 className='siteSubtitle'>
               {' '}
-              Web development services, maintenance and web application
-              deployment.
+              I create, deploy, and maintain web applications.
             </h3>
           </div>
           <div
@@ -76,63 +76,80 @@ export default class Homepage extends Component {
           </div>
           <div className='socialHeaderCallToAction'>
             <Link to={'/Contact'}>
-              <button className='simpleBtn simpleBtnDark' style={{ textAlign: 'center', justifyContent: 'center', left: '0vw',width: '100%'}}>
-                <h4 style={{fontSize: '24px',fontWeight: '300', padding: '5px 75px'}}>Get Started</h4>
+              <button
+                className='simpleBtn simpleBtnDark'
+                style={{
+                  textAlign: 'center',
+                  justifyContent: 'center',
+                  left: '0vw',
+                  width: '100%'
+                }}>
+                <h4
+                  style={{
+                    fontSize: '24px',
+                    fontWeight: '300',
+                    padding: '5px 75px'
+                  }}>
+                  Get Started
+                </h4>
               </button>
             </Link>
 
-              <p className="socialHeaderCallToActionHeader"> Schedule a FREE Virtual Consultation</p>
+            <p className='socialHeaderCallToActionHeader'>
+              {' '}
+              Schedule a FREE Virtual Consultation
+            </p>
 
             <br />
             <br />
           </div>
 
-          <div className='socialManagement' style={{ top: '5vh', left: '25vw' }}>
+          <div className='socialManagement'>
             <div className='socialManagementContent'>
-            <div className='iconBox instaBox'>
-                    {' '}
-                    <SvgIcons
-                      style={{
-                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                      }}
-                      dimension='100px'
-                      iconName='instagram'
-                      fillColor='#fff'
-                    />{' '}
-                  </div>
-                  <div className='iconBox tiktokBox'>
-                    {' '}
-                    <SvgIcons
-                      style={{
-                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                      }}
-                      dimension='100px'
-                      iconName='tiktok'
-                      fillColor='#fff'
-                    />{' '}
-                  </div>
-                  <div className='iconBox youtubeBox'>
-                    {' '}
-                    <SvgIcons
-                      style={{
-                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                      }}
-                      dimension='100px'
-                      iconName='youtube'
-                      fillColor='#fff'
-                    />{' '}
-                  </div>
-                  <div className='iconBox facebookBox'>
-                    {' '}
-                    <SvgIcons
-                      style={{
-                        textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                      }}
-                      dimension='100px'
-                      iconName='facebook'
-                      fillColor='#fff'
-                    />{' '}
-                  </div>
+              <div className='iconBox instaBox'>
+                {' '}
+                <SvgIcons
+                  style={{
+                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                  }}
+                  dimension='100px'
+                  iconName='instagram'
+                  fillColor='#fff'
+                />{' '}
+              </div>
+              <div className='iconBox tiktokBox'>
+                {' '}
+                <SvgIcons
+                  style={{
+                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                  }}
+                  dimension='100px'
+                  iconName='tiktok'
+                  fillColor='#fff'
+                />{' '}
+              </div>
+              <div className='iconBox youtubeBox'>
+                {' '}
+                <SvgIcons
+                  style={{
+                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                  }}
+                  dimension='100px'
+                  iconName='youtube'
+                  fillColor='#fff'
+                />{' '}
+              </div>
+              <div className='iconBox facebookBox'>
+                {' '}
+                <SvgIcons
+                  style={{
+                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
+                  }}
+                  dimension='100px'
+                  iconName='facebook'
+                  fillColor='#fff'
+                />{' '}
+              </div>
             </div>
           </div>
         </div>
@@ -153,49 +170,43 @@ export default class Homepage extends Component {
 
             <ViewCards />
           </div>
-          <div
-            className='fullSectionContent limitWidthContent thirdBottom'
-            style={{ textAlign: 'center'}}>
+
+          <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfoHomepage'>
-              <div className='siteTitle expertise'>
-                <h5 style={{ fontWeight: 700 }}> Expertise </h5>
-                <br />
-                <div className='siteText expertise'>
-                  <p>
-                    {' '}
-                    I am a full-stack web developer with 2 years of experience
+              <div className='siteTitleHomepage'>
+                <h5> Expertise </h5>
+                <h2>I am a full-stack web developer with 2 years of experience
                     creating web applications using JavaScript and integrated
-                    JavaScript libraries/frameworks.{' '}
-                  </p>
-                </div>
-              </div>
-              <div className='siteTitle promise'>
-                <h5 style={{ fontWeight: 700 }}> My Promise </h5>
+                    JavaScript libraries/frameworks.</h2>
                 <br />
-                <div className='siteText promise'>
+                <div className='siteTextHomepage'>
                   <p>
                     {' '}
-                    I can design, build and launch your vision at scale. Whether
-                    you're a Fortune 500, a startup or even a local business - I
-                    give my clients the technical prowess they need to succeed.{' '}
+                    I can design, build and
+                    launch your vision at scale. Whether you're a Fortune 500
+                    company, a startup or even a mom-and-pop shop - I give my
+                    clients the technical prowess they need to succeed.{' '}
                   </p>
                 </div>
               </div>
-              <div
-                className='siteButtons'
-                >
-                <Link to={'/Projects'}>
-                  <button className='circleBtn circleBtnDark'>
-                    <span className='circleBtnIcon'>+</span>
-                    <h5 style={{fontSize: '20px', fontWeight: 500, color: '#f0f8ff', padding: '25px'}}>See Case History</h5>
-                  </button>
-                </Link>
-                <Link to={'/Contact'}>
-                  <button className='simpleBtn simpleBtnDark'>
-                    <h4 style={{padding: '8px 100px', borderRadius: '50%'}}>Contact</h4>
-                  </button>
-                </Link>
-              </div>
+
+            <div className='siteButtonsHomepage'>
+              <Link to={'/Projects'}>
+                <button className='circleBtn circleBtnDark'>
+                  <span className='circleBtnIcon'>+</span>
+                  <h5
+                   >
+                    See Case History
+                  </h5>
+                </button>
+              </Link>
+              <Link to={'/Contact'}>
+                <button className='simpleBtn simpleBtnDark'>
+                  <h4 style={{ padding: '8px 100px', borderRadius: '50%' }}>
+                    Contact
+                  </h4>
+                </button>
+              </Link>
             </div>
           </div>
           <div className='backSvg backRightBottom'>
@@ -207,21 +218,20 @@ export default class Homepage extends Component {
             />
           </div>
         </div>
+            </div>
 
-  <div className="fullSection">
-<div className="fullSectionContent limitWidthContent">
-
-</div>
-</div>
+        <div className='fullSection'>
+          <div className='fullSectionContent limitWidthContent'></div>
+        </div>
         <div className='fullSection'>
           <div className='fullSectionContent limitWidthContent'>
             <h1 className='bigTitle'> Services </h1>
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo' style={{borderRadius: '10px'}}>
+            <div className='siteInfo'>
               <div className='siteTitle'>
-                <FontAwesomeIcon icon={faGlobe} className='icon' />
+                <FontAwesomeIcon icon={faGlobe} className='icon' style={{width: '35px', height: '35px'}} />
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
               </div>
@@ -234,17 +244,17 @@ export default class Homepage extends Component {
                   managing your maintenance after deployment.{' '}
                 </p>
               </div>
-              <div className='siteButtons' style={{alignItems: 'flex-start'}}>
+              <div className='siteButtons' style={{ alignItems: 'flex-start' }}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h5  style={{color: '#f0f8ff'}}>See Case History</h5>
+                    <h5 style={{ color: '#f0f8ff' }}>See Case History</h5>
                   </button>
                 </Link>
                 <Link to={'/Services'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h5 style={{color: '#f0f8ff'}} >See Services</h5>
+                    <h5 style={{ color: '#f0f8ff' }}>See Services</h5>
                   </button>
                 </Link>
               </div>

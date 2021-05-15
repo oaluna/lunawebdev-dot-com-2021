@@ -56,7 +56,7 @@
   background-position: center;
 }
 
-@media only screen and (min-width: 300px){
+@media only screen and (max-width: 450px){
   .videoSection .fullScreenImage {
     background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size: cover;
@@ -145,13 +145,12 @@
   align-items: flex-end;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 450px) {
   .videoMain {
     position: absolute;
-    height: 100%;
-    width: auto;
-    margin-top: -5vh;
-    transform: scale(1);
+
+    top: -3vh !important;
+    transform: scale(4) !important;
   }
 
   .videoSectionRight .siteInfo {
@@ -160,27 +159,33 @@
     width: 100vw;
     color: #fff !important;
     top: -50vh;
+    z-index: 1000;
 
     border-radius: 15px;
   }
   .videoSectionRight .siteInfo .siteInfoVideoSection {
     max-width: 100vw;
     width: 100%;
+    margin-left: -10vw !important;
   }
-  .videoSectionRight .siteInfo > .siteText p {
+  .videoSectionRight .siteInfo > .siteText h2 {
     max-width: 100vw;
     margin: 10px 0;
     width: 100%;
+    height: 100%;
     opacity: 1;
     text-align: left;
     color: #fff !important;
   }
   .videoSectionRight .siteButtons {
-    max-width: 100vw;
+    max-width: 90vw;
     align-items: flex-start;
     text-align: left;
-    margin-left: -20vw;
+    position: relative;
+    margin-left: -40vw !important;
+    margin-top: 25vh !important;
     padding: 0;
+    z-index: 10000 !important;
   }
   .lottie-player-container {
     margin-top: -50vh;

@@ -1,187 +1,105 @@
-.siteInfo,
-.siteInfoHomepage {
-  padding: 15px;
-
-  line-height: 1;
-  margin: -5vh 10vw 0vh 0vh;
-  z-index: 30;
-  display: flex;
-  flex-direction: column;
-  max-width: 45vw;
-  height: auto;
-  border-radius: 16px;
-
-  box-shadow: none !important;
+.siteInfo, .siteInfoHomepage {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1.5fr 20px 2.4fr 20px 1.2fr;
+  max-height: 300px;
+  margin: 50px 0 30px 0;
+  padding: 25px 25px !important;
+  box-sizing: border-box;
   background: rgba(189, 202, 251, 0.11);
   border: 1px solid rgba(189,202,251,0.11);
   backdrop-filter: blur(12px);
-  align-items: flex-start;
+  border-radius: 15px;
 }
 
-.siteInfoHomepage {
-  margin: 10vh auto;
-  display: flex;
-  flex-direction: row;
-  max-width: 80vw;
-  width: 100%;
+
+
+.siteTitle, .siteTitle h5 h2, .siteTitleHomepage, .siteTitleHomepage h5 h2 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
 }
 
-.siteTitle {
+.siteText p, .siteTextHomepage p {
+  position: relative;
+  width: 30vw;
+  margin-left: 2vw;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.siteButtons, .siteButtonsHomepage {
+  position: relative;
+  grid-column: 5/6;
+  grid-row: 1/2;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-  margin-left: 0vw;
-  width: 100%;
-  padding: 15px;
-  text-align: left;
-  font-weight: 900;
-  font-size: 20px;
 }
 
-
-
-.siteButtons {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin: 15px auto;
-  bottom: 0px;
-  width: 100%;
-
-}
-.siteButtons h4 {
-  color: #f0f8ff;
-}
-
-.siteText  p {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto 25px;
-  padding: auto 25px;
-  text-align: center;
-  font-size: 12px;
-  max-width: 40vw;
-  font-weight: 500;
-  color: #f0f8ff;
-}
-
-.siteTitle h5 {
-
-  position: relative;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 .minimalButton {
   display: flex;
   align-items: center;
   cursor: pointer;
-
+  margin: 10px 0;
   border-radius: 50px;
 }
-.minimalButton h3 {
+.minimalButton h4 {
   padding-right: 4px;
   transition: all 0.6s ease;
-  font-size: 20px;
 }
 
-@media only screen and (min-width: 1023px) {
-  .siteInfo,
-  .siteInfoHomepage {
-    width: 100%;
+.minimalButton:hover h4 {
+  padding-right: 12px;
+}
 
+@media only screen and (max-width: 1023px) {
+  .siteInfo, .siteInfoHomepage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 20px 2.4fr;
   }
-  .siteButtons {
+
+  .siteButtons, .siteButtonsHomepage {
     position: relative;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    border-left: 0px;
+    padding: 10px 20% 0 20%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 15px;
-  }
-  .siteText {
-    padding: 15px;
-
-
+    flex-direction: row;
   }
 }
 
-.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
-  margin-top: 10vh;
-  margin-left: 15vw;
-}
-.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo > .siteTitle .icon {
-  width: 100%;
-  text-align: center;
-}
-.fullSectionContent.limitWidthContent.thirdBottom > .siteInfo > .siteTitle h2 {
-  text-align: center;
-}
-
-@media only screen and (min-width: 300px){
-  .siteInfo,
-  .siteInfoHomepage {
-
-    width: 100%;
-max-width:100vw;
+@media only screen and (max-width: 450px) {
+  .siteInfo, .siteInfoHomepage {
     display: flex;
     flex-direction: column;
-border-radius: 0;
-    align-items: center;
-    margin: 15vh;
-    padding: 25px;
   }
-.siteTitle .icon {
-  font-size: 48px;
-  width: 100%;
-  text-align: center;
-}
-  .siteTitle h5 {
-    font-size: 24px;
+
+  .siteTitle, .siteTitleHomepage {
+    padding-bottom: 15px;
   }
-  .siteTitle h2 {
-    text-align: center;
-    margin-top: 10
+
+  .siteText, .siteTextHomepage {
+    padding-bottom: 15px;
+
+  }
+  .siteTextHomepage p {
+    width: 75vw;
   }
   .siteText p {
-    line-height: 22px;
-    width: 100%;
-    max-width: 75vw;
-    margin: 0px auto;
-    text-align: center;
-    margin-left: 10vw;
-    justify-content: flex-end;
-
-  }
-@media only screen and (min-width: 600px) {
-  .siteText .promise {
-    margin-left: 5vw;
-    margin-right: auto;
-    width: 90%;
-  }
-}
-  .siteButtons {
-
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-    justify-content: center;
-    margin-left: 24vw;
-    font-weight: 900 !important;
+    width: 75vw;
   }
 
-  .fullSectionContent.limitWidthContent.thirdBottom > .siteInfo {
-    width: 100%;
-    max-width: 90vw;
-        display: flex;
-        flex-direction: column;
-       margin-left: 25vw;
+  .siteButtons, .siteButtonsHomepage {
+    flex-direction: column;
+    margin-top: 1vh;
+    padding: 0;
   }
 }

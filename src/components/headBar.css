@@ -121,6 +121,6 @@ padding: 25px auto;
 
 @media only screen and (min-width: 375px) {
   .logoWrapper {
-    margin-left: -25vw;
+    margin-left: -20vw;
   }
 }
