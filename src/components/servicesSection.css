@@ -1140,8 +1140,8 @@ text-align: left;
     width: 100vw;
   }
   .socialHeader .socialManagement {
-    top: 25vh;
-    left: -20vw;
+    top: 10vh;
+    left: -5vw;
     transform: scale(0.9);
   }
 
