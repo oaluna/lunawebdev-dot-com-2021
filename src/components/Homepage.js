@@ -154,17 +154,10 @@ export default class Homepage extends Component {
           </div>
           <div
             className='fullSectionContent limitWidthContent thirdBottom'
-<<<<<<< HEAD
             style={{ textAlign: 'center'}}>
             <div className='siteInfo'>
               <div className='siteTitle'>
                 <h2 style={{ fontWeight: 700 }}> Expertise </h2>
-=======
-            style={{ textAlign: 'center' }}>
-            <div className='siteInfoHomepage'>
-              <div className='siteTitle expertise'>
-                <h5 style={{ fontWeight: 700 }}> Expertise </h5>
->>>>>>> parent of 7b7bd47... Fixed last of responsiveness issues
                 <br />
                 <div className='siteText'>
                   <p>
