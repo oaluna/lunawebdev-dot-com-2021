@@ -227,7 +227,7 @@
   }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 450px) {
   .videoSection {
     flex-direction: column;
   }
@@ -240,6 +240,10 @@
       rgba(0, 0, 0, 0.1) 50%,
       rgba(0, 0, 0, 0.2) 100%
     );
+  }
+  .videoSection > video.videoMain {
+    transform: scale(4);
+   top: -50vh;
   }
 
   .projectOverlay {
@@ -260,7 +264,7 @@
   .videoSectionRight {
     width: 100%;
     height: 40vh;
-    padding: 15px;
+
   }
 
   .videoOverlay img {
@@ -276,6 +280,10 @@
     margin-top: -50vh;
     font-weight: 100;
     z-index: 1400;
+  }
+  .siteInfoVideoSection > .siteButtons {
+    margin-top: 25vh !important;
+    margin-left: -25vw;
   }
 }
 
@@ -295,7 +303,8 @@
   }
   .siteInfoVideoSection .siteButtons {
     align-items: flex-start;
-
+    position: relative;
+margin-top: 10vh;
     margin-left: 12vw;
     padding: 5px;
   }
@@ -335,7 +344,7 @@
   border-left: 1px solid #0e0e0e;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 450px) {
   .tokenModule {
     bottom: 0px;
   }

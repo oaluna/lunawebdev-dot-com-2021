@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-//import { Player } from '@lottiefiles/react-lottie-player';
-//import LottieInteractivity from '@lottiefiles/react-lottie-player';
 import './components.css';
 
 export default class VideoSection extends Component {
@@ -47,24 +45,6 @@ export default class VideoSection extends Component {
           </div>
         </div>
 
-        {/* <div className='lottie-player-container'>
-         <Player
-            autoplay
-            loop
-            src='https://assets7.lottiefiles.com/packages/lf20_k86wxpgr.json'
-            background='rgba(0,0,0,0)'
-            className='secondLottie'
-            id='#secondLottie'
-            speed='1'
-            style={{
-              position: 'absolute',
-              textShadow: '0 0 4px rgba(189,202,251,0.3)',
-              width: '800px',
-              height: '800px',
-              top: '-10vh',
-              left: '0vw'
-            }}
-          /> */}
         <div className='videoOverlay'></div>
           <video className="videoMain"
             width='100%'

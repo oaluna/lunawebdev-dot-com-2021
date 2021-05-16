@@ -1110,19 +1110,17 @@
   color: #F0F8FF;
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
   .socialHeaderTitle h1 {
-    max-width: 100vw;
-flex-wrap: wrap;
-text-align: left;
-    width: 100%;
-    margin-left: -10vw;
-    margin-top: -15vh;
-    margin-right: -20vw;
-    padding: 0px 0px;
+
+margin-top: -10vh;
+margin-left: -10vw;
+text-align: center;
+width: 120% !important;
     line-height: 1.4;
     transform: scale(0.8);
+
   }
   .socialHeaderTitle span {
      margin-left: 65vw;
@@ -1135,13 +1133,14 @@ text-align: left;
   }
 
   .socialHeaderCallToAction {
-    bottom: 20px !important;
-    left: -4vw !important;
+    bottom: 0px !important;
+    top: 90vh;
+    left: 0vw !important;
     width: 100vw;
   }
   .socialHeader .socialManagement {
-    top: 10vh;
-    left: -5vw;
+    top: 35vh;
+    left: -20vw;
     transform: scale(0.9);
   }
 
@@ -1157,7 +1156,7 @@ text-align: left;
   text-align: center;
   align-items: center;
   justify-content: center;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 .socialHeaderGradient {
