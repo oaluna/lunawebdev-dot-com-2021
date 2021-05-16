@@ -97,6 +97,10 @@ padding: 25px auto;
   background-color: rgba(31,38,135, 0.5);
   color: rgb(240, 248, 255);
 }
+.logoWrapper svg{
+  margin-left: 25vw;
+
+}
 
 
 @media only screen and (min-width: 300px) {
