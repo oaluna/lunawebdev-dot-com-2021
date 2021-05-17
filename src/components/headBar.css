@@ -98,12 +98,12 @@ padding: 25px auto;
   color: rgb(240, 248, 255);
 }
 .logoWrapper svg{
-  margin-left: 25vw;
+  margin-left: -15vw;
 
 }
 
 
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 450px) {
   .headBarContainerActive .headBarMenu {
     width: 100%;
   }
@@ -118,13 +118,7 @@ padding: 25px auto;
   }
 .logoWrapper {
     transform: scale(0.55);
-    margin-left: -40vw;
+    margin-left: -65vw;
 
  }
-}
-
-@media only screen and (max-width: 450px) {
-  .logoWrapper {
-    margin-left: -20vw;
-  }
 }

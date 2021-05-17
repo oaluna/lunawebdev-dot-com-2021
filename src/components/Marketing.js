@@ -27,7 +27,7 @@ export default class Marketing extends Component {
                     style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
                     dimension='25px'
                     iconName='user'
-                    fillColor='rgba(240, 246, 255, 1)'
+                    fillColor='rgb(240, 246, 255)'
                   />{' '}
                 </div>
                 <div className='socialImageContainer'>

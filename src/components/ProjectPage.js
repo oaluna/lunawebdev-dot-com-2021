@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import projectsData from './Data/projectsData.js';
 import SvgIcons from './SvgIcons.js';
 import './components.css';
+import './siteInfo.css'
 
 const VideoSectionRight = styled.div`
   margin-top: 10vh;
@@ -92,22 +93,23 @@ export default class ProjectPage extends Component {
         <div
           className='fullScreenImage'
           style={{
+            zIndex:-1,
             backgroundImage:
               'url(' + projectsData[this.state.currentProject].imageLarge + ')'
           }}></div>
 
-        <VideoSectionRight className="videoSectionRight">
-          <SiteInfo className="siteInfo">
-            <SiteTitle className="siteTitle">
+        <VideoSectionRight className="videoSectionRightProjectpage">
+          <SiteInfo className="siteInfoProjectpage">
+            <SiteTitle className="siteTitleProjectpage">
               <h5> {projectsData[this.state.currentProject].category} </h5>
               <h2>{projectsData[this.state.currentProject].title}</h2>
             </SiteTitle>
-            <div className='siteText'>
+            <div className='siteTextProjectpage'>
               <p>
                 {projectsData[this.state.currentProject].text}
               </p>
             </div>
-            <SiteButtons className="siteButtons">
+            <SiteButtons className="siteButtonsProjectpage">
               <button
                 onClick={() => this.props.history.goBack()}
                 className='circleBtn circleBtnDark'>
@@ -121,19 +123,19 @@ export default class ProjectPage extends Component {
                 <br />
                 </BackButton>
               </button>
-              <Link to={'/Contact'}>
+              <Link style={{padding: '0px 5px'}} to={'/Contact'}>
                 <button
                   className='simpleBtn simpleBtnDark'
                   style={{ width: '100%', padding: '10px' }}>
                   CONTACT
                 </button>
               </Link>
-                <Link to={projectsData[this.state.currentProject].url}>
+                <Link style={{padding: '0px 5px'}} to={projectsData[this.state.currentProject].url}>
               <button className="simpleBtn simpleBtnDark" style={{width:'100%', padding: '10px'}}>
                   DEMO
               </button>
                 </Link>
-                <Link to={projectsData[this.state.currentProject].repo}>
+                <Link style={{padding: '0px 5px'}} to={projectsData[this.state.currentProject].repo}>
               <button className="simpleBtn simpleBtnDark" style={{width:'100%', padding: '10px'}}>
                   REPO
               </button>

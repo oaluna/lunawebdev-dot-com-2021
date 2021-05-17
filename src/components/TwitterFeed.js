@@ -6,7 +6,7 @@ import StyleContext from '../utils/contexts/StyleContext';
 
 const twitterDetails = {
   userName: 'LunaWebDev',
-  display: true
+  display: false
 };
 
 const renderLoader = () => <Loading />;

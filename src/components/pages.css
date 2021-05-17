@@ -239,7 +239,7 @@ background: rgba(255,255,255,0);
   height: 40vh;
   margin-top: 0vh;
   margin-left: 25vw;
-  background: rgba( 255, 255, 255, 0.34 );
+  background: rgba( 255, 255, 255, 0.11 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 7.5px );
   border-radius: 15px;
@@ -277,7 +277,7 @@ background: rgba(255,255,255,0);
   margin-top: 55vh;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 900px){
+@media only screen and (max-width: 450px){
 .aboutMePage {
   display: flex;
   flex-direction: column;
