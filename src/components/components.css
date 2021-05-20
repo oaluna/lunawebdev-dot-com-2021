@@ -58,14 +58,6 @@
   background-position: center;
 }
 
-@media only screen and (min-width: 300px){
-  .videoSection .fullScreenImage {
-    background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
 
 .videoOverlay {
   width: 100%;
@@ -80,11 +72,11 @@
     rgba(97, 52, 52, 0.33) 50%,
     rgba(46, 42, 94, 0.2) 80%,
     rgba(13, 39, 94, 1) 100%
-  );
-}
+    );
+  }
 
-.projectOverlay {
-  width: 100%;
+  .projectOverlay {
+    width: 100%;
   height: 100%;
   z-index: 15;
   position: absolute;
@@ -95,240 +87,100 @@
     rgba(97, 52, 52, 0.33) 50%,
     rgba(46, 42, 94, 0.2) 80%,
     rgba(46, 42, 94, 1) 100%
-  );
-}
-
-.videoSectionLeft {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.videoSectionRight {
-  width: 100%;
-  max-width: 60vw;
-  margin-left: 25vw;
-  position: relative;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 30px;
-}
-
-.videoSectionRight .siteText,
-.videoSectionRight .siteTitle,
-.videoSectionRight .siteButtons {
-  max-width: 35vw;
-  width: 100%;
-  color: #f0f8ff;
-  border-color: #f0f8ff;
-}
-
-.siteInfoVideoSection {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 100vw;
-  text-align: left;
-  justify-content: center;
-
-  border-radius: 15px;
-
-  box-shadow: none !important;
-  background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189, 202, 251, 0.11);
-  backdrop-filter: blur(12px);
-  align-items: flex-start;
-}
-.siteInfoVideoSection > .siteButtons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-@media only screen and (min-width: 300px) {
-  .videoMain {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    margin-top: -5vh;
-    transform: scale(1);
-  }
-
-  .videoSectionRight .siteInfo {
-    position: absolute;
-    max-width: 100vw;
-    width: 100vw;
-    color: #fff !important;
-    top: -50vh;
-
-    border-radius: 15px;
-  }
-  .videoSectionRight .siteInfo .siteInfoVideoSection {
-    max-width: 100vw;
-    width: 100%;
-  }
-  .videoSectionRight .siteInfo > .siteText p {
-    max-width: 100vw;
-    margin: 10px 0;
-    width: 100%;
-    opacity: 1;
-    text-align: left;
-    color: #fff !important;
-  }
-  .videoSectionRight .siteButtons {
-    max-width: 100vw;
-    align-items: flex-start;
-    text-align: left;
-    margin-left: -20vw;
-    padding: 0;
-  }
-  .lottie-player-container {
-    margin-top: -50vh;
-    margin-right: 60vw;
-    margin-bottom: 50vh;
-    margin-left: -30vw;
-    width: 100%;
-    max-width: 100vw;
-    transform: scale(0.5);
-    position: relative;
-    opacity: 1;
-    z-index: 100;
-  }
-  .contactFormContainer {
-    max-width: 100vw;
-    width: 100%;
-  }
-  .siteInfoVideoSection {
-    margin-left: 0vw;
-    margin-top: 0vh;
-    width: 120%;
-    height: 350px;
-    padding: 0px 100px;
-  }
-
-  .siteInfoVideoSection > .siteText {
-    text-align: left;
-    margin-left: 0vw;
-    align-items: flex-start;
-    display: flex;
-    width: 100%;
-
-    padding: 10px 0px 150px 0px;
-  }
-  .siteInfoVideoSection .siteButtons {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 55px;
-    margin-left: -7vw;
-    padding: 25px 25px;
-    align-items: flex-start;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .videoSection {
-    flex-direction: column;
-  }
-
-  .videoOverlay {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0) 35%,
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.2) 100%
-    );
-  }
-  .videoSection > video.videoMain {
-    transform: scale(4);
-   top: -50vh;
-  }
-
-  .projectOverlay {
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.21) 1%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0) 70%,
-      rgba(0, 0, 0, 0) 100%
     );
   }
 
   .videoSectionLeft {
     width: 100%;
-    height: 55%;
+    height: 100%;
+    position: relative;
   }
 
   .videoSectionRight {
     width: 100%;
-    height: 40vh;
-
+    max-width: 60vw;
+    margin-left: 25vw;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
   }
 
-  .videoOverlay img {
-    background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
-    background-position: center;
+  .videoSectionRight .siteText,
+  .videoSectionRight .siteTitle,
+  .videoSectionRight .siteButtons {
+    max-width: 35vw;
+    width: 100%;
+    color: #f0f8ff;
+    border-color: #f0f8ff;
   }
+
   .siteInfoVideoSection {
-    margin-left: -20vw !important;
-    margin-top: -20vh;
-  }
-  .siteInfoVideoSection .siteText p {
-    margin-top: -50vh;
-    font-weight: 100;
-    z-index: 1400;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100vw;
+    text-align: left;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    box-shadow: none !important;
+    background: rgba(189, 202, 251, 0.11);
+    border: 1px solid rgba(189, 202, 251, 0.11);
+    backdrop-filter: blur(12px);
+    align-items: flex-start;
   }
   .siteInfoVideoSection > .siteButtons {
-    margin-top: 25vh !important;
-    margin-left: -25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
-}
 
-@media screen and (min-width: 600px) {
-  .videoSectionLeft {
-    max-width: 100vw;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+
+
+  @media screen and (min-width: 600px) {
+    .videoSectionLeft {
+      max-width: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .siteInfoVideoSection {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      margin-left: 0vw;
+      padding: 10px;
+    }
+    .siteInfoVideoSection .siteButtons {
+      align-items: flex-start;
+      position: relative;
+      margin-top: 10vh;
+      margin-left: 12vw;
+      padding: 5px;
+    }
   }
-  .siteInfoVideoSection {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    margin-left: 0vw;
-    padding: 10px;
+
+  /* token module (tesla style stat head-up) */
+  .tokenModule {
+    display: none;
   }
-  .siteInfoVideoSection .siteButtons {
-    align-items: flex-start;
-    position: relative;
-margin-top: 10vh;
-    margin-left: 12vw;
-    padding: 5px;
+
+  .token h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    transform: scale(1.2);
+    font-weight: 900;
+    color: "rgb(240, 248, 255)";
   }
-}
 
-/* token module (tesla style stat head-up) */
-.tokenModule {
-  display: none;
-}
-
-.token h2 {
-  text-align: center;
-  margin-bottom: 5px;
-  transform: scale(1.2);
-  font-weight: 900;
-  color: "rgb(240, 248, 255)";
-}
-
-.token h6 {
-  text-align: center;
-  transform: scale(1.2);
-  font-weight: 100;
+  .token h6 {
+    text-align: center;
+    transform: scale(1.2);
+    font-weight: 100;
   color: "rgb(240, 248, 255)";
 }
 
@@ -347,11 +199,117 @@ margin-top: 10vh;
 }
 
 @media only screen and (max-width: 450px) {
-  .tokenModule {
-    bottom: 0px;
+  .videoSection {
+    flex-direction: column;
   }
 
-  .token {
+  .videoOverlay {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.2) 100%
+      );
+    }
+    .videoSection > video.videoMain {
+      transform: scale(4);
+      top: -50vh;
+    }
+
+    .projectOverlay {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 1%,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0) 70%,
+        rgba(0, 0, 0, 0) 100%
+        );
+      }
+
+      .videoSectionLeft {
+        width: 100%;
+        height: 55%;
+      }
+
+      .videoSectionRight {
+        width: 100%;
+        height: 40vh;
+
+      }
+
+      .videoOverlay img {
+        background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+        background-size: cover;
+        background-position: center;
+      }
+      .siteInfoVideoSection {
+        margin-left: -20vw !important;
+        margin-top: -20vh;
+      }
+      .siteInfoVideoSection .siteText p {
+        margin-top: -50vh;
+        font-weight: 100;
+        z-index: 1400;
+      }
+      .siteInfoVideoSection > .siteButtons {
+        margin-top: 25vh !important;
+        margin-left: -25vw;
+      }
+
+
+      .videoSectionRight .siteInfo {
+        position: absolute;
+        max-width: 100vw;
+        width: 100vw;
+        color: #fff !important;
+        top: -100vh;
+        left: 0vw;
+
+        border-radius: 15px;
+      }
+      .videoSectionRight .siteInfo .siteInfoVideoSection {
+        max-width: 100vw;
+        width: 100%;
+      }
+
+      .videoSectionRight .siteInfo > .siteText p {
+        max-width: 100vw;
+        margin: 10px 0;
+        width: 100%;
+        opacity: 1;
+        text-align: left;
+        color: #fff !important;
+      }
+      .videoSectionRight .siteButtons {
+        max-width: 100vw;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: -30vw;;
+        padding: 0;
+      }
+      .lottie-player-container {
+        margin-top: -50vh;
+        margin-right: 60vw;
+        margin-bottom: 50vh;
+        margin-left: -30vw;
+        width: 100%;
+        max-width: 100vw;
+        transform: scale(0.5);
+        position: relative;
+        opacity: 1;
+        z-index: 100;
+      }
+      .contactFormContainer {
+        max-width: 100vw;
+        width: 100%;
+      }
+
+      .tokenModule {
+        bottom: 0px;
+      }
+
+      .token {
     max-width: 100px;
     padding: 0 15px;
   }
@@ -442,7 +400,7 @@ margin-top: 10vh;
   color: #113355;
   border-color: rgb(240, 248, 255);
 }
-@media only screen and (min-width: 300px) {
+@media only screen and (max-width: 450px) {
   .simpleBtn .simpleBtnDark {
     left: 0vw;
     width: 100%;
@@ -598,28 +556,28 @@ margin-top: 10vh;
     rgba(256, 256, 256, 1) 20%,
     rgba(256, 256, 256, 0) 50%,
     rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: -webkit-linear-gradient(
-    90deg,
-    rgba(256, 256, 256, 1) 20%,
-    rgba(256, 256, 256, 0) 50%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
+    );
+    mask-image: -webkit-linear-gradient(
+      90deg,
+      rgba(256, 256, 256, 1) 20%,
+      rgba(256, 256, 256, 0) 50%,
+      rgba(0, 0, 0, 0) 100%
+      );
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+    }
 
-.filterDark {
-  -webkit-filter: blur(3px) brightness(50%);
-  filter: blur(3px) brightness(50%);
-}
+    .filterDark {
+      -webkit-filter: blur(3px) brightness(50%);
+      filter: blur(3px) brightness(50%);
+    }
 
-.filterLight {
-  -webkit-filter: blur(3px) brightness(150%);
-  filter: blur(3px) brightness(150%);
-}
+    .filterLight {
+      -webkit-filter: blur(3px) brightness(150%);
+      filter: blur(3px) brightness(150%);
+    }
 
-/*  Contact Form*/
+    /*  Contact Form*/
 
 .contactFormContainer {
   display: flex;
@@ -723,4 +681,13 @@ textarea {
   top: -10%;
   right: 10%;
   transform: rotate(-25deg);
+}
+
+@media only screen and (max-width: 350px){
+  .videoSection .fullScreenImage {
+    background-image: url(https://images.pexels.com/photos/270410/pexels-photo-270410.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

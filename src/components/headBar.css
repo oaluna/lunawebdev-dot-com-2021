@@ -118,7 +118,13 @@ padding: 25px auto;
   }
 .logoWrapper {
     transform: scale(0.55);
-    margin-left: -65vw;
+    margin-left: -18vw;
 
  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logoWrapper {
+    margin-left: -30vw;
+  }
 }

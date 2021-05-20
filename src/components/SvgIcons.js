@@ -34,22 +34,21 @@ function getIcon(props) {
             class='css-1j8o68f'>
             <defs id='SvgjsDefs7265'>
               <linearGradient id='SvgjsLinearGradient7270'>
-                <stop id='SvgjsStop7271' stop-color='#e9e9e9' offset='0'></stop>
+                <stop id='SvgjsStop7271' stopColor='#e9e9e9' offset='0'></stop>
                 <stop
                   id='SvgjsStop7272'
-                  stop-color='#f6f6f6
-'
+                  stopColor='#f6f6f6'
                   offset='0.5'></stop>
-                <stop id='SvgjsStop7273' stop-color='#e9e9e9' offset='1'></stop>
+                <stop id='SvgjsStop7273' stopColor='#e9e9e9' offset='1'></stop>
               </linearGradient>
               <linearGradient id='SvgjsLinearGradient7274'>
-                <stop id='SvgjsStop7275' stop-color='#e9e9e9' offset='0'></stop>
+                <stop id='SvgjsStop7275' stopColor='#e9e9e9' offset='0'></stop>
                 <stop
                   id='SvgjsStop7276'
-                  stop-color='#f6f6f6
+                  stopColor='#f6f6f6
 '
                   offset='0.5'></stop>
-                <stop id='SvgjsStop7277' stop-color='#e9e9e9' offset='1'></stop>
+                <stop id='SvgjsStop7277' stopColor='#e9e9e9' offset='1'></stop>
               </linearGradient>
             </defs>
             <g
@@ -577,9 +576,9 @@ function getIcon(props) {
             d='M602,180.71c43.44,56.81,26.18,159.8-8,238.34-34.38,78.39-85.73,132.48-152.33,170.45s-148.3,60.13-210.3,33.23-104-102.56-124.42-185.12c-20.43-82.71-19-172.18,25.17-229.29s131-81.7,226.7-88.6C454.3,113,558.58,123.74,602,180.71Z'
           />
           <linearGradient id='my-cool-gradient' x2='1' y2='1'>
-            <stop offset='0%' stop-color='#447799' />
-            <stop offset='50%' stop-color='#224488' />
-            <stop offset='100%' stop-color='#112266' />
+            <stop offset='0%' stopColor='#447799' />
+            <stop offset='50%' stopColor='#224488' />
+            <stop offset='100%' stopColor='#112266' />
           </linearGradient>
         </svg>
       );
