@@ -215,6 +215,9 @@
     .videoSection > video.videoMain {
       transform: scale(4);
       top: -50vh;
+      width: 100%;
+      height: auto;
+      padding: 25px;
     }
 
     .projectOverlay {
@@ -690,4 +693,76 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+/*--- Brands Element Grid ---*/
+.brandsContent {
+  margin-top: -110vh;
+  margin-bottom: 10vh;
+  z-index: 10;
+  position: relative;
+}
+.brandsTitle > h1 {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+  align-items: flex-start;
+}
+div .brandsList {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+.brandsOverlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.21) 1%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.brandsList img {
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+
+  width: 200px;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: space-evenly;
+
+  padding: 25px;
+  margin: 25px;
+  transition: 0.3s ease-in;
+
+}
+  .brandsList img:hover {
+    text-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    transition: 0.3s ease-in;
+
+}
+@media only screen and (max-width: 370px){
+  .brandsList {
+    width: 100%;
+    -ms-grid-columns: (50%) [3];
+    grid-template-columns: repeat(2, 50%);
+    transform: scale(0.3);
+    background: none;
+  }
+
+
 }

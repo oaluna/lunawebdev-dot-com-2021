@@ -145,7 +145,39 @@ export default class Homepage extends Component {
             </div>
           </div>
         </div>
+        <div className="brandsContainer">
+        <div className='brandsOverlay'>
+          <video className="brandsMain"
+            width='100%'
+            style={{ zIndex: -1 }}
+            autoPlay
+            loop
+            playsInline
+            muted>
+            <source
+              src="https://www.pexels.com/video/6071387/download/"
+              type='video/mp4'
 
+            />
+          </video>
+          </div>
+        <div className="brandsContent">
+          <div className="brandsTitle">
+            <h1>Technologies I'm most familiar with:</h1>
+          </div>
+
+          <div className="brandsList">
+            <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="ReactJS"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="NextJS"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg" alt="Apollo"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/graphql.svg" alt="GraphQL"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="NodeJS"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Sass"/>
+            <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"/>
+          </div>
+        </div>
+      </div>
         <div className='fullSection'>
           <div className='fullSectionContent limitWidthContent'>
             <h1 className='bigTitle'>Projects</h1>

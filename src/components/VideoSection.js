@@ -54,7 +54,7 @@ export default class VideoSection extends Component {
             autoPlay
             muted>
             <source
-              src='https://res.cloudinary.com/dgdnpkfun/video/upload/v1619661859/dna.mp4'
+              src='https://www.pexels.com/video/7101912/download/'
               type='video/mp4'
             />
           </video>
