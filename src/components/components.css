@@ -706,7 +706,6 @@ textarea {
   width: 100vw;
   height: auto;
   text-align: center;
-  align-items: flex-start;
 }
 div .brandsList {
 
@@ -735,7 +734,8 @@ div .brandsList {
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
 
-  width: 200px;
+  width: 64px;
+  max-height: 64px;
   height: auto;
   display: flex;
 
@@ -758,7 +758,7 @@ div .brandsList {
 @media only screen and (max-width: 370px){
   .brandsList {
     width: 100%;
-    -ms-grid-columns: (50%) [3];
+    -ms-grid-columns: (3, 50%);
     grid-template-columns: repeat(2, 50%);
     transform: scale(0.3);
     background: none;

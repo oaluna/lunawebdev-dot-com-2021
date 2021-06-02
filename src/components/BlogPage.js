@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import FilterBlurImg from './FilterBlurImg';
 import styled from 'styled-components';
+import Medium from './Medium'
 
 class Slider extends Component {
   constructor(props) {
@@ -36,7 +37,7 @@ class Slider extends Component {
   render() {
     return (
       <>
-        <BlogPageHeader>
+        {/* <BlogPageHeader>
           <BlogPageTitle>Blog</BlogPageTitle>
           <BlogPageSubtitle>
             Documenting my dev journey, one commit at a time.
@@ -47,12 +48,13 @@ class Slider extends Component {
             <CardRow>
               {row.map((item, j) => (
                 <BlogCardContainer key={j}>
-                  <BlogCard {...item} />
-                </BlogCardContainer>
+                  <BlogCard {...item} /> */}
+                  <Medium />
+                {/* </BlogCardContainer>
               ))}
             </CardRow>
           ))}
-        </div>
+        </div> */}
       </>
     );
   }

@@ -9,6 +9,7 @@ import Marketing from './components/Marketing';
 import SocialMediaManagement from './components/SocialMediaManagement';
 import DigitalCreations from './components/DigitalCreations';
 import ServicesPage from './components/ServicesPage';
+import SkillsPage from './components/SkillsPage';
 import Footer from './components/Footer';
 import HeadBar from './components/HeadBar';
 import AboutMePage from './components/AboutMePage'
@@ -63,6 +64,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Homepage}/>
             <Route path='/Services' component={ServicesPage} />
+            <Route path='/Skills' component={SkillsPage} />
             <Route path='/Marketing' component={Marketing} />
             <Route path='/Marketing' component={Marketing} />
             <Route path='/DigitalCreations' component={DigitalCreations} />

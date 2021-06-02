@@ -33,7 +33,7 @@ export default class Homepage extends Component {
             <br />
             <h3 className='siteSubtitle'>
               {' '}
-              I create, deploy, and maintain web applications.
+              I create, deploy, and maintain web applications. I am also a writer for Medium. I am currently in search of work opportunities.
             </h3>
           </div>
           <div
@@ -145,36 +145,28 @@ export default class Homepage extends Component {
             </div>
           </div>
         </div>
-        <div className="brandsContainer">
-        <div className='brandsOverlay'>
-          <video className="brandsMain"
-            width='100%'
-            style={{ zIndex: -1 }}
-            autoPlay
-            loop
-            playsInline
-            muted>
-            <source
-              src="https://www.pexels.com/video/6071387/download/"
-              type='video/mp4'
-
-            />
-          </video>
+        <div className="brandsContainer" style={{position: 'relative', marginTop: '125vh'}}>
+        <div className='brandsOverlay' style={{ zIndex: -1 }}>
           </div>
         <div className="brandsContent">
           <div className="brandsTitle">
-            <h1>Technologies I'm most familiar with:</h1>
+            <h1>Technologies I work with:</h1>
           </div>
 
           <div className="brandsList">
-            <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="ReactJS"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="NextJS"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg" alt="Apollo"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/graphql.svg" alt="GraphQL"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="NodeJS"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Sass"/>
-            <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"/>
+            <img aria-labelledby="ReactJS" src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="ReactJS"/>
+            <img aria-labelledby="NextJS" src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="NextJS"/>
+            <img aria-labelledby="Apollo" src="https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg" alt="Apollo"/>
+            <img aria-labelledby="GraphQL" src="https://cdn.worldvectorlogo.com/logos/graphql.svg" alt="GraphQL"/>
+            <img aria-labelledby="NodeJS" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" alt="NodeJS"/>
+            <img aria-labelledby="Redux" src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux"/>
+            <img aria-labelledby="Sass" src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="Sass"/>
+            <img aria-labelledby="MongoDB" src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg"/>
+            <img aria-labelledby="Amazon Web Services" src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="Amazon Web Services" />
+            <img aria-labelledby="JSONWebToken" src="https://cdn.worldvectorlogo.com/logos/jwtio-json-web-token.svg" alt="JSONWebToken" />
+            <img aria-labelledby="NPM" src="https://cdn.worldvectorlogo.com/logos/npm.svg" alt="NPM" />
+            <img aria-labelledby="Figma" src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" alt="Figma" />
+            <img aria-labelledby="Gatsby" src="https://cdn.worldvectorlogo.com/logos/gatsby.svg" alt="Gatsby" />
           </div>
         </div>
       </div>

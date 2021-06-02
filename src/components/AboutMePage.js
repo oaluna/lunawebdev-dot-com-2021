@@ -86,7 +86,7 @@ export default class AboutMePage extends Component {
             </div>
           </div>
         </div>
-        <h2
+        {/* <h2
           style={{
             textAlign: 'center',
             width: '100vw',
@@ -107,9 +107,9 @@ export default class AboutMePage extends Component {
             flexDirection: 'row',
             justifyContent: 'space-evenly'
           }}>
-          {/* <PluralsightRoleIQ /> */}
+        <PluralsightRoleIQ />
           <TwitterFeed />
-        </div>
+     </div> */}
       </div>
     );
   }

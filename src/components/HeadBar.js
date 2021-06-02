@@ -64,6 +64,11 @@ export default function HeadBar(props) {
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
+            <Link to={'/Skills'}>
+              <h3>Skills</h3>
+            </Link>
+          </h2>
+          <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/BlogPage'}>
               <h3>Blog</h3>
             </Link>

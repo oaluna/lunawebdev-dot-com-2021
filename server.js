@@ -1,5 +1,3 @@
-
-// Requires and declarations
 const env = require('dotenv').config({ silent: true });
 const server = require('./index');
 
