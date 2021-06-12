@@ -84,7 +84,7 @@ export default function HeadBar(props) {
             </Link>
           </h2>
         </div>
-        <div className='socialBox'>
+        <div className='socialBox'o>
           <a
             href='https://www.facebook.com/aka.kay.drama'
             className='socialItem'>

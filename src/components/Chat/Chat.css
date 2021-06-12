@@ -1,6 +1,6 @@
 .chat-chatbot-button {
   position: fixed;
-  left: 92vw;
+  left: 90vw;
   top: 50vh;
   width: 65px;
   height: 65px;
@@ -30,7 +30,7 @@
   line-height: 1;
   color: #f0f8ff;
   top: 62vh;
-  left: 92vw;
+  left: 90vw;
   text-align: center;
   opacity: 1;
   z-index: 10000;

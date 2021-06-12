@@ -7,7 +7,8 @@ import {
   faLinkedin,
   faInstagram,
   faTwitter,
-  faDev
+  faDev,
+  faMedium
 } from '@fortawesome/free-brands-svg-icons';
 import './pages.css';
 import { Link } from 'react-router-dom';
@@ -16,11 +17,24 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div className='footerContent'>
+
         <div className='footerFirstRow'>
           <Link to={'/'} className='footerLogo'>
             <SvgIcons dimension='400px' iconName='oscarArmandoLunaLogo' className="oscarArmandoLunaLogo" />
           </Link>
           <div className='socialBox'>
+            <a href='https://www.medium.com/@oaluna' className='socialItem'>
+              <FontAwesomeIcon
+                icon={faMedium}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
+            <a href='https://www.dev.to/oaluna' className='socialItem'>
+              <FontAwesomeIcon
+                icon={faDev}
+                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
+              />
+            </a>
             <a
               href='https://www.facebook.com/aka.kay.drama'
               className='socialItem'>
@@ -42,12 +56,6 @@ export default function Footer() {
               className='socialItem'>
               <FontAwesomeIcon
                 icon={faInstagram}
-                style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
-              />
-            </a>
-            <a href='https://www.dev.to/oaluna' className='socialItem'>
-              <FontAwesomeIcon
-                icon={faDev}
                 style={{ color: 'rgb(240, 248, 255)', fontSize: '30px' }}
               />
             </a>
