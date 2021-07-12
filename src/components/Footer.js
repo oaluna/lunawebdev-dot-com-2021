@@ -85,16 +85,16 @@ export default function Footer() {
         </div>
 
         <div className='footerEnd'>
-          <h6>&copy;2021 by Oscar Armando Luna, All rights reserved</h6>
+          <p>&copy;2021 by Oscar Armando Luna, All rights reserved</p>
           <div className='footerEndMenu'>
-            <span id='siteseal'>
+            <span id='siteseal' style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap', margin: '0px 25px', padding: '0px 25px'}}>
               <script
                 async
                 type='text/javascript'
                 src='https://seal.godaddy.com/getSeal?sealID=4EoD4LpoaNqS9Kn4VydonuEwLZnJaQJk0eJZU99KyNUyTY6PImcTF1v6yyn6'></script>
             </span>
-            <h6> Terms and conditions </h6>
-            <h6> Privacy policy </h6>
+            <p> {' '} Terms and conditions {' '}</p><br />
+            <p>{' '} Privacy policy {' '}</p>
           </div>
         </div>
       </div>

@@ -103,8 +103,8 @@ export default class ServicesSection extends Component {
             </div>
           </div>
           <div className='serviceName' style={{lineHeight: 1.4}}>
-            <h5> Advertising </h5>
-            <h2>Marketing </h2>
+            <p style={{letterSpacing: '1px'}}> Advertising </p>
+            <h5>Marketing </h5>
           </div>
           <button className='circleBtn circleBtnLight plusButton'>
             <span className='circleBtnIcon'>+</span>
@@ -150,9 +150,9 @@ export default class ServicesSection extends Component {
               </div>
             </div>
           </div>
-          <div className='serviceName' style={{lineHeight: 1.5}}>
-            <h5> Websites & more... </h5>
-            <h2> Digital Creations </h2>
+          <div className='serviceName' style={{lineHeight: 2, width: '100%'}}>
+            <p style={{letterSpacing: '1px'}}> Websites & more... </p>
+            <h5> Digital Creations </h5>
           </div>
 
           <button className='circleBtn circleBtnLight plusButton'>
@@ -209,8 +209,8 @@ export default class ServicesSection extends Component {
             </div>
           </div>
           <div className='serviceName' style={{lineHeight: 1.5}}>
-            <h5> Socialmedia </h5>
-            <h2> Management </h2>
+            <p style={{letterSpacing: '1px'}}> Social Media </p>
+            <h5> Management </h5>
           </div>
           <button className='circleBtn circleBtnLight plusButton'>
             <span className='circleBtnIcon'>+</span>

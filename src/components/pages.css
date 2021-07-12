@@ -125,7 +125,7 @@ overflow-x: hidden;
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
-  margin: 0vh auto 0vh 40vw;
+  margin: 5vh auto 0vh 40vw;
   z-index: 200;
   width: 100%;
   margin-left: 0vw;

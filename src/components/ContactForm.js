@@ -31,11 +31,11 @@ export default function ContactForm() {
     <div className='fullSection'>
       <div className='fullSectionContent limitWidthContent'>
         <div className='contactFormContainer'>
-          <h1>Contact</h1>
-          <h5 style={{ padding: 25 }}>
+          <h3>Contact</h3>
+          <h6 style={{ padding: 25 }}>
             Fill out the form below to get started with a FREE 30-minute web
             consultation.
-          </h5>
+          </h6>
           <form
             className='contactForm'
             onSubmit={sendEmail}
@@ -43,7 +43,7 @@ export default function ContactForm() {
             <div className='form-group'>
               <label htmlFor='name'>
                 {' '}
-                <h5>Name: </h5>{' '}
+                <p style={{fontSize: '30px'}}>Name: </p>{' '}
               </label>
               <input
                 type='text'
@@ -55,7 +55,7 @@ export default function ContactForm() {
             <div className='form-group'>
               <label htmlFor='email'>
                 {' '}
-                <h5>Email address: </h5>{' '}
+                <p style={{fontSize: '30px'}}>Email address: </p>{' '}
               </label>
               <input
                 type='email'
@@ -67,7 +67,7 @@ export default function ContactForm() {
             <div className='form-group'>
               <label htmlFor='message'>
                 {' '}
-                <h5>Your message:</h5>{' '}
+                <p style={{fontSize: '30px'}}>Your message: </p>{' '}
               </label>
               <textarea
                 id='message'
@@ -81,8 +81,8 @@ export default function ContactForm() {
               <h4> Send </h4>
             </button>
           </form>
-          <p>or contact me directly at:</p>
-          <br /> <h2>oscar@oscarluna.dev</h2>
+          <h5>or contact me directly at:</h5>
+          <br /> <h6 style={{padding: '25px'}}>oscar@oscarluna.dev</h6>
         </div>
       </div>
       <div

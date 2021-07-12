@@ -8,7 +8,7 @@
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (25%) [4];
+  /* -ms-grid-columns: (25%) [4]; */
   grid-template-columns: repeat(4, 25%);
   background: transparent;
   border-radius: 15px;
@@ -35,7 +35,7 @@ box-shadow:  20px 20px 60px #ccd3d9,
 @media only screen and (min-width: 300px) and (max-width: 900px) {
   .brandsList {
     width: 100%;
-    -ms-grid-columns: (50%) [3];
+    /* -ms-grid-columns: (50%) [3]; */
     grid-template-columns: repeat(2, 50%);
   }
 }
