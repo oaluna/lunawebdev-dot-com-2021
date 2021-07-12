@@ -13,11 +13,11 @@
 }
 
 
-.siteTitle, .siteTitle h5 h2, .siteTitleHomepage, .siteTitleHomepage h5 h2{
+.siteTitle {
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
-  text-align: center;
+  text-align: left;
 }
 
 .siteText p, .siteTextHomepage p {

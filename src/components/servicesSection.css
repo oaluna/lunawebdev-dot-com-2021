@@ -1146,7 +1146,10 @@
   }
 
 }
-
+.socialHeaderCallToAction button {
+  position: absolute;
+  right: 0vw;
+}
 
 
 .socialHeaderCallToAction {
@@ -1156,8 +1159,11 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  bottom: 0px;
+  justify-content: flex-end;
+  max-width: 100vw;
+  width: 300px;
+  right: 15vw;
+  bottom: 15vh;
 }
 
 .socialHeaderGradient {

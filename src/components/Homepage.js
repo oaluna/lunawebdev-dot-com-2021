@@ -23,7 +23,9 @@ export default class Homepage extends Component {
       <div className='homepage'>
         <div className='fullSection socialHeader'>
           <div className='socialHeaderTitle'>
-            <h1 style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1
+              className='siteTitle'
+              style={{ display: 'flex', flexDirection: 'column' }}>
               {' '}
               <br />
               Hello! I'm Oscar,
@@ -32,11 +34,15 @@ export default class Homepage extends Component {
             </h1>
             <br />
             <br />
-            <h3 className='siteSubtitle'>
+            <h6 style={{ textAlign: 'left', lineHeight: 1.2, width: '40vw' }}>
               {' '}
               I create, deploy, and maintain web applications. I am also a
               writer for Medium. I am currently in search of work opportunities.
+<<<<<<< HEAD
             </h3>
+=======
+            </h6>
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
           </div>
           <div
             className='tokenModule'
@@ -73,9 +79,6 @@ export default class Homepage extends Component {
               <button
                 className='simpleBtn simpleBtnDark'
                 style={{
-                  textAlign: 'center',
-                  justifyContent: 'center',
-                  left: '0vw',
                   width: '100%'
                 }}>
                 <h4
@@ -89,14 +92,16 @@ export default class Homepage extends Component {
               </button>
             </Link>
 
-            <p className='socialHeaderCallToActionHeader'>
-              {' '}
-              Schedule a FREE Virtual Consultation
-            </p>
 
             <br />
             <br />
           </div>
+<p
+              style={{ position: 'relative', marginBottom: '10vh' }}
+              className='socialHeaderCallToActionHeader'>
+              {' '}
+              Schedule a FREE Virtual Consultation
+            </p>
 
           <div className='socialManagement'>
             <div className='socialManagementContent'>
@@ -153,10 +158,17 @@ export default class Homepage extends Component {
           <div className='brandsOverlay' style={{ zIndex: -1 }}></div>
           <div className='brandsContent'>
             <div className='brandsTitle'>
+<<<<<<< HEAD
               <h1>Technologies I work with:</h1>
             </div>
 
             <div className='brandsList'>
+=======
+              <h3 style={{textAlign: 'center'}}>Technologies I work with:</h3>
+            </div>
+
+            <div className='brandsList' style={{margin: '25px'}}>
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
               <img
                 aria-labelledby='ReactJS'
                 src='https://cdn.worldvectorlogo.com/logos/react-2.svg'
@@ -164,7 +176,11 @@ export default class Homepage extends Component {
               />
               <img
                 aria-labelledby='NextJS'
+<<<<<<< HEAD
                 src='../assets/nextjs-icon.svg'
+=======
+                src='https://iconape.com/wp-content/files/gf/82292/svg/nextjs-3.svg'
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
                 alt='NextJS'
               />
               <img
@@ -226,9 +242,9 @@ export default class Homepage extends Component {
         </div>
         <div className='fullSection'>
           <div className='fullSectionContent limitWidthContent'>
-            <h1 className='bigTitle'>Projects</h1>
+            <h3 className='bigTitle'>Projects</h3>
             <br />
-            <h5 style={{ padding: '15px', textAlign: 'center' }}>
+            <h6 style={{ padding: '45px', textAlign: 'center' }}>
               Previous projects I have created, as well as links to their demos
               and repositories.
               <br />
@@ -236,7 +252,7 @@ export default class Homepage extends Component {
               <strong>
                 Using a mobile device? Swipe to see more previews.
               </strong>
-            </h5>
+            </h6>
 
             <ViewCards />
           </div>
@@ -244,15 +260,24 @@ export default class Homepage extends Component {
           <div className='fullSectionContent limitWidthContent thirdBottom'>
             <div className='siteInfoHomepage'>
               <div className='siteTitleHomepage'>
+<<<<<<< HEAD
                 <h5> Expertise </h5>
                 <h2>
                   I am a full-stack web developer with 2 years of experience
                   creating web applications using JavaScript and integrated
                   JavaScript libraries/frameworks.
                 </h2>
+=======
+                <p style={{fontSize: '25px', padding: '5px 0px 15px 0px'}}> <strong>EXPERTISE</strong> </p>
+                <h6 style={{letterSpacing: '-1px', width: '45vw', fontWeight: 500, textAlign: 'left', marginLeft: '0vw', lineHeight: 1.1}}>
+                  I'm a full-stack web developer with 2 years of experience in
+                  web development using JavaScript and integrated
+                  JavaScript libraries/frameworks.
+                </h6>
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
                 <br />
                 <div className='siteTextHomepage'>
-                  <p>
+                  <p style={{letterSpacing: '1px', fontSize: '20px', fontWeight: 100, left: '-2vw', width: '40vw'}}>
                     {' '}
                     I can design, build and launch your vision at scale. Whether
                     you're a Fortune 500 company, a startup or even a
@@ -262,11 +287,19 @@ export default class Homepage extends Component {
                 </div>
               </div>
 
+<<<<<<< HEAD
               <div className='siteButtonsHomepage'>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
                     <h5>See Case History</h5>
+=======
+              <div className='siteButtonsHomepage' style={{margin: 'auto'}}>
+                <Link to={'/Projects'}>
+                  <button className='circleBtn circleBtnDark'>
+                    <span className='circleBtnIcon'>+</span>
+                    <h6>See Case History</h6>
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
                   </button>
                 </Link>
                 <Link to={'/Contact'}>
@@ -294,7 +327,7 @@ export default class Homepage extends Component {
         </div>
         <div className='fullSection'>
           <div className='fullSectionContent limitWidthContent'>
-            <h1 className='bigTitle'> Services </h1>
+            <h3 className='bigTitle'> Services </h3>
             <ServicesSection />
           </div>
           <div className='fullSectionContent limitWidthContent thirdBottom'>
@@ -305,11 +338,16 @@ export default class Homepage extends Component {
                   className='icon'
                   style={{ width: '35px', height: '35px' }}
                 />
+<<<<<<< HEAD
                 <h5> Full Package </h5>
                 <h2> 360° Digital Presence </h2>
+=======
+                <p style={{fontSize: '25px', padding: '5px 0px 15px 0px'}}> <strong>FULL PACKAGE</strong> </p>
+                <h5 style={{lineHeight: 1}}> 360° Digital Presence </h5>
+>>>>>>> dc2268ff74f2fb54807c4ea514f350ab759681c3
               </div>
               <div className='siteText'>
-                <p>
+                <p style={{fontSize: '25px', left: '-3vw', textAlign: 'left', width: '30vw', lineHeight: 1.1}}>
                   {' '}
                   I will help you establish a network that fits your brand,
                   increase your visits and/or sales with a web application
@@ -317,17 +355,17 @@ export default class Homepage extends Component {
                   managing your maintenance after deployment.{' '}
                 </p>
               </div>
-              <div className='siteButtons' style={{ alignItems: 'flex-start' }}>
+              <div className='siteButtons' style={{ alignItems: 'flex-start', padding: 'auto', lineHeight: 1.1 }}>
                 <Link to={'/Projects'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h5 style={{ color: '#f0f8ff' }}>See Case History</h5>
+                    <h6 style={{ color: '#f0f8ff' }}>See Case History</h6>
                   </button>
                 </Link>
                 <Link to={'/Services'}>
                   <button className='circleBtn circleBtnDark'>
                     <span className='circleBtnIcon'>+</span>
-                    <h5 style={{ color: '#f0f8ff' }}>See Services</h5>
+                    <h6 style={{ color: '#f0f8ff' }}>See Services</h6>
                   </button>
                 </Link>
               </div>

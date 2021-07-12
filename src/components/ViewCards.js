@@ -34,7 +34,7 @@ export default class viewCards extends Component {
           </Link>
 
           <Link to={'/Projects'} className='viewCard viewCardLast'>
-            <h3>
+            <h3 style={{fontWeight: 300, fontSize: '36px', margin: '15px auto'}}>
               {' '}
               View <br /> All Projects
             </h3>

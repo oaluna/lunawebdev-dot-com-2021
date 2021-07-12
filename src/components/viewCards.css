@@ -38,7 +38,8 @@
 
   .viewCard {
     max-width: 100% !important;
-    margin: 0;
+    margin: auto;
+    padding: 15px 25px;
     max-height: 90%;
   }
 }
@@ -132,7 +133,7 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
 }
 
 .viewCardLast:hover {
-  border: 3px solid rgba(206, 208, 237, 1);
+  border: 2px solid rgba(206, 208, 237, 1);
 }
 
 .viewCardLast h3 {
@@ -151,7 +152,7 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
 }
 
 .viewCard:hover .viewCircleButton {
-  left: 40%;
+  left: 50%;
 }
 
 .viewCard:hover .circleBtnIcon {

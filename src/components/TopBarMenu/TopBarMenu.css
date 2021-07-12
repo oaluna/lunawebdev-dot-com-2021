@@ -152,7 +152,7 @@ background-color: slateblue;
 
 /*--- Mobile Style for Top Bar Component ---*/
 
-@media only screen (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .topBarContainer {
     z-index: 500;
     position: absolute;

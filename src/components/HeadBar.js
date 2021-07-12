@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 import SvgIcons from './SvgIcons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faLinkedin, faInstagram, faMedium, faDev, faGithubSquare} from '@fortawesome/free-brands-svg-icons'
 import './headBar.css';
 import { Link } from 'react-router-dom';
 
@@ -50,79 +52,59 @@ export default function HeadBar(props) {
         <div className='headBarMenuItems'>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/'}>
-              <h3>Home</h3>
+              <h6>HOME</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/Projects'}>
-              <h3>Case History</h3>
+              <h6>CASE HISTORY</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/Services'}>
-              <h3>Services</h3>
+              <h6>SERVICES</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/Skills'}>
-              <h3>Skills</h3>
+              <h6>SKILLS</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/BlogPage'}>
-              <h3>Blog</h3>
+              <h6>BLOG</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/Contact'}>
-              <h3>Contact</h3>
+              <h6>CONTACT</h6>
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
             <Link to={'/AboutMe'}>
-              <h3>About</h3>
+              <h6>ABOUT</h6>
             </Link>
           </h2>
         </div>
-        <div className='socialBox'o>
+        <div className='socialBox'>
           <a
             href='https://www.facebook.com/aka.kay.drama'
             className='socialItem'>
-            <img
-              src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/facebook-512.png'
-              style={{ width: '32px', height: '32px' }}
-              alt='facebook link'
-            />
+            <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faFacebook} />
           </a>
           <a
             href='https://www.linkedin.com/in/oscar-a-luna'
             className='socialItem'>
-            <img
-              src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/linkedin-512.png'
-              alt='Linkedin, professional network, linked in icon - Free download'
-              style={{ width: '32px', height: '32px' }}
-            />
+            <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faLinkedin} />
+          </a>
+          <a href='https://www.medium.com/@oaluna' className='socialItem'>
+          <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faMedium} />
           </a>
           <a href='https://www.instagram.com/LunaWebDev' className='socialItem'>
-            <img
-              src='https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png'
-              alt='Applications, instagram, media, social icon - Free download'
-              style={{ width: '32px', height: '32px' }}
-            />
+          <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faInstagram} />
           </a>
           <a href='https://www.dev.to/oaluna' className='socialItem'>
-            <img
-              src='https://cdn1.iconfinder.com/data/icons/logos-and-brands-3/512/84_Dev_logo_logos-512.png'
-              alt='Dev.to social icon'
-              style={{ width: '36px', height: '36px' }}
-            />
-          </a>
-          <a href='https://www.twitter.com/LunaWebDev' className='socialItem'>
-            <img
-              src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/twitter-512.png'
-              alt='Logo, social, tweet, twitter icon - Free download'
-              style={{ width: '32px', height: '32px' }}
-            />
+          <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faDev} />
           </a>
         </div>
       </div>

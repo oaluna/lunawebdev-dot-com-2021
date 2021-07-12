@@ -4,7 +4,7 @@ const BrandsSection = () => (
   <div className='sectionContainer'>
     <div className='sectionContent'>
       <div className='sectionTitle'>
-        <h3>Technologies I'm most familiar with:</h3>
+        <h4>Technologies I'm most familiar with:</h4>
       </div>
 
       <div className='brandsList'>
@@ -12,7 +12,10 @@ const BrandsSection = () => (
           src='https://cdn.worldvectorlogo.com/logos/react-2.svg'
           alt='ReactJS'
         />
-        <img src='../assets/nextjs-icon.svg' alt='NextJS' />
+        <img
+          src='https://iconape.com/wp-content/files/gf/82292/svg/nextjs-3.svg'
+          alt='NextJS'
+        />
         <img
           src='https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg'
           alt='Apollo'
