@@ -54,7 +54,7 @@ export default class VideoSection extends Component {
             autoPlay
             muted>
             <source
-              src='https://www.pexels.com/video/7101912/download/'
+              src='https://www.pexels.com/video/4779866/download/'
               type='video/mp4'
             />
           </video>
