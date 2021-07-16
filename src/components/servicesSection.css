@@ -1124,12 +1124,18 @@
   margin-left: 0vw;
   width: 100vw;
 }
+<<<<<<< HEAD
 
 .socialHeaderTitle h1 {
   font-size: 72px;
   position: absolute;
   left: -30vw;
   top: 15vh;
+=======
+.socialHeaderCallToAction button {
+  position: absolute;
+  right: 0vw;
+>>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
 }
 
 
@@ -1139,8 +1145,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   justify-content: center;
   bottom: 150px;
+=======
+  justify-content: flex-end;
+  max-width: 100vw;
+  width: 300px;
+  right: 15vw;
+  bottom: 15vh;
+>>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
 }
 
 .socialHeaderGradient {
