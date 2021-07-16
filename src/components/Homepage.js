@@ -23,7 +23,7 @@ export default class Homepage extends Component {
       <div className='homepage'>
         <div className='fullSection socialHeader'>
           <div className='socialHeaderTitle'>
-            <h1 style={{ display: 'flex', flexDirection: 'column' }}>
+            <h1 style={{ display: 'flex', flexDirection: 'column',width: '50vw' }}>
               {' '}
               <br />
               Hello! I'm Oscar,<br />
@@ -31,41 +31,12 @@ export default class Homepage extends Component {
             </h1>
             <br />
             <br />
-            <h3 className='siteSubtitle'>
+            <h3 className='siteSubtitle' style={{width: '50vw', marginLeft: '-30vw', marginTop: '50vh'}}>
               {' '}
               I create, deploy, and maintain web applications. I am also a writer for Medium. I am currently in search of work opportunities.
             </h3>
           </div>
-          <div
-            className='tokenModule'
-            style={{ color: 'rgb(240, 248, 255)', bottom: '0px' }}>
-            <div className='token firsttoken'>
-              <div className='tokenTop'>
-                <h2>100%</h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6> Engagement With Content. </h6>
-              </div>
-            </div>
-            <div
-              className='token secondtoken'
-              style={{ borderColor: 'rgb(240, 248, 255)' }}>
-              <div className='tokenTop'>
-                <h2>62</h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6> Completed projects to date </h6>
-              </div>
-            </div>
-            <div className='token thirdtoken'>
-              <div className='tokenTop'>
-                <h2> 1B+ </h2>
-              </div>
-              <div className='tokenBottom'>
-                <h6>Reasons to hire</h6>
-              </div>
-            </div>
-          </div>
+
           <div className='socialHeaderCallToAction'>
             <Link to={'/Contact'}>
               <button
@@ -73,6 +44,7 @@ export default class Homepage extends Component {
                 style={{
                   textAlign: 'center',
                   justifyContent: 'center',
+                  bottom: '-20vh',
                   left: '0vw',
                   width: '100%'
                 }}>
@@ -96,7 +68,7 @@ export default class Homepage extends Component {
             <br />
           </div>
 
-          <div className='socialManagement'>
+          <div className='socialManagement' style={{marginTop: '20vh'}}>
             <div className='socialManagementContent'>
               <div className='iconBox instaBox'>
                 {' '}

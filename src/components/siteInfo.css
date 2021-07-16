@@ -1,7 +1,8 @@
 .siteInfo, .siteInfoHomepage {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1.5fr 20px 2.4fr 20px 1.2fr;
+  width: 100%;
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   max-height: 300px;
   margin: 50px 0 30px 0;
   padding: 25px 25px !important;
@@ -15,15 +16,18 @@
 
 .siteTitle, .siteTitle h5 h2, .siteTitleHomepage, .siteTitleHomepage h5 h2{
   position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  flex-wrap: wrap;
+  text-align: left;
 }
+
 
 .siteText p, .siteTextHomepage p {
   position: relative;
-  width: 30vw;
-  margin-left: 2vw;
+  width: 40vw;
+  margin-left: 0vw;
 
 }
 

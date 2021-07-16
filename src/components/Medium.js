@@ -105,7 +105,7 @@ const Medium = () => {
                     background: 'rgba( 255, 255, 255, 0.25 )',
                     boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
                     width: '400px',
-                    maxHeight: '350px',
+                    maxHeight: '400px',
                     margin: '15px',
                     alignItems: 'center',
                     padding: '0 0 25px 0',
@@ -138,10 +138,10 @@ const Medium = () => {
                     </CardTitle>
                     <CardSubtitle
                       className={{ marginLeft: '10px', fontWeight: 100 }}>
-                      <h3>
+                      <p>
                         Published:{' '}
                         {moment(article.pubDate).format('dddd, MMMM Do YYYY')}
-                      </h3>
+                      </p>
                     </CardSubtitle>
                   </CardBody>
                 </Card>
