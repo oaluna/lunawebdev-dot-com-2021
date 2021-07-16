@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7804f03d-e667-4704-9379-5ce00ca42269" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Homepage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Medium.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Medium.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/headBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/headBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/servicesSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/servicesSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/siteInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/siteInfo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,8 @@
       <updated>1626377378587</updated>
       <workItem from="1626377406273" duration="444000" />
       <workItem from="1626379164953" duration="985000" />
-      <workItem from="1626380628516" duration="7931000" />
+      <workItem from="1626380628516" duration="8253000" />
+      <workItem from="1626455683471" duration="52000" />
     </task>
     <servers />
   </component>

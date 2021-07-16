@@ -16,15 +16,10 @@ display: flex;
 
 .siteTitle {
   position: relative;
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   width: 40vw;
   flex-wrap: wrap;
-=======
-  grid-column: 1/2;
-  grid-row: 1/2;
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
   text-align: left;
 }
 
