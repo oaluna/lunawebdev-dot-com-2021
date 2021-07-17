@@ -72,7 +72,7 @@ class App extends Component {
               path='/SocialMediaManagement'
               component={SocialMediaManagement}
             />
-            <Route path='/Contact' component={ContactPage} />
+            <Route path='/Contacts' component={ContactPage} />
             <Route path='/Projects' component={CaseHistory} />
             <Route path='/ProjectPage/:Project' component={ProjectPage} />
             <Route path='/AboutMe' component={AboutMePage} />

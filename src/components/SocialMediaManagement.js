@@ -93,8 +93,7 @@ export default class SocialMediaManagement extends Component {
                 <h3>Branding</h3>
                 <p>
                   {' '}
-                  Your online content should be instantly recognizable and be an
-                  extension of your brand.
+                  In development
                 </p>
               </div>
               <div className='serviceDetailsCard'>
@@ -107,8 +106,7 @@ export default class SocialMediaManagement extends Component {
                 <h3>Original Content</h3>
                 <p>
                   {' '}
-                  Spamming the same logo on stock images does not cut it
-                  anymore.
+                  Check out my blog where I am documenting my learning journey <a href="https://medium.com/@oaluna">here</a>.
                 </p>
               </div>
               <div className='serviceDetailsCard'>

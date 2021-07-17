@@ -60,7 +60,7 @@ export default class ServicesSection extends Component {
             <div className='socialProfile'>
               {' '}
               <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                
                 dimension='25px'
                 iconName='user'
                 fillColor='rgb(255,255,255)'
@@ -68,7 +68,7 @@ export default class ServicesSection extends Component {
             </div>
             <div className='socialImageContainer'>
               <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                
                 dimension='60px'
                 iconName='photo'
                 fillColor='rgb(255,255,255)'
@@ -77,7 +77,7 @@ export default class ServicesSection extends Component {
             <div className='socialAction socialLike'>
               {' '}
               <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                
                 dimension='12px'
                 iconName='heart'
                 fillColor='rgb(255,255,255)'
@@ -86,7 +86,7 @@ export default class ServicesSection extends Component {
             <div className='socialAction socialComment'>
               {' '}
               <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                
                 dimension='12px'
                 iconName='comment'
                 fillColor='rgb(255,255,255)'
@@ -95,7 +95,7 @@ export default class ServicesSection extends Component {
             <div className='socialAction socialShare'>
               {' '}
               <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                
                 dimension='12px'
                 iconName='send'
                 fillColor='rgb(255,255,255)'
@@ -104,7 +104,7 @@ export default class ServicesSection extends Component {
           </div>
           <div className='serviceName' style={{lineHeight: 1.4}}>
             <p style={{letterSpacing: '1px'}}> Advertising </p>
-            <h5>Marketing </h5>
+            <h5 style={{fontWeight: 500}}>Marketing </h5>
           </div>
           <button className='circleBtn circleBtnLight plusButton'>
             <span className='circleBtnIcon'>+</span>
@@ -124,7 +124,7 @@ export default class ServicesSection extends Component {
             <div className='digitalPc'>
               <div className='searchBox'>
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='12px'
                   iconName='web'
                   fillColor='#B993D6'
@@ -132,7 +132,7 @@ export default class ServicesSection extends Component {
               </div>
               <div className='webBox'>
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='60px'
                   iconName='photo'
                   fillColor='#B993D6'
@@ -142,7 +142,7 @@ export default class ServicesSection extends Component {
             <div className='digitalPhone'>
               <div className='phoneBox'>
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='60px'
                   iconName='appstore'
                   fillColor='#B993D6'
@@ -152,7 +152,7 @@ export default class ServicesSection extends Component {
           </div>
           <div className='serviceName' style={{lineHeight: 2, width: '100%'}}>
             <p style={{letterSpacing: '1px'}}> Websites & more... </p>
-            <h5> Digital Creations </h5>
+            <h5 style={{fontWeight: 500}}> Digital Creations </h5>
           </div>
 
           <button className='circleBtn circleBtnLight plusButton'>
@@ -173,7 +173,7 @@ export default class ServicesSection extends Component {
               <div className='iconBox instaBox'>
                 {' '}
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='100px'
                   iconName='instagram'
                   fillColor='#fff'
@@ -182,7 +182,7 @@ export default class ServicesSection extends Component {
               <div className='iconBox tiktokBox'>
                 {' '}
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='100px'
                   iconName='tiktok'
                   fillColor='rgb(255,255,255)'
@@ -191,7 +191,7 @@ export default class ServicesSection extends Component {
               <div className='iconBox youtubeBox'>
                 {' '}
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='100px'
                   iconName='youtube'
                   fillColor='#ff0000'
@@ -200,7 +200,7 @@ export default class ServicesSection extends Component {
               <div className='iconBox facebookBox'>
                 {' '}
                 <SvgIcons
-                  style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
+                  
                   dimension='100px'
                   iconName='facebook'
                   fillColor='#fff'
@@ -210,7 +210,7 @@ export default class ServicesSection extends Component {
           </div>
           <div className='serviceName' style={{lineHeight: 1.5}}>
             <p style={{letterSpacing: '1px'}}> Social Media </p>
-            <h5> Management </h5>
+            <h5 style={{fontWeight: 500}}> Management </h5>
           </div>
           <button className='circleBtn circleBtnLight plusButton'>
             <span className='circleBtnIcon'>+</span>

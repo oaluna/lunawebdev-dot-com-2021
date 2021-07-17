@@ -1,7 +1,8 @@
 .chat-chatbot-button {
   position: fixed;
-  left: 90vw;
+  left: 91vw;
   top: 50vh;
+  padding: auto;
   width: 65px;
   height: 65px;
   font-size: 36px;
@@ -23,13 +24,17 @@
   border: 1px solid #135;
   transition: 0.5s ease-in;
 }
+.chat-chatbot-icon {
+  display: flex;
+  margin: 0 auto 0 -0.85vw;
+}
 .chat-chatbot-button-label {
   width: 5vw;
   position: absolute;
   font-size: 1.8rem;
   line-height: 1;
   color: #f0f8ff;
-  top: 62vh;
+  top: 58vh;
   left: 90vw;
   text-align: center;
   opacity: 1;
@@ -198,7 +203,7 @@
   background: 0 0 !important;
 }
 .react-chatbot-kit-chat-btn-send-icon {
-  padding: 10px;
+  padding: 10px auto;
   border: 1px solid #135;
   fill: #135 !important;
   border-radius: 50%;

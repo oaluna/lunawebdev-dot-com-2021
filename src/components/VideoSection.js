@@ -48,13 +48,13 @@ export default class VideoSection extends Component {
         <div className='videoOverlay'></div>
           <video className="videoMain"
             width='100%'
-            style={{ zIndex: -1 }}
+            style={{ filter: 'saturate(0.25) darken', zIndex: -1 }}
             loop
             playsInline
             autoPlay
             muted>
             <source
-              src='https://www.pexels.com/video/4779866/download/'
+              src='https://www.pexels.com/video/3194277/download/'
               type='video/mp4'
             />
           </video>

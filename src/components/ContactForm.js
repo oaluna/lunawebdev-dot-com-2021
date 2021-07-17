@@ -43,21 +43,23 @@ export default function ContactForm() {
             <div className='form-group'>
               <label htmlFor='name'>
                 {' '}
-                <p style={{fontSize: '30px'}}>Name: </p>{' '}
+                <p style={{fontSize: '24px'}}>Name: </p>{' '}
               </label>
               <input
                 type='text'
                 id='name'
                 name='name'
                 placeholder='Last, First'
+                style={{color: '#fff'}}
               />
             </div>
             <div className='form-group'>
               <label htmlFor='email'>
                 {' '}
-                <p style={{fontSize: '30px'}}>Email address: </p>{' '}
+                <p style={{fontSize: '24px'}}>Email address: </p>{' '}
               </label>
               <input
+                style={{color: '#fff'}}
                 type='email'
                 id='email'
                 name='email'
@@ -67,14 +69,14 @@ export default function ContactForm() {
             <div className='form-group'>
               <label htmlFor='message'>
                 {' '}
-                <p style={{fontSize: '30px'}}>Your message: </p>{' '}
+                <p style={{fontSize: '24px'}}>Your message: </p>{' '}
               </label>
               <textarea
                 id='message'
                 cols='30'
                 rows='5'
                 name='message'
-                placeholder='Tell me about your project, and a time I can set up a virtual consultation and speak directly.'></textarea>
+                placeholder='Tell me about your project, and a time I can set up a virtual consultation and speak directly.' style={{color: '#fff'}}></textarea>
             </div>
 
             <button type='submit' className='simpleBtn simpleBtnDark'>

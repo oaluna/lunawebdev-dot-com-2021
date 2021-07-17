@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import VideoSection from './VideoSection.js';
-import ServicesSection from './ServicesSection.js';
-import ViewCards from './ViewCards.js';
-import SvgIcons from './SvgIcons.js';
-import ContactForm from './ContactForm.js';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import './pages.css';
-import './siteInfo.css';
+import VideoSection from "./VideoSection.js";
+import ServicesSection from "./ServicesSection.js";
+import VierCards from "./ViewCards.js";
+import SvgIcons from "./SvgIcons.js";
+import ContactForm from "./ContactForm.js";
+
+import "./pages.css";
+import "./siteInfo.css";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -20,312 +19,148 @@ export default class Homepage extends Component {
 
   render() {
     return (
-      <div className='homepage'>
-        <div className='fullSection socialHeader'>
-          <div className='socialHeaderTitle'>
-<<<<<<< HEAD
-            <h1 style={{ display: 'flex', flexDirection: 'column',width: '50vw' }}>
-=======
-            <h1
-              className='siteTitle'
-              style={{ display: 'flex', flexDirection: 'column' }}>
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
-              {' '}
-              <br />
-              Hello! I'm Oscar,
-              <br />
-              and I'm a front-end developer from San Francisco
+      <div className="homepage">
+        <div className="fullSection socialHeader">
+          
+          <div className="socialHeaderTitle">
+            <h1>
+              {" "}
+              Hello! I'm <span style={{ fontWeight: "900" }}>
+                Oscar Luna
+              </span>{" "}
             </h1>
-            <br />
-            <br />
-<<<<<<< HEAD
-            <h3 className='siteSubtitle' style={{width: '50vw', marginLeft: '-30vw', marginTop: '50vh'}}>
-=======
-            <h6 style={{ textAlign: 'left', lineHeight: 1.2, width: '40vw' }}>
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
-              {' '}
-              I create, deploy, and maintain web applications. I am also a
-              writer for Medium. I am currently in search of work opportunities.
+            <h6>
+              {" "}
+             I'm a front-end web developer, former dancer, and tech blogger from San Francisco, CA. I'm in search of full-time work while increasing my reader count, honing my coding skills, and attending the occasional dance workshop. 
             </h6>
           </div>
-
-          <div className='socialHeaderCallToAction'>
-            <Link to={'/Contact'}>
-              <button
-                className='simpleBtn simpleBtnDark'
-                style={{
-<<<<<<< HEAD
-                  textAlign: 'center',
-                  justifyContent: 'center',
-                  bottom: '-20vh',
-                  left: '0vw',
-=======
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
-                  width: '100%'
-                }}>
-                <h4
-                  style={{
-                    fontSize: '24px',
-                    fontWeight: '300',
-                    padding: '5px 75px'
-                  }}>
-                  Get Started
-                </h4>
+          <div className="socialHeaderCallToAction">
+            <Link to={"/Contacts"}>
+              <button className="simpleBtn simpleBtnDark">
+                <h4> GET IN TOUCH </h4>
               </button>
             </Link>
-
-
-            <br />
-            <br />
+            <Link to={"/Contacts"}>
+              <h6> Schedule a Virtual Consultation</h6>
+            </Link>
           </div>
-<p
-              style={{ position: 'relative', marginBottom: '10vh' }}
-              className='socialHeaderCallToActionHeader'>
-              {' '}
-              Schedule a FREE Virtual Consultation
-            </p>
-
-          <div className='socialManagement' style={{marginTop: '20vh'}}>
-            <div className='socialManagementContent'>
-              <div className='iconBox instaBox'>
-                {' '}
+          <div className="socialManagement">
+            <div className="socialManagementContent">
+              <div className="iconBox instaBox">
+                {" "}
                 <SvgIcons
-                  style={{
-                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                  }}
-                  dimension='100px'
-                  iconName='instagram'
-                  fillColor='#fff'
-                />{' '}
+                  dimension="100px"
+                  iconName="instagram"
+                  fillColor="#fff"
+                />{" "}
               </div>
-              <div className='iconBox tiktokBox'>
-                {' '}
+              <div className="iconBox tiktokBox">
+                {" "}
                 <SvgIcons
-                  style={{
-                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                  }}
-                  dimension='100px'
-                  iconName='tiktok'
-                  fillColor='#fff'
-                />{' '}
+                  dimension="100px"
+                  iconName="tiktok"
+                  fillColor="#fff"
+                />{" "}
               </div>
-              <div className='iconBox youtubeBox'>
-                {' '}
+              <div className="iconBox youtubeBox">
+                {" "}
                 <SvgIcons
-                  style={{
-                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                  }}
-                  dimension='100px'
-                  iconName='youtube'
-                  fillColor='#fff'
-                />{' '}
+                  dimension="100px"
+                  iconName="youtube"
+                  fillColor="#fff"
+                />{" "}
               </div>
-              <div className='iconBox facebookBox'>
-                {' '}
+              <div className="iconBox facebookBox">
+                {" "}
                 <SvgIcons
-                  style={{
-                    textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                  }}
-                  dimension='100px'
-                  iconName='facebook'
-                  fillColor='#fff'
-                />{' '}
+                  dimension="100px"
+                  iconName="facebook"
+                  fillColor="#fff"
+                />{" "}
               </div>
             </div>
           </div>
         </div>
-        <div
-          className='brandsContainer'
-          style={{ position: 'relative', marginTop: '125vh' }}>
-          <div className='brandsOverlay' style={{ zIndex: -1 }}></div>
-          <div className='brandsContent'>
-            <div className='brandsTitle'>
-              <h3 style={{textAlign: 'center'}}>Technologies I work with:</h3>
-            </div>
 
-            <div className='brandsList' style={{margin: '25px'}}>
-              <img
-                aria-labelledby='ReactJS'
-                src='https://cdn.worldvectorlogo.com/logos/react-2.svg'
-                alt='ReactJS'
-              />
-              <img
-                aria-labelledby='NextJS'
-                src='https://iconape.com/wp-content/files/gf/82292/svg/nextjs-3.svg'
-                alt='NextJS'
-              />
-              <img
-                aria-labelledby='Apollo'
-                src='https://cdn.worldvectorlogo.com/logos/apollo-graphql-1.svg'
-                alt='Apollo'
-              />
-              <img
-                aria-labelledby='GraphQL'
-                src='https://cdn.worldvectorlogo.com/logos/graphql.svg'
-                alt='GraphQL'
-              />
-              <img
-                aria-labelledby='NodeJS'
-                src='https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg'
-                alt='NodeJS'
-              />
-              <img
-                aria-labelledby='Redux'
-                src='https://cdn.worldvectorlogo.com/logos/redux.svg'
-                alt='Redux'
-              />
-              <img
-                aria-labelledby='Sass'
-                src='https://cdn.worldvectorlogo.com/logos/sass-1.svg'
-                alt='Sass'
-              />
-              <img
-                aria-labelledby='MongoDB'
-                src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg'
-              />
-              <img
-                aria-labelledby='Amazon Web Services'
-                src='https://cdn.worldvectorlogo.com/logos/aws-2.svg'
-                alt='Amazon Web Services'
-              />
-              <img
-                aria-labelledby='JSONWebToken'
-                src='https://cdn.worldvectorlogo.com/logos/jwtio-json-web-token.svg'
-                alt='JSONWebToken'
-              />
-              <img
-                aria-labelledby='NPM'
-                src='https://cdn.worldvectorlogo.com/logos/npm.svg'
-                alt='NPM'
-              />
-              <img
-                aria-labelledby='Figma'
-                src='https://cdn.worldvectorlogo.com/logos/figma-1.svg'
-                alt='Figma'
-              />
-              <img
-                aria-labelledby='Gatsby'
-                src='https://cdn.worldvectorlogo.com/logos/gatsby.svg'
-                alt='Gatsby'
-              />
-            </div>
+        <div className="fullSection">
+          <div className="fullSectionContent limitWidthContent">
+            <h1 className="bigTitle"> Our Projects </h1>
+            <VierCards />
           </div>
-        </div>
-        <div className='fullSection'>
-          <div className='fullSectionContent limitWidthContent'>
-            <h3 className='bigTitle'>Projects</h3>
-            <br />
-            <h6 style={{ padding: '45px', textAlign: 'center' }}>
-              Previous projects I have created, as well as links to their demos
-              and repositories.
-              <br />
-              <br />
-              <strong>
-                Using a mobile device? Swipe to see more previews.
-              </strong>
-            </h6>
-
-            <ViewCards />
-          </div>
-
-          <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfoHomepage'>
-              <div className='siteTitleHomepage'>
-                <p style={{fontSize: '25px', padding: '5px 0px 15px 0px'}}> <strong>EXPERTISE</strong> </p>
-                <h6 style={{letterSpacing: '-1px', width: '45vw', fontWeight: 500, textAlign: 'left', marginLeft: '0vw', lineHeight: 1.1}}>
-                  I'm a full-stack web developer with 2 years of experience in
-                  web development using JavaScript and integrated
-                  JavaScript libraries/frameworks.
-                </h6>
-                <br />
-                <div className='siteTextHomepage'>
-                  <p style={{letterSpacing: '1px', fontSize: '20px', fontWeight: 100, left: '-2vw', width: '40vw'}}>
-                    {' '}
-                    I can design, build and launch your vision at scale. Whether
-                    you're a Fortune 500 company, a startup or even a
-                    mom-and-pop shop - I give my clients the technical prowess
-                    they need to succeed.{' '}
-                  </p>
-                </div>
+          <div className="fullSectionContent limitWidthContent dritteBottom">
+            <div className="untersiteInfo">
+              <div className="untersiteTitle">
+                <h5> Expertise </h5>
+                <h2> Front-end Web Develpment </h2>
               </div>
-
-              <div className='siteButtonsHomepage' style={{margin: 'auto'}}>
-                <Link to={'/Projects'}>
-                  <button className='circleBtn circleBtnDark'>
-                    <span className='circleBtnIcon'>+</span>
-                    <h6>See Case History</h6>
-                  </button>
-                </Link>
-                <Link to={'/Contact'}>
-                  <button className='simpleBtn simpleBtnDark'>
-                    <h4 style={{ padding: '8px 100px', borderRadius: '50%' }}>
-                      Contact
-                    </h4>
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className='backSvg backRightBottom'>
-              <SvgIcons
-                style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-                dimension='600px'
-                iconName='star'
-                fillColor='rgb(240, 248, 255)'
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className='fullSection'>
-          <div className='fullSectionContent limitWidthContent'></div>
-        </div>
-        <div className='fullSection'>
-          <div className='fullSectionContent limitWidthContent'>
-            <h3 className='bigTitle'> Services </h3>
-            <ServicesSection />
-          </div>
-          <div className='fullSectionContent limitWidthContent thirdBottom'>
-            <div className='siteInfo'>
-              <div className='siteTitle'>
-                <FontAwesomeIcon
-                  icon={faGlobe}
-                  className='icon'
-                  style={{ width: '35px', height: '35px' }}
-                />
-                <p style={{fontSize: '25px', padding: '5px 0px 15px 0px'}}> <strong>FULL PACKAGE</strong> </p>
-                <h5 style={{lineHeight: 1}}> 360° Digital Presence </h5>
-              </div>
-              <div className='siteText'>
-                <p style={{fontSize: '25px', left: '-3vw', textAlign: 'left', width: '30vw', lineHeight: 1.1}}>
-                  {' '}
-                  I will help you establish a network that fits your brand,
-                  increase your visits and/or sales with a web application
-                  containing stunning, responsive UI, and free up your time by
-                  managing your maintenance after deployment.{' '}
+              <div className="untersiteText">
+                <p>
+                  {" "}
+                  I can create stunning, responsive, and semantic UI that adapts to any device screen size. I also have back-end development knowledge such as creating and aintaining relational and non-relational databases as well as deployment to platforms such as Vercel or Netlify.{" "}
                 </p>
               </div>
-              <div className='siteButtons' style={{ alignItems: 'flex-start', padding: 'auto', lineHeight: 1.1 }}>
-                <Link to={'/Projects'}>
-                  <button className='circleBtn circleBtnDark'>
-                    <span className='circleBtnIcon'>+</span>
-                    <h6 style={{ color: '#f0f8ff' }}>See Case History</h6>
+              <div className="untersiteButtons">
+                <Link to={"/Projects"}>
+                  <button className="circleBtn circleBtnDark">
+                    <span className="circleBtnIcon">+</span>
+                    <h4> SEE CASE HISTORY</h4>
                   </button>
                 </Link>
-                <Link to={'/Services'}>
-                  <button className='circleBtn circleBtnDark'>
-                    <span className='circleBtnIcon'>+</span>
-                    <h6 style={{ color: '#f0f8ff' }}>See Services</h6>
+                <Link to={"/Contacts"}>
+                  <button className="simpleBtn simpleBtnDark">
+                    <h4> CONTACT US </h4>
                   </button>
                 </Link>
               </div>
             </div>
           </div>
-          <div className='backSvg backLeftBottom noShowTablet'>
+          <div className="backSvg backRightBottom">
             <SvgIcons
-              style={{ textShadow: '0px, 0px, 5px, rgb(240, 248, 255)' }}
-              dimension='400px'
-              iconName='heartMessage'
-              fillColor='rgb(240, 248, 255)'
+              dimension="600px"
+              iconName="star"
+              fillColor="rgba(189, 202, 251, 1)"
+            />
+          </div>
+        </div>
+
+        <div className="fullSection">
+          <div className="fullSectionContent limitWidthContent">
+            <h1 className="bigTitle">Services</h1>
+            <ServicesSection />
+          </div>
+          <div className="fullSectionContent limitWidthContent dritteBottom">
+            <div className="untersiteInfo">
+              <div className="untersiteTitle">
+                <h5> Experience </h5>
+                <h2> Self-learned since August 2019 </h2>
+              </div>
+              <div className="untersiteText">
+                <p>
+                  {" "}
+                  I am self-learned developer who got started in 2019. In the past few years I have become passionate about JavaScript Data Structures, their algorithms for searching, sorting, appending, and prepending data, and using that knowledge towards solving all kinds of problems through writing code.{" "}
+                </p>
+              </div>
+              <div className="untersiteButtons">
+                <Link to={"/Projects"}>
+                  <button className="circleBtn circleBtnDark">
+                    <span className="circleBtnIcon">+</span>
+                    <h4> SEE CASE HISTORY </h4>
+                  </button>
+                </Link>
+                <Link to={"/Services"}>
+                  <button className="circleBtn circleBtnDark">
+                    <span className="circleBtnIcon">+</span>
+                    <h4> SEE SERVICES </h4>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="backSvg backLeftBottom noShowTablet">
+            <SvgIcons
+              dimension="400px"
+              iconName="heartMessage"
+              fillColor="rgba(189, 202, 251, 1)"
             />
           </div>
         </div>

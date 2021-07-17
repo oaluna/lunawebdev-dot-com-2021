@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-
+  background-color: #f6f6f6;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -34,9 +34,9 @@
 
 @media only screen and (min-width: 451px) {
   .socialPostContainer:hover > .socialPost {
-    filter: drop-shadow(-60px 60px 60px rgba(0, 0, 0, 0.11));
+    filter: drop-shadow(-60px 60px 60px rgb(0, 0, 0, 0.11));
     transform: scale(1.2) rotateX(60deg) rotateY(0deg) rotateZ(-45deg)
-    translateZ(50px);
+      translateZ(50px);
   }
 }
 
@@ -60,30 +60,30 @@
 }
 
 .transparentBlueGradientBack {
-  background: rgba(189, 202, 251, 0.1);
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.06) 100%);
 }
 
 .redGradientBack {
   background: linear-gradient(
-          130deg,
-          rgba(215, 102, 98, 1) 0%,
-          rgba(244, 181, 161, 0.7) 100%
+    130deg,
+    rgba(215, 102, 98, 1) 0%,
+    rgba(244, 181, 161, 0.7) 100%
   );
 }
 
 .pinkGradientBack {
   background: linear-gradient(
-          130deg,
-          rgba(221, 129, 137, 1) 0%,
-          rgba(252, 197, 215, 0.7) 100%
+    130deg,
+    rgba(221, 129, 137, 1) 0%,
+    rgba(252, 197, 215, 0.7) 100%
   );
 }
 
 .violetGradientBack {
   background: linear-gradient(
-          130deg,
-          rgba(221, 168, 232, 1) 0%,
-          rgba(249, 215, 253, 0.7) 100%
+    130deg,
+    rgba(221, 168, 232, 1) 0%,
+    rgba(249, 215, 253, 0.7) 100%
   );
 }
 
@@ -134,11 +134,11 @@
   animation-iteration-count: 9;
   transition: all 0.3s ease;
   transform: scale(1.2) rotateX(60deg) rotateY(0deg) rotateZ(-45deg)
-  translateZ(0px);
+    translateZ(0px);
 }
 
 @media only screen and (max-width: 900px) and (min-height: 600px),
-(orientation: portrait) {
+  (orientation: portrait) {
   .servicesContainer {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -161,7 +161,7 @@
 
   .socialPost {
     transform: scale(0.8) rotateX(60deg) rotateY(0deg) rotateZ(-45deg)
-    translateZ(0px) !important;
+      translateZ(0px) !important;
   }
 
   .socialPost1 {
@@ -255,9 +255,9 @@
   width: 30px;
   height: 30px;
   background: linear-gradient(
-          130deg,
-          rgba(215, 102, 98, 1) 0%,
-          rgba(244, 181, 161, 1) 100%
+    130deg,
+    rgba(215, 102, 98, 1) 0%,
+    rgba(244, 181, 161, 1) 100%
   );
   border-radius: 30px;
   overflow: hidden;
@@ -342,9 +342,9 @@
   width: 180px;
   height: 180px;
   background: linear-gradient(
-          130deg,
-          rgba(215, 102, 98, 1) 0%,
-          rgba(244, 181, 161, 1) 100%
+    130deg,
+    rgba(215, 102, 98, 1) 0%,
+    rgba(244, 181, 161, 1) 100%
   );
   border-radius: 30px;
   position: absolute;
@@ -445,9 +445,9 @@
   height: 20px;
   border-radius: 30px;
   background: linear-gradient(
-          130deg,
-          rgba(215, 102, 98, 1) 0%,
-          rgba(244, 181, 161, 1) 100%
+    130deg,
+    rgba(215, 102, 98, 1) 0%,
+    rgba(244, 181, 161, 1) 100%
   );
   transition: all 0.3s ease;
   display: flex;
@@ -594,7 +594,7 @@
 }
 
 .socialPostContainer:hover > .digitalCreations {
-  filter: drop-shadow(-60px 60px 30px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(-60px 60px 30px rgb(0, 0, 0, 0.15));
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(50px);
 }
 
@@ -603,9 +603,9 @@
   width: 260px;
   height: 180px;
   background: linear-gradient(
-          130deg,
-          rgba(221, 129, 137, 0.5) 0%,
-          rgba(252, 197, 215, 1) 100%
+    130deg,
+    rgba(221, 129, 137, 0.5) 0%,
+    rgba(252, 197, 215, 1) 100%
   );
   border-radius: 30px;
   box-shadow: inset 4px -4px 4px rgb(221, 129, 137, 1);
@@ -677,9 +677,9 @@
   width: 0px;
   height: 180px;
   background: linear-gradient(
-          130deg,
-          rgba(221, 129, 137, 0.5) 0%,
-          rgba(252, 197, 215, 1) 100%
+    130deg,
+    rgba(221, 129, 137, 0.5) 0%,
+    rgba(252, 197, 215, 1) 100%
   );
   border-radius: 30px;
   box-shadow: inset 4px -4px 4px rgb(252, 197, 215, 1);
@@ -755,7 +755,7 @@
   margin-top: 70px;
   background: #fff;
   border-radius: 30px;
-  position: relative;
+  position: reative;
   animation: searchBoxAnim 6s ease-in;
   animation-iteration-count: 9;
   display: flex;
@@ -877,14 +877,14 @@
   position: relative;
   transition: all 0.3s ease;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(0px);
-  filter: drop-shadow(-12px 12px 15px rgba(221, 168, 232, 1));
+  filter: drop-shadow(-12px 12px 15px rgb(221, 168, 232, 1));
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .socialPostContainer:hover > .socialManagement {
-  filter: drop-shadow(-60px 60px 30px rgba(221, 168, 232, 1));
+  filter: drop-shadow(-60px 60px 30px rgb(221, 168, 232, 1));
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(50px);
 }
 
@@ -1093,7 +1093,7 @@
   /*        rgba(206, 208, 237, 0.3) 30%,*/
   /*        rgba(255, 255, 255, 1) 100%*/
   /*);*/
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .socialHeaderTitle {
@@ -1119,42 +1119,39 @@
 }
 
 
-.socialHeaderTitle h1, .siteSubtitle h3 {
+.socialHeaderTitle h1, .socialHeaderTitle h6 {
   text-align: left;
-  margin-left: 0vw;
-  width: 100vw;
+  margin-left: -30vw;
+  width: 50vw;
+  
 }
-<<<<<<< HEAD
 
 .socialHeaderTitle h1 {
-  font-size: 72px;
-  position: absolute;
-  left: -30vw;
-  top: 15vh;
-=======
-.socialHeaderCallToAction button {
-  position: absolute;
-  right: 0vw;
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
+  margin-top: 20vh;
+  font-weight: 300;
+  font-size: 84px;
+  letter-spacing: -4px;
+}
+.socialHeaderTitle h6 {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin-top: 2vh;
 }
 
 
 .socialHeaderCallToAction {
-  z-index: 30;
   position: absolute;
-  display: flex;
-  flex-direction: column;
+  z-index: 20;
   align-items: center;
-<<<<<<< HEAD
   justify-content: center;
-  bottom: 150px;
-=======
-  justify-content: flex-end;
-  max-width: 100vw;
-  width: 300px;
-  right: 15vw;
-  bottom: 15vh;
->>>>>>> d40478053ea299b9ca17d642ddff260f247bab48
+top: 80vh;
+  height: auto;
+  width: auto;
+}
+.socialHeaderCallToActionHeader {
+  position: absolute;
+  top: 88vh;
 }
 
 .socialHeaderGradient {
@@ -1170,10 +1167,11 @@
   );
 }
 
-.socialHeader .socialManagement {
+.socialManagement {
+  position: absolute;
   z-index: 20;
   filter: drop-shadow(-36px 36px 12px rgba(255, 255, 255, 0.5));
-  margin-top: -10vh;
+  margin-top: 0vh;
   margin-left: 50vw;
 }
 
@@ -1257,7 +1255,7 @@
 }
 
 .socialPostFull .serviceName {
-  color: #060606;
+  color: #fff;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1295,16 +1293,18 @@
   box-sizing: border-box;
   display: block;
   padding: 30px 20px 30px 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.06) 100%);
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.24);
 }
-
 .serviceDetailsCard svg {
   padding-left: 15px;
 }
 
 .serviceDetailsCardLast {
-  border-radius: 30px;
+  border-radius: 15px;
   overflow: hidden;
-  background: rgba(189, 202, 251, 0.1);
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.06) 100%);
 }
 
 .serviceDetailsCard .svgIcon {

@@ -240,9 +240,7 @@ export default class TabView extends Component {
                   <div className='instaBottomButtons'>
                     <div className='instaLike'>
                       <SvgIcons
-                        style={{
-                          textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                        }}
+                        
                         dimension='12px'
                         iconName='heart'
                         fillColor='rgba(189, 202, 251, 1)'
@@ -250,9 +248,7 @@ export default class TabView extends Component {
                     </div>
                     <div className='instaComment'>
                       <SvgIcons
-                        style={{
-                          textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                        }}
+                        
                         dimension='12px'
                         iconName='comment'
                         fillColor='rgba(189, 202, 251, 1)'
@@ -260,9 +256,7 @@ export default class TabView extends Component {
                     </div>
                     <div className='instaShare'>
                       <SvgIcons
-                        style={{
-                          textShadow: '0px, 0px, 5px, rgb(240, 248, 255)'
-                        }}
+                        
                         dimension='12px'
                         iconName='send'
                         fillColor='rgba(189, 202, 251, 1)'

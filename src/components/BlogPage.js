@@ -222,7 +222,7 @@ const CardPost = styled.div`
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
   border: 1px solid rgba(189, 202, 251, 0.11);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(22px);
   @media only screen and (max-width: 450px) {
     width: 80vw;
   }

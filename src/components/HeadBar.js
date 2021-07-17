@@ -8,9 +8,13 @@ import { Link } from 'react-router-dom';
 
 export default function HeadBar(props) {
   const [isOpen, setIsOpen] = useState(false);
+  const {isHovered, setIsHovered} = useState(false);
 
   function handleMenu(value) {
     setIsOpen(value);
+  }
+  function handleHover(value) {
+    setIsHovered(!isHovered)
   }
 
   return (
@@ -25,13 +29,7 @@ export default function HeadBar(props) {
       <div className='headBar limitWidthContent'>
         <Link
           to='/'
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-    marginLeft: '10vw',
-            marginBottom: '20px'
-          }}>
+         >
           <div className="logoWrapper">
             <SvgIcons
               iconName='oscarArmandoLunaLogo'
@@ -42,8 +40,7 @@ export default function HeadBar(props) {
         </Link>
         <div className='headBarButton' onClick={() => handleMenu(!isOpen)}>
           <button
-            className='circleBtn circleBtnDark'
-            style={{ margin: '-10px 0 50px 0', height: '35px', alignItems: 'flex-start' }}>
+            className='circleBtn circleBtnDark'>
             <span className='headBarButtonContent circleBtnIcon'>+</span>
           </button>
         </div>
@@ -76,7 +73,7 @@ export default function HeadBar(props) {
             </Link>
           </h2>
           <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-            <Link to={'/Contact'}>
+            <Link to={'/Contacts'}>
               <h6>CONTACT</h6>
             </Link>
           </h2>

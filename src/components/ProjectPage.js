@@ -101,8 +101,8 @@ export default class ProjectPage extends Component {
         <VideoSectionRight className="videoSectionRightProjectpage">
           <SiteInfo className="siteInfoProjectpage">
             <SiteTitle className="siteTitleProjectpage">
-              <h5> {projectsData[this.state.currentProject].category} </h5>
-              <h2>{projectsData[this.state.currentProject].title}</h2>
+              <h6> {projectsData[this.state.currentProject].category} </h6>
+              <h3>{projectsData[this.state.currentProject].title}</h3>
             </SiteTitle>
             <div className='siteTextProjectpage'>
               <p>
@@ -113,13 +113,13 @@ export default class ProjectPage extends Component {
               <button
                 onClick={() => this.props.history.goBack()}
                 className='circleBtn circleBtnDark'>
-                <BackButton>
+                <BackButton style={{transform: 'rotate(0deg)'}}>
                   <SvgIcons
                     dimension='15px'
                     iconName='arrowRight'
                     fillColor="#f0f8ff"
                   />
-                <h3 style={{transform: 'rotate(180deg)'}}>GO BACK</h3>
+            GO BACK
                 <br />
                 </BackButton>
               </button>

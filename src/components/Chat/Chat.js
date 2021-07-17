@@ -45,12 +45,12 @@ function Chat() {
           />
         </div>
 
-        <button
+<button
           className='chat-chatbot-button'
           onClick={() => setShowChatBot((prev) => !prev)}
           onMouseEnter={mouseOver}
           onMouseLeave={mouseLeave}>
-          <FontAwesomeIcon icon={faRobot} /></button>
+          <FontAwesomeIcon icon={faRobot} className="chat-chatbot-icon"/></button>
         <br />
         {!showChatBot ? (
           <p className='chat-chatbot-button-label'>

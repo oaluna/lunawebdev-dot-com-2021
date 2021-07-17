@@ -261,6 +261,7 @@
   width: auto;
   display: flex;
   flex-direction: column;
+  text-align:left;
   justify-content: center;
   align-items: center;
   margin: 10px;

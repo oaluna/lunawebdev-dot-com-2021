@@ -13,7 +13,7 @@ export default class ContactPage extends Component {
 
   render() {
     return (
-      <div className='Contact'>
+      <div className='Contacts'>
         <ContactForm />
       </div>
     );
