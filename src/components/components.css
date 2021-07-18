@@ -4,11 +4,13 @@
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
+  letter-spacing: -2px;
 }
 
 @media only screen and (max-width: 900px) {
   .bigTitle {
     width: auto;
+    
   }
 }
 
@@ -263,8 +265,9 @@ mix-blend-mode: multiply;
 }
 
 .simpleBtn h4 {
-  padding: 10px 20px;
+  padding: 7px 20px;
   color: inherit;
+  margin: 0px auto;
   text-align: center;
   white-space: nowrap;
 }
@@ -336,6 +339,15 @@ mix-blend-mode: multiply;
   background-color: #f6f6f6;
   color: #fff;
   border-color: #f6f6f6;
+}
+
+@media only screen and (max-width: 450px) {
+  .simpleBtnDark {
+    width: 90vw;
+  }
+  .circleBtnLight, .circleBtnDark {
+    z-index: 900;
+  }
 }
 
 /* FullScreenEffect Carousel component */
@@ -515,6 +527,47 @@ textarea {
   line-height: 28px;
   font-family: "Raleway", sans-serif;
   margin: 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-form-container h3 {
+    font-size: 36px;
+    transform: scale(1);
+  }
+  .contact-form-container p {
+    font-size: 24px;
+    text-align: left;
+  
+  }
+  .form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+.form-group input, .form-group textarea {
+  width: 80vw;
+  background-color: rgba(192, 192, 192, 0);
+  font-size: 14px;
+  text-align: left;
+  border: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 5px;
+
+  font-family: "Raleway", sans-serif;
+  
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  font-size: 20px;
+}
+.contactMessage {
+  font-size: 20px;
+}
+.contactEmail {
+  font-size: 24px;
+  font-weight: 700;
+}
 }
 
 /* Background svg decorations */

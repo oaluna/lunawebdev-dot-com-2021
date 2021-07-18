@@ -20,17 +20,17 @@ export default class viewCards extends Component {
         <div className='viewCardContent'>
           <Link to={'/ProjectPage/0'} className='viewCard'>
             <FilterBlurImg img={projectsData[0].imageCard} brightness={''} />
-            <SvgIcons iconName="oscarArmandoLunaLogo" style={{zIndex: 1000}}/>
+            <SvgIcons iconName="oscarArmandoLunaLogo" style={{position: 'absolute', zIndex: 1000}}/>
           </Link>
 
           <Link to={'/ProjectPage/1'} className='viewCard'>
             <FilterBlurImg img={projectsData[1].imageCard} brightness={''} />
-            <SvgIcons iconName="oscarArmandoLunaLogo" style={{zIndex: 1000}}/>
+            <SvgIcons iconName="oscarArmandoLunaLogo" style={{position: 'absolute', zIndex: 1000}}/>
           </Link>
 
           <Link to={'/ProjectPage/2'} className='viewCard'>
             <FilterBlurImg img={projectsData[2].imageCard} brightness={''} />
-            <SvgIcons iconName="oscarArmandoLunaLogo" style={{zIndex: 1000}}/>
+            <SvgIcons iconName="oscarArmandoLunaLogo" style={{position: 'absolute', zIndex: 1000}}/>
           </Link>
 
           <Link to={'/Projects'} className='viewCard viewCardLast'>

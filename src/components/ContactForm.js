@@ -31,7 +31,7 @@ export default function ContactForm() {
     <div className='fullSection'>
       <div className='fullSectionContent limitWidthContent'>
         <div className='contactFormContainer'>
-          <h3>Contact</h3>
+          <h2>Contact</h2>
           <h6 style={{ padding: 25 }}>
             Fill out the form below to get started with a FREE 30-minute web
             consultation.
@@ -80,11 +80,11 @@ export default function ContactForm() {
             </div>
 
             <button type='submit' className='simpleBtn simpleBtnDark'>
-              <h4> Send </h4>
+              <h4> SEND </h4>
             </button>
           </form>
-          <h5>or contact me directly at:</h5>
-          <br /> <h6 style={{padding: '25px'}}>oscar@oscarluna.dev</h6>
+          <h5 className="contactMessage">or contact me directly at:</h5>
+          <br /> <h6 className="contactEmail" style={{padding: '25px'}}>oscar@oscarluna.dev</h6>
         </div>
       </div>
       <div

@@ -1100,29 +1100,17 @@
   z-index: 30;
   position: absolute;
   top: 100px;
+  width: 50vw;
+  left: 10vw;
 }
-
-@media only screen and (max-width: 450px) {
-  .socialHeaderTitle {
-    max-width: 400px;
-    transform: scale(0.5);
-    text-align: center;
-  }
-
-  .socialHeader {
-    height: 90vh;
-  }
-
-  .socialHeaderCallToAction {
-    bottom: 120px !important;
-  }
-}
-
 
 .socialHeaderTitle h1, .socialHeaderTitle h6 {
+  display: flex;
+  flex-direction: row;
+ align-items: flex-start;
   text-align: left;
-  margin-left: -30vw;
-  width: 50vw;
+
+ width: 100%;
   
 }
 
@@ -1138,6 +1126,59 @@
   letter-spacing: 0px;
   margin-top: 2vh;
 }
+@media only screen and (max-width: 450px) {
+  .socialHeaderTitle {
+   
+    transform: scale(0.5);
+    width: 100vw;
+    text-align: left;
+    margin-left: -25vw;
+    margin-top: -25vh;
+    padding: 0;
+  }
+  .socialHeaderTitle h1{
+  display: none;
+
+  }
+  .socialHeaderTitle > span {
+    display: flex;
+    flex-direction: column;
+    left: 0vw;
+    top: 0vh;
+  }
+  .socialHeaderTitle h6 {
+    display: none;
+  }
+
+  .socialHeader {
+  height: 100vh;
+  width: 100vw;
+  }
+
+  .socialHeaderCallToAction {
+    bottom: 120px !important;
+   
+  }
+  .socialHeaderCallToAction button {
+    width: 90vw;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .socialHeaderCallToAction h6 {
+    text-align: center;
+  }
+  .socialHeader .socialManagement {
+    margin-top: 0vh;
+    margin-left: 10vw;
+    transform: scale(0.8);
+  }
+  .logoWrapper {
+    transform: scale(0.65);
+    margin-left: -25vw;
+  }
+}
+
+
 
 
 .socialHeaderCallToAction {

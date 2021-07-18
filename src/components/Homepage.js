@@ -25,8 +25,8 @@ export default class Homepage extends Component {
           <div className="socialHeaderTitle">
             <h1>
               {" "}
-              Hello! I'm <span style={{ fontWeight: "900" }}>
-                Oscar Luna
+              Hello! I'm <span style={{ fontWeight: "900", padding: '0 15px' }}>
+                {" "}Oscar Luna
               </span>{" "}
             </h1>
             <h6>
@@ -37,7 +37,7 @@ export default class Homepage extends Component {
           <div className="socialHeaderCallToAction">
             <Link to={"/Contacts"}>
               <button className="simpleBtn simpleBtnDark">
-                <h4> GET IN TOUCH </h4>
+                <h4>GET STARTED</h4>
               </button>
             </Link>
             <Link to={"/Contacts"}>
@@ -84,7 +84,8 @@ export default class Homepage extends Component {
 
         <div className="fullSection">
           <div className="fullSectionContent limitWidthContent">
-            <h1 className="bigTitle"> Our Projects </h1>
+            <h1 className="bigTitle"> Projects </h1>
+            <p>Some of the previous projects build when learning web development. <br /><strong>If you're on mobile, swipe left and right to view more.</strong></p>
             <VierCards />
           </div>
           <div className="fullSectionContent limitWidthContent dritteBottom">

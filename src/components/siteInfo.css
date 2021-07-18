@@ -19,6 +19,7 @@ display: flex;
   position: relative;
 width: 75%;
   text-align: left;
+  
 }
 
 
@@ -136,11 +137,12 @@ margin-left: 20vw;
     display: flex;
     flex-direction: column;
     min-height: 450px;
-    margin-top: 25px;
+    margin-top: 45px;
   }
 
   .siteTitle, .siteTitleHomepage {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    letter-spacing: -3px;
   }
 
   .siteText, .siteTextHomepage {
@@ -149,9 +151,11 @@ margin-left: 20vw;
   }
   .siteTextHomepage p {
     width: 75vw;
+    padding-bottom: 25px;
   }
   .siteText p {
     width: 75vw;
+    margin-top: 25px;
   }
 
   .siteButtons, .siteButtonsHomepage {

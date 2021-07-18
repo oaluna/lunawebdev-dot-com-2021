@@ -73,14 +73,14 @@ z-index: 10;
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
   border: 1px solid rgba(189,202,251,0.11);
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(12px);
   border-radius: 15px;
 }
 
 .viewCard:hover {
   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1);
 }
 
 .viewCard:hover .backImg {
@@ -124,7 +124,7 @@ z-index: 10;
   box-shadow: none !important;
   background: rgba(189, 202, 251, 0.11);
   border: 1px solid rgba(189,202,251,0.11);
-  backdrop-filter: blur(22px);
+  backdrop-filter: blur(12px);
 }
 
 .viewCardLast .filterBlurImg {
@@ -156,9 +156,9 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
 }
 
 .viewCard:hover .circleBtnIcon {
-  background-color: #fff;
+  background-color: #060606;
   color: #f6f6f6;
-  border-color: #fff;
+  border-color: #060606;
 }
 
 /* vierCards on projects page / case history */

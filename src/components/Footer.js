@@ -87,7 +87,7 @@ export default function Footer() {
         <div className='footerEnd'>
           <p>&copy;2021 by Oscar Armando Luna, All rights reserved</p>
           <div className='footerEndMenu'>
-            <span id='siteseal' style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap', margin: '0px 25px', padding: '0px 25px'}}>
+            <span id='siteseal'>
               <script
                 async
                 type='text/javascript'
