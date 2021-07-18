@@ -109,3 +109,16 @@ transform: scale(4);
 transition: 0.3s ease-in-out;
 
 }
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+  .headBarMenuItems {
+    position: relative;
+    margin-left: -20vw;
+  }
+  .headBarMenu .socialBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    margin-left: -20vw;
+    justify-content: space-evenly;
+  }
+}

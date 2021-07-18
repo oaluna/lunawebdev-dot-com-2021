@@ -24,9 +24,9 @@ export default class Homepage extends Component {
           
           <div className="socialHeaderTitle">
             <h1>
-              {" "}
-              Hello! I'm <span style={{ fontWeight: "900", padding: '0 15px' }}>
-                {" "}Oscar Luna
+              
+              Hello! I'm {" "}<span style={{ fontWeight: 900, padding: "0 12px"}}>
+             Oscar Luna
               </span>{" "}
             </h1>
             <h6>

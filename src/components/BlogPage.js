@@ -164,6 +164,9 @@ function BlogPage() {
   return (
     <div className='blogPage'>
       <Slider />
+      <span style={{  fontSize: '48px', marginLeft: '50vw', marginTop: '55vh'}}>
+      Click <a href="https://medium.com/@oaluna" style={{color: '#f0f'}}>here</a> to read more of my posts.
+      </span>
     </div>
   );
 }

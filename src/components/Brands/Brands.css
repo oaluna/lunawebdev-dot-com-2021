@@ -16,7 +16,7 @@
   display: -ms-grid;
   display: grid;
   /* -ms-grid-columns: (20%) [5]; */
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(8, 12.5%);
   background: transparent;
   border-radius: 15px;
   

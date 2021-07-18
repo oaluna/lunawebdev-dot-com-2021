@@ -1178,6 +1178,51 @@
   }
 }
 
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+  .socialHeaderTitle h1,  .socialHeaderTitle  h6 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+ 
+  }
+  .socialHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -10vw;
+  }
+  .socialHeaderTitle h1 {
+    display: flex;
+    font-size: 64px;
+    letter-spacing: -1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+
+  }
+  .socialHeaderTitle h6 {
+    margin-left: 5vw;
+    text-align: center;
+    width: 90vw;
+  }
+  .socialHeader .socialManagement {
+    margin: 50vh 0vw 10vh 25vw;
+  }
+  .socialHeaderCallToAction button {
+    width: 90vw;
+    margin-left: 20vw;
+  }
+  .socialHeaderCallToAction h6 {
+    text-align: center;
+    margin: 0vh auto 0vh 25vw;
+  
+  }
+
+}
 
 
 
