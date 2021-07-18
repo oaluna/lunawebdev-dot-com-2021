@@ -1099,7 +1099,7 @@
 .socialHeaderTitle {
   z-index: 30;
   position: absolute;
-  top: 100px;
+  top: 120px;
   width: 50vw;
   left: 10vw;
 }
@@ -1183,7 +1183,7 @@
 
 .socialHeaderCallToAction {
   position: absolute;
-  z-index: 20;
+  z-index: 90;
   align-items: center;
   justify-content: center;
 top: 80vh;
@@ -1222,7 +1222,7 @@ top: 80vh;
 
 .socialHeader .instaBox {
   animation: InstaBoxAnim 6s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   background: linear-gradient(
           30deg,
           rgb(245, 133, 41) 0%, rgb(221, 42, 123) 50%, rgb(129,52,175) 100%);
@@ -1232,7 +1232,7 @@ top: 80vh;
 
 .socialHeader .youtubeBox {
   animation: youtubeBoxAnim 6s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   background: linear-gradient(
           130deg,
           #FF0000 0%,
@@ -1244,7 +1244,7 @@ top: 80vh;
 
 .socialHeader .tiktokBox {
   animation: tiktokFacebookBoxAnim 6s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   background: linear-gradient(
           130deg,
           rgba(0,0,0, 1) 0%,
@@ -1256,7 +1256,7 @@ top: 80vh;
 
 .socialHeader .facebookBox {
   animation: tiktokFacebookBoxAnim 6s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   background: linear-gradient(
           130deg,
           #1778F2 0%,

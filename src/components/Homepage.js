@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
-import VideoSection from "./VideoSection.js";
-import ServicesSection from "./ServicesSection.js";
-import VierCards from "./ViewCards.js";
-import SvgIcons from "./SvgIcons.js";
-import ContactForm from "./ContactForm.js";
+import SkillsPage from './SkillsPage'
+import VideoSection from "./VideoSection";
+import ServicesSection from "./ServicesSection";
+import VierCards from "./ViewCards";
+import SvgIcons from "./SvgIcons";
+import ContactForm from "./ContactForm";
 
 import "./pages.css";
 import "./siteInfo.css";
@@ -81,7 +81,11 @@ export default class Homepage extends Component {
             </div>
           </div>
         </div>
-
+<div className="fullSection">
+  <div className="fullSectionContent limitWidthContent">
+    <SkillsPage />
+  </div>
+</div>
         <div className="fullSection">
           <div className="fullSectionContent limitWidthContent">
             <h1 className="bigTitle"> Projects </h1>

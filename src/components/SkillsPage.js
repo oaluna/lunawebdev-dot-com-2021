@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
+import './Brands/Brands.css'
 export default class SkillsPage extends Component {
   render() {
     return (
-      <div className='brandsContainer' style={{ marginTop: '125vh' }}>
-        <div className='brandsOverlay' style={{ zIndex: -1 }}></div>
+      <div className='brandsContainer'>
+        <div className='brandsOverlay'></div>
         <div className='brandsContent'>
           <div className='brandsTitle'>
             <h1>Technologies I work with:</h1>
@@ -17,13 +17,33 @@ export default class SkillsPage extends Component {
               alt='HTML5'
             />
             <img
+              aria-labelledby='Css3'
+              src='https://iconape.com/wp-content/files/dj/370768/svg/370768.svg'
+              alt='CSS3'
+            />
+            <img
+              aria-labelledby='JavaScript'
+              src='https://iconape.com/wp-content/files/rj/371212/svg/371212.svg'
+              alt='JS'
+            />
+            <img
               areia-labelledby='Bootstrap'
               src='https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg'
               alt='Bootstrap 5'
             />
             <img
+              areia-labelledby='React'
+              src='https://iconape.com/wp-content/files/ec/371378/svg/371378.svg'
+              alt='React'
+            />
+            <img
+              areia-labelledby='Vue'
+              src='https://iconape.com/wp-content/files/xn/371621/svg/371621.svg'
+              alt='Vue'
+            />
+            <img
               aria-labelledby='NextJS'
-              src='../assets/nextjs-icon.svg'
+              src='https://iconape.com/wp-content/files/cf/353046/svg/next-js-seeklogo.com.svg'
               alt='NextJS'
             />
             <img
@@ -80,6 +100,7 @@ export default class SkillsPage extends Component {
               src='https://cdn.worldvectorlogo.com/logos/jwtio-json-web-token.svg'
               alt='JSONWebToken'
             />
+            <img aria-labelledby='Sequelize' src="https://iconape.com/wp-content/files/hd/371447/svg/371447.svg" alt="Sequelize" />
             <img
               aria-labelledby='NPM'
               src='https://cdn.worldvectorlogo.com/logos/npm.svg'

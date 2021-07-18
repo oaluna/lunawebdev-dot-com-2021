@@ -205,49 +205,56 @@
   margin: 5px 25px;
   cursor: pointer;
 }
+
 @media only screen and (max-width: 450px) {
   .footer {
     max-width: 450px;
     display: flex;
     text-align: center;
   }
+
   .footerFirstRow {
     width: 450px;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   .footerLogo {
-   transform: scale(.75);
-   position: relative;
-   margin-left: -50vw;
-  
-   }
-   .socialBox {
-     width: 450px;
-     display: flex;
-     top: 20vh;
-     align-items: flex-end;
-     justify-content: space-evenly;
-     left: -100vw;
-   }
-   .footerMainMenu {
-     width: 450px;
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     margin-left: -25vw;
-   }
-   .footerEnd p{
-     width: 450px;
-     text-align: left;
-     margin-left: -50vw;
-   }
-   .footerEndMenu p {
-      line-height: 1;
-   }
+    transform: scale(.75);
+    position: relative;
+    margin-left: -50vw;
 
   }
+
+  .socialBox {
+    width: 450px;
+    display: flex;
+    top: 20vh;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    left: -100vw;
+  }
+
+  .footerMainMenu {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: -25vw;
+  }
+
+  .footerEnd p {
+    width: 450px;
+    text-align: left;
+    margin-left: -50vw;
+  }
+
+  .footerEndMenu p {
+    line-height: 1;
+  }
+
+}
 
 @media only screen and (max-width: 900px) {
   .footerFirstRow {
