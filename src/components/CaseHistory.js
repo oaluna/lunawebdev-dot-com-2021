@@ -18,7 +18,7 @@ export default class CaseHistoryPage extends Component {
   render() {
     var projectsCards = projectsData.map((item) => {
       return (
-        <Link to={"/ProjectPage/" + (item.id - 1)} className="vierCard">
+        <Link to={"/ProjectPage/" + (item.id - 1)} className="Card">
           <FilterBlurImg img={item.imageCard} brightness={"dark"} />
           <img src={item.logoImg} alt="none" className="projectLogo"></img>
         </Link>
@@ -29,7 +29,7 @@ export default class CaseHistoryPage extends Component {
       <div className="caseHistoryPage">
         <div className="fullSection">
           <div className="fullSectionContent limitWidthContent">
-            <h1 className="bigTitle"> Our Projects </h1>
+            <h1 className="bigTitle"> Past Projects </h1>
             <div className="projectsCards">{projectsCards}</div>
           </div>
           <div className="backSvg backRightTop">

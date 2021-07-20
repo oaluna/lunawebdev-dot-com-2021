@@ -1,9 +1,11 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import projectsData from "../Data/projectsData";
-import SvgIcons from "../SvgIcons";
-import "../components.css";
+import projectsData from '../Data/projectsData.js';
+import SvgIcons from '../SvgIcons.js';
+import '../components.css';
+import '../unterseiteInfo.css'
+
 
 export default class ProjectPage extends Component {
   constructor(props) {
@@ -16,7 +18,7 @@ export default class ProjectPage extends Component {
   }
 
   componentDidMount() {
-    if (this.state.nextProject === projectsData.lenght - 1) {
+    if (this.state.nextProject === projectsData.length - 1) {
       this.setState({
         nextProject: 0
       });
@@ -25,53 +27,19 @@ export default class ProjectPage extends Component {
 
   render() {
     return (
-      <div className="videoSection projectPage">
-        <div className="videoSectionLeft">
-          <div className="tikenModule">
-            <div className="tiken firstTiken">
-              <div className="tikenTop">
-                <h2>
-                  {" "}
-                  {projectsData[this.state.currentProject].stat1.number}{" "}
-                </h2>
-              </div>
-              <div className="tikenBottom">
-                <h6> {projectsData[this.state.currentProject].stat1.text} </h6>
-              </div>
-            </div>
-            <div className="tiken secondTiken">
-              <div className="tikenTop">
-                <h2>
-                  {" "}
-                  {projectsData[this.state.currentProject].stat2.number}{" "}
-                </h2>
-              </div>
-              <div className="tikenBottom">
-                <h6> {projectsData[this.state.currentProject].stat2.text} </h6>
-              </div>
-            </div>
-            <div className="tiken thirdTiken">
-              <div className="tikenTop">
-                <h2>
-                  {" "}
-                  {projectsData[this.state.currentProject].stat3.number}{" "}
-                </h2>
-              </div>
-              <div className="tikenBottom">
-                <h6> {projectsData[this.state.currentProject].stat3.text} </h6>
-              </div>
-            </div>
-          </div>
+      <div className='videoSection'>
+        <div className='videoSectionLeft'>
+
         </div>
-        <div className="projectOverlay"></div>
+        <div className='projectOverlay'></div>
 
         <div
-          className="fullScreenImage"
+          className='fullScreenImage'
           style={{
+            zIndex:-1,
             backgroundImage:
-              "url(" + projectsData[this.state.currentProject].imageLarge + ")"
-          }}
-        ></div>
+              'url(' + projectsData[this.state.currentProject].imageLarge + ')'
+          }}></div>
 
         <div className="videoSectionRight">
           <div className="seiteInfo">
