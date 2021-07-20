@@ -503,7 +503,7 @@ mix-blend-mode: multiply;
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 28px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   margin: 0;
   color: #ccc;
 }
@@ -525,7 +525,7 @@ textarea {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 28px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   margin: 0;
 }
 
@@ -554,7 +554,7 @@ textarea {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-top: 5px;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   
   color: #fff;
 }
