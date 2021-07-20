@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './components.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+import "./components.css";
 
 export default class VideoSection extends Component {
   constructor(props) {
@@ -10,77 +11,73 @@ export default class VideoSection extends Component {
   }
 
   openVideo() {
-    console.log('clicked play button');
+    console.log("clicked play button");
   }
 
   render() {
     return (
-      <div className='videoSection'>
-        <div className='videoSectionLeft' style={{ zIndex: 10000, color: '#f0f8ff' }}>
-          <div className='tokenModule'>
-            <div className='token firsttoken'>
-              <div className='tokenTop'>
+      <div className="videoSection">
+        <div className="videoSectionLeft">
+          <div className="tikenModule">
+            <div className="tiken firstTiken">
+              <div className="tikenTop">
                 <h2> 30+ </h2>
               </div>
-              <div className='tokenBottom'>
+              <div className="tikenBottom">
                 <h6> Tech books read so far </h6>
               </div>
             </div>
-            <div className='token secondtoken'>
-              <div className='tokenTop'>
-                <h2> 100+ </h2>
+            <div className="tiken secondTiken">
+              <div className="tikenTop">
+                <h2> 12000+ </h2>
               </div>
-              <div className='tokenBottom'>
-                <h6> Random thoughts had today </h6>
+              <div className="tikenBottom">
+                <h6> Scatterbrained thoughts </h6>
               </div>
             </div>
-            <div className='token thirdtoken'>
-              <div className='tokenTop'>
+            <div className="tiken thirdTiken">
+              <div className="tikenTop">
                 <h2> 10k+ </h2>
               </div>
-              <div className='tokenBottom'>
-                <h6> Hours of learning. </h6>
+              <div className="tikenBottom">
+                <h6> Hours of Learning </h6>
               </div>
             </div>
           </div>
         </div>
+        <div className="videoOverlay"></div>
+        <video loop playsInline autoPlay muted>
+          <source
+            src="https://www.pexels.com/video/854102/download/"
+            type="video/mp4"
+          />
+          
+          Your browser does not support the video tag.
+        </video>
 
-        <div className='videoOverlay'></div>
-          <video className="videoMain"
-            width='100%'
-            style={{ filter: 'saturate(0.25) darken', zIndex: -1 }}
-            loop
-            playsInline
-            autoPlay
-            muted>
-            <source
-              src='https://www.pexels.com/video/3194277/download/'
-              type='video/mp4'
-            />
-          </video>
-          {/* </div> */}
-
-
-        <div className='videoSectionRight'>
-          <div className='siteInfoVideoSection'>
-            <div className='siteTitle'>
-              <h1 style={{ fontWeight: 900, color: '#f0f8ff'}}> Live Events </h1>
-              <br />
+        <div className="videoSectionRight">
+          <div className="seiteInfo">
+            <div className="seiteTitle">
+              <h5> Live Events </h5>
+              <h2> We Take Your Brand In Tour With Influencers</h2>
             </div>
-            <br />
-            <div className='siteText'>
-              <h2 style={{fontWeight: 100, fontSize: '30px', lineHeight: 1.2}}> COMING SOON</h2>
+            <div className="seiteText">
+            <h2>COMING SOON</h2>
+              <p>
+                {" "}
+                Stay tuned for live coding in this space.<br />{" "}
+              </p>
             </div>
-            <div className='siteButtons' style={{paddingTop: 25}}>
-              <Link to={'/Contact'}>
-                <button className='circleBtn circleBtnDark' style={{marginLeft: '15px'}}>
-                  <span className='circleBtnIcon'>+</span>
-                  <h5 style={{ color: '#f0f8ff' }}>Find Out More</h5>
+            <div className="seiteButtons">
+              <Link to={"/Contacts"}>
+                <button className="circleBtn circleBtnDark">
+                  <span className="circleBtnIcon">+</span>
+                  <h4> FIND OUT MORE </h4>
                 </button>
               </Link>
-              <Link to={'/Contact'}>
-                <button className='simpleBtn simpleBtnDark'>
-                  <h4 style={{ color: '#f0f8ff', padding:'5px 95px'}}>Contact</h4>
+              <Link to={"/Contacts"}>
+                <button className="simpleBtn simpleBtn">
+                  <h4> CONTACT </h4>
                 </button>
               </Link>
             </div>

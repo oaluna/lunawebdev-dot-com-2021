@@ -82,15 +82,15 @@
         var Waves = this;
 
         Waves.options = extend(options || {}, {
-          resize: false,
-          rotation: 45,
+          resize: true,
+          rotation: 20,
           waves: 5,
-          width: 100,
+          width: 90,
           hue: [11, 14],
-          amplitude: 0.5,
+          amplitude: 0.25,
           background: true,
           preload: true,
-          speed: [0.004, 0.008],
+          speed: [0.003, 0.008],
           debug: false,
           fps: false,
         });
@@ -225,11 +225,11 @@
           Waves.Waves = true;
         }
 
-        var a = Math.floor(127 * Math.sin(0.3 * Waves.hue + 0) + 128);
-        var b = Math.floor(127 * Math.sin(0.3 * Waves.hue + 2) + 128);
-        var c = Math.floor(127 * Math.sin(0.3 * Waves.hue + 4) + 128);
+        var a = Math.floor(0 * Math.sin(0.3 * Waves.hue + 0) + 0);
+        var b = Math.floor(0 * Math.sin(0.3 * Waves.hue + 2) + 0);
+        var c = Math.floor(0 * Math.sin(0.3 * Waves.hue + 4) + 0);
 
-        Waves.color = 'rgba(' + a + ',' + b + ',' + c + ', 0.1)';
+        Waves.color = 'rgba(' + a + ',' + b + ',' + c + ', 0.2)';
       };
 
       function Wave(Waves) {

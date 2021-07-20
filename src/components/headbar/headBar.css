@@ -1,0 +1,83 @@
+.headBarContainer {
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  height: 100px;
+  overflow: visible;
+  margin: 0;
+  padding: 0px 0 0 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.16) 100%);
+}
+
+.headBarContainerActive {
+  height: 100vh;
+  background-color: rgba(256, 256, 256, 1);
+}
+
+.headBarContainerTop {
+  height: 80px !important;
+  background-color: rgba(256, 256, 256, 0) !important;
+  padding: 25px 0 0 0 !important;
+}
+
+.headBar {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+}
+
+.headBarButton {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.headBarButtonContent {
+  transition: all 0.6s ease;
+}
+
+.headBarContainerActive .headBarButtonContent {
+  transform: rotate(45deg) scale(1.2);
+}
+
+.headBarMenu {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  pointer-events: none;
+  display: block;
+  margin: 60px 0 0 0;
+  transition: all 0.3s ease;
+  height: 0;
+  opacity: 0;
+  color: rgba(0, 0, 0, 1);
+}
+
+.headBarContainerActive .headBarMenu {
+  pointer-events: auto;
+  margin: 30px 0;
+  opacity: 1;
+  height: auto;
+}
+
+.headBarMenuItem {
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.headBarMenuItem:hover {
+  text-align: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}

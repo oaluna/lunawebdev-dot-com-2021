@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ContactForm from './ContactForm.js';
 
-import './pages.css';
+import '../pages.css';
 
 export default class ContactPage extends Component {
   constructor(props) {

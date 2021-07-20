@@ -11,8 +11,7 @@
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-  background-color: #a4508b;
-  background-image: linear-gradient(136deg, #a4508b 0%, #5f0a87 74%);
+  background-color: #ffffff;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -32,7 +31,7 @@
   min-height: 600px;
 }
 
-.projectPage .token {
+.projectPage .tiken {
   color: #fff;
   border-color: #fff;
 }
@@ -132,10 +131,12 @@
   transition: all 0.6s ease;
   cursor: pointer;
   border-radius: 30px;
+  color: #fff;
 }
 
 .socialItem:hover {
-  background: rgba(189, 202, 251, 1);
+  background:rgba(255,255,255,0.3);
+  
 }
 
 /* Footer Component */
@@ -170,15 +171,14 @@
 }
 
 .footerMainMenu {
-  grid-column: 1/1;
+  grid-column: 1/2;
   grid-row: 2/3;
   display: flex;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 15px;
 }
 
 .footerMainMenu h4 {
@@ -193,8 +193,6 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 15px;
-  margin: 15px;
 }
 
 .footerEndMenu {
@@ -202,58 +200,8 @@
 }
 
 .footerEndMenu h6 {
-  margin: 5px 25px;
+  margin: 5px 10px;
   cursor: pointer;
-}
-
-@media only screen and (max-width: 450px) {
-  .footer {
-    max-width: 450px;
-    display: flex;
-    text-align: center;
-  }
-
-  .footerFirstRow {
-    width: 450px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .footerLogo {
-    transform: scale(.75);
-    position: relative;
-    margin-left: -50vw;
-
-  }
-
-  .socialBox {
-    width: 450px;
-    display: flex;
-    top: 20vh;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    left: -100vw;
-  }
-
-  .footerMainMenu {
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: -25vw;
-  }
-
-  .footerEnd p {
-    width: 450px;
-    text-align: left;
-    margin-left: -50vw;
-  }
-
-  .footerEndMenu p {
-    line-height: 1;
-  }
-
 }
 
 @media only screen and (max-width: 900px) {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-const projectsData = require('./Data/projectsData');
+const projectsData = require('../Data/projectsData');
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import FilterBlurImg from './FilterBlurImg';
+import FilterBlurImg from '../FilterBlurImg';
 import styled from 'styled-components';
-import Medium from './Medium'
+import Medium from '../Medium'
 
 class Slider extends Component {
   constructor(props) {
@@ -165,7 +165,7 @@ function BlogPage() {
     <div className='blogPage'>
       <Slider />
       <span style={{  fontSize: '48px', marginLeft: '50vw', marginTop: '55vh'}}>
-      Click <a href="https://medium.com/@oaluna" style={{color: '#f0f'}}>here</a> to read more of my posts.
+      Click <a href="https://medium.com/@oaluna" style={{color: '#f0f'}}><strong>here</strong></a> to read more of my posts.
       </span>
     </div>
   );

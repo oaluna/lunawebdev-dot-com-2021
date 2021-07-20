@@ -56,8 +56,8 @@ const Medium = () => {
         Apart from creating web-applications, I now write for a publication on
         Medium. Here's some of the recent posts on my page, which you can also
         view{' '}
-        <a href='https://medium.com/@oaluna' style={{ textDecoration: 'none' }}>
-          here
+        <a href='https://medium.com/@oaluna' style={{ color: '#f0f' }}>
+          <strong>here</strong>
         </a>
       </h2>
       {isLoading && (

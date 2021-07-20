@@ -1,4 +1,4 @@
-.viewCardModule {
+.vierCardModule {
   position: relative;
   width: 100%;
   height: 450px;
@@ -6,88 +6,73 @@
   margin: 0px;
 }
 
-.viewCardContent {
+.vierCardContent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
   display: flex;
   align-items: center;
-
 }
 
-@media only screen and (min-width: 300px) and (max-width: 900px) {
-  .viewCardModule {
+@media only screen and (max-width: 900px) and (min-width: 451px) {
+  .vierCardModule {
     overflow-x: scroll;
     overflow-y: hidden;
-    min-width: 100vw;
-    max-height: 450px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
-
+    width: 100vw;
   }
 
-  .viewCardContent {
-    width: 200 !important;
-    height: 95 !important;
-    margin: 0 !important;
+  .vierCardContent {
+    width: 160% !important;
+    padding: 2%;
   }
 
-  .viewCard {
-    max-width: 100% !important;
-    margin: auto;
-    padding: 15px 25px;
-    max-height: 90%;
+  .vierCard {
+    width: 25% !important;
+    margin: 0 1%;
   }
 }
 
 @media only screen and (max-width: 450px) and (min-height: 600px) {
-  .viewCardModule {
+  .vierCardModule {
     width: 100vw;
     overflow-x: scroll;
     overflow-y: hidden;
   }
 
-  .viewCardContent {
+  .vierCardContent {
     width: 300%;
     padding: 0 2%;
   }
 
-  .viewCard {
+  .vierCard {
     width: 25%;
     margin: 0 1%;
   }
 }
 
-.viewCard {
+.vierCard {
   position: relative;
   width: 23%;
   height: 100%;
   overflow: hidden;
+  border-radius: 30px;
   box-sizing: border-box;
   transition: all 0.6s ease;
-z-index: 10;
-  box-shadow: none !important;
-  background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189,202,251,0.11);
-  backdrop-filter: blur(12px);
-  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.viewCard:hover {
+.vierCard:hover {
   box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transform: scale(1);
+  transform: scale(1.02);
 }
 
-.viewCard:hover .backImg {
+/*.vierCard:hover .backImg {
   filter: blur(3px) brightness(100%);
-}
+}*/
 
-.viewCard .backImg {
+.vierCard .backImg {
   position: absolute;
   height: 112%;
   top: -6%;
@@ -99,7 +84,13 @@ z-index: 10;
   position: absolute;
   z-index: 10 !important;
   position: absolute;
-  mask-image: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(12,12,12,0.4) 40%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(188, 188, 188, 0) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-filter: blur(3px) brightness(200%) !important;
 }
 
 .projectInfo {
@@ -112,7 +103,7 @@ z-index: 10;
   align-items: center;
 }
 
-.viewCard .projectLogo {
+.vierCard .projectLogo {
   position: absolute;
   bottom: 25px;
   z-index: 20;
@@ -120,30 +111,33 @@ z-index: 10;
   left: 10%;
 }
 
-.viewCardLast {
+.vierCardLast {
+  border: 2px solid rgba(206, 208, 237, 1);
   box-shadow: none !important;
-  background: rgba(189, 202, 251, 0.11);
-  border: 1px solid rgba(189,202,251,0.11);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(235, 230, 248, 1) 90%
+  );
 }
 
-.viewCardLast .filterBlurImg {
-filter: blur(3px) brightness(100%) saturate(0) !important;
+.vierCardLast .filterBlurImg {
+  -webkit-filter: blur(3px) brightness(100%) saturate(0) !important;
   opacity: 0.2;
 }
 
-.viewCardLast:hover {
-  border: 2px solid rgba(206, 208, 237, 1);
+.vierCardLast:hover {
+  border: 3px solid rgba(206, 208, 237, 1);
 }
 
-.viewCardLast h3 {
+.vierCardLast h3 {
   z-index: 20;
   position: absolute;
   bottom: 50%;
   left: 20px;
 }
 
-.viewCircleButton {
+.vierCircleButton {
   position: absolute;
   z-index: 50;
   top: 50%;
@@ -151,17 +145,17 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
   transition: all 0.6s ease;
 }
 
-.viewCard:hover .viewCircleButton {
-  left: 50%;
+.vierCard:hover .vierCircleButton {
+  left: 40%;
 }
 
-.viewCard:hover .circleBtnIcon {
+.vierCard:hover .circleBtnIcon {
   background-color: #060606;
   color: #f6f6f6;
   border-color: #060606;
 }
 
-/* vierCards on projects page / case history */
+/* Cards on projects page / case history */
 
 .projectsCards {
   position: relative;
@@ -174,7 +168,7 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
   grid-row-gap: 20px;
 }
 
-.projectsCards .viewCard {
+.projectsCards .vierCard {
   width: 100% !important;
   height: 400px;
 }
@@ -183,16 +177,9 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
   color: #fff;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 900px) and (min-width: 351px) {
+@media only screen and (max-width: 900px) and (min-width: 451px) {
   .projectsCards {
     grid-template-columns: 1fr 1fr;
-    color: #113355;
-  }
-  .projectTitle {
-    color: #113355;
-  }
-  .viewCard {
-    color: #113355;
   }
 }
 
@@ -200,7 +187,7 @@ filter: blur(3px) brightness(100%) saturate(0) !important;
   .projectsCards {
     grid-template-columns: 1fr;
   }
-  .projectsCards .viewCard {
+  .projectsCards .vierCard {
     height: 250px !important;
   }
 }

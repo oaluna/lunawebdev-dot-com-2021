@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import SkillsPage from './SkillsPage'
+
 import VideoSection from "./VideoSection";
-import ServicesSection from "./ServicesSection";
-import VierCards from "./ViewCards";
+import ServicesSection from "./services/ServicesSection";
+import Cards from "./cards/Cards";
 import SvgIcons from "./SvgIcons";
-import ContactForm from "./ContactForm";
+import ContactForm from "./contact/ContactForm";
 
 import "./pages.css";
-import "./siteInfo.css";
+import "./unterseiteInfo.css";
 
 export default class Homepage extends Component {
   constructor(props) {
@@ -24,20 +24,21 @@ export default class Homepage extends Component {
           
           <div className="socialHeaderTitle">
             <h1>
-              
-              Hello! I'm {" "}<span style={{ fontWeight: 900, padding: "0 12px"}}>
-             Oscar Luna
+              {" "}
+              Welcome! <br />I'm <span style={{ fontWeight: "900" }}>
+                Oscar Luna
               </span>{" "}
             </h1>
-            <h6>
+            <h5>
               {" "}
-             I'm a front-end web developer, former dancer, and tech blogger from San Francisco, CA. I'm in search of full-time work while increasing my reader count, honing my coding skills, and attending the occasional dance workshop. 
-            </h6>
+              I'm a front-end web developer, former dancer, and tech blogger from San Francisco, CA. I'm in search of full-time work while increasing my reader count, honing my coding skills, and attending the occasional dance workshop. 
+            </h5>
           </div>
+          
           <div className="socialHeaderCallToAction">
             <Link to={"/Contacts"}>
               <button className="simpleBtn simpleBtnDark">
-                <h4>GET STARTED</h4>
+                <h4> GET STARTED </h4>
               </button>
             </Link>
             <Link to={"/Contacts"}>
@@ -81,34 +82,30 @@ export default class Homepage extends Component {
             </div>
           </div>
         </div>
-<div className="fullSection">
-  <div className="fullSectionContent limitWidthContent">
-    <SkillsPage />
-  </div>
-</div>
+
         <div className="fullSection">
           <div className="fullSectionContent limitWidthContent">
-            <h1 className="bigTitle"> Projects </h1>
+          <h1 className="bigTitle"> Projects </h1>
             <p>Some of the previous projects build when learning web development. <br /><strong>If you're on mobile, swipe left and right to view more.</strong></p>
-            <VierCards />
+            <Cards />
           </div>
           <div className="fullSectionContent limitWidthContent dritteBottom">
-            <div className="untersiteInfo">
-              <div className="untersiteTitle">
+            <div className="unterseiteInfo">
+              <div className="unterseiteTitle">
                 <h5> Expertise </h5>
-                <h2> Front-end Web Develpment </h2>
+                <h2> Frontend Web Developer </h2>
               </div>
-              <div className="untersiteText">
+              <div className="unterseiteText">
                 <p>
                   {" "}
                   I can create stunning, responsive, and semantic UI that adapts to any device screen size. I also have back-end development knowledge such as creating and aintaining relational and non-relational databases as well as deployment to platforms such as Vercel or Netlify.{" "}
                 </p>
               </div>
-              <div className="untersiteButtons">
+              <div className="unterseiteButtons">
                 <Link to={"/Projects"}>
                   <button className="circleBtn circleBtnDark">
                     <span className="circleBtnIcon">+</span>
-                    <h4> SEE CASE HISTORY</h4>
+                    <h4> SEE PAST PROJECTS </h4>
                   </button>
                 </Link>
                 <Link to={"/Contacts"}>
@@ -130,26 +127,26 @@ export default class Homepage extends Component {
 
         <div className="fullSection">
           <div className="fullSectionContent limitWidthContent">
-            <h1 className="bigTitle">Services</h1>
+            <h1 className="bigTitle">Services </h1>
             <ServicesSection />
           </div>
           <div className="fullSectionContent limitWidthContent dritteBottom">
-            <div className="untersiteInfo">
-              <div className="untersiteTitle">
+            <div className="unterseiteInfo">
+              <div className="unterseiteTitle">
                 <h5> Experience </h5>
-                <h2> Self-learned since August 2019 </h2>
+                <h2> Over 2 Years of Experience </h2>
               </div>
-              <div className="untersiteText">
+              <div className="unterseiteText">
                 <p>
                   {" "}
                   I am self-learned developer who got started in 2019. In the past few years I have become passionate about JavaScript Data Structures, their algorithms for searching, sorting, appending, and prepending data, and using that knowledge towards solving all kinds of problems through writing code.{" "}
                 </p>
               </div>
-              <div className="untersiteButtons">
+              <div className="unterseiteButtons">
                 <Link to={"/Projects"}>
                   <button className="circleBtn circleBtnDark">
                     <span className="circleBtnIcon">+</span>
-                    <h4> SEE CASE HISTORY </h4>
+                    <h4> SEE PAST PROJECTS </h4>
                   </button>
                 </Link>
                 <Link to={"/Services"}>

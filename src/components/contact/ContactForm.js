@@ -1,10 +1,10 @@
 import React from 'react';
 import emailjs, { init } from 'emailjs-com';
 
-import SvgIcons from './SvgIcons.js';
+import SvgIcons from '../SvgIcons.js';
 
-import './pages.css';
-import './components.css';
+import '../pages.css';
+import '../components.css';
 
 init('user_GNoYMqZXu8puUlBH1AHpn');
 

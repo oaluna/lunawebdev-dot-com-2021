@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import "./services/servicesSection.css";
+import "./servicesSection.css";
 import "./components.css";
 
 import SvgIcons from "./SvgIcons";
 
-export default class DigitalCreations extends Component {
+export default class InfluencerMarketing extends Component {
   constructor(props) {
     super(props);
 
@@ -19,41 +19,52 @@ export default class DigitalCreations extends Component {
         <div className="fullSection">
           <div className="socialPostContainer limitWidthContent transparentBlueGradientBack">
             <div className="socialPostFull">
-              <div className="digitalCreations">
-                <div className="digitalPc">
-                  <div className="searchBox">
-                    <SvgIcons
-                      dimension="12px"
-                      iconName="web"
-                      fillColor="rgba(252, 197, 215, 1)"
-                    />
-                  </div>
-                  <div className="webBox">
-                    <SvgIcons
-                      dimension="60px"
-                      iconName="photo"
-                      fillColor="rgba(252, 197, 215, 1)"
-                    />
-                  </div>
+              <div className="socialPost">
+                <div className="socialPost3D" />
+                <div className="socialProfile">
+                  {" "}
+                  <SvgIcons
+                    dimension="25px"
+                    iconName="user"
+                    fillColor="#fff"
+                  />{" "}
                 </div>
-                <div className="digitalPhone">
-                  <div className="phoneBox">
-                    <SvgIcons
-                      dimension="60px"
-                      iconName="appstore"
-                      fillColor="rgba(252, 197, 215, 1)"
-                    />
-                  </div>
+                <div className="socialImageContainer">
+                  <SvgIcons
+                    dimension="60px"
+                    iconName="photo"
+                    fillColor="#fff"
+                  />
+                </div>
+                <div className="socialAction socialLike">
+                  {" "}
+                  <SvgIcons
+                    dimension="12px"
+                    iconName="heart"
+                    fillColor="#fff"
+                  />{" "}
+                </div>
+                <div className="socialAction socialComment">
+                  {" "}
+                  <SvgIcons
+                    dimension="12px"
+                    iconName="comment"
+                    fillColor="#fff"
+                  />{" "}
+                </div>
+                <div className="socialAction socialShare">
+                  {" "}
+                  <SvgIcons
+                    dimension="12px"
+                    iconName="send"
+                    fillColor="#fff"
+                  />{" "}
                 </div>
               </div>
               <div className="serviceName">
-                <h5> Websites & more... </h5>
-                <h1> Digital Creations </h1>
+                <h5> Advertising </h5>
+                <h1> Influencer Marketing </h1>
               </div>
-
-              <button className="circleBtn circleBtnLight plusButton">
-                <span className="circleBtnIcon">+</span>
-              </button>
             </div>
           </div>
         </div>
@@ -64,56 +75,58 @@ export default class DigitalCreations extends Component {
               <div className="serviceDetailsCard">
                 <SvgIcons
                   dimension="50px"
-                  iconName="domain"
+                  iconName="influencer"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Domain Selection</h3>
+                <h3>Influencer Selection</h3>
                 <p>
                   {" "}
-                  We help you find your way on the web from the very beginning
-                  by choosing the right domain name.
+                  We can offer you a roster of influencers working exclusiveley
+                  with us nand/r find someone specific you are looking for.
                 </p>
               </div>
               <div className="serviceDetailsCard">
                 <SvgIcons
                   dimension="50px"
-                  iconName="design"
+                  iconName="management"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Branding & Design</h3>
+                <h3>Campaign Management</h3>
                 <p>
                   {" "}
-                  Our tem will assist you in moving your branding and design
-                  lenguage to the web, updating it or even creating a new one
-                  tht fits even better.
+                  Our team will manage the influencers chosen and make sure they
+                  post the right contents at the right time.
                 </p>
               </div>
               <div className="serviceDetailsCard">
                 <SvgIcons
                   dimension="50px"
-                  iconName="responsive"
+                  iconName="videoEdit"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Responsive Content</h3>
+                <h3>Quality contents</h3>
                 <p>
                   {" "}
-                  Just having a website it's not enugh, it should be an
-                  experience capable of being lived torugh every screen.
+                  Our esclusive influencers do their best to create the content
+                  that follows the guidelines while being relevant to thei
+                  audience.{" "}
                 </p>
               </div>
               <div className="serviceDetailsCard">
                 <SvgIcons
                   dimension="50px"
-                  iconName="database"
+                  iconName="analytics"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Database management</h3>
+                <h3>Campaign Reporting</h3>
                 <p>
                   {" "}
-                  If your web presence is in need of a place to store digital
-                  content and client informations, we got tht covered too.{" "}
+                  Your campaign results will be collected in real time and at
+                  the end of the perios you will receive a full report of the
+                  content posted and relative statistics.
                 </p>
               </div>
+
               <div className="serviceDetailsCard serviceDetailsCardLast">
                 <SvgIcons
                   dimension="50px"

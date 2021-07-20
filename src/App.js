@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { Redirect, Route, Switch, withRouter } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 import Homepage from "./components/Homepage";
 import CaseHistory from "./components/CaseHistory";
-import ProjectPage from "./components/ProjectPage";
-import ContactPage from "./components/ContactPage";
+import ProjectPage from "./components/Projects/ProjectPage";
+import ContactPage from "./components/contact/ContactPage";
 import Marketing from "./components/Marketing";
 import SocialMediaManagement from "./components/SocialMediaManagement";
 import DigitalCreations from "./components/DigitalCreations";
-import ServicesPage from "./components/ServicesPage";
-import SkillsPage from "./components/SkillsPage";
-import Footer from "./components/Footer";
-import HeadBar from "./components/HeadBar";
+import ServicesPage from "./components/services/ServicesPage";
+import SkillsPage from "./components/Brands/SkillsPage";
+import Footer from "./components/footer/Footer";
+import HeadBar from "./components/headbar/HeadBar";
 import AboutMePage from "./components/AboutMePage";
 import Chat from "./components/Chat/Chat";
-import BlogPage from "./components/BlogPage.js";
-import ErrorPage from "./components/404.js";
+import BlogPage from "./components/blogpage/BlogPage";
+import ErrorPage from "./components/404/404";
 import "./styles.css";
 
 class App extends Component {

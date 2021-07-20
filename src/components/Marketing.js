@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './servicesSection.css';
+import './services/servicesSection.css';
 import './components.css';
 
 import SvgIcons from './SvgIcons.js';
