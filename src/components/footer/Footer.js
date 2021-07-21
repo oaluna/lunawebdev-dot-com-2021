@@ -1,7 +1,8 @@
 import React from "react";
 
 import SvgIcons from "../SvgIcons";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMedium, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import "../pages.css";
 import { Link } from "react-router-dom";
 
@@ -11,33 +12,27 @@ export default function Footer() {
       <div className="footerContent">
         <div className="footerFirstRow">
           <Link to={"/"} className="footerLogo">
-            <SvgIcons
-              dimension="200px"
-              iconName="socialflowFullLogo"
-              fillColor="#060606"
-            />
+            <SvgIcons iconName="oscarArmandoLunaLogo" style={{maxWidth: '100px !important'}}/>
           </Link>
           <div className="socialBox">
             <a
-              href="https://www.instagram.com/socialflowagency"
+              href="https://linkedin.com/in/oscar-a-luna"
               className="socialItem"
             >
-              <SvgIcons
-                dimension="30px"
-                iconName="linkedin"
-                fillColor="#060606"
-              />
-            </a>
+               <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faLinkedin} />
+        </a>
+        <a href='https://www.medium.com/@oaluna' className='socialItem'>
+        <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faMedium} />
+        </a>
+            
             <a
-              href="https://www.instagram.com/socialflowagency"
+              href="https://github.com/oaluna"
               className="socialItem"
             >
-              <SvgIcons
-                dimension="30px"
-                iconName="instagram"
-                fillColor="#060606"
-              />
+             <FontAwesomeIcon style={{width: '32px', height: '32px'}}
+ icon={faGithub} />         
             </a>
+           
           </div>
         </div>
         <div className="footerMainMenu">
@@ -45,7 +40,7 @@ export default function Footer() {
             <Link to="/">Home</Link>
           </h4>
           <h4>
-            <Link to="/Projects">Case History</Link>
+            <Link to="/Projects">Past Projects</Link>
           </h4>
           <h4>
             <Link to="/Services">Services</Link>
@@ -59,7 +54,7 @@ export default function Footer() {
         </div>
 
         <div className="footerEnd">
-          <h6>Copyright @ 2021 Socialflow LTD, All rights reserved</h6>
+          <h6>Copyright @ 2021 by Oscar Armando Luna, All rights reserved</h6>
           <div className="footerEndMenu">
             <h6> Terms and conditions </h6>
             <h6> Privacy policy </h6>

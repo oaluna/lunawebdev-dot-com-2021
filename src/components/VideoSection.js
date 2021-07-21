@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import Fade from 'react-reveal'
 import "./components.css";
 
 export default class VideoSection extends Component {
@@ -18,6 +18,7 @@ export default class VideoSection extends Component {
     return (
       <div className="videoSection">
         <div className="videoSectionLeft">
+        <Fade left duration={300}>
           <div className="tikenModule">
             <div className="tiken firstTiken">
               <div className="tikenTop">
@@ -44,6 +45,7 @@ export default class VideoSection extends Component {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
         <div className="videoOverlay"></div>
         <video loop playsInline autoPlay muted>
@@ -57,6 +59,7 @@ export default class VideoSection extends Component {
 
         <div className="videoSectionRight">
           <div className="seiteInfo">
+<Fade in duration={300}>
             <div className="seiteTitle">
               <h5> Live Events </h5>
               <h2> We Take Your Brand In Tour With Influencers</h2>
@@ -81,6 +84,7 @@ export default class VideoSection extends Component {
                 </button>
               </Link>
             </div>
+</Fade>
           </div>
         </div>
       </div>
