@@ -78,11 +78,10 @@ export default class InfluencerMarketing extends Component {
                   iconName="influencer"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Influencer Selection</h3>
+                <h3>Front-end Development</h3>
                 <p>
                   {" "}
-                  We can offer you a roster of influencers working exclusiveley
-                  with us nand/r find someone specific you are looking for.
+                  I am a self-taught developer with 2 years of experience.
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -91,11 +90,10 @@ export default class InfluencerMarketing extends Component {
                   iconName="management"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Campaign Management</h3>
+                <h3>Blogger on Medium</h3>
                 <p>
                   {" "}
-                  Our team will manage the influencers chosen and make sure they
-                  post the right contents at the right time.
+                  I am a writer for 3 publications on Medium, and in the past month my following has grown by over 1500 readers, and counting.
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -107,9 +105,7 @@ export default class InfluencerMarketing extends Component {
                 <h3>Quality contents</h3>
                 <p>
                   {" "}
-                  Our esclusive influencers do their best to create the content
-                  that follows the guidelines while being relevant to thei
-                  audience.{" "}
+                  When I'm not working on code I'm either reading about it or writing a blog post about it.{" "}
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -118,13 +114,7 @@ export default class InfluencerMarketing extends Component {
                   iconName="analytics"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Campaign Reporting</h3>
-                <p>
-                  {" "}
-                  Your campaign results will be collected in real time and at
-                  the end of the perios you will receive a full report of the
-                  content posted and relative statistics.
-                </p>
+
               </div>
 
               <div className="serviceDetailsCard serviceDetailsCardLast">
@@ -133,8 +123,8 @@ export default class InfluencerMarketing extends Component {
                   iconName="heartMessage"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Can't Find What Your Are Looking For?</h3>
-                <p> Get in touch and let us know what you need. </p>
+                <h3>Want to hire me?</h3>
+                <p> Proceed to the Contact section to get in touch. </p>
                 <Link to={"/Contacts"}>
                   <button className="simpleBtn simpleBtnDark">
                     <h4> CONTACT US </h4>

@@ -67,11 +67,10 @@ export default class DigitalCreations extends Component {
                   iconName="domain"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Domain Selection</h3>
+                <h3>Stunning, Responsive UI</h3>
                 <p>
                   {" "}
-                  We help you find your way on the web from the very beginning
-                  by choosing the right domain name.
+                  I can create UI that looks good on any device.
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -80,12 +79,10 @@ export default class DigitalCreations extends Component {
                   iconName="design"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Branding & Design</h3>
+                <h3>Prototyping</h3>
                 <p>
                   {" "}
-                  Our tem will assist you in moving your branding and design
-                  lenguage to the web, updating it or even creating a new one
-                  tht fits even better.
+                  I use prototyping tools like Figma and Editor X to prototype UI for my projects.
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -94,11 +91,10 @@ export default class DigitalCreations extends Component {
                   iconName="responsive"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Responsive Content</h3>
+                <h3>Swift, Secure Performance</h3>
                 <p>
                   {" "}
-                  Just having a website it's not enugh, it should be an
-                  experience capable of being lived torugh every screen.
+                  I ensure that my code is optimized and can provide the best Lighthouse score it can before going into deployment.
                 </p>
               </div>
               <div className="serviceDetailsCard">
@@ -110,8 +106,7 @@ export default class DigitalCreations extends Component {
                 <h3>Database management</h3>
                 <p>
                   {" "}
-                  If your web presence is in need of a place to store digital
-                  content and client informations, we got tht covered too.{" "}
+                  I can create and manage relational and non-relational databases such as MongoDB, NoSQL, and Apollo GraphQL.{" "}
                 </p>
               </div>
               <div className="serviceDetailsCard serviceDetailsCardLast">
@@ -120,8 +115,8 @@ export default class DigitalCreations extends Component {
                   iconName="heartMessage"
                   fillColor="rgba(189, 202, 251, 1)"
                 />
-                <h3>Can't Find What Your Are Looking For?</h3>
-                <p> Get in touch and let us know what you need. </p>
+                <h3>Want to hire me?</h3>
+                <p> Proceed to the contact page to get started. </p>
                 <Link to={"/Contacts"}>
                   <button className="simpleBtn simpleBtnDark">
                     <h4> CONTACT US </h4>
