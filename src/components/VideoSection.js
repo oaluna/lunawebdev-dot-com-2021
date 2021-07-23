@@ -62,7 +62,7 @@ export default class VideoSection extends Component {
 <Fade in duration={300}>
             <div className="seiteTitle">
               <h5> Live Events </h5>
-              <h2> We Take Your Brand In Tour With Influencers</h2>
+              <h2> Workshops, Vlogs, and More!</h2>
             </div>
             <div className="seiteText">
             <h2>COMING SOON</h2>
