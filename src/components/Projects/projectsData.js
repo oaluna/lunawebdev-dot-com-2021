@@ -41,7 +41,7 @@ const projectsData = [
 
       url1: '',
       social1: '',
-      number1: 424000,
+      number1: null,
       tag1: 'Oscar Armando Luna',
 
       url2: 'https://instagram.com/LunaWebDev',

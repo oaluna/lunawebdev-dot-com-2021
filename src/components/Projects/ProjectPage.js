@@ -74,6 +74,11 @@ export default class ProjectPage extends Component {
                   <h4> CONTACT US </h4>
                 </button>
               </Link>
+              <a href={projectsData[this.state.currentProject].url}>
+                <button className="simpleBtn simpleBtnDark">
+                  <h4>DEMO</h4>
+                </button>
+              </a>
             </div>
           </div>
         </div>
