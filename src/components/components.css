@@ -106,7 +106,7 @@
   padding: 30px;
 }
 
-.seiteInfo {
+.sideInfo {
   z-index: 30;
   width: 300px;
   height: 82%;
@@ -120,12 +120,12 @@
   backdrop-filter: blur(30px);
 }
 
-.seiteTitle,
-.seiteText {
+.sideTitle,
+.sideText {
   margin-bottom: 15px;
 }
 
-.seiteButtons {
+.sideButtons {
   bottom: 20px;
 }
 
@@ -167,13 +167,13 @@
     padding: 15px;
   }
 
-  .seiteInfo {
+  .sideInfo {
     width: 100%;
     height: auto;
     padding: 30px 20px 20px 20px;
   }
 
-  .seiteButtons {
+  .sideButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

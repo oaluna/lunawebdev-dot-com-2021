@@ -11,9 +11,9 @@ export default class ServicesSection extends Component {
     super(props);
 
     this.state = {
-      highliht: 1,
+      highlight: 1,
       activeStyle: null,
-      passiveStyle: null
+      passiveStyle: null,
     };
 
     this.handleMouseOver = this.handleMouseOver.bind(this);
@@ -47,7 +47,7 @@ export default class ServicesSection extends Component {
     return (
       <div className="servicesContainer">
         <Link
-          to={"/InfluencerMarketing"}
+          to={"/"}
           className="socialPostContainer socialPost1 redGradientBack"
           onMouseOver={() => this.handleMouseOver(1)}
           style={
@@ -95,8 +95,8 @@ export default class ServicesSection extends Component {
             </div>
           </div>
           <div className="serviceName">
-            <h5> Advertising </h5>
-            <h2> Influencer Marketing </h2>
+            <h5> UI/UX </h5>
+            <h2> Responsive, Beautiful Interfaces </h2>
           </div>
           <button className="circleBtn circleBtnLight plusButton">
             <span className="circleBtnIcon">+</span>
@@ -142,7 +142,7 @@ export default class ServicesSection extends Component {
           </div>
           <div className="serviceName">
             <h5> Websites & more... </h5>
-            <h2> Digital Creations </h2>
+            <h2> Web Dev Projects </h2>
           </div>
 
           <button className="circleBtn circleBtnLight plusButton">
@@ -196,8 +196,8 @@ export default class ServicesSection extends Component {
             </div>
           </div>
           <div className="serviceName">
-            <h5> Socialmedia </h5>
-            <h2> Management </h2>
+            <h5> Mongoose, Express, React, Node </h5>
+            <h2> App Development </h2>
           </div>
           <button className="circleBtn circleBtnLight plusButton">
             <span className="circleBtnIcon">+</span>

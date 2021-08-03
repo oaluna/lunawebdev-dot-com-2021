@@ -1101,6 +1101,16 @@
   width: 50%;
 
 }
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .socialHeaderTitle h5 {
+    font-size: 12px;
+    margin-bottom: 10vh;
+  }
+  .socialHeaderCallToAction {
+    top: 90vh !important;
+    bottom: -5vh !important;
+  }
+}
 
 @media only screen and (max-width: 450px) {
   .socialHeaderTitle {
@@ -1132,7 +1142,32 @@
   }
  
 }
-
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+  .socialHeaderTitle {
+    transform: scale(0.7) !important;
+    top: 10vh !important;
+    left: 0vw;
+    width: 85vw;
+  }
+  .socialHeaderTitle h5 {
+    width: 75vw !important;
+  }
+  .socialHeaderCallToAction {
+    bottom: 0vh !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .socialHeaderCallToAction {
+    bottom: 10vh !important;
+    left: 65vw !important;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .socialHeaderCallToAction {
+    top: 90vh !important;
+    bottom: 0vh !important; 
+  }
+}
 .socialHeaderTitle h1 {
   text-align: left;
   font-size: 110px;

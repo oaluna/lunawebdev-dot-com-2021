@@ -1,86 +1,106 @@
-import { Component } from 'react';
-import { a } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
+  faFacebookSquare,
   faLinkedin,
-  faInstagram,
   faTwitter,
+  faMedium,
   faDev,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import aboutMeData from './Data/aboutMeData';
-import './pages.css';
-
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import aboutMeData from "./Data/aboutMeData";
+import styled, { keyframes } from "styled-components";
 
 export default class AboutMePage extends Component {
   state = {
-    pageAuthor: parseInt(this.props.match.params.AboutMe, 1)
+    pageAuthor: parseInt(this.props.match.params.AboutMe, 1),
   };
 
   render() {
     return (
-      <div className='aboutMePage'>
-        <div className='aboutContainer'>
-          <div className='aboutTitle'>
-            <h1>{aboutMeData.title}</h1>
+      <StyledAboutMePage>
+        <AboutMePageHeader>
+          <div className="aboutMeTitle">
+            <h3>AboutMe</h3>
           </div>
-
-          <div className='aboutBody'>
-            <div className='aboutBodyContainer'>
-              <div className='aboutBodyImg'>
-                <img
-                  src={aboutMeData.image}
-                  alt='Oscar Armando Luna, web developer'
-                />
-              </div>
-              <a style={{ zIndex: 25 }} href={aboutMeData.portfolioLink}>
-                <div className='aboutBodyName'>{aboutMeData.name}</div>
-              </a>
-              <div className='aboutBodyText'>
-                <p>{aboutMeData.text}</p>
-              </div>
-              <div className='socialBoxAboutMe'>
-                <a href={aboutMeData.facebookLink}>
-                  <img
-                    className='socialItem'
-                    src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/facebook-512.png'
-                    alt='facebook link'
-                  />
-                </a>
-                <a href={aboutMeData.linkedinLink}>
-                  <img
-                    className='socialItem'
-                    src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/linkedin-512.png'
-                    alt='Linkedin, professional network, linked in icon - Free download'
-                  />
-                </a>
-                <a href={aboutMeData.devLink} className='socialItem'>
-                  <FontAwesomeIcon
-                    icon={faDev}
-                    style={{ color: '#000', fontSize: '30px' }}
-                  />
-                </a>
-                <a href={aboutMeData.twitterLink}>
-                  <img
-                    className='socialItem'
-                    src='https://cdn3.iconfinder.com/data/icons/inficons-round-brand-set-2/512/twitter-512.png'
-                    alt='Logo, social, tweet, twitter icon - Free download'
-                  />
-                </a>
-                <a href={aboutMeData.githubLink}>
-                  <img
-                    className='socialItem'
-                    src='https://cdn3.iconfinder.com/data/icons/social-network-round-gloss-shine/512/GitHub_Social-Network-Communicate-Page-Curl-Effect-Circle-Glossy-Shadow-Shine.png'
-                    alt='Logo, social, github icon'
-                  />
-                </a>
-              </div>
-            </div>
+          <div className="aboutMeName">
+            <h1>{aboutMeData.name}</h1>
           </div>
-        </div>
-      </div>
+          <div className="socialBoxAboutMe">
+            <a href={aboutMeData.facebookLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faFacebookSquare} />
+            </a>
+            <a href={aboutMeData.linkedinLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faLinkedin} />
+            </a>
+            <a href={aboutMeData.mediumLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faMedium} />
+            </a>
+            <a href={aboutMeData.devLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faDev} />
+            </a>
+            <a href={aboutMeData.twitterLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faTwitter} />
+            </a>
+            <a href={aboutMeData.githubLink}>
+              <FontAwesomeIcon style={{width: "64px", height: "64px", marginRight: "20px", marginTop: "20px"}} icon={faGithub} />
+            </a>
+          </div>
+        </AboutMePageHeader>
+        <br />
+        <AboutMePageBody>
+          <AboutMeText>
+            <h5>{aboutMeData.text}</h5>
+          </AboutMeText>
+        </AboutMePageBody>
+      </StyledAboutMePage>
     );
   }
 }
+
+const textPopUpTop = keyframes`
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+   opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            opacity: 1;
+   }
+`;
+
+const StyledAboutMePage = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 90vh;
+  color: #fff;
+  margin: 0;
+`;
+const AboutMePageHeader = styled.div`
+  text-align: left;
+  margin: 15px;
+  animation: ${textPopUpTop} 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+`;
+const AboutMePageBody = styled.div`
+  width: 40vw;
+`;
+
+const AboutMeText = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin: 15px;
+  animation: ${textPopUpTop} 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+`;

@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import projectsData from '../Data/projectsData.js';
-import SvgIcons from '../SvgIcons.js';
-import '../components.css';
-import '../unterseiteInfo.css'
-
+import projectsData from "../Data/projectsData.js";
+import SvgIcons from "../SvgIcons.js";
+import "../components.css";
+import "../underSideInfo.css";
 
 export default class ProjectPage extends Component {
   constructor(props) {
@@ -13,44 +12,43 @@ export default class ProjectPage extends Component {
 
     this.state = {
       currentProject: parseInt(this.props.match.params.Project, 10),
-      nextProject: parseInt(this.props.match.params.Project, 10) + 1
+      nextProject: parseInt(this.props.match.params.Project, 10) + 1,
     };
   }
 
   componentDidMount() {
     if (this.state.nextProject === projectsData.length - 1) {
       this.setState({
-        nextProject: 0
+        nextProject: 0,
       });
     }
   }
 
   render() {
     return (
-      <div className='videoSection'>
-        <div className='videoSectionLeft'>
-
-        </div>
-        <div className='projectOverlay'></div>
+      <div className="videoSection">
+        <div className="videoSectionLeft"></div>
+        <div className="projectOverlay"></div>
 
         <div
-          className='fullScreenImage'
+          className="fullScreenImage"
           style={{
-            zIndex:-1,
+            zIndex: -1,
             backgroundImage:
-              'url(' + projectsData[this.state.currentProject].imageLarge + ')'
-          }}></div>
+              "url(" + projectsData[this.state.currentProject].imageLarge + ")",
+          }}
+        ></div>
 
         <div className="videoSectionRight">
-          <div className="seiteInfo">
-            <div className="seiteTitle">
+          <div className="sideInfo">
+            <div className="sideTitle">
               <h5> {projectsData[this.state.currentProject].category} </h5>
               <h2>{projectsData[this.state.currentProject].title}</h2>
             </div>
-            <div className="seiteText">
+            <div className="sideText">
               <p>{projectsData[this.state.currentProject].text}</p>
             </div>
-            <div className="seiteButtons">
+            <div className="sideButtons">
               <button
                 onClick={() => this.props.history.goBack()}
                 className="circleBtn circleBtnDark"
@@ -58,7 +56,7 @@ export default class ProjectPage extends Component {
                 <span
                   style={{
                     transform: "rotate(" + 180 + "deg)",
-                    marginRight: "10px"
+                    marginRight: "10px",
                   }}
                 >
                   <SvgIcons

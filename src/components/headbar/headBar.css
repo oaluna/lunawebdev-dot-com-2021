@@ -90,6 +90,7 @@
   line-height: 1.2;
 }
 
+
 @media only screen and (max-width: 450px) {
   .logoWrapper {
     position: absolute;
