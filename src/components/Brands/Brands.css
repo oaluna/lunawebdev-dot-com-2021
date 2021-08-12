@@ -1,25 +1,30 @@
-/*----------*/
-/*---------------*/
 /*--- Brands Element Grid ---*/
 .brandsContainer {
   margin-left: 0vw;
   text-align: center;
 }
+
 .brandsTitle h1 {
+  position: absolute;
   text-align: center;
-  margin: 25px auto;
+  top: 15vh;
+  left: 15vw;
+  right: auto;
+  z-index: 9999;
 }
+
 .brandsList {
-  width: 100%;
+  width: 80%;
   position: relative;
-  margin: 25px;
+  margin-top: 28vh;
+  margin-left: 10vw;
   display: -ms-grid;
   display: grid;
   /* -ms-grid-columns: (20%) [5]; */
   grid-template-columns: repeat(8, 12.5%);
   background: transparent;
   border-radius: 15px;
-  
+
 }
 
 .brandsList img {
@@ -32,14 +37,16 @@
   align-self: center;
   padding: 40px;
 }
-  .brandsList img:hover {
+
+.brandsList img:hover {
   border-radius: 50px;
-background: linear-gradient(145deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.06) 100%);
-border: 1px solid rgba(255,255,255,0.2);
-transition: 0.2s ease-in-out;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.2s ease-in-out;
 
 
 }
+
 @media only screen and (max-width: 450px) {
   .brandsList {
     width: 100%;
@@ -47,6 +54,7 @@ transition: 0.2s ease-in-out;
     /* -ms-grid-columns: (50%) [3]; */
     grid-template-columns: repeat(3, 33%);
   }
+
   .brandsList img {
     width: 72px;
     height: 72px;

@@ -20,18 +20,48 @@ export default class Cards extends Component {
       <div className="CardModule">
         <div className="CardContent">
           <Link to={"/ProjectPage/0"} className="Card">
-            <h5 style={{position: 'absolute', width: '100%', textAlign: 'center', top: '50%', zIndex: 9999}}>{projectsData[0].title}</h5>
+            <h5
+              style={{
+                position: "absolute",
+                width: "100%",
+                textAlign: "center",
+                top: "50%",
+                zIndex: 9999,
+              }}
+            >
+              {projectsData[0].title}
+            </h5>
             <FilterBlurImg img={projectsData[0].imageCard} brightness={""} />
           </Link>
 
           <Link to={"/ProjectPage/1"} className="Card">
-          <h5 style={{position: 'absolute', width: '100%', textAlign: 'center', top: '50%', zIndex: 9999}}>{projectsData[1].title}</h5>
+            <h5
+              style={{
+                position: "absolute",
+                width: "100%",
+                textAlign: "center",
+                top: "50%",
+                zIndex: 9999,
+              }}
+            >
+              {projectsData[1].title}
+            </h5>
             <FilterBlurImg img={projectsData[1].imageCard} brightness={""} />
-           <p style={{color: '#000'}}>{projectsData[1].title}</p>
+            <p style={{ color: "#000" }}>{projectsData[1].title}</p>
           </Link>
 
           <Link to={"/ProjectPage/3"} className="Card">
-          <h5 style={{position: 'absolute', width: '100%', textAlign: 'center', top: '50%', zIndex: 9999}}>{projectsData[2].title}</h5>
+            <h5
+              style={{
+                position: "absolute",
+                width: "100%",
+                textAlign: "center",
+                top: "50%",
+                zIndex: 9999,
+              }}
+            >
+              {projectsData[2].title}
+            </h5>
             <FilterBlurImg img={projectsData[2].imageCard} brightness={""} />
             <img
               src={projectsData[2].logoImg}
@@ -41,7 +71,7 @@ export default class Cards extends Component {
           </Link>
 
           <Link to={"/Projects"} className="Card CardLast">
-            <h3 style={{color: '#000'}}>
+            <h3 style={{ color: "#000" }}>
               {" "}
               View <br /> All Projects
             </h3>

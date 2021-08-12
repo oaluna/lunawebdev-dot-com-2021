@@ -8,7 +8,7 @@ import '../components.css';
 
 init('user_GNoYMqZXu8puUlBH1AHpn');
 
-export default function ContactForm() {
+export default function ContacftForm() {
   function sendEmail(e) {
     e.preventDefault();
 
@@ -75,7 +75,7 @@ export default function ContactForm() {
                 id='message'
                 cols='30'
                 rows='5'
-                name='message'
+              name='message'
                 placeholder='Tell me about your project, and a time I can set up a virtual consultation and speak directly.' style={{color: '#fff'}}></textarea>
             </div>
 
