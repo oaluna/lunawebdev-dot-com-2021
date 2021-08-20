@@ -125,7 +125,7 @@ export default class InfluencerMarketing extends Component {
                 />
                 <h3>Want to hire me?</h3>
                 <p> Proceed to the Contact section to get in touch. </p>
-                <Link to={"/Contacts"}>
+                <Link to={"/Contact"}>
                   <button className="simpleBtn simpleBtnDark">
                     <h4> CONTACT US </h4>
                   </button>

@@ -148,7 +148,7 @@ export default class TabView extends Component {
                 spark engaging conversations, drive positive brand perception
                 and deliver real results.{" "}
               </p>
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <button className="circleBtn circleBtnDark">
                   <span className="circleBtnIcon">+</span>
                   <h4> KNOW MORE </h4>
@@ -179,7 +179,7 @@ export default class TabView extends Component {
                 success at each distribution touchpoint to optimize and redirect
                 efforts if necessary.{" "}
               </p>
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <button className="circleBtn circleBtnDark">
                   <span className="circleBtnIcon">+</span>
                   <h4> KNOW MORE </h4>
@@ -210,7 +210,7 @@ export default class TabView extends Component {
                 business but is creatively tailored around your budget to
                 maximize results.{" "}
               </p>
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <button className="circleBtn circleBtnDark">
                   <span className="circleBtnIcon">+</span>
                   <h4> KNOW MORE </h4>

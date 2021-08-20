@@ -40,12 +40,12 @@ export default class Homepage extends Component {
           </Fade>
           <Fade right delay={100} duration={500}>
             <div className="socialHeaderCallToAction">
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <button className="simpleBtn simpleBtnDark">
                   <h4> GET STARTED </h4>
                 </button>
               </Link>
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <h6> Schedule a Virtual Consultation</h6>
               </Link>
             </div>
@@ -127,7 +127,7 @@ export default class Homepage extends Component {
                       <h4> SEE PAST PROJECTS </h4>
                     </button>
                   </Link>
-                  <Link to={"/Contacts"}>
+                  <Link to={"/Contact"}>
                     <button className="simpleBtn simpleBtnDark">
                       <h4> CONTACT US </h4>
                     </button>

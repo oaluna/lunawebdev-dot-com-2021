@@ -67,7 +67,7 @@ export default class ProjectPage extends Component {
                 </span>
                 <h4> GO BACK </h4>
               </button>
-              <Link to={"/Contacts"}>
+              <Link to={"/Contact"}>
                 <button className="simpleBtn simpleBtnDark">
                   <h4> CONTACT US </h4>
                 </button>

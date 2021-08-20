@@ -72,13 +72,13 @@ export default class VideoSection extends Component {
                 </p>
               </div>
               <div className="sideButtons">
-                <Link to={"/Contacts"}>
+                <Link to={"/Contact"}>
                   <button className="circleBtn circleBtnDark">
                     <span className="circleBtnIcon">+</span>
                     <h4> FIND OUT MORE </h4>
                   </button>
                 </Link>
-                <Link to={"/Contacts"}>
+                <Link to={"/Contact"}>
                   <button className="simpleBtn simpleBtn">
                     <h4> CONTACT </h4>
                   </button>

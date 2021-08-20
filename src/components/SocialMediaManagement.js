@@ -130,7 +130,7 @@ export default class SocialMediaManagement extends Component {
               <div className="serviceDetailsCard serviceDetailsCardLast">
                 <h3>Can't Find What Your Are Looking For?</h3>
                 <p> Get in touch and let us know what you need. </p>
-                <Link to={"/Contacts"}>
+                <Link to={"/Contact"}>
                   <button className="simpleBtn simpleBtnDark">
                     <h4> CONTACT US </h4>
                   </button>

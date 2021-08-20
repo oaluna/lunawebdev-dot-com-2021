@@ -117,7 +117,7 @@ export default class DigitalCreations extends Component {
                 />
                 <h3>Want to hire me?</h3>
                 <p> Proceed to the contact page to get started. </p>
-                <Link to={"/Contacts"}>
+                <Link to={"/Contact"}>
                   <button className="simpleBtn simpleBtnDark">
                     <h4> CONTACT US </h4>
                   </button>

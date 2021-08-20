@@ -57,7 +57,7 @@ export default function Footer() {
             <Link to="/Services">Services</Link>
           </h4>
           <h4>
-            <Link to="/Contacts">Contacts</Link>
+            <Link to="/Contact">Contacts</Link>
           </h4>
           <h4>
             <Link to="/Aboutus">About Us</Link>
