@@ -9,5 +9,5 @@ const ContactPage = (props) => (
         <ContactForm />
       </div>
     );
-  }
-}
+
+export default ContactPage;
