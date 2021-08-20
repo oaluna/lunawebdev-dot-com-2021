@@ -65,7 +65,6 @@ class App extends Component {
             <Route path="/Services" component={ServicesPage} />
             <Route path="/Skills" component={SkillsPage} />
             <Route path="/Marketing" component={Marketing} />
-            <Route path="/Marketing" component={Marketing} />
             <Route path="/DigitalCreations" component={DigitalCreations} />
             <Route
               path="/SocialMediaManagement"

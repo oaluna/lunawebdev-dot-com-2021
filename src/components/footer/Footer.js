@@ -1,8 +1,12 @@
 import React from "react";
 
 import SvgIcons from "../SvgIcons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedium, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMedium,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import "../pages.css";
 import { Link } from "react-router-dom";
 
@@ -12,27 +16,34 @@ export default function Footer() {
       <div className="footerContent">
         <div className="footerFirstRow">
           <Link to={"/"} className="footerLogo">
-            <SvgIcons iconName="oscarArmandoLunaLogo" style={{maxWidth: '100px !important'}}/>
+            <SvgIcons
+              iconName="oscarArmandoLunaLogo"
+              style={{ maxWidth: "100px !important" }}
+            />
           </Link>
           <div className="socialBox">
             <a
               href="https://linkedin.com/in/oscar-a-luna"
               className="socialItem"
             >
-               <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faLinkedin} />
-        </a>
-        <a href='https://www.medium.com/@oaluna' className='socialItem'>
-        <FontAwesomeIcon style={{width: '32px', height: '32px'}} icon={faMedium} />
-        </a>
-            
-            <a
-              href="https://github.com/oaluna"
-              className="socialItem"
-            >
-             <FontAwesomeIcon style={{width: '32px', height: '32px'}}
- icon={faGithub} />         
+              <FontAwesomeIcon
+                style={{ width: "32px", height: "32px" }}
+                icon={faLinkedin}
+              />
             </a>
-           
+            <a href="https://www.medium.com/@oaluna" className="socialItem">
+              <FontAwesomeIcon
+                style={{ width: "32px", height: "32px" }}
+                icon={faMedium}
+              />
+            </a>
+
+            <a href="https://github.com/oaluna" className="socialItem">
+              <FontAwesomeIcon
+                style={{ width: "32px", height: "32px" }}
+                icon={faGithub}
+              />
+            </a>
           </div>
         </div>
         <div className="footerMainMenu">

@@ -4,16 +4,8 @@ import ContactForm from './ContactForm.js';
 
 import '../pages.css';
 
-export default class ContactPage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className='Contacts'>
+const ContactPage = (props) => (
+      <div className='Contact'>
         <ContactForm />
       </div>
     );
