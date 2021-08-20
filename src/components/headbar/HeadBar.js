@@ -69,7 +69,7 @@ export default function HeadBar(props) {
           </Link>
         </h2>
         <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
-          <Link to={'/Contacts'}>
+          <Link to={'/Contact'}>
             <h6>CONTACT</h6>
           </Link>
         </h2>
