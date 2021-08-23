@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import projectsData from "../Data/projectsData.js";
+import projectsData from "../Data/pastProjectsData.js";
 import SvgIcons from "../SvgIcons.js";
 import "../components.css";
 import "../underSideInfo.css";

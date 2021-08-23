@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 
 import Homepage from "./components/Homepage";
-import CaseHistory from "./components/CaseHistory";
+import CaseHistory from "./components/PastProjects";
 import ProjectPage from "./components/Projects/ProjectPage";
 import ContactPage from "./components/contact/ContactPage";
 import Marketing from "./components/Marketing";

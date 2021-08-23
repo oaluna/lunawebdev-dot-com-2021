@@ -50,7 +50,7 @@ export default function HeadBar(props) {
         </h2>
         <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>
           <Link to={'/Projects'}>
-            <h6>CASE HISTORY</h6>
+            <h6>PAST PROJECTS</h6>
           </Link>
         </h2>
         <h2 className='headBarMenuItem' onClick={() => handleMenu(false)}>

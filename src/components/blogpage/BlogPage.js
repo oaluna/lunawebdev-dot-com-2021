@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-const projectsData = require("../Data/projectsData");
+const projectsData = require("../Data/pastProjectsData");
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import FilterBlurImg from "../FilterBlurImg";

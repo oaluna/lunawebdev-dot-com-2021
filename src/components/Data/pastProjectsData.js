@@ -73,9 +73,9 @@ const projectsData = [
     id: 5,
     category: 'Landing Site',
     imageLarge:
-      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1629707101/globomantics-preview-2021_llh2ux.png',
     imageCard:
-      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1617817991/oscarlunadotdev/globoMantics.png',
+      'https://res.cloudinary.com/dgdnpkfun/image/upload/v1629707101/globomantics-preview-2021_llh2ux.png',
     logoImg: '../../assets/oscarArmandoLunaLogo.png',
     title: 'Globomantics - a Real Estate page demo',
     url: 'https://globomantics.vercel.app/',
@@ -98,4 +98,6 @@ const projectsData = [
       'I will be quite honest. I was bent on learning how that wonderful gradient mask on Stripe.com works. So after some reverse engineering I implemented the gradient webGL to a React application. Through building this application I also learned about Figma and how to generate web applications through prototypes and used a community file to create device mockups for it. Built using React.'
   }
 ];
+
+
 export default projectsData;
