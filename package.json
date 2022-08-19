@@ -5,7 +5,6 @@
   "author": "Oscar Luna <CaporalesLuna@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.2",
@@ -22,22 +21,23 @@
     "lottie-react": "^2.1.0",
     "materialize-css": "^1.0.0",
     "moment": "^2.29.1",
-    "postcss": "^7",
     "react": "17.0.1",
     "react-chatbot-kit": "^1.1.14",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "17.0.1",
     "react-feather": "^2.0.9",
+    "react-icons": "4.4.0",
     "react-reveal": "^1.2.2",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.2",
+    "react-scroll": "1.8.7",
+    "react-scroll-parallax": "3.2.0",
     "react-simple-chatbot": "^0.6.1",
     "react-spinners": "^0.10.6",
     "react-twitter-embed": "^3.0.3",
     "reactstrap": "^8.9.0",
-    "styled-components": "^5.2.1",
-    "tailwindcss": "yarn:@tailwindcss/postcss7-compat"
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "typescript": "3.8.3"
