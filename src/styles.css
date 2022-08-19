@@ -1,251 +1,233 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&family=Maven+Pro:wght@400;500;700&family=Roboto:wght@100;400;700&display=swap");
-*,
-*::before,
-*::after {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+html,
+body,
+.App {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-body {
+  width: 100%;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(145deg, #141418 0%, #13154d 84%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-weight: 400;
-  color: white;
-  overflow-x: hidden;
+  font-size: 62.5%;
 }
 
-main {
-  background: #151418;
-  background-image: url(https://raw.githubusercontent.com/gurupawar/website/main/src/Assets/blob-haikei.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+label {
+  font-size: 100%;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  background-color: transparent;
+  color: inherit !important;
 }
 
-ul,
-ol {
-  list-style: none;
+button {
+  padding: 15px 25px;
+  margin: 0 auto;
+  outline: none !important;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+@media only screen and (min-width: 900px) {
+  .onlyTablet {
+    display: none !important;
+  }
 }
 
-h1 {
-  font-family: "Hind Siliguri", sans-serif;
-  font-weight: 700;
-  line-height: 1;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Maven Pro", sans-serif;
-  font-weight: 400;
+@media only screen and (max-width: 900px) {
+  .noShowTablet {
+    display: none !important;
+  }
 }
 
-p,
-a,
-li,
-label,
-span,
-div {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+::selection {
+  background: rgba(255, 255, 255, 0);
 }
 
+div,
+img,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-size: 100%;
-  font-weight: normal;
-  z-index: 100;
+  margin: 0;
+  padding: 0;
+  color: inherit;
 }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-}
-
-.btn {
-  border: none;
-  padding: 10px 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  font-weight: 400;
-  outline: none;
-  z-index: 100;
-}
-
-.PrimaryBtn {
-  background: linear-gradient(
-    132deg,
-    rgba(251, 51, 255, 0.51),
-    rgba(78, 83, 190, 0.46),
-    rgba(5, 0, 255, 0.41),
-    rgba(48, 255, 255, 0.36)
-  );
-  color: #f6f6f6;
-  z-index: 100;
-}
-
-.PrimaryBtn:hover {
-  border: 1px solid
-    linear-gradient(
-      132deg,
-      rgba(251, 51, 255, 0.51),
-      rgba(78, 83, 190, 0.46),
-      rgba(5, 0, 255, 0.41),
-      rgba(48, 255, 255, 0.36)
-    );
-  background: white;
-  color: rgba(5, 0, 255, 1);
-}
-.SecondarBtn {
-  background: black;
-  color: white;
-}
-.SecondarBtn:hover {
-  background: linear-gradient(
-    132deg,
-    rgba(251, 51, 255, 0.51),
-    rgba(78, 83, 190, 0.46),
-    rgba(5, 0, 255, 0.41),
-    rgba(48, 255, 255, 0.36)
-  );
-  z-index: 100;
-}
-
-.btn2 {
-  margin-right: 1rem;
-}
-
-.Container {
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.BigCard {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.06) 84%
-  );
-  backdrop-filter: blur(6px);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
-  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05); */
-}
-
-.AboutBio,
-.tagline2 {
-  text-align: center;
-  max-width: 650px;
-  margin: 0 auto;
-  color: #f6f6f6;
-  line-height: 1.6;
-}
-
-.tagline2 {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.SectionTitle {
-  font-size: 28px;
-  color: #f6f6f6;
+h1 {
+  font-size: 4.8rem;
   font-weight: 700;
-  margin-bottom: 3.5rem;
-  @media (max-width: 800px) {
-    margin-top: 5vh;
-  }
-}
-.ProjectWrapper {
-  margin-top: -1rem;
+  line-height: 1;
 }
 
-/* ------------------------------------ Media for Container */
-@media (min-width: 576px) {
-  .Container {
-    max-width: 540px;
-  }
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.2rem;
 }
-@media (min-width: 768px) {
-  .Container {
-    max-width: 720px;
-  }
-  .ProjectWrapper {
-    margin-top: -5rem;
-  }
+
+h3 {
+  font-weight: 700;
+  font-size: 2.2rem;
 }
-@media (min-width: 992px) {
-  .Container {
-    max-width: 960px;
-  }
+
+h4 {
+  font-weight: 500;
+  font-size: 1.44rem;
 }
-@media (min-width: 1200px) {
-  .Container {
-    max-width: 1000px;
+
+h5 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-family: "Manrope", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 28px;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  transition: all ease 0.39s;
+}
+
+a {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.44rem;
+    line-height: 18px;
+    font-family: "Manrope", sans-serif;
+  }
+
+  h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-family: "Manrope", sans-serif;
+    margin: 0;
   }
 }
 
-.MediumCardContainer {
-  @media screen and (min-width: 300px) {
-    .MediumCard {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+/* Animations */
 
-      margin: 1rem 0;
-    }
+.animBottomUp {
+  opacity: 0;
+  margin-top: 0%;
+  animation: bottomUp 0.3s ease forwards;
+}
+
+@keyframes bottomUp {
+  from {
+    opacity: 0;
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 
-.CardFooter {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  font-size: 12px;
-  margin-bottom: 0;
+.animOpacity {
+  opacity: 0;
+  animation: animOpacity 0.3s ease forwards;
+}
+
+@keyframes animOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation Delays*/
+
+.delay1 {
+  animation-delay: 0.1s;
+}
+
+.delay2 {
+  animation-delay: 0.2s;
+}
+
+.delay3 {
+  animation-delay: 0.3s;
+}
+
+.delay4 {
+  animation-delay: 0.4s;
+}
+
+.delay5 {
+  animation-delay: 0.5s;
+}
+
+.delay6 {
+  animation-delay: 0.6s;
+}
+
+.noOverflow {
+  overflow: hidden;
 }
